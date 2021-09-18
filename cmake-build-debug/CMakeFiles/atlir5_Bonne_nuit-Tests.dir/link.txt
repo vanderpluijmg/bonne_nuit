@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/atlir5_Bonne_nuit-Tests.dir/Player.cpp.o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/Game.cpp.o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o -o atlir5_Bonne_nuit-Tests 

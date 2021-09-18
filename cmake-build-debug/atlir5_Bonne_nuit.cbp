@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="atlir5_Bonne_nuit"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="atlir5_Bonne_nuit-Tests">
+				<Option output="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="atlir5_Bonne_nuit-Tests/fast">
+				<Option output="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="atlir5_Bonne_nuit">
+				<Option output="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="atlir5_Bonne_nuit/fast">
+				<Option output="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Board.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Board.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Game.cpp">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Game.h">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/GoodNight.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/GoodNight.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Pawn.h">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Player.cpp">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/Player.h">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/main.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/test/testGame.cpp">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+		</Unit>
+		<Unit filename="/home/greg/CLionProjects/atlir5_Bonne-nuit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
