@@ -15,7 +15,6 @@
 enum GameState {notStarted, throwDice , placeStar, lightOff, turnOverStar ,lightOn};
 struct Turn{
     int diceRoll;
-
     std::list<Color> pawnsToPlace_color;
 };
 
@@ -44,8 +43,6 @@ public:
      */
     Game(int numberOfPlayers){
         gameState = notStarted;
-        populateGame(numberOfPlayers);
-        currentPlayer = players.at(0);
     }
     /**
      * Populates the game with number of players.
@@ -105,7 +102,15 @@ public:
      */
     void moveRose(Turn t);
 
-    void addPawnsToPlace(Turn);
+    /**
+     * Adds all pawns that have not yet been taken by a player.
+     */
+    void addPawnsToPlace(Turn, int);
+
+    /**
+     * Places the current players pawns
+     */
+    void placePawn();
 };
 
 

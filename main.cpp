@@ -7,15 +7,10 @@
 using namespace std;
 
 int main() {
-    Game g(5);
+    Game g(4);
     Board *b = new Board(g);
-    b->initGameBoard();
+    g.addPawnsToPlace(Turn(),1);
     std::cout << b->toString() << std::endl;
-    g.moveRose(Turn{});
-    std::cout << b->toString() << std::endl;
-
-
-
     delete b;
 
 }

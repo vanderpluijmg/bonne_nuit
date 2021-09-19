@@ -10,7 +10,7 @@ std::list<Player> Game::populateGame(int numberOfPlayers) {
         players.emplace_back(Player(i + 1, Color(i)));
     }
     std::list<Player> pawnToPlace;
-    for (; i < 5; i++)r|
+    for (; i < 5; i++)
         pawnToPlace.emplace_back(Player(0, Color(i)));
     return pawnToPlace;
 }
@@ -51,15 +51,20 @@ void Game::notify(Turn t) {
 }
 
 void Game::moveRose(Turn t) {
-    t.diceRoll = 2;//rollDice();
+
+    //t.diceRoll = 2;//rollDice();
     notify(t);
 }
 
-void Game::addPawnsToPlace(Turn t) {
-    std::list<Player> player = populateGame(5);
+void Game::addPawnsToPlace(Turn t, int numberOfPlayers) {
+    std::list<Player> player = populateGame(numberOfPlayers);
     for (auto &x: player)
         t.pawnsToPlace_color.emplace_back(x.getColor());
     notify(t);
+}
+
+void Game::placePawn() {
+
 }
 
 

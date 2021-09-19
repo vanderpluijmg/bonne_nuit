@@ -6,29 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Board.cpp
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.cpp
 iostream
 -
 Board.h
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Board.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.h
 
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Board.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.h
 string
 -
 Game.h
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Game.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.h
 
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Game.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.cpp
+Game.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.h
+
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.h
 list
 -
 iostream
 -
 Player.h
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Player.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.h
 
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Pawn.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Pawn.h
 
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Player.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.h
 vector
 -
 string
@@ -38,5 +42,17 @@ map
 list
 -
 Pawn.h
-/home/greg/CLionProjects/atlir5_Bonne-nuit/Pawn.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Pawn.h
+
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/main.cpp
+iostream
+-
+list
+-
+Pawn.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Pawn.h
+Game.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.h
+Board.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/greg/CLionProjects/atlir5_Bonne-nuit
+# Install script for directory: /home/greg/CLionProjects/esi-atlir5-bonne_nuit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/greg/CLionProjects/atlir5_Bonne-nuit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
