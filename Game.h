@@ -16,6 +16,7 @@ enum GameState {notStarted, throwDice , placeStar, lightOff, turnOverStar ,light
 struct Turn{
     int diceRoll;
     std::list<Color> pawnsToPlace_color;
+    std::pair<int, int> positionToPlacePlayerPawn;
 };
 
 /**
@@ -108,9 +109,9 @@ public:
     void addPawnsToPlace(Turn, int);
 
     /**
-     * Places the current players pawns
+     * Places the current players pawns.
      */
-    void placePawn();
+    void placePawn(int, int, Turn);
 };
 
 

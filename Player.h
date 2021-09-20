@@ -53,7 +53,7 @@ public:
      * Getter for pawns.
      * @return Pawns of player.
      */
-    const std::list<Pawn> &getPawns() const {
+    std::list<Pawn> getPawns() const {
         return pawns;
     }
 };

@@ -51,8 +51,7 @@ void Game::notify(Turn t) {
 }
 
 void Game::moveRose(Turn t) {
-
-    //t.diceRoll = 2;//rollDice();
+    t.diceRoll = 2;//rollDice();
     notify(t);
 }
 
@@ -63,8 +62,11 @@ void Game::addPawnsToPlace(Turn t, int numberOfPlayers) {
     notify(t);
 }
 
-void Game::placePawn() {
-
+void Game::placePawn(int x, int y, Turn t) {
+    currentPlayer.getPawns().pop_front();
+    t.positionToPlacePlayerPawn.first=x;
+    t.positionToPlacePlayerPawn.second=y;
+    notify(t);
 }
 
 

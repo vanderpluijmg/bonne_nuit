@@ -12,7 +12,9 @@ public:
     /**
      * Default constructor for marble.
      */
-    Pawn(){};
+    Pawn(void){};
+
+    Pawn(const Pawn &p1) {_color = p1._color; _state = p1._state; }
     /**
      * Constructor for marble.
      * @param color Color of marble object.
@@ -55,6 +57,7 @@ public:
     void setColor (Color color){
         _color = color;
     }
+
 };
 
 #endif //ATLIR5_BONNE_NUIT_PAWN_H

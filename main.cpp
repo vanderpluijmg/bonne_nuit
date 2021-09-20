@@ -9,7 +9,8 @@ using namespace std;
 int main() {
     Game g(4);
     Board *b = new Board(g);
-    g.addPawnsToPlace(Turn(),1);
+    b->initGameBoard();
+    g.moveRose(Turn());
     std::cout << b->toString() << std::endl;
     delete b;
 

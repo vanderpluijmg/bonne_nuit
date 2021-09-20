@@ -9,7 +9,7 @@
  */
 class Board : public Listener {
 private:
-    int gameBoard[9][5];
+    int gameBoard[9][6];
     int rosePlace;
 public:
 
@@ -42,7 +42,15 @@ public:
      */
     void moveRose(int);
 
+    /**
+     * Places the remaining pawns graphically that are not used.
+     */
     void placePawnsBeg(std::list<Color>);
+
+    /**
+     * Places a player pawn where he wished to on the board.
+     */
+    void placePawn(int, int);
 
 };
 

@@ -18,7 +18,14 @@ void Board::initGameBoard() {
 
 void Board::onEvent(Turn t) {
     moveRose(t.diceRoll);
-    placePawnsBeg(t.pawnsToPlace_color);
+    //placePawnsBeg(t.pawnsToPlace_color);
+    //placePawn(t.positionToPlacePlayerPawn.first, t.positionToPlacePlayerPawn.second);
+}
+
+void Board::placePawn(int x, int y){
+    if( (x < 0 || x > 8) || (y < 0 || y > 5) )
+        throw "x or y is to big, board.cpp l27";
+    gameBoard[x][y]=1;
 }
 
 void Board::placePawnsBeg(std::list<Color> colors) {
@@ -36,18 +43,9 @@ void Board::placePawnsBeg(std::list<Color> colors) {
 }
 
 void Board::moveRose(int t) {
-    //gameBoard[ 9-(t+rosePlace) >= 0 ?  t+rosePlace :  std::abs( 9-(t+rosePlace)  )][0] = 2;
-    //gameBoard[2][0] = 2;
-    //rosePlace += t;
-    //gameBoard[0][0]=2;
-    //gameBoard[1][0]=2;
-    //gameBoard[2][0]=2;
-    //gameBoard[3][0]=2;
-    //gameBoard[4][0]=2;
-    //gameBoard[5][0]=2;
-    //gameBoard[6][0]=2;
-    //gameBoard[7][0]=2;
-    //gameBoard[8][0]=2;
+    gameBoard[1+t+rosePlace][0]=2;
+    gameBoard[0][rosePlace]=0;
+    rosePlace+=t;
 }
 
 std::string Board::toString() {
