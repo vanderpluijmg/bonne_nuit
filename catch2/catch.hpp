@@ -14083,7 +14083,7 @@ namespace Catch {
             }
         }
         if( isHidden ) {
-            // Add all "hidden" tags to make them behave identically
+            // Add all "notShining" tags to make them behave identically
             tags.insert( tags.end(), { ".", "!hide" } );
         }
 

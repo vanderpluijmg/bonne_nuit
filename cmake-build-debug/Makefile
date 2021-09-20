@@ -147,6 +147,7 @@ src/Board.o: src/Board.cpp.o
 
 # target to build an object file
 src/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o
 .PHONY : src/Board.cpp.o
 
@@ -155,6 +156,7 @@ src/Board.i: src/Board.cpp.i
 
 # target to preprocess a source file
 src/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.i
 .PHONY : src/Board.cpp.i
 
@@ -163,6 +165,7 @@ src/Board.s: src/Board.cpp.s
 
 # target to generate assembly for a file
 src/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 

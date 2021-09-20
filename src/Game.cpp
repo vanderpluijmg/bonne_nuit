@@ -4,6 +4,16 @@
 
 #include "Game.h"
 #include "../ressources/random.hpp"
+#include "Board.h"
+
+
+Game::Game(int numberOfPlayers) {
+    gameState = notStarted;
+    board.initGameBoard();
+    addPawnsToPlace(numberOfPlayers);
+    currentPlayer = players[0];
+
+}
 
 std::list<Player> Game::populateGame(int numberOfPlayers) {
     unsigned int i;
@@ -38,33 +48,27 @@ void Game::nextPlayer() {
             currentPlayer = players.at(currentPlayer.getName()) : currentPlayer = players.at(0);
 }
 
-void Game::addListener(Listener *lis) {
-    listeners.emplace_back(lis);
+void Game::moveRose() {
+    board.moveRose(nvs::random_value(1,3));
 }
 
-void Game::notify(Turn t) {
-    for (Listener *lis: listeners)
-        lis->onEvent(t);
-}
-
-void Game::moveRose(Turn t) {
-    t.diceRoll = nvs::random_value(1,3);
-    std::cout<<t.diceRoll<<std::endl;
-    notify(t);
-}
-
-void Game::addPawnsToPlace(Turn t, int numberOfPlayers) {
+void Game::addPawnsToPlace( int numberOfPlayers) {
+    std::list<Color>pawnsToPlace_color;
     std::list<Player> player = populateGame(numberOfPlayers);
     for (auto &x: player)
-        t.pawnsToPlace_color.emplace_back(x.getColor());
-    notify(t);
+       pawnsToPlace_color.emplace_back(x.getColor());
+    board.placePawnsBeg(pawnsToPlace_color);
 }
 
-void Game::placePawn(int x, int y, Turn t) {
-    std::cout<<currentPlayer.getPawns().size()<<std::endl;
-    t.positionToPlacePlayerPawn.first=x-1;
-    t.positionToPlacePlayerPawn.second=y;
-    notify(t);
+bool Game::placePawn(int x, int y) {
+    if ((x < 8 && x > 0) && (y < 5 && y > 0) && (board.getCase(x,y).getColor()==Color::None)) {
+        board.placePawn(x, y, currentPlayer.getColor());
+        return true;
+    } return false;
+}
+
+Board &Game::getBoard() {
+    return board;
 }
 
 

@@ -5,11 +5,10 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o: \
  ../ressources/random.hpp \
  ../src/Board.cpp \
  ../src/Board.h \
- ../src/Game.h \
- ../src/Pawn.h \
- ../src/Player.h
+ ../src/Pawn.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o: \
  ../ressources/random.hpp \
+ ../src/Board.h \
  ../src/Game.cpp \
  ../src/Game.h \
  ../src/Pawn.h \

@@ -127,6 +127,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h">

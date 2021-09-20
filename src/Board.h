@@ -2,27 +2,25 @@
 #define ATLIR5_BONNE_NUIT_BOARD_H
 
 #include <string>
-#include "Game.h"
+#include <list>
+#include "Pawn.h"
 
 /**
  * Represents the game board of the game.
  */
-class Board : public Listener {
+class Board {
 private:
-    int gameBoard[9][6];
+    Pawn gameBoard[9][6];
     int rosePlace;
+
+
 public:
 
     /**
      * Default constructor for board.
      * @param g Publisher to subscribe to.
      */
-    Board(Game &g);
-
-    /**
-     * Pseudo-constructor for board. Initializes board in beginning of game.
-     */
-    void initGameBoard();
+    Board();
 
     /**
      * Turns board to String for TUI.
@@ -31,16 +29,15 @@ public:
     std::string toString();
 
     /**
-     * updates board after publisher sends an update.
-     * @param t Update of publisher.
-     */
-    virtual void onEvent(Turn t);
-
-    /**
      * Moves rose on display.
      * @param Dice roll of user.
      */
     void moveRose(int);
+
+    /**
+    * Initializes all cases of the game to color "None" and state "none".
+    */
+    void initGameBoard();
 
     /**
      * Places the remaining pawns graphically that are not used.
@@ -50,7 +47,9 @@ public:
     /**
      * Places a player pawn where he wished to on the board.
      */
-    void placePawn(int, int);
+    void placePawn(int, int, Color);
+
+    Pawn getCase (int,int);
 
 };
 

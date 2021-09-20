@@ -8,47 +8,37 @@
 #include <list>
 #include <iostream>
 #include "Player.h"
+#include "Board.h"
 
 /**
  * Defines the states in which the game is currently in.
  */
 enum GameState {notStarted, throwDice , placeStar, lightOff, turnOverStar ,lightOn};
-struct Turn{
-    int diceRoll;
-    std::list<Color> pawnsToPlace_color;
-    std::pair<int, int> positionToPlacePlayerPawn;
-};
-
-/**
- * Defines a listener
- */
-class Listener{
-public:
-    /**
-    * updates board after publisher sends an update.
-    * @param t Update of publisher.
-    */
-    virtual void onEvent (Turn t) = 0;
-};
 
 class Game {
 private:
     GameState gameState;
     Player currentPlayer;
     std::vector<Player>players;
-    std::vector<Listener*> listeners;
+    Board board;
+
+    /**
+    * Populates the game with number of players.
+    */
+    std::list<Player> populateGame(int);
+
+    /**
+     * Adds all pawns that have not yet been taken by a player.
+     */
+    void addPawnsToPlace(int);
+
+
 public:
     /**
      * Constructor of Game
      * @param numberOfPlayers Number of players who are going to play.
      */
-    Game(int numberOfPlayers){
-        gameState = notStarted;
-    }
-    /**
-     * Populates the game with number of players.
-     */
-    std::list<Player> populateGame(int);
+    Game(int numberOfPlayers);
 
     /**
      * Getter for the current playing player.
@@ -79,33 +69,19 @@ public:
      */
     void nextPlayer();
 
-    /**
-     * Adds a listener to the publisher.
-     * @param lis Listener to add.
-     */
-    void addListener( Listener* lis);
-
-    /**
-     * Notifies all listeners
-     * @param t Information that has been updated.
-     */
-    void notify (Turn t);
 
     /**
      * Rolls dice and passes value to board.
      * @param t Information that has been updated.
      */
-    void moveRose(Turn t);
-
-    /**
-     * Adds all pawns that have not yet been taken by a player.
-     */
-    void addPawnsToPlace(Turn, int);
+    void moveRose();
 
     /**
      * Places the current players pawns.
      */
-    void placePawn(int, int, Turn);
+    bool placePawn(int, int);
+
+     Board &getBoard() ;
 };
 
 

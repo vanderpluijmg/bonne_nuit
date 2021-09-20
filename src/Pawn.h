@@ -1,8 +1,8 @@
 #ifndef ATLIR5_BONNE_NUIT_PAWN_H
 #define ATLIR5_BONNE_NUIT_PAWN_H
 
-enum Color {Green, Black, Red, Purple, Blue};
-enum pawnState {returned, hidden, inHand};
+enum Color {Green, Black, Red, Purple, Blue, None};
+enum pawnState {shining, notShining, inHand, none, open, rose};
 
 class Pawn {
 private:
@@ -31,6 +31,10 @@ public:
         return _color;
     }
 
+    pawnState getState() const {
+        return _state;
+    }
+
     /**
      * Equality operator for pawn.
      * @param rhs Pawn that is equal to current.
@@ -48,6 +52,9 @@ public:
    */
     bool operator!=(const Pawn &rhs) const {
         return !(rhs == *this);
+    }
+    void setState(pawnState state) {
+        _state = state;
     }
 
     /**
