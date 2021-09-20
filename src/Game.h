@@ -7,7 +7,7 @@
 
 #include <list>
 #include <iostream>
-#include "Player.h"
+#include "Player.hpp"
 #include "Board.h"
 
 /**
@@ -81,7 +81,44 @@ public:
      */
     bool placePawn(int, int);
 
-     Board &getBoard() ;
+    /**
+     * Getter for the game board.
+     * @return game board.
+     */
+    Board &getBoard() ;
+
+    /**
+     * Setter for game state
+     * @param gameState Game state to set to.
+     */
+    void setGameState(GameState gameState);
+
+    /**
+     * Plays turn of player
+     */
+    void playTurn();
+
+    /**
+     * Plays a move for a player.
+     * @param player Player to play move for.
+     */
+    void playMove(Player player);
+
+    /**
+     * Check if game is done.
+     * @return True if game is done.
+     */
+    bool isDone();
+
+    /**
+     * Turns light off during the game.
+     */
+    void turnLightOff();
+
+    /**
+     * Turns lights on during the game.
+     */
+    void turnLightOn();
 };
 
 

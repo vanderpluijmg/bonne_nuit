@@ -2,15 +2,15 @@
 // Created by greg on 17.09.21.
 //
 
-#ifndef ATLIR5_BONNE_NUIT_PLAYER_H
-#define ATLIR5_BONNE_NUIT_PLAYER_H
+#ifndef ATLIR5_BONNE_NUIT_PLAYER_HPP
+#define ATLIR5_BONNE_NUIT_PLAYER_HPP
 
 
 #include <vector>
 #include <string>
 #include <map>
 #include <list>
-#include "Pawn.h"
+#include "Pawn.hpp"
 
 class Player {
 private:
@@ -45,6 +45,10 @@ public:
         return _name;
     }
 
+    /**
+     * Getter for player color
+     * @return Color of the player.
+     */
     Color getColor() const {
         return _color;
     }
@@ -59,4 +63,4 @@ public:
 };
 
 
-#endif //ATLIR5_BONNE_NUIT_PLAYER_H
+#endif //ATLIR5_BONNE_NUIT_PLAYER_HPP

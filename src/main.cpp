@@ -1,6 +1,6 @@
 #include <iostream>
 #include <list>
-#include "Pawn.h"
+#include "Pawn.hpp"
 #include "Game.h"
 #include "Board.h"
 #include "../ressources/random.hpp"

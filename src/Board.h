@@ -3,7 +3,7 @@
 
 #include <string>
 #include <list>
-#include "Pawn.h"
+#include "Pawn.hpp"
 
 /**
  * Represents the game board of the game.
@@ -12,8 +12,6 @@ class Board {
 private:
     Pawn gameBoard[9][6];
     int rosePlace;
-
-
 public:
 
     /**
@@ -49,7 +47,17 @@ public:
      */
     void placePawn(int, int, Color);
 
-    Pawn getCase (int,int);
+    /**
+     * Gets a specific case in the game board.
+     * @return pawn that occupies the specific case.
+     */
+    Pawn getCase(int, int);
+
+    /**
+     * Gets the x coordinates of the rose.
+     * @return X coordinates of the rose.
+     */
+    int getRosePlace() const;
 
 };
 

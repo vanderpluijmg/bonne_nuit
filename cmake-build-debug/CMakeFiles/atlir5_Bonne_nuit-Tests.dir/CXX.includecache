@@ -600,6 +600,24 @@ iomanip
 cassert
 -
 
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/ressources/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
+
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp
+iostream
+-
+Board.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h
+../ressources/random.hpp
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/ressources/random.hpp
+
 /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h
 string
 -
@@ -607,6 +625,14 @@ list
 -
 Pawn.h
 /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.h
+
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp
+Game.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h
+../ressources/random.hpp
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/ressources/random.hpp
+Board.h
+/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h
 
 /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h
 list

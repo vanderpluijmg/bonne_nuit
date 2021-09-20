@@ -5,4 +5,12 @@
 #ifndef ATLIR5_BONNE_NUIT_GOODNIGHT_H
 #define ATLIR5_BONNE_NUIT_GOODNIGHT_H
 
+static class GoodNight{
+
+    /**
+     * Start a new game of goodnight.
+     */
+    void startGame();
+};
+
 #endif //ATLIR5_BONNE_NUIT_GOODNIGHT_H

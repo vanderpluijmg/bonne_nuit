@@ -1,5 +1,5 @@
-#ifndef ATLIR5_BONNE_NUIT_PAWN_H
-#define ATLIR5_BONNE_NUIT_PAWN_H
+#ifndef ATLIR5_BONNE_NUIT_PAWN_HPP
+#define ATLIR5_BONNE_NUIT_PAWN_HPP
 
 enum Color {Green, Black, Red, Purple, Blue, None};
 enum pawnState {shining, notShining, inHand, none, open, rose};
@@ -31,6 +31,10 @@ public:
         return _color;
     }
 
+    /**
+     * Getter for the state of the pawn.
+     * @return State of the pawn.
+     */
     pawnState getState() const {
         return _state;
     }
@@ -53,6 +57,11 @@ public:
     bool operator!=(const Pawn &rhs) const {
         return !(rhs == *this);
     }
+
+    /**
+     * Setter for the state of the pawn
+     * @param state State of the pawn to set to.
+     */
     void setState(pawnState state) {
         _state = state;
     }
@@ -64,7 +73,6 @@ public:
     void setColor (Color color){
         _color = color;
     }
-
 };
 
-#endif //ATLIR5_BONNE_NUIT_PAWN_H
+#endif //ATLIR5_BONNE_NUIT_PAWN_HPP

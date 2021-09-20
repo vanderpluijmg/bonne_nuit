@@ -26,6 +26,9 @@ std::list<Player> Game::populateGame(int numberOfPlayers) {
     return pawnToPlace;
 }
 
+void Game::setGameState(GameState gameState) {
+    Game::gameState = gameState;
+}
 
 GameState Game::getGameState() const {
     return gameState;
@@ -70,5 +73,33 @@ bool Game::placePawn(int x, int y) {
 Board &Game::getBoard() {
     return board;
 }
+
+void Game::playTurn() {
+    moveRose();
+    playMove(currentPlayer);
+    nextPlayer();
+}
+bool Game::isDone(){
+    return players.end()->getPawns().empty();
+}
+void Game::playMove(Player player){
+    //Get coordinates from user.
+    int x = board.getRosePlace();
+    int y = 4;
+    //Give them to placePawn()
+    while (!placePawn(x,y)) {
+        //re-ask for valid y coordinates
+        y += 1;
+    }
+}
+
+void Game::turnLightOff() {
+    setGameState(lightOff);
+}
+void Game::turnLightOn() {
+    setGameState(lightOn);
+}
+
+
 
 

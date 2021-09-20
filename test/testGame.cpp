@@ -140,4 +140,14 @@ TEST_CASE("move rose", "[rose]"){
     }
 }
 
+TEST_CASE("play move", "[game mechanics]"){
+    Game g(5);
+    Player playingPlayer = g.getCurrentPlayer();
+    g.playTurn();
+    REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getColor()) == (playingPlayer.getColor()));
+    REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getState())
+    == (playingPlayer.getPawns().begin()->getState()));
+    REQUIRE(g.getPlayers().at(1).getName() == g.getCurrentPlayer().getName());
+}
+
 
