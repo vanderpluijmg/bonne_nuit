@@ -80,12 +80,6 @@ public:
     void nextPlayer();
 
     /**
-     * Rolls a dice.
-     * @return Value of dice after it has been rolled.
-     */
-    int rollDice();
-
-    /**
      * Adds a listener to the publisher.
      * @param lis Listener to add.
      */

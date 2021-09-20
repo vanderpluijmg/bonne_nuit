@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "Board.h"
+#include "../ressources/random.hpp"
+
 
 Board::Board(Game &g) {
     g.addListener(this);
@@ -12,13 +14,13 @@ Board::Board(Game &g) {
 
 void Board::initGameBoard() {
     for (auto x = 0; x < 9; x++)
-        for (auto y = 0; y < 5; y++)
+        for (auto y = 0; y <= 5; y++)
             gameBoard[x][y]=0;
 }
 
 void Board::onEvent(Turn t) {
-    moveRose(t.diceRoll);
-    //placePawnsBeg(t.pawnsToPlace_color);
+    //moveRose(t.diceRoll);
+    placePawnsBeg(t.pawnsToPlace_color);
     //placePawn(t.positionToPlacePlayerPawn.first, t.positionToPlacePlayerPawn.second);
 }
 
@@ -31,11 +33,11 @@ void Board::placePawn(int x, int y){
 void Board::placePawnsBeg(std::list<Color> colors) {
     for (auto& color: colors) {
         for (auto i = 1; i < 4; i++) {
-            int randomBetween0and8 = rand()%(8-0)+0;
-            int randomBetween1and5 = rand()%(5-1)+1;
+            int randomBetween0and8 = nvs::random_value(0,8);
+            int randomBetween1and5 = nvs::random_value(1,5);
             while(gameBoard[randomBetween0and8][randomBetween1and5]==1){
-                randomBetween0and8 = rand()%(8-1)+1;
-                randomBetween1and5 = rand()%(5-1)+1;
+                randomBetween0and8 = nvs::random_value(0,8);
+                randomBetween1and5 = nvs::random_value(1,5);
             }
             gameBoard[randomBetween0and8][randomBetween1and5]=1;
         }
@@ -43,9 +45,10 @@ void Board::placePawnsBeg(std::list<Color> colors) {
 }
 
 void Board::moveRose(int t) {
-    gameBoard[1+t+rosePlace][0]=2;
-    gameBoard[0][rosePlace]=0;
-    rosePlace+=t;
+    int place = t+rosePlace>=9 ? (std::abs(9-(t+rosePlace))) : (t+rosePlace);
+    gameBoard[place][0]=2;
+    gameBoard[rosePlace][0]=0;
+    rosePlace = place;
 }
 
 std::string Board::toString() {

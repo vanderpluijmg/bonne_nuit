@@ -3,7 +3,7 @@
 //
 #define CATCH_CONFIG_MAIN
 #include "../catch2/catch.hpp"
-#include "../Game.h"
+#include "../src/Game.h"
 
 
 std::list<Pawn> blackHand (){

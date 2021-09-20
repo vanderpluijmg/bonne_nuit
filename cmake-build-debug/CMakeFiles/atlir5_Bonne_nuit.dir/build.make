@@ -66,87 +66,87 @@ include CMakeFiles/atlir5_Bonne_nuit.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
 
-CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/main.cpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/main.cpp
 
-CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/main.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.i
+CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/main.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/main.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.s
+CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/main.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.cpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o: ../src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.cpp
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.i
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.s
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.cpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o: ../src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.i
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.s
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.cpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o: ../src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.i
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.s
+CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o: ../GoodNight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/GoodNight.cpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o: CMakeFiles/atlir5_Bonne_nuit.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o: ../src/GoodNight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o -c /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.cpp
 
-CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/GoodNight.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.i
+CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.cpp > CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/GoodNight.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.s
+CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.cpp -o CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.s
 
 # Object files for target atlir5_Bonne_nuit
 atlir5_Bonne_nuit_OBJECTS = \
-"CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o"
+"CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o"
 
 # External object files for target atlir5_Bonne_nuit
 atlir5_Bonne_nuit_EXTERNAL_OBJECTS =
 
-atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/main.cpp.o
-atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/Player.cpp.o
-atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/Game.cpp.o
-atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/Board.cpp.o
-atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/GoodNight.cpp.o
+atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o
+atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/src/Player.cpp.o
+atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o
+atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o
+atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o
 atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/build.make
 atlir5_Bonne_nuit: CMakeFiles/atlir5_Bonne_nuit.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable atlir5_Bonne_nuit"

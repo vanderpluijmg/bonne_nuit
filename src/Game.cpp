@@ -3,6 +3,7 @@
 //
 
 #include "Game.h"
+#include "../ressources/random.hpp"
 
 std::list<Player> Game::populateGame(int numberOfPlayers) {
     unsigned int i;
@@ -37,10 +38,6 @@ void Game::nextPlayer() {
             currentPlayer = players.at(currentPlayer.getName()) : currentPlayer = players.at(0);
 }
 
-int Game::rollDice() {
-    return 1 + (rand() % 6);
-}
-
 void Game::addListener(Listener *lis) {
     listeners.emplace_back(lis);
 }
@@ -51,7 +48,8 @@ void Game::notify(Turn t) {
 }
 
 void Game::moveRose(Turn t) {
-    t.diceRoll = 2;//rollDice();
+    t.diceRoll = nvs::random_value(1,3);
+    std::cout<<t.diceRoll<<std::endl;
     notify(t);
 }
 
@@ -63,8 +61,8 @@ void Game::addPawnsToPlace(Turn t, int numberOfPlayers) {
 }
 
 void Game::placePawn(int x, int y, Turn t) {
-    currentPlayer.getPawns().pop_front();
-    t.positionToPlacePlayerPawn.first=x;
+    std::cout<<currentPlayer.getPawns().size()<<std::endl;
+    t.positionToPlacePlayerPawn.first=x-1;
     t.positionToPlacePlayerPawn.second=y;
     notify(t);
 }

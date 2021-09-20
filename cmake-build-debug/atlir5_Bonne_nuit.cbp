@@ -126,39 +126,39 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.cpp">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Board.h">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.cpp">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Game.h">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/GoodNight.cpp">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/GoodNight.h">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Pawn.h">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.cpp">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/Player.h">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/main.cpp">
+		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/main.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/test/testGame.cpp">
