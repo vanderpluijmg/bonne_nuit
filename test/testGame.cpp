@@ -2,11 +2,13 @@
 // Created by greg on 17.09.21.
 //
 #define CATCH_CONFIG_MAIN
+
+#include <langinfo.h>
 #include "../catch2/catch.hpp"
 #include "../src/Game.h"
 
 
-std::list<Pawn> blackHand (){
+std::list<Pawn> blackPlayerHand (){
     std::list<Pawn> pawns;
     for (auto i = 0; i<5; i++)
         pawns.push_back(Pawn(Black,inHand));
@@ -72,7 +74,22 @@ TEST_CASE( "Populating hands of players with 1 players", "[hand]" ) {
     REQUIRE(colorInUse.size() == 1);
 }
 
-TEST_CASE("Correctly placed rose", "[rose]"){
+TEST_CASE("Correctly number of rose", "[rose]"){
+    Game game(5);
+    auto index = 0;
+    game.moveRose();
+    for (int x = 0; x>9; x++) {
+        if (game.getBoard().getCase(x, 0).getState() == rose)
+            index++;
+    }
+    REQUIRE(index==1);
+}
+
+TEST_CASE("Correctly placed number of rose", "[rose]") {
+    Game g(5);
+    int place = g.getBoard().getRosePlace();
+    g.moveRose();
+    REQUIRE_FALSE(place==g.getBoard().getRosePlace());
 }
 
 TEST_CASE("next player"){
