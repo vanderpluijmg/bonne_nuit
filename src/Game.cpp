@@ -12,7 +12,6 @@ Game::Game(int numberOfPlayers) {
     board.initGameBoard();
     addPawnsToPlace(numberOfPlayers);
     currentPlayer = players[0];
-
 }
 
 std::list<Player> Game::populateGame(int numberOfPlayers) {
@@ -74,7 +73,7 @@ Board &Game::getBoard() {
     return board;
 }
 
-void Game::playTurn() {
+void Game::playTurnLightOn() {
     moveRose();
     playMove(currentPlayer);
     nextPlayer();
@@ -91,6 +90,7 @@ void Game::playMove(Player player){
         //re-ask for valid y coordinates
         y += 1;
     }
+    board.getCase(x,y).setState(shining);
 }
 
 void Game::turnLightOff() {
@@ -98,6 +98,16 @@ void Game::turnLightOff() {
 }
 void Game::turnLightOn() {
     setGameState(lightOn);
+}
+
+void Game::playTurnLightOff() {
+}
+
+bool Game::returnPawn(int x, int y) {
+    if ((x < 8 && x > 0) && (y < 5 && y > 0) && (board.getCase(x,y).getColor()!=Color::None)) {
+        board.removePawn(x, y);
+        return true;
+    } return false;
 }
 
 

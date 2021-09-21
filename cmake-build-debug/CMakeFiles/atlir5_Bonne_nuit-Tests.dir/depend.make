@@ -5,22 +5,18 @@ CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o: \
  ../ressources/random.hpp \
  ../src/Board.cpp \
  ../src/Board.h \
- ../src/Pawn.h
+ ../src/Pawn.hpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o: \
  ../ressources/random.hpp \
  ../src/Board.h \
  ../src/Game.cpp \
  ../src/Game.h \
- ../src/Pawn.h \
- ../src/Player.h
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Player.cpp.o: \
- ../src/Pawn.h \
- ../src/Player.cpp \
- ../src/Player.h
+ ../src/Pawn.hpp \
+ ../src/Player.hpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o: \
  ../catch2/catch.hpp \
  ../src/Board.h \
  ../src/Game.h \
- ../src/Pawn.h \
- ../src/Player.h \
+ ../src/Pawn.hpp \
+ ../src/Player.hpp \
  ../test/testGame.cpp

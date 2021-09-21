@@ -140,14 +140,39 @@ TEST_CASE("move rose", "[rose]"){
     }
 }
 
-TEST_CASE("play move", "[game mechanics]"){
+TEST_CASE("play moves lights on", "[game mechanics]"){
     Game g(5);
     Player playingPlayer = g.getCurrentPlayer();
-    g.playTurn();
+    g.playTurnLightOn();
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getColor()) == (playingPlayer.getColor()));
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getState())
-    == (playingPlayer.getPawns().begin()->getState()));
+    == (shining));
     REQUIRE(g.getPlayers().at(1).getName() == g.getCurrentPlayer().getName());
 }
+
+TEST_CASE("remove current player pawn","[remove pawn]") {
+    Game g(4);
+    g.placePawn(g.getBoard().getRosePlace(), 4);
+    g.returnPawn(g.getBoard().getRosePlace(),4);
+    REQUIRE(g.getBoard().getCase(g.getBoard().getRosePlace(),4).getColor() == None);
+}
+
+
+/**
+TEST_CASE("fully populating", "[play whole game]"){
+    Game game(3);
+    game.turnLightOn();
+    while (game.getGameState() == lightOn){
+        game.playTurnLightOn();
+        if(game.isDone())
+            game.turnLightOff();
+    }
+    for (auto &x: game.getPlayers())
+        REQUIRE(x.getPawns().empty());
+    REQUIRE(game.getGameState() == lightOff);
+}*/
+
+//Create autofill
+
 
 

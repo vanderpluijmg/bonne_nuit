@@ -94,9 +94,14 @@ public:
     void setGameState(GameState gameState);
 
     /**
-     * Plays turn of player
+     * Plays turn of player in lights on state of game.
      */
-    void playTurn();
+    void playTurnLightOn();
+
+    /**
+     * Plays turn of player in light off on state of the game.
+     */
+    void playTurnLightOff();
 
     /**
      * Plays a move for a player.
@@ -119,6 +124,12 @@ public:
      * Turns lights on during the game.
      */
     void turnLightOn();
+
+    /**
+     * Return pawn of current player.
+     */
+    bool returnPawn(int, int);
+
 };
 
 

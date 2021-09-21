@@ -51,6 +51,10 @@ void Board::moveRose(int t) {
     rosePlace = place;
 }
 
+void Board::removePawn(int x, int y) {
+    gameBoard[x][y].setState(notShining);
+}
+
 /**std::string Board::toString() {
     std::string result = "";
     for (auto i = 0; i < 9; i++) {

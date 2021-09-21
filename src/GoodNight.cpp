@@ -9,9 +9,12 @@ void GoodNight::startGame(){
         Game game(5);
         game.turnLightOn();
         while (game.getGameState() == lightOn){
-            game.playTurn();
+            game.playTurnLightOn();
             if(game.isDone())
                 game.turnLightOff();
+        }
+        while (game.getGameState() == lightOff){
+            game.playTurnLightOff();
         }
 
 };

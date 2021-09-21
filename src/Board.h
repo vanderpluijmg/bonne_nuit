@@ -59,6 +59,12 @@ public:
      */
     int getRosePlace() const;
 
+    /**
+     * Turns a shining pawn into a non shining pawn.
+     * @param x X coordinates if the case.
+     * @param y Y coordinates of the case.
+     */
+    void removePawn(int x,int y);
 };
 
 #endif //ATLIR5_BONNE_NUIT_BOARD_H
