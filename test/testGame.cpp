@@ -125,20 +125,19 @@ TEST_CASE("populating table"){
             }
         }
     }
-    REQUIRE(index==9);
+    REQUIRE(index==6);
 }
 
 TEST_CASE("place pawn without pawn", "[placePawn]"){
-    Game g (5);
-    REQUIRE(g.placePawn(4,4));
+    Game g;
+    REQUIRE(g.placePawn(g.getBoard().getRosePlace(),4));
 }
 
 TEST_CASE("place pawn with pawn in place", "[placePawn]"){
-    Game g (4);
-    g.placePawn(4,4);
-    //REQUIRE_FALSE(g.placePawn(4,4));
-    REQUIRE_THROWS_AS(g.placePawn(4,4), PawnInPlaceException);
-
+    Game g;
+    g.playMove(g.getCurrentPlayer(), 4);
+    REQUIRE_THROWS_AS(  g.playMove(g.getCurrentPlayer(), 4)
+    ,PawnInPlaceException);
 }
 
 TEST_CASE("place pawn out of bounds y", "[placePawn]"){
@@ -185,10 +184,11 @@ TEST_CASE("play moves lights on", "[game mechanics]"){
 }
 
 TEST_CASE("remove current player pawn","[remove pawn]") {
-    Game g(4);
+    Game g;
     g.placePawn(g.getBoard().getRosePlace(), 4);
     g.returnPawn(g.getBoard().getRosePlace(),4);
-    REQUIRE(g.getBoard().getCase(g.getBoard().getRosePlace(),4).getState() == notShining);
+    bool  a = g.getBoard().getCase(g.getBoard().getRosePlace(),4).getState() == notShining;
+    REQUIRE(a==true);
 }
 
 TEST_CASE("autofill"){

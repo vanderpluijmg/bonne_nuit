@@ -54,8 +54,11 @@ void Game::moveRose() {
 }
 
 void Game::addPawnsToPlace(int numberOfPlayers) {
+    std::list<Player> npc;
     populateGame(numberOfPlayers);
-    for (auto &x: players)
+    for (int i=players.size(); i<5; i++)
+        npc.emplace_back(Player(i,Color(i)));
+    for (auto &x: npc)
         board.placePawnsBeg(x.getColor());
 }
 
@@ -80,9 +83,7 @@ bool Game::isDone() {
 void Game::playMove(Player player, int y) {
     //Get coordinates from user.
     //Give them to placePawn()
-    while (!placePawn(board.getRosePlace(), y)) {
-        y += 1;
-    }
+    placePawn(board.getRosePlace(), y);
     board.getCase(board.getRosePlace(), y).setState(shining);
 }
 

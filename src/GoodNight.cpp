@@ -5,8 +5,8 @@
 #include "GoodNight.h"
 #include "Game.h"
 
-void GoodNight::startGame(){
-        Game game(5);
+void GoodNight::startGame(int numberOfPlayers){
+        Game game(numberOfPlayers);
         game.turnLightOn();
         while (game.getGameState() == lightOn){
             game.playTurnLightOn(1);
