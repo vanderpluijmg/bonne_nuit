@@ -5,24 +5,23 @@
 #include "Game.h"
 #include "../ressources/random.hpp"
 #include "Board.h"
-
+#include "../exceptions/NumberOfPlayersException.h"
 
 Game::Game(int numberOfPlayers) {
+    if (numberOfPlayers <= 0 || numberOfPlayers > 5)
+        throw NumberOfPlayersException(
+                "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     gameState = notStarted;
     board.initGameBoard();
     addPawnsToPlace(numberOfPlayers);
     currentPlayer = players[0];
 }
 
-std::list<Player> Game::populateGame(int numberOfPlayers) {
+void Game::populateGame(int numberOfPlayers) {
     unsigned int i;
     for (i = 0; i < numberOfPlayers; i++) {
         players.emplace_back(Player(i + 1, Color(i)));
     }
-    std::list<Player> pawnToPlace;
-    for (; i < 5; i++)
-        pawnToPlace.emplace_back(Player(0, Color(i)));
-    return pawnToPlace;
 }
 
 void Game::setGameState(GameState gameState) {
@@ -51,63 +50,62 @@ void Game::nextPlayer() {
 }
 
 void Game::moveRose() {
-    board.moveRose(nvs::random_value(1,3));
+    board.moveRose(nvs::random_value(1, 3));
 }
 
-void Game::addPawnsToPlace( int numberOfPlayers) {
-    std::list<Color>pawnsToPlace_color;
-    std::list<Player> player = populateGame(numberOfPlayers);
-    for (auto &x: player)
-       pawnsToPlace_color.emplace_back(x.getColor());
-    board.placePawnsBeg(pawnsToPlace_color);
+void Game::addPawnsToPlace(int numberOfPlayers) {
+    populateGame(numberOfPlayers);
+    for (auto &x: players)
+        board.placePawnsBeg(x.getColor());
 }
 
 bool Game::placePawn(int x, int y) {
-    if ((x < 8 && x > 0) && (y < 5 && y > 0) && (board.getCase(x,y).getColor()==Color::None)) {
-        board.placePawn(x, y, currentPlayer.getColor());
-        return true;
-    } return false;
+    return getBoard().placePawn(x,y,currentPlayer.getColor());
 }
 
 Board &Game::getBoard() {
     return board;
 }
 
-void Game::playTurnLightOn() {
+void Game::playTurnLightOn(int y) {
     moveRose();
-    playMove(currentPlayer);
+    playMove(currentPlayer, y);
     nextPlayer();
 }
-bool Game::isDone(){
+
+bool Game::isDone() {
     return players.end()->getPawns().empty();
 }
-void Game::playMove(Player player){
+
+void Game::playMove(Player player, int y) {
     //Get coordinates from user.
-    int x = board.getRosePlace();
-    int y = 4;
     //Give them to placePawn()
-    while (!placePawn(x,y)) {
-        //re-ask for valid y coordinates
+    while (!placePawn(board.getRosePlace(), y)) {
         y += 1;
     }
-    board.getCase(x,y).setState(shining);
+    board.getCase(board.getRosePlace(), y).setState(shining);
 }
 
 void Game::turnLightOff() {
     setGameState(lightOff);
 }
+
 void Game::turnLightOn() {
     setGameState(lightOn);
 }
 
-void Game::playTurnLightOff() {
+void Game::playTurnLightOff(int x, int y) {
+    returnPawn(x, y);
 }
 
 bool Game::returnPawn(int x, int y) {
-    if ((x < 8 && x > 0) && (y < 5 && y > 0) && (board.getCase(x,y).getColor()!=Color::None)) {
-        board.removePawn(x, y);
-        return true;
-    } return false;
+    if ((x < 8 && x >= 0))
+        if (y < 5 && y > 0)
+            if (board.getCase(x, y).getColor() != Color::None) {
+                board.removePawn(x, y);
+                return true;
+            }
+    return false;
 }
 
 

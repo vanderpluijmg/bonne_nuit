@@ -13,7 +13,7 @@
 /**
  * Defines the states in which the game is currently in.
  */
-enum GameState {notStarted, throwDice , placeStar, lightOff, turnOverStar ,lightOn};
+enum GameState {notStarted,lightOff,lightOn, finished};
 
 class Game {
 private:
@@ -25,7 +25,7 @@ private:
     /**
     * Populates the game with number of players.
     */
-    std::list<Player> populateGame(int);
+    void populateGame(int);
 
     /**
      * Adds all pawns that have not yet been taken by a player.
@@ -34,6 +34,10 @@ private:
 
 
 public:
+    /**
+     * Default constructor for Game
+    */
+    Game() : Game(5){};
     /**
      * Constructor of Game
      * @param numberOfPlayers Number of players who are going to play.
@@ -96,18 +100,18 @@ public:
     /**
      * Plays turn of player in lights on state of game.
      */
-    void playTurnLightOn();
+    void playTurnLightOn(int);
 
     /**
      * Plays turn of player in light off on state of the game.
      */
-    void playTurnLightOff();
+    void playTurnLightOff(int,int);
 
     /**
      * Plays a move for a player.
      * @param player Player to play move for.
      */
-    void playMove(Player player);
+    void playMove(Player player, int);
 
     /**
      * Check if game is done.
@@ -130,6 +134,7 @@ public:
      */
     bool returnPawn(int, int);
 
+    Player getWinner();
 };
 
 

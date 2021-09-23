@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp" "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o"
-  "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp" "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o"
-  "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/test/testGame.cpp" "/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o"
+  "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.cpp" "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o"
+  "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Game.cpp" "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o"
+  "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/test/mainTest.cpp" "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o"
+  "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/test/testGame.cpp" "/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

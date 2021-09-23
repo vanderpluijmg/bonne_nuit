@@ -57,10 +57,10 @@ RM = /opt/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greg/CLionProjects/esi-atlir5-bonne_nuit
+CMAKE_SOURCE_DIR = /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug
+CMAKE_BINARY_DIR = /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles /home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -244,6 +244,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/mainTest.o: test/mainTest.cpp.o
+.PHONY : test/mainTest.o
+
+# target to build an object file
+test/mainTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o
+.PHONY : test/mainTest.cpp.o
+
+test/mainTest.i: test/mainTest.cpp.i
+.PHONY : test/mainTest.i
+
+# target to preprocess a source file
+test/mainTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.i
+.PHONY : test/mainTest.cpp.i
+
+test/mainTest.s: test/mainTest.cpp.s
+.PHONY : test/mainTest.s
+
+# target to generate assembly for a file
+test/mainTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.s
+.PHONY : test/mainTest.cpp.s
+
 test/testGame.o: test/testGame.cpp.o
 .PHONY : test/testGame.o
 
@@ -290,6 +314,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/mainTest.o"
+	@echo "... test/mainTest.i"
+	@echo "... test/mainTest.s"
 	@echo "... test/testGame.o"
 	@echo "... test/testGame.i"
 	@echo "... test/testGame.s"

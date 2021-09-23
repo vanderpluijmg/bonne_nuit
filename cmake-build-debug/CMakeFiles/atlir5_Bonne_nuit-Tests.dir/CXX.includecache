@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/catch2/catch.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/catch2/catch.hpp
 TargetConditionals.h
 -
 cstddef
@@ -388,7 +388,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/catch2/Foundation/Foundation.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/catch2/Foundation/Foundation.h
 algorithm
 -
 signal.h
@@ -600,27 +600,41 @@ iomanip
 cassert
 -
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h
+exception
+-
+
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
+stdexcept
+-
+
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h
+stdexcept
+-
+
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.h
 string
 -
 list
 -
 Pawn.hpp
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Pawn.hpp
+Player.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Player.hpp
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Game.h
 list
 -
 iostream
 -
 Player.hpp
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Player.hpp
 Board.h
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.h
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Pawn.hpp
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Player.hpp
 vector
 -
 string
@@ -630,13 +644,17 @@ map
 list
 -
 Pawn.hpp
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Pawn.hpp
 
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/test/testGame.cpp
-langinfo.h
--
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/test/testGame.cpp
 ../catch2/catch.hpp
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/catch2/catch.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/catch2/catch.hpp
 ../src/Game.h
-/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Game.h
+../exceptions/NumberOfPlayersException.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h
+../exceptions/OutOfGameBoardException.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
+../exceptions/PawnInPlaceException.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h
 

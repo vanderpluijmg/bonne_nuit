@@ -1,11 +1,12 @@
 //
 // Created by greg on 17.09.21.
 //
-#define CATCH_CONFIG_MAIN
 
-#include <langinfo.h>
 #include "../catch2/catch.hpp"
 #include "../src/Game.h"
+#include "../exceptions/NumberOfPlayersException.h"
+#include "../exceptions/OutOfGameBoardException.h"
+#include "../exceptions/PawnInPlaceException.h"
 
 
 std::list<Pawn> blackPlayerHand (){
@@ -16,7 +17,7 @@ std::list<Pawn> blackPlayerHand (){
 }
 
 TEST_CASE( "Populating hands of players with 5 players", "[hand]" ) {
-    Game game(5);
+    Game game;
     std::list<Color> colorInUse;
     REQUIRE(game.getPlayers().size() == 5);
     REQUIRE(game.getGameState() == GameState::notStarted);
@@ -62,6 +63,16 @@ TEST_CASE( "Populating hands of players with 2 players", "[hand]" ) {
     colorInUse.unique();
     REQUIRE(colorInUse.size() == 2);
 }
+
+TEST_CASE("Populating hand 0 players", "[hand]"){
+
+}
+TEST_CASE("Populating hand 6 players", "[hand]"){
+    REQUIRE_THROWS_AS(Game(0), NumberOfPlayersException);
+}
+
+
+
 TEST_CASE( "Populating hands of players with 1 players", "[hand]" ) {
     std::list<Color> colorInUse;
     Game game(1);
@@ -75,10 +86,10 @@ TEST_CASE( "Populating hands of players with 1 players", "[hand]" ) {
 }
 
 TEST_CASE("Correctly number of rose", "[rose]"){
-    Game game(5);
+    Game game;
     auto index = 0;
     game.moveRose();
-    for (int x = 0; x>9; x++) {
+    for (int x = 0; x<  9; x++) {
         if (game.getBoard().getCase(x, 0).getState() == rose)
             index++;
     }
@@ -86,7 +97,7 @@ TEST_CASE("Correctly number of rose", "[rose]"){
 }
 
 TEST_CASE("Correctly placed number of rose", "[rose]") {
-    Game g(5);
+    Game g;
     int place = g.getBoard().getRosePlace();
     g.moveRose();
     REQUIRE_FALSE(place==g.getBoard().getRosePlace());
@@ -114,37 +125,43 @@ TEST_CASE("populating table"){
             }
         }
     }
-    REQUIRE(index==6);
+    REQUIRE(index==9);
 }
 
 TEST_CASE("place pawn without pawn", "[placePawn]"){
-    Game g (4);
+    Game g (5);
     REQUIRE(g.placePawn(4,4));
 }
 
 TEST_CASE("place pawn with pawn in place", "[placePawn]"){
     Game g (4);
     g.placePawn(4,4);
-    REQUIRE_FALSE(g.placePawn(4,4));
+    //REQUIRE_FALSE(g.placePawn(4,4));
+    REQUIRE_THROWS_AS(g.placePawn(4,4), PawnInPlaceException);
+
 }
 
 TEST_CASE("place pawn out of bounds y", "[placePawn]"){
     Game g (4);
-    REQUIRE_FALSE(g.placePawn(4,7));
+    //REQUIRE_FALSE(g.placePawn(4,7));
+    REQUIRE_THROWS_AS(g.placePawn(4,7), OutOfGameBoardException);
 }
 
 TEST_CASE("place pawn out of bounds x", "[placePawn]"){
     Game g (4);
-    REQUIRE_FALSE(g.placePawn(10,4));
+    //REQUIRE_FALSE(g.placePawn(10,4));
+    REQUIRE_THROWS_AS(g.placePawn(10,4), OutOfGameBoardException);
 }
 
 TEST_CASE("place pawn out of bounds X and Y", "[placePawn]"){
     Game g (4);
-    REQUIRE_FALSE(g.placePawn(10,7));
+    //REQUIRE_FALSE(g.placePawn(10,7));
+    REQUIRE_THROWS_AS(g.placePawn(10,7), OutOfGameBoardException);
+
 }
 
 TEST_CASE("move rose", "[rose]"){
-    Game g(5);
+    Game g;
     g.moveRose();
     int index= 0;
     for (int y = 0; y<5; y++) {
@@ -158,12 +175,12 @@ TEST_CASE("move rose", "[rose]"){
 }
 
 TEST_CASE("play moves lights on", "[game mechanics]"){
-    Game g(5);
+    Game g;
     Player playingPlayer = g.getCurrentPlayer();
-    g.playTurnLightOn();
+    g.playTurnLightOn(4);
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getColor()) == (playingPlayer.getColor()));
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getState())
-    == (shining));
+            == (shining));
     REQUIRE(g.getPlayers().at(1).getName() == g.getCurrentPlayer().getName());
 }
 
@@ -171,7 +188,12 @@ TEST_CASE("remove current player pawn","[remove pawn]") {
     Game g(4);
     g.placePawn(g.getBoard().getRosePlace(), 4);
     g.returnPawn(g.getBoard().getRosePlace(),4);
-    REQUIRE(g.getBoard().getCase(g.getBoard().getRosePlace(),4).getColor() == None);
+    REQUIRE(g.getBoard().getCase(g.getBoard().getRosePlace(),4).getState() == notShining);
+}
+
+TEST_CASE("autofill"){
+    Game g(1);
+    g.setGameState(lightOff);
 }
 
 

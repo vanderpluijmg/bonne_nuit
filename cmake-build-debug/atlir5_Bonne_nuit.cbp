@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="atlir5_Bonne_nuit-Tests">
-				<Option output="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option output="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="atlir5_Bonne_nuit-Tests/fast">
-				<Option output="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option output="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,15 +75,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit-Tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="atlir5_Bonne_nuit">
-				<Option output="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option output="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -97,15 +97,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="atlir5_Bonne_nuit/fast">
-				<Option output="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug"/>
+				<Option output="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -119,49 +119,61 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/CLionProjects/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 atlir5_Bonne_nuit/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.cpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Board.h">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.cpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Game.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Game.h">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Game.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.cpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/GoodNight.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/GoodNight.h">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/GoodNight.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Pawn.hpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Pawn.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/Player.hpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Player.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/src/main.cpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/main.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/test/testGame.cpp">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/test/mainTest.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 		</Unit>
-		<Unit filename="/home/greg/CLionProjects/esi-atlir5-bonne_nuit/CMakeLists.txt">
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/test/testGame.cpp">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+		</Unit>
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -5,6 +5,10 @@
 #include <iostream>
 #include "Board.h"
 #include "../ressources/random.hpp"
+#include "../exceptions/OutOfGameBoardException.h"
+#include "../exceptions/PawnInPlaceException.h"
+
+
 
 
 Board::Board() {
@@ -22,22 +26,29 @@ void Board::initGameBoard() {
             gameBoard[x][y] = Pawn(Color::None, none);
 }
 
-void Board::placePawn(int x, int y, Color color) {
-    gameBoard[x][y] = Pawn(color, shining);
+bool Board::placePawn(int x, int y, Color color) {
+    if (!((x < 8 && x >= 0) && (y < 5 && y > 0)))
+        throw OutOfGameBoardException("Sorry the coordinates you gave are not in the game board ("
+                                      + std::to_string(x) + std::to_string(y) + " )") ;
+    if (getCase(x, y).getColor() != Color::None)
+        throw PawnInPlaceException("Sorry there is currently a pawn in this case");
+    else
+        gameBoard[x][y] = Pawn(color, shining);
+        return true;
 }
 
-void Board::placePawnsBeg(std::list<Color> colors) {
-    for (auto &color: colors) {
-        for (auto i = 1; i < 4; i++) {
-            int randomBetween0and8 = nvs::random_value(0, 8);
-            int randomBetween1and5 = nvs::random_value(1, 5);
-            while (gameBoard[randomBetween0and8][randomBetween1and5].getState() == shining) {
-                randomBetween0and8 = nvs::random_value(0, 8);
-                randomBetween1and5 = nvs::random_value(1, 5);
-            }
-            gameBoard[randomBetween0and8][randomBetween1and5] = Pawn(color, shining);
+void Board::placePawnsBeg(Color color) {
+    nvs::randomize();
+    for (auto i = 1; i < 4; i++) {
+        int randomBetween0and8 = nvs::random_value(0, 8);
+        int randomBetween1and5 = nvs::random_value(1, 5);
+        while (gameBoard[randomBetween0and8][randomBetween1and5].getState() == shining) {
+            randomBetween0and8 = nvs::random_value(0, 8);
+            randomBetween1and5 = nvs::random_value(1, 5);
         }
+        gameBoard[randomBetween0and8][randomBetween1and5] = Pawn(color, shining);
     }
+
 }
 
 int Board::getRosePlace() const {

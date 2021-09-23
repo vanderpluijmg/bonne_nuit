@@ -4,6 +4,7 @@
 #include <string>
 #include <list>
 #include "Pawn.hpp"
+#include "Player.hpp"
 
 /**
  * Represents the game board of the game.
@@ -40,12 +41,12 @@ public:
     /**
      * Places the remaining pawns graphically that are not used.
      */
-    void placePawnsBeg(std::list<Color>);
+    void placePawnsBeg(Color);
 
     /**
      * Places a player pawn where he wished to on the board.
      */
-    void placePawn(int, int, Color);
+    bool placePawn(int, int, Color);
 
     /**
      * Gets a specific case in the game board.
