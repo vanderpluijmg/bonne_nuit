@@ -7,8 +7,7 @@
 #include "../ressources/random.hpp"
 #include "../exceptions/OutOfGameBoardException.h"
 #include "../exceptions/PawnInPlaceException.h"
-
-
+#include "../exceptions/NoPawnFound.h"
 
 
 Board::Board() {
@@ -63,7 +62,10 @@ void Board::moveRose(int t) {
 }
 
 void Board::removePawn(int x, int y) {
+    getCase(x,y).getColor() == Color::None ? throw NoPawnFoundException("Sorry the coordinates do not lead to a pawn") :
     gameBoard[x][y].setState(notShining);
+
+
 }
 
 /**std::string Board::toString() {

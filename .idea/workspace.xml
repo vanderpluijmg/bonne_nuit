@@ -13,14 +13,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/exceptions/NoPawnFound.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoodNight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoodNight.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoodNight.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoodNight.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/testGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,46 +70,46 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Catch.atlir5_Bonne_nuit-Tests">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Catch.isDone">
     <configuration name="atlir5_Bonne_nuit-Tests" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="place pawn out of bounds y" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[placePawn]" TEST_METHOD="place pawn out of bounds y" TEST_MODE="SUITE_TEST">
+    <configuration name="autofill (1)" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[sunDown]" TEST_METHOD="autofill" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="place pawn with pawn in place" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[placePawn]" TEST_METHOD="place pawn with pawn in place" TEST_MODE="SUITE_TEST">
+    <configuration name="isDone" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[sunUp]" TEST_METHOD="isDone" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="place pawn without pawn" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[placePawn]" TEST_METHOD="place pawn without pawn" TEST_MODE="SUITE_TEST">
+    <configuration name="remove current pawn out of bounds" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[remove pawn][sunDown]" TEST_METHOD="remove current pawn out of bounds" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="play moves lights on" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[game mechanics]" TEST_METHOD="play moves lights on" TEST_MODE="SUITE_TEST">
+    <configuration name="remove current pawn with no pawn" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[remove pawn][sunDown]" TEST_METHOD="remove current pawn with no pawn" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="remove current player pawn" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[remove pawn]" TEST_METHOD="remove current player pawn" TEST_MODE="SUITE_TEST">
+    <configuration name="remove current player with no pawn" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_CLASS="[remove pawn][sunDown]" TEST_METHOD="remove current player with no pawn" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="atlir5_Bonne_nuit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit">
@@ -114,20 +124,20 @@
     </configuration>
     <list>
       <item itemvalue="Catch.atlir5_Bonne_nuit-Tests" />
-      <item itemvalue="Catch.place pawn with pawn in place" />
-      <item itemvalue="Catch.place pawn without pawn" />
-      <item itemvalue="Catch.remove current player pawn" />
-      <item itemvalue="Catch.place pawn out of bounds y" />
       <item itemvalue="CMake Application.atlir5_Bonne_nuit" />
-      <item itemvalue="Catch.play moves lights on" />
+      <item itemvalue="Catch.remove current player with no pawn" />
+      <item itemvalue="Catch.remove current pawn out of bounds" />
+      <item itemvalue="Catch.remove current pawn with no pawn" />
+      <item itemvalue="Catch.isDone" />
+      <item itemvalue="Catch.autofill (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Catch.remove current player pawn" />
-        <item itemvalue="Catch.place pawn with pawn in place" />
-        <item itemvalue="Catch.play moves lights on" />
-        <item itemvalue="Catch.place pawn without pawn" />
-        <item itemvalue="Catch.place pawn out of bounds y" />
+        <item itemvalue="Catch.isDone" />
+        <item itemvalue="Catch.autofill (1)" />
+        <item itemvalue="Catch.remove current pawn with no pawn" />
+        <item itemvalue="Catch.remove current pawn out of bounds" />
+        <item itemvalue="Catch.remove current player with no pawn" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +159,8 @@
       <workItem from="1632336863390" duration="1000" />
       <workItem from="1632336916599" duration="3797000" />
       <workItem from="1632378746873" duration="6108000" />
-      <workItem from="1632389562897" duration="2958000" />
+      <workItem from="1632389562897" duration="4296000" />
+      <workItem from="1632431315618" duration="6813000" />
     </task>
     <servers />
   </component>
@@ -170,5 +181,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/Game.cpp</url>
+          <line>80</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/testGame.cpp</url>
+          <line>216</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/Player.hpp</url>
+          <line>70</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

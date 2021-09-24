@@ -126,6 +126,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NoPawnFound.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
 		<Unit filename="/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>

@@ -16,6 +16,7 @@
 enum GameState {notStarted,lightOff,lightOn, finished};
 
 class Game {
+
 private:
     GameState gameState;
     Player currentPlayer;
@@ -134,7 +135,15 @@ public:
      */
     bool returnPawn(int, int);
 
+
     Player getWinner();
+
+    /**
+     * Auto fills a game with pawn. Used to test second part of the game
+     */
+    void autofill();
+
+    bool isFinished();
 };
 
 

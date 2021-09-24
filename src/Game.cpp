@@ -2,10 +2,12 @@
 // Created by greg on 17.09.21.
 //
 
+#include <langinfo.h>
 #include "Game.h"
 #include "../ressources/random.hpp"
 #include "Board.h"
 #include "../exceptions/NumberOfPlayersException.h"
+#include "../exceptions/OutOfGameBoardException.h"
 
 Game::Game(int numberOfPlayers) {
     if (numberOfPlayers <= 0 || numberOfPlayers > 5)
@@ -18,8 +20,7 @@ Game::Game(int numberOfPlayers) {
 }
 
 void Game::populateGame(int numberOfPlayers) {
-    unsigned int i;
-    for (i = 0; i < numberOfPlayers; i++) {
+    for (int i = 0; i < numberOfPlayers; i++) {
         players.emplace_back(Player(i + 1, Color(i)));
     }
 }
@@ -77,14 +78,14 @@ void Game::playTurnLightOn(int y) {
 }
 
 bool Game::isDone() {
-    return players.end()->getPawns().empty();
-}
+    return players.back().hasPawns();
+    }
 
 void Game::playMove(Player player, int y) {
     //Get coordinates from user.
     //Give them to placePawn()
     placePawn(board.getRosePlace(), y);
-    board.getCase(board.getRosePlace(), y).setState(shining);
+    player.removePawn();
 }
 
 void Game::turnLightOff() {
@@ -101,13 +102,26 @@ void Game::playTurnLightOff(int x, int y) {
 
 bool Game::returnPawn(int x, int y) {
     if ((x < 8 && x >= 0))
-        if (y < 5 && y > 0)
-            if (board.getCase(x, y).getColor() != Color::None) {
-                board.removePawn(x, y);
-                return true;
-            }
-    return false;
+        if (y < 5 && y > 0) {
+            board.removePawn(x, y);
+            return true;
+        }
+    throw OutOfGameBoardException("Sorry the coordinates are not in the game board");
 }
+
+void Game::autofill(){
+    int nbNpc= 5-players.size();
+    for (; nbNpc<=5;nbNpc++)
+        board.placePawnsBeg(Color(nbNpc));
+    for (auto& x : players)
+            while (!x.getPawns().empty())
+                x.removePawn();
+}
+
+bool Game::isFinished(){
+    return players.back().full();
+}
+
 
 
 

@@ -33,7 +33,7 @@ public:
       _name= name;
       _color = color;
         for (auto i = 0; i < 3; i++) {
-            pawns.push_back(Pawn(_color, pawnState::inHand));
+            pawns.emplace_back(Pawn(_color, pawnState::inHand));
         }
     }
 
@@ -53,12 +53,30 @@ public:
         return _color;
     }
 
-    /**
-     * Getter for pawns.
-     * @return Pawns of player.
-     */
-    std::list<Pawn> getPawns() const {
+    const std::list<Pawn> &getPawns() const {
         return pawns;
+    }
+    /**
+     * Removes one pawn form the player.
+     */
+    void removePawn(){
+        pawns.pop_back();
+    }
+
+    /**
+     * Checks if the player still has any pawns.
+     * @return True if player still has pawns.
+     */
+    bool hasPawns(){
+        return pawns.empty();
+    }
+
+    /**
+     * Checks if a player has it's
+     * @return
+     */
+    bool full(){
+
     }
 };
 

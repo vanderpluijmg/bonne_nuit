@@ -10,7 +10,7 @@ static class GoodNight{
     /**
      * Start a new game of goodnight.
      */
-    void startGame(int);
+    static void startGame(int);
 };
 
 #endif //ATLIR5_BONNE_NUIT_GOODNIGHT_H

@@ -4,12 +4,19 @@
 
 #include "GoodNight.h"
 #include "Game.h"
+#include "../exceptions/PawnInPlaceException.h"
 
 void GoodNight::startGame(int numberOfPlayers){
         Game game(numberOfPlayers);
         game.turnLightOn();
         while (game.getGameState() == lightOn){
-            game.playTurnLightOn(1);
+            try {
+                game.playTurnLightOn(1);
+            }
+            catch (PawnInPlaceException& e){
+                std::cout<<e.what()<<std::endl;
+                //Get new y coordinates from user
+            }
             if(game.isDone())
                 game.turnLightOff();
         }
