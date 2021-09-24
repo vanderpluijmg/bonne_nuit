@@ -626,6 +626,20 @@ limits
 ctime
 -
 
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.cpp
+iostream
+-
+Board.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.h
+../ressources/random.hpp
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/ressources/random.hpp
+../exceptions/OutOfGameBoardException.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
+../exceptions/PawnInPlaceException.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h
+../exceptions/NoPawnFound.h
+/home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/exceptions/NoPawnFound.h
+
 /home/greg/Documents/ESI/Q5/ATLIR5/Cpp/esi-atlir5-bonne_nuit/src/Board.h
 string
 -
