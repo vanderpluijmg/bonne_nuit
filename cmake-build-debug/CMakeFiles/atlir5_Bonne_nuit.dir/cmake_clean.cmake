@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/atlir5_Bonne_nuit_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt"
+  "atlir5_Bonne_nuit_autogen"
+  "CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o"
