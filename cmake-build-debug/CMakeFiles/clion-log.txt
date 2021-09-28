@@ -1,18 +1,5 @@
 /home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Check if compiler accepts -pthread
--- Check if compiler accepts -pthread - yes
--- Found Threads: TRUE  
--- Performing Test HAVE_STDATOMIC
--- Performing Test HAVE_STDATOMIC - Success
--- Found WrapAtomic: TRUE  
--- Found OpenGL: /usr/lib/libOpenGL.so   
--- Found WrapOpenGL: TRUE  
 -- Could NOT find Vulkan (missing: Vulkan_INCLUDE_DIR) 
--- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.3.1", minimum required is "0.5.0") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug

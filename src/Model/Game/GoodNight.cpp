@@ -4,7 +4,7 @@
 
 #include "GoodNight.h"
 #include "Game.h"
-#include "../exceptions/PawnInPlaceException.h"
+#include "../../exceptions/PawnInPlaceException.h"
 
 void GoodNight::startGame(int numberOfPlayers){
         Game game(numberOfPlayers);

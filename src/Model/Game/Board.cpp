@@ -4,10 +4,10 @@
 
 #include <iostream>
 #include "Board.h"
-#include "../ressources/random.hpp"
-#include "../exceptions/OutOfGameBoardException.h"
-#include "../exceptions/PawnInPlaceException.h"
-#include "../exceptions/NoPawnFound.h"
+#include "../../../ressources/random.hpp"
+#include "../../exceptions/OutOfGameBoardException.h"
+#include "../../exceptions/PawnInPlaceException.h"
+#include "../../exceptions/NoPawnFound.h"
 
 
 Board::Board() {

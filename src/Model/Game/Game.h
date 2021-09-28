@@ -9,13 +9,15 @@
 #include <iostream>
 #include "Player.hpp"
 #include "Board.h"
+#include "../Model.h"
+#include "../../Utils/Observable.h"
 
 /**
  * Defines the states in which the game is currently in.
  */
 enum GameState {notStarted,lightOff,lightOn, finished};
 
-class Game {
+class Game : public Observable {
 
 private:
     GameState gameState;

@@ -5,7 +5,7 @@
 #ifndef ATLIR5_BONNE_NUIT_GOODNIGHT_H
 #define ATLIR5_BONNE_NUIT_GOODNIGHT_H
 
-static class GoodNight{
+class GoodNight{
 
     /**
      * Start a new game of goodnight.

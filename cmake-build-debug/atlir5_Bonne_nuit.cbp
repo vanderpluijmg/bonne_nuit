@@ -90,7 +90,19 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_SVGWIDGETS_LIB"/>
+					<Add option="-DQT_SVG_LIB"/>
 					<Add directory="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/include"/>
+					<Add directory="/usr/include/qt6/QtCore"/>
+					<Add directory="/usr/include/qt6"/>
+					<Add directory="/usr/lib/qt6/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/qt6/QtWidgets"/>
+					<Add directory="/usr/include/qt6/QtGui"/>
+					<Add directory="/usr/include/qt6/QtSvgWidgets"/>
+					<Add directory="/usr/include/qt6/QtSvg"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -113,7 +125,19 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_SVGWIDGETS_LIB"/>
+					<Add option="-DQT_SVG_LIB"/>
 					<Add directory="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/include"/>
+					<Add directory="/usr/include/qt6/QtCore"/>
+					<Add directory="/usr/include/qt6"/>
+					<Add directory="/usr/lib/qt6/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/qt6/QtWidgets"/>
+					<Add directory="/usr/include/qt6/QtGui"/>
+					<Add directory="/usr/include/qt6/QtSvgWidgets"/>
+					<Add directory="/usr/include/qt6/QtSvg"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -156,45 +180,69 @@
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NoPawnFound.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/GoodNight.cpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GoodNight.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/GoodNight.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GoodNight.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Pawn.hpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Player.hpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp">

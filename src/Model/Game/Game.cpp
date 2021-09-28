@@ -2,12 +2,11 @@
 // Created by greg on 17.09.21.
 //
 
-#include <langinfo.h>
 #include "Game.h"
-#include "../ressources/random.hpp"
 #include "Board.h"
-#include "../exceptions/NumberOfPlayersException.h"
-#include "../exceptions/OutOfGameBoardException.h"
+#include "../../../ressources/random.hpp"
+#include "../../exceptions/NumberOfPlayersException.h"
+#include "../../exceptions/OutOfGameBoardException.h"
 
 Game::Game(int numberOfPlayers) {
     if (numberOfPlayers <= 0 || numberOfPlayers > 5)
@@ -119,7 +118,11 @@ void Game::autofill(){
 }
 
 bool Game::isFinished(){
-    return players.back().full();
+    return true;// players.back().full();
+}
+
+Player Game::getWinner() {
+    return currentPlayer;
 }
 
 

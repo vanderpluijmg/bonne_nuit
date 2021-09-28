@@ -75,9 +75,6 @@ public:
      * Checks if a player has it's
      * @return
      */
-    bool full(){
-
-    }
 };
 
 

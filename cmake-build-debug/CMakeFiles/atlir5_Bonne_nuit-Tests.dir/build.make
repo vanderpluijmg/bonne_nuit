@@ -92,31 +92,31 @@ CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/test/mainTest.cpp -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o: ../src/Model/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp > CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.i
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp > CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.s
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.s
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/flags.make
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/flags.make
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o: ../src/Model/Game/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp > CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.i
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp > CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.i
 
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.s
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp -o CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.s
 
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/flags.make
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o: ../test/testGame.cpp
@@ -135,8 +135,8 @@ CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.s: cmake_force
 atlir5_Bonne_nuit__Tests_OBJECTS = \
 "CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o" \
-"CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o" \
+"CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o" \
 "CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o"
 
 # External object files for target atlir5_Bonne_nuit-Tests
@@ -144,8 +144,8 @@ atlir5_Bonne_nuit__Tests_EXTERNAL_OBJECTS =
 
 atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o
 atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o
-atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o
-atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o
+atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o
+atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o
 atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o
 atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make
 atlir5_Bonne_nuit-Tests: CMakeFiles/atlir5_Bonne_nuit-Tests.dir/link.txt

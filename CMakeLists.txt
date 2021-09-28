@@ -13,6 +13,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-add_executable(atlir5_Bonne_nuit src/main.cpp src/Pawn.hpp src/Player.hpp src/Game.cpp src/Game.h src/Board.cpp src/Board.h src/GoodNight.cpp src/GoodNight.h exceptions/NumberOfPlayersException.h exceptions/OutOfGameBoardException.h exceptions/PawnInPlaceException.h exceptions/NoPawnFound.h)
+add_executable(atlir5_Bonne_nuit src/main.cpp src/Model/Game/Pawn.hpp src/Model/Game/Player.hpp src/Model/Game/Game.cpp src/Model/Game/Game.h src/Model/Game/Board.cpp src/Model/Game/Board.h src/Model/Game/GoodNight.cpp src/Model/Game/GoodNight.h src/exceptions/NumberOfPlayersException.h src/exceptions/OutOfGameBoardException.h src/exceptions/PawnInPlaceException.h src/exceptions/NoPawnFound.h src/Model/Model.h src/View/View.cpp src/View/View.h src/Controller/Controller.cpp src/Controller/Controller.h src/Utils/Observable.h src/Utils/Observer.h src/Model/Model.cpp)
 
-add_executable(atlir5_Bonne_nuit-Tests test/mainTest.cpp src/Pawn.hpp src/Player.hpp src/Game.cpp src/Game.h src/Board.cpp test/testGame.cpp)
+add_executable(atlir5_Bonne_nuit-Tests test/mainTest.cpp src/Model/Game/Pawn.hpp src/Model/Game/Player.hpp src/Model/Game/Game.cpp src/Model/Game/Game.h src/Model/Game/Board.cpp test/testGame.cpp)
+
+target_link_libraries(${PROJECT_NAME} ${REQUIRED_LIBS_QUALIFIED})

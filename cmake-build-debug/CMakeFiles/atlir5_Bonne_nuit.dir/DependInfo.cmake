@@ -9,16 +9,35 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o"
-  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Board.cpp.o"
-  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Game.cpp.o"
-  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/GoodNight.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/GoodNight.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Board.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Game.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GoodNight.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/GoodNight.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o"
   "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "QT_CORE_LIB"
+  "QT_GUI_LIB"
+  "QT_SVGWIDGETS_LIB"
+  "QT_SVG_LIB"
+  "QT_WIDGETS_LIB"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "atlir5_Bonne_nuit_autogen/include"
+  "/usr/include/qt6/QtCore"
+  "/usr/include/qt6"
+  "/usr/lib/qt6/mkspecs/linux-g++"
+  "/usr/include/qt6/QtWidgets"
+  "/usr/include/qt6/QtGui"
+  "/usr/include/qt6/QtSvgWidgets"
+  "/usr/include/qt6/QtSvg"
   )
 
 # The set of dependency files which are needed:

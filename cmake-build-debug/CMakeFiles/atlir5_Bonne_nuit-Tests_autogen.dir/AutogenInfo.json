@@ -45,8 +45,6 @@
 		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckIncludeFile.cmake",
 		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake",
 		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckIncludeFile.c.in",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckForPthreads.c",
 		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
 		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageMessage.cmake",
 		"/usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
@@ -232,27 +230,27 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.h",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h",
 			"MU",
-			"UVLADIE3JM/moc_Board.cpp",
+			"AFYTAY7QZ5/moc_Board.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.h",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h",
 			"MU",
-			"UVLADIE3JM/moc_Game.cpp",
+			"AFYTAY7QZ5/moc_Game.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Pawn.hpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp",
 			"MU",
-			"UVLADIE3JM/moc_Pawn.cpp",
+			"AFYTAY7QZ5/moc_Pawn.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Player.hpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp",
 			"MU",
-			"UVLADIE3JM/moc_Player.cpp",
+			"AFYTAY7QZ5/moc_Player.cpp",
 			null
 		]
 	],
@@ -302,12 +300,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp",
 			"MU",
 			null
 		],

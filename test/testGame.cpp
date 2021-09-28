@@ -3,7 +3,7 @@
 //
 
 #include "../catch2/catch.hpp"
-#include "../src/Game.h"
+#include "../src/Model/Game/Game.h"
 #include "../exceptions/NumberOfPlayersException.h"
 #include "../exceptions/OutOfGameBoardException.h"
 #include "../exceptions/PawnInPlaceException.h"
