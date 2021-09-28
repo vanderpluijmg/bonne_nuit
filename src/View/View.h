@@ -6,13 +6,24 @@
 #define ATLIR5_BONNE_NUIT_VIEW_H
 #include <QWidget>
 #include <QLayout>
+#include "windows/startwindow.h"
+#include "../Utils/Observable.h"
 
-class View : public QWidget {
+class View : public QMainWindow, public Observer {
 private:
-    QHBoxLayout *layout_;
+    Ui_MainWindow *a;
 public:
-    View();
-};
+    /**
+     * Default constructor for view of game.
+     * @param parent
+     */
+    View(QWidget * parent = nullptr);
+    /**
+     * Default destructor
+     */
+    ~View()=default;
 
+    void update(const Observable *obs) override;
+};
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

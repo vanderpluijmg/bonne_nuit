@@ -9,15 +9,11 @@
 #include <iostream>
 #include "Player.hpp"
 #include "Board.h"
-#include "../Model.h"
 #include "../../Utils/Observable.h"
+#include "GameState.hpp"
+#include "../Model.h"
 
-/**
- * Defines the states in which the game is currently in.
- */
-enum GameState {notStarted,lightOff,lightOn, finished};
-
-class Game : public Observable {
+class Game : public Model {
 
 private:
     GameState gameState;
@@ -141,10 +137,14 @@ public:
     Player getWinner();
 
     /**
-     * Auto fills a game with pawn. Used to test second part of the game
+     * Auto fills a game with pawn. Used to test second part of the game.
      */
     void autofill();
 
+    /**
+     * Checks if the game is finished.
+     * @return True if the game is finished.
+     */
     bool isFinished();
 };
 

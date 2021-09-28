@@ -248,6 +248,12 @@
 			null
 		],
 		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp",
+			"MU",
+			"AFYTAY7QZ5/moc_GameState.cpp",
+			null
+		],
+		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GoodNight.h",
 			"MU",
 			"AFYTAY7QZ5/moc_GoodNight.cpp",
@@ -287,6 +293,12 @@
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h",
 			"MU",
 			"GT66W5ZSTU/moc_View.cpp",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/startwindow.h",
+			"MU",
+			"2BF6PUDNJ4/moc_startwindow.cpp",
 			null
 		],
 		[
