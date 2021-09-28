@@ -11,6 +11,11 @@ private:
     Model *model_;
     View *view_;
 public:
+    /**
+     * Constructor for controller.
+     * @param model Model of game.
+     * @param view View for player.
+     */
     Controller(Model *model, View *view);
 };
 

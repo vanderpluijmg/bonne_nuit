@@ -11,8 +11,11 @@
  * @param view View of the game.
  */
 Controller::Controller(Model *model, View *view) : model_{model}, view_{view} {
-    if (model == nullptr || view == nullptr) {
+    if (model == nullptr) {
         throw std::invalid_argument("Model cannot be null");
+    }
+    if (view == nullptr) {
+        throw std::invalid_argument("View cannot be null");
     }
     model_->addObserver(view);
 }

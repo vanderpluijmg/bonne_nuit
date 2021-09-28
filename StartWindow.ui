@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="playersNumberQuestion">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -26,6 +26,62 @@
     <property name="placeholderText">
      <string>How many players are going to play ?</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>49</x>
+      <y>90</y>
+      <width>711</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <widget class="QTextEdit" name="questionName">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>What is your name ?</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="questionAge">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>0</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Age :</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="ageOfPlayer">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>78</width>
+       <height>32</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="nameOfPlayer">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>104</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

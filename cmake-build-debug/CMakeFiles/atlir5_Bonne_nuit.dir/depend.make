@@ -299,6 +299,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtCore/qpropertyprivate.h \
  /usr/include/qt6/QtCore/qrect.h \
  /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qregularexpression.h \
  /usr/include/qt6/QtCore/qscopedpointer.h \
  /usr/include/qt6/QtCore/qset.h \
  /usr/include/qt6/QtCore/qshareddata.h \
@@ -367,6 +368,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
  /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtGui/qvalidator.h \
  /usr/include/qt6/QtGui/qvector2d.h \
  /usr/include/qt6/QtGui/qvectornd.h \
  /usr/include/qt6/QtGui/qwindowdefs.h \
@@ -376,9 +378,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/QMenuBar \
  /usr/include/qt6/QtWidgets/QPlainTextEdit \
+ /usr/include/qt6/QtWidgets/QSpinBox \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/QWidget \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qframe.h \
@@ -390,6 +394,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/qmenubar.h \
  /usr/include/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
+ /usr/include/qt6/QtWidgets/qspinbox.h \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtextedit.h \

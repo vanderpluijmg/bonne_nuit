@@ -47,7 +47,7 @@ public:
      * Getter for the current playing player.
      * @return The current player that is playing.
      */
-    const Player &getCurrentPlayer() const;
+    const Player getCurrentPlayer() const;
 
     /**
      * Gets current state of the game.

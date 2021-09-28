@@ -40,7 +40,7 @@ std::vector<Player> Game::getPlayers() {
     return players;
 }
 
-const Player &Game::getCurrentPlayer() const {
+const Player Game::getCurrentPlayer() const {
     return currentPlayer;
 }
 

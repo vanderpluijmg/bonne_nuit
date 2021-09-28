@@ -15,7 +15,6 @@ class Model : public Observable{
 private:
     std::list<Observer *> observers;
 public:
-
     [[nodiscard]] virtual GameState getGameState() const =0;
     virtual void playTurnLightOn(int) =0;
     virtual void playTurnLightOff(int,int)=0;
@@ -23,6 +22,7 @@ public:
     virtual void turnLightOn()=0;
     virtual bool isDone()=0;
     virtual bool isFinished()=0;
+    [[nodiscard]] virtual const Player getCurrentPlayer() const=0;
     void addObserver(Observer *observer) override;
     void notify() override;
 };

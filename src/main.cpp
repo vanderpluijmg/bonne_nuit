@@ -12,8 +12,10 @@
 #include "Model/Model.h"
 int main(int argc, char *argv[]){
     QApplication a (argc,argv);
-    View *view;
-    Model *model;
-    Controller(model,view);
+    View view;
+    Game game;
+    Model *model =  &game;
+    Controller(model,&view);
+    model->notify();
     return a.exec();
 }
