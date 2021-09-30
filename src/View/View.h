@@ -16,6 +16,7 @@
 class View : public QMainWindow, public Observer {
 private:
     QMainWindow* mainWindow;
+    Ui_MainWindow *a;
 public:
     /**
      * Default constructor for view of game.
