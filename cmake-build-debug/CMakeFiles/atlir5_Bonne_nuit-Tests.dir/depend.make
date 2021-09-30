@@ -25,6 +25,14 @@ CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o: \
  ../src/Utils/Observer.h \
  ../src/exceptions/NumberOfPlayersException.h \
  ../src/exceptions/OutOfGameBoardException.h
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Model.cpp.o: \
+ ../src/Model/Game/GameState.hpp \
+ ../src/Model/Game/Pawn.hpp \
+ ../src/Model/Game/Player.hpp \
+ ../src/Model/Model.cpp \
+ ../src/Model/Model.h \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o: \
  ../catch2/catch.hpp \
  ../test/mainTest.cpp

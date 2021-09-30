@@ -15,7 +15,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/View/View.h \
- ../src/View/windows/startwindow.h \
+ ../src/View/windows/test.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -112,7 +112,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h \
  /usr/include/qt6/QtGui/qaction.h \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
@@ -121,10 +120,8 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtGui/qeventpoint.h \
  /usr/include/qt6/QtGui/qfont.h \
- /usr/include/qt6/QtGui/qfontdatabase.h \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontmetrics.h \
- /usr/include/qt6/QtGui/qglyphrun.h \
  /usr/include/qt6/QtGui/qguiapplication.h \
  /usr/include/qt6/QtGui/qicon.h \
  /usr/include/qt6/QtGui/qimage.h \
@@ -134,11 +131,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  /usr/include/qt6/QtGui/qpaintdevice.h \
  /usr/include/qt6/QtGui/qpalette.h \
  /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtGui/qpixelformat.h \
  /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtGui/qpointingdevice.h \
  /usr/include/qt6/QtGui/qpolygon.h \
- /usr/include/qt6/QtGui/qrawfont.h \
  /usr/include/qt6/QtGui/qregion.h \
  /usr/include/qt6/QtGui/qrgb.h \
  /usr/include/qt6/QtGui/qrgba64.h \
@@ -146,7 +143,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextformat.h \
- /usr/include/qt6/QtGui/qtextlayout.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
@@ -156,27 +152,31 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o: \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtGui/qwindowdefs_win.h \
  /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/QMenuBar \
- /usr/include/qt6/QtWidgets/QPlainTextEdit \
+ /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/QWidget \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qmenu.h \
  /usr/include/qt6/QtWidgets/qmenubar.h \
- /usr/include/qt6/QtWidgets/qplaintextedit.h \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/qtextedit.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
@@ -231,7 +231,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  ../src/Utils/Observer.h \
  ../src/View/View.cpp \
  ../src/View/View.h \
- ../src/View/windows/startwindow.h \
+ ../src/View/windows/test.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -329,7 +329,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h \
  /usr/include/qt6/QtGui/qaction.h \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
@@ -338,10 +337,8 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtGui/qeventpoint.h \
  /usr/include/qt6/QtGui/qfont.h \
- /usr/include/qt6/QtGui/qfontdatabase.h \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontmetrics.h \
- /usr/include/qt6/QtGui/qglyphrun.h \
  /usr/include/qt6/QtGui/qguiapplication.h \
  /usr/include/qt6/QtGui/qicon.h \
  /usr/include/qt6/QtGui/qimage.h \
@@ -351,11 +348,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtGui/qpaintdevice.h \
  /usr/include/qt6/QtGui/qpalette.h \
  /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtGui/qpixelformat.h \
  /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtGui/qpointingdevice.h \
  /usr/include/qt6/QtGui/qpolygon.h \
- /usr/include/qt6/QtGui/qrawfont.h \
  /usr/include/qt6/QtGui/qregion.h \
  /usr/include/qt6/QtGui/qrgb.h \
  /usr/include/qt6/QtGui/qrgba64.h \
@@ -363,7 +360,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextformat.h \
- /usr/include/qt6/QtGui/qtextlayout.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
@@ -374,30 +370,34 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtGui/qwindowdefs_win.h \
  /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/QMenuBar \
- /usr/include/qt6/QtWidgets/QPlainTextEdit \
+ /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QSpinBox \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/QWidget \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qmenu.h \
  /usr/include/qt6/QtWidgets/qmenubar.h \
- /usr/include/qt6/QtWidgets/qplaintextedit.h \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qspinbox.h \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/qtextedit.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
@@ -413,7 +413,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/View/View.h \
- ../src/View/windows/startwindow.h \
+ ../src/View/windows/test.hpp \
  ../src/main.cpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
@@ -511,7 +511,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h \
  /usr/include/qt6/QtGui/qaction.h \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
@@ -520,10 +519,8 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtGui/qeventpoint.h \
  /usr/include/qt6/QtGui/qfont.h \
- /usr/include/qt6/QtGui/qfontdatabase.h \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontmetrics.h \
- /usr/include/qt6/QtGui/qglyphrun.h \
  /usr/include/qt6/QtGui/qguiapplication.h \
  /usr/include/qt6/QtGui/qicon.h \
  /usr/include/qt6/QtGui/qimage.h \
@@ -533,11 +530,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qpaintdevice.h \
  /usr/include/qt6/QtGui/qpalette.h \
  /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtGui/qpixelformat.h \
  /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtGui/qpointingdevice.h \
  /usr/include/qt6/QtGui/qpolygon.h \
- /usr/include/qt6/QtGui/qrawfont.h \
  /usr/include/qt6/QtGui/qregion.h \
  /usr/include/qt6/QtGui/qrgb.h \
  /usr/include/qt6/QtGui/qrgba64.h \
@@ -545,7 +542,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextformat.h \
- /usr/include/qt6/QtGui/qtextlayout.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
@@ -555,27 +551,31 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtGui/qwindowdefs_win.h \
  /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/QMenuBar \
- /usr/include/qt6/QtWidgets/QPlainTextEdit \
+ /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/QWidget \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qmenu.h \
  /usr/include/qt6/QtWidgets/qmenubar.h \
- /usr/include/qt6/QtWidgets/qplaintextedit.h \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/qtextedit.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h

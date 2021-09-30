@@ -6,18 +6,24 @@
 #include <iostream>
 #include <QSpinBox>
 #include "View.h"
-#include "windows/startwindow.h"
+#include "windows/test.hpp"
 #include "../Model/Model.h"
 
 View::View(QWidget *parent) : QMainWindow(parent) {
     a = new Ui_MainWindow;
     a->setupUi(this);
-    this->show();
+    //QObject::connect(a->pushButton, SIGNAL(clicked(bool)), this , SLOT(View::onAddWidget()));
+    QObject::connect(a->pushButton, &QPushButton::clicked, this , &View::onAddWidget);
 }
+
 
 void View::update(const Observable *obs) {
     auto model = dynamic_cast<const Model *>(obs);
+}
 
+void View::onAddWidget() {
+    a->pushButton->setText("test");
+    a.
 }
 
 

@@ -6,10 +6,11 @@
 #define ATLIR5_BONNE_NUIT_VIEW_H
 #include <QWidget>
 #include <QLayout>
-#include "windows/startwindow.h"
+
 #include "../Utils/Observable.h"
 
 #include "../Utils/Observer.h"
+#include "windows/test.hpp"
 
 class View : public QMainWindow, public Observer {
 private:
@@ -26,6 +27,8 @@ public:
     ~View()=default;
 
     void update(const Observable *obs) override;
+
+    void onAddWidget();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

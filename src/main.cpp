@@ -17,5 +17,6 @@ int main(int argc, char *argv[]){
     Model *model =  &game;
     Controller(model,&view);
     model->notify();
+    view.show();
     return a.exec();
 }

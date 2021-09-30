@@ -323,6 +323,7 @@ src/Model/Model.o: src/Model/Model.cpp.o
 
 # target to build an object file
 src/Model/Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Model.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.o
 .PHONY : src/Model/Model.cpp.o
 
@@ -331,6 +332,7 @@ src/Model/Model.i: src/Model/Model.cpp.i
 
 # target to preprocess a source file
 src/Model/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Model.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.i
 .PHONY : src/Model/Model.cpp.i
 
@@ -339,6 +341,7 @@ src/Model/Model.s: src/Model/Model.cpp.s
 
 # target to generate assembly for a file
 src/Model/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Model.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.s
 .PHONY : src/Model/Model.cpp.s
 

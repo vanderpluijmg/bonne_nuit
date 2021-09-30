@@ -296,12 +296,6 @@
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/startwindow.h",
-			"MU",
-			"2BF6PUDNJ4/moc_startwindow.cpp",
-			null
-		],
-		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h",
 			"MU",
 			"P2QHMNIPOG/moc_NoPawnFound.cpp",
