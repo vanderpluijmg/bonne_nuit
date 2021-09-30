@@ -25,6 +25,7 @@ public:
     [[nodiscard]] virtual const Player getCurrentPlayer() const=0;
     void addObserver(Observer *observer) override;
     void notify() override;
+
 };
 
 

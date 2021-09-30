@@ -6,7 +6,9 @@
 #define ATLIR5_BONNE_NUIT_OBSERVABLE_H
 
 #include <list>
-#include "Observer.h"
+//#include "Observer.h"
+
+class Observer;
 
 class Observable {
 public:
@@ -19,5 +21,9 @@ public:
      * Notifies all the list of observers with the field that needs to be changed
      */
     virtual void notify () = 0;
+
+
+
+    virtual ~Observable()=default;
 };
 #endif //ATLIR5_BONNE_NUIT_OBSERVABLE_H

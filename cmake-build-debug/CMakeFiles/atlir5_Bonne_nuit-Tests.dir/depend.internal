@@ -3,35 +3,43 @@
 
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NoPawnFound.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.cpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Pawn.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Player.hpp
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.cpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Pawn.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Player.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.cpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/catch2/catch.hpp
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/test/mainTest.cpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/catch2/catch.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NoPawnFound.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/NumberOfPlayersException.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/OutOfGameBoardException.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/exceptions/PawnInPlaceException.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Board.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Game.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Pawn.hpp
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Player.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/test/testGame.cpp

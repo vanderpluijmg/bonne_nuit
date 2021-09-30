@@ -3,35 +3,43 @@
 
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o: \
  atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o: \
- ../exceptions/NoPawnFound.h \
- ../exceptions/OutOfGameBoardException.h \
- ../exceptions/PawnInPlaceException.h \
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o: \
  ../ressources/random.hpp \
- ../src/Board.cpp \
- ../src/Board.h \
- ../src/Pawn.hpp \
- ../src/Player.hpp
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o: \
- ../exceptions/NumberOfPlayersException.h \
- ../exceptions/OutOfGameBoardException.h \
+ ../src/Model/Game/Board.cpp \
+ ../src/Model/Game/Board.h \
+ ../src/Model/Game/Pawn.hpp \
+ ../src/Model/Game/Player.hpp \
+ ../src/exceptions/NoPawnFound.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/exceptions/PawnInPlaceException.h
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o: \
  ../ressources/random.hpp \
- ../src/Board.h \
- ../src/Game.cpp \
- ../src/Game.h \
- ../src/Pawn.hpp \
- ../src/Player.hpp
+ ../src/Model/Game/Board.h \
+ ../src/Model/Game/Game.cpp \
+ ../src/Model/Game/Game.h \
+ ../src/Model/Game/GameState.hpp \
+ ../src/Model/Game/Pawn.hpp \
+ ../src/Model/Game/Player.hpp \
+ ../src/Model/Model.h \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h \
+ ../src/exceptions/NumberOfPlayersException.h \
+ ../src/exceptions/OutOfGameBoardException.h
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o: \
  ../catch2/catch.hpp \
  ../test/mainTest.cpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o: \
  ../catch2/catch.hpp \
- ../exceptions/NoPawnFound.h \
- ../exceptions/NumberOfPlayersException.h \
- ../exceptions/OutOfGameBoardException.h \
- ../exceptions/PawnInPlaceException.h \
- ../src/Board.h \
- ../src/Game.h \
- ../src/Pawn.hpp \
- ../src/Player.hpp \
+ ../src/Model/Game/Board.h \
+ ../src/Model/Game/Game.h \
+ ../src/Model/Game/GameState.hpp \
+ ../src/Model/Game/Pawn.hpp \
+ ../src/Model/Game/Player.hpp \
+ ../src/Model/Model.h \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h \
+ ../src/exceptions/NoPawnFound.h \
+ ../src/exceptions/NumberOfPlayersException.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/exceptions/PawnInPlaceException.h \
  ../test/testGame.cpp

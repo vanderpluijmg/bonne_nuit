@@ -33,27 +33,17 @@ private:
 
 
 public:
+
     /**
      * Default constructor for Game
     */
     Game() : Game(5){};
+
     /**
      * Constructor of Game
      * @param numberOfPlayers Number of players who are going to play.
      */
-    Game(int numberOfPlayers);
-
-    /**
-     * Getter for the current playing player.
-     * @return The current player that is playing.
-     */
-    const Player getCurrentPlayer() const;
-
-    /**
-     * Gets current state of the game.
-     * @return Current state of game.
-     */
-    GameState getGameState() const;
+    explicit Game(int numberOfPlayers);
 
     /**
      * Gets players of game
@@ -71,7 +61,6 @@ public:
      * Changes to the next player
      */
     void nextPlayer();
-
 
     /**
      * Rolls dice and passes value to board.
@@ -97,43 +86,20 @@ public:
     void setGameState(GameState gameState);
 
     /**
-     * Plays turn of player in lights on state of game.
-     */
-    void playTurnLightOn(int);
-
-    /**
-     * Plays turn of player in light off on state of the game.
-     */
-    void playTurnLightOff(int,int);
-
-    /**
      * Plays a move for a player.
      * @param player Player to play move for.
      */
     void playMove(Player player, int);
 
     /**
-     * Check if game is done.
-     * @return True if game is done.
-     */
-    bool isDone();
-
-    /**
-     * Turns light off during the game.
-     */
-    void turnLightOff();
-
-    /**
-     * Turns lights on during the game.
-     */
-    void turnLightOn();
-
-    /**
      * Return pawn of current player.
      */
     bool returnPawn(int, int);
 
-
+    /**
+     * Gets winner of the game.
+     * @return The player that has won the current game.
+     */
     Player getWinner();
 
     /**
@@ -142,10 +108,50 @@ public:
     void autofill();
 
     /**
+    * Plays turn of player in lights on state of game.
+    */
+    void playTurnLightOn(int) override;
+
+    /**
+     * Plays turn of player in light off on state of the game.
+     */
+    void playTurnLightOff(int,int) override;
+
+    /**
      * Checks if the game is finished.
      * @return True if the game is finished.
      */
-    bool isFinished();
+    bool isFinished() override;
+
+    /**
+     * Getter for the current playing player.
+     * @return The current player that is playing.
+     */
+    [[nodiscard]] const Player getCurrentPlayer() const override;
+
+    /**
+     * Gets current state of the game.
+     * @return Current state of game.
+     */
+    [[nodiscard]] GameState getGameState() const override;
+
+    /**
+    * Check if game is done.
+     * @return True if game is done.
+     */
+    bool isDone() override;
+
+    /**
+     * Turns light off during the game.
+     */
+    void turnLightOff() override;
+
+    /**
+     * Turns lights on during the game.
+     */
+    void turnLightOn() override;
+
+
 };
 
 

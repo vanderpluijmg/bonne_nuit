@@ -4,10 +4,10 @@
 
 #include "../catch2/catch.hpp"
 #include "../src/Model/Game/Game.h"
-#include "../exceptions/NumberOfPlayersException.h"
-#include "../exceptions/OutOfGameBoardException.h"
-#include "../exceptions/PawnInPlaceException.h"
-#include "../exceptions/NoPawnFound.h"
+#include "../src/exceptions/NumberOfPlayersException.h"
+#include "../src/exceptions/OutOfGameBoardException.h"
+#include "../src/exceptions/PawnInPlaceException.h"
+#include "../src/exceptions/NoPawnFound.h"
 
 
 std::list<Pawn> blackPlayerHand (){

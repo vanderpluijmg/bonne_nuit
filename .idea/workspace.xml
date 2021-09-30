@@ -17,10 +17,16 @@
     <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="MVC &amp; Observer pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/StartWindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Board.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Game.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Board.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Game.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/GoodNight.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/GoodNight.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.o" afterDir="false" />
@@ -29,13 +35,15 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Game/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Game/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Game/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Game/Board.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Game/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Game/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Game/GameState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Game/GameState.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Observable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Observable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +88,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.atlir5_Bonne_nuit">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="atlir5_Bonne_nuit-Tests" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -121,11 +124,6 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="atlir5_Bonne_nuit-Tests_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests_autogen" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -139,6 +137,11 @@
     <configuration name="atlir5_Bonne_nuit_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit_autogen" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -196,6 +199,10 @@
       <workItem from="1632826421110" duration="7819000" />
       <workItem from="1632835562289" duration="1122000" />
       <workItem from="1632840212709" duration="9415000" />
+      <workItem from="1632862297898" duration="548000" />
+      <workItem from="1632906722752" duration="15000" />
+      <workItem from="1632932295565" duration="1588000" />
+      <workItem from="1632983587446" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="MVC &amp; Observer pattern">
       <created>1632849312238</created>

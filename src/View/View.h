@@ -9,6 +9,8 @@
 #include "windows/startwindow.h"
 #include "../Utils/Observable.h"
 
+#include "../Utils/Observer.h"
+
 class View : public QMainWindow, public Observer {
 private:
     Ui_MainWindow *a;

@@ -6,6 +6,54 @@
 
 #IncludeRegexTransform: 
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.cpp
+stdexcept
+-
+Controller.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h
+../View/View.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
+../Model/Game/Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+string
+-
+list
+-
+Pawn.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+list
+-
+iostream
+-
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+../../Utils/Observable.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+GameState.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
+../Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
@@ -35,8 +83,6 @@ Game/GameState.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
 list
 -
-Observer.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 string_view
@@ -65,6 +111,8 @@ windows/startwindow.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/startwindow.h
 ../Utils/Observable.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+../Utils/Observer.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/startwindow.h
 QtCore/QVariant
@@ -81,6 +129,32 @@ QtWidgets/QStatusBar
 -
 QtWidgets/QWidget
 -
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
+QApplication
+-
+iostream
+-
+list
+-
+QWidget
+-
+QMainWindow
+-
+Model/Game/Pawn.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+Model/Game/Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+Model/Game/Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+../ressources/random.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
+View/View.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
+Controller/Controller.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h
+Model/Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
 
 /usr/include/qt6/QtCore/QList
 qlist.h

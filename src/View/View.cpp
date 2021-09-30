@@ -12,7 +12,6 @@
 View::View(QWidget *parent) : QMainWindow(parent) {
     a = new Ui_MainWindow;
     a->setupUi(this);
-    a->centralwidget->findChild<QSpinBox*>("ageOfPlayer");
     this->show();
 }
 

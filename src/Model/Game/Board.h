@@ -17,15 +17,8 @@ public:
 
     /**
      * Default constructor for board.
-     * @param g Publisher to subscribe to.
      */
     Board();
-
-    /**
-     * Turns board to String for TUI.
-     * @return String of board.
-     */
-    std::string toString();
 
     /**
      * Moves rose on display.
@@ -45,6 +38,7 @@ public:
 
     /**
      * Places a player pawn where he wished to on the board.
+     * @return True if pawn has been placed.
      */
     bool placePawn(int, int, Color);
 
@@ -58,7 +52,7 @@ public:
      * Gets the x coordinates of the rose.
      * @return X coordinates of the rose.
      */
-    int getRosePlace() const;
+    [[nodiscard]] int getRosePlace() const;
 
     /**
      * Turns a shining pawn into a non shining pawn.
