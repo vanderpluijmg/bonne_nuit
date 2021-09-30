@@ -4,7 +4,7 @@ project(atlir5_Bonne_nuit)
 set(CMAKE_CXX_STANDARD 17)
 
 # https://digitalkarabela.com/mingw-w64-how-to-fix-file-too-big-too-many-sections/
-# set(CMAKE_CXX_FLAGS -Wa,-mbig-obj)    # rnvs
+#set(CMAKE_CXX_FLAGS -Wa,-mbig-obj)    # rnvs
 
 set(QT_VERSION 6)
 set(REQUIRED_LIBS Core Widgets SvgWidgets)
@@ -18,7 +18,7 @@ set(CMAKE_AUTORCC ON)
 SET ( UIS
         StartWindow.ui)
 qt_wrap_ui(StartWindow.ui)
-add_executable(atlir5_Bonne_nuit src/main.cpp src/Model/Game/Pawn.hpp src/Model/Game/Player.hpp src/Model/Game/Game.cpp src/Model/Game/Game.h src/Model/Game/Board.cpp src/Model/Game/Board.h src/Model/Game/GoodNight.cpp src/Model/Game/GoodNight.h src/exceptions/NumberOfPlayersException.h src/exceptions/OutOfGameBoardException.h src/exceptions/PawnInPlaceException.h src/exceptions/NoPawnFound.h src/View/View.cpp src/View/View.h src/Controller/Controller.cpp src/Controller/Controller.h src/Utils/Observable.h src/Utils/Observer.h src/Model/Game/GameState.hpp src/Model/Model.h src/Model/Model.cpp)
+add_executable(atlir5_Bonne_nuit src/main.cpp src/Model/Game/Pawn.hpp src/Model/Game/Player.hpp src/Model/Game/Game.cpp src/Model/Game/Game.h src/Model/Game/Board.cpp src/Model/Game/Board.h src/Model/Game/GoodNight.cpp src/Model/Game/GoodNight.h src/exceptions/NumberOfPlayersException.h src/exceptions/OutOfGameBoardException.h src/exceptions/PawnInPlaceException.h src/exceptions/NoPawnFound.h src/View/View.cpp src/View/View.h src/Utils/Observable.h src/Utils/Observer.h src/Model/Game/GameState.hpp src/Model/Model.h src/Model/Model.cpp)
 
 add_executable(atlir5_Bonne_nuit-Tests test/mainTest.cpp src/Model/Game/Pawn.hpp src/Model/Game/Player.hpp src/Model/Game/Game.cpp src/Model/Game/Game.h src/Model/Game/Board.cpp test/testGame.cpp src/Utils/Observable.h src/Utils/Observer.h src/Utils/Observable.h src/Utils/Observable.h src/Model/Model.cpp src/Model/Model.h)
 

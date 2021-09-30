@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt"
   "atlir5_Bonne_nuit_autogen"
   "CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o"
-  "CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Board.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Game.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/GoodNight.cpp.o"

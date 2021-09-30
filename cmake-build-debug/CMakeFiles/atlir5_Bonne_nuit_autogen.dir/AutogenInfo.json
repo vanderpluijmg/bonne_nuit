@@ -230,12 +230,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h",
-			"MU",
-			"IFQ4TM45GG/moc_Controller.cpp",
-			null
-		],
-		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h",
 			"MU",
 			"AFYTAY7QZ5/moc_Board.cpp",
@@ -382,11 +376,6 @@
 	"SETTINGS_FILE" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.cpp",
-			"MU",
-			null
-		],
 		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.cpp",
 			"MU",

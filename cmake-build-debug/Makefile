@@ -216,30 +216,6 @@ atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s
 .PHONY : atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s
 
-src/Controller/Controller.o: src/Controller/Controller.cpp.o
-.PHONY : src/Controller/Controller.o
-
-# target to build an object file
-src/Controller/Controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.o
-.PHONY : src/Controller/Controller.cpp.o
-
-src/Controller/Controller.i: src/Controller/Controller.cpp.i
-.PHONY : src/Controller/Controller.i
-
-# target to preprocess a source file
-src/Controller/Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.i
-.PHONY : src/Controller/Controller.cpp.i
-
-src/Controller/Controller.s: src/Controller/Controller.cpp.s
-.PHONY : src/Controller/Controller.s
-
-# target to generate assembly for a file
-src/Controller/Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/Controller/Controller.cpp.s
-.PHONY : src/Controller/Controller.cpp.s
-
 src/Model/Game/Board.o: src/Model/Game/Board.cpp.o
 .PHONY : src/Model/Game/Board.o
 
@@ -459,9 +435,6 @@ help:
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.o"
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.i"
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.s"
-	@echo "... src/Controller/Controller.o"
-	@echo "... src/Controller/Controller.i"
-	@echo "... src/Controller/Controller.s"
 	@echo "... src/Model/Game/Board.o"
 	@echo "... src/Model/Game/Board.i"
 	@echo "... src/Model/Game/Board.s"

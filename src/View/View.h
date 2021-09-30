@@ -10,17 +10,18 @@
 #include "../Utils/Observable.h"
 
 #include "../Utils/Observer.h"
+#include "../Model/Model.h"
 #include "windows/test.hpp"
 
 class View : public QMainWindow, public Observer {
 private:
-    Ui_MainWindow *a;
+    QMainWindow* mainWindow;
 public:
     /**
      * Default constructor for view of game.
      * @param parent
      */
-    View(QWidget * parent = nullptr);
+    View(QWidget * parent = nullptr, Model * m = nullptr);
     /**
      * Default destructor
      */
@@ -28,7 +29,11 @@ public:
 
     void update(const Observable *obs) override;
 
-    void onAddWidget();
+    void onAddPlayer();
+
+    void onRemovePlayer();
+
+    QWidget* newPlayer();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

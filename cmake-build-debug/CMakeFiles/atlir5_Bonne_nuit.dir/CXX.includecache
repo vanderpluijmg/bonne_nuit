@@ -6,6 +6,42 @@
 
 #IncludeRegexTransform: 
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+string
+-
+list
+-
+Pawn.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+list
+-
+iostream
+-
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Player.hpp
+Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+../../Utils/Observable.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+GameState.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
+../Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/GameState.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
@@ -40,20 +76,6 @@ list
 string_view
 -
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.cpp
-QMainWindow
--
-iostream
--
-QSpinBox
--
-View.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
-windows/test.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
-../Model/Model.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
-
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
 QWidget
 -
@@ -63,6 +85,8 @@ QLayout
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
 ../Utils/Observer.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
+../Model/Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
 windows/test.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 
@@ -71,11 +95,13 @@ QtCore/QVariant
 -
 QtWidgets/QApplication
 -
+QtWidgets/QFrame
+-
 QtWidgets/QHBoxLayout
 -
-QtWidgets/QLabel
+QtWidgets/QLCDNumber
 -
-QtWidgets/QLineEdit
+QtWidgets/QLabel
 -
 QtWidgets/QMainWindow
 -
@@ -83,10 +109,40 @@ QtWidgets/QMenuBar
 -
 QtWidgets/QPushButton
 -
+QtWidgets/QSpacerItem
+-
 QtWidgets/QStatusBar
+-
+QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
+QApplication
+-
+iostream
+-
+list
+-
+QWidget
+-
+QMainWindow
+-
+Model/Game/Pawn.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Pawn.hpp
+Model/Game/Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Game.h
+Model/Game/Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Game/Board.h
+../ressources/random.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/ressources/random.hpp
+View/View.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
+Controller/Controller.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Controller/Controller.h
+Model/Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Model/Model.h
 
 /usr/include/qt6/QtCore/QList
 qlist.h
@@ -728,20 +784,6 @@ QtCore/qpoint.h
 QtCore/qatomic.h
 -
 
-/usr/include/qt6/QtCore/qregularexpression.h
-QtCore/qglobal.h
--
-QtCore/qstring.h
--
-QtCore/qstringview.h
--
-QtCore/qshareddata.h
--
-QtCore/qvariant.h
--
-iterator
--
-
 /usr/include/qt6/QtCore/qscopedpointer.h
 QtCore/qglobal.h
 -
@@ -1256,14 +1298,6 @@ QtGui/qcolor.h
 QtGui/qbrush.h
 -
 
-/usr/include/qt6/QtGui/qpen.h
-QtGui/qtguiglobal.h
--
-QtGui/qcolor.h
--
-QtGui/qbrush.h
--
-
 /usr/include/qt6/QtGui/qpicture.h
 QtGui/qtguiglobal.h
 -
@@ -1360,16 +1394,6 @@ QtGui/QTransform
 QtCore/qnamespace.h
 -
 
-/usr/include/qt6/QtGui/qtextcursor.h
-QtGui/qtguiglobal.h
--
-QtCore/qstring.h
--
-QtCore/qshareddata.h
--
-QtGui/qtextformat.h
--
-
 /usr/include/qt6/QtGui/qtextdocument.h
 QtGui/qtguiglobal.h
 -
@@ -1386,36 +1410,6 @@ QtGui/qfont.h
 QtCore/qurl.h
 -
 QtCore/qcontainerfwd.h
--
-
-/usr/include/qt6/QtGui/qtextformat.h
-QtGui/qbrush.h
--
-QtGui/qcolor.h
--
-QtGui/qfont.h
--
-QtGui/qpen.h
--
-QtGui/qtextoption.h
--
-QtGui/qtguiglobal.h
--
-QtCore/qlist.h
--
-QtCore/qshareddata.h
--
-QtCore/qvariant.h
--
-
-/usr/include/qt6/QtGui/qtextoption.h
-QtGui/qtguiglobal.h
--
-QtCore/qnamespace.h
--
-QtCore/qchar.h
--
-QtCore/qmetatype.h
 -
 
 /usr/include/qt6/QtGui/qtgui-config.h
@@ -1440,18 +1434,6 @@ QtCore/qline.h
 QtCore/qpoint.h
 -
 QtCore/qrect.h
--
-
-/usr/include/qt6/QtGui/qvalidator.h
-QtGui/qtguiglobal.h
--
-QtCore/qobject.h
--
-QtCore/qstring.h
--
-QtCore/qregularexpression.h
--
-QtCore/qlocale.h
 -
 
 /usr/include/qt6/QtGui/qvector2d.h
@@ -1488,9 +1470,17 @@ QtGui/qtguiglobal.h
 qapplication.h
 /usr/include/qt6/QtWidgets/qapplication.h
 
+/usr/include/qt6/QtWidgets/QFrame
+qframe.h
+/usr/include/qt6/QtWidgets/qframe.h
+
 /usr/include/qt6/QtWidgets/QHBoxLayout
 qboxlayout.h
 /usr/include/qt6/QtWidgets/qboxlayout.h
+
+/usr/include/qt6/QtWidgets/QLCDNumber
+qlcdnumber.h
+/usr/include/qt6/QtWidgets/qlcdnumber.h
 
 /usr/include/qt6/QtWidgets/QLabel
 qlabel.h
@@ -1499,10 +1489,6 @@ qlabel.h
 /usr/include/qt6/QtWidgets/QLayout
 qlayout.h
 /usr/include/qt6/QtWidgets/qlayout.h
-
-/usr/include/qt6/QtWidgets/QLineEdit
-qlineedit.h
-/usr/include/qt6/QtWidgets/qlineedit.h
 
 /usr/include/qt6/QtWidgets/QMainWindow
 qmainwindow.h
@@ -1516,13 +1502,17 @@ qmenubar.h
 qpushbutton.h
 /usr/include/qt6/QtWidgets/qpushbutton.h
 
-/usr/include/qt6/QtWidgets/QSpinBox
-qspinbox.h
-/usr/include/qt6/QtWidgets/qspinbox.h
+/usr/include/qt6/QtWidgets/QSpacerItem
+qlayoutitem.h
+/usr/include/qt6/QtWidgets/qlayoutitem.h
 
 /usr/include/qt6/QtWidgets/QStatusBar
 qstatusbar.h
 /usr/include/qt6/QtWidgets/qstatusbar.h
+
+/usr/include/qt6/QtWidgets/QVBoxLayout
+qboxlayout.h
+/usr/include/qt6/QtWidgets/qboxlayout.h
 
 /usr/include/qt6/QtWidgets/QWidget
 qwidget.h
@@ -1536,14 +1526,6 @@ QtGui/qicon.h
 QtGui/qkeysequence.h
 -
 QtWidgets/qwidget.h
--
-
-/usr/include/qt6/QtWidgets/qabstractspinbox.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qwidget.h
--
-QtGui/qvalidator.h
 -
 
 /usr/include/qt6/QtWidgets/qapplication.h
@@ -1628,16 +1610,10 @@ QtCore/qrect.h
 limits.h
 -
 
-/usr/include/qt6/QtWidgets/qlineedit.h
+/usr/include/qt6/QtWidgets/qlcdnumber.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qframe.h
--
-QtGui/qtextcursor.h
--
-QtCore/qstring.h
--
-QtCore/qmargins.h
 -
 
 /usr/include/qt6/QtWidgets/qmainwindow.h
@@ -1678,12 +1654,6 @@ QtWidgets/qtwidgetsglobal.h
 QtCore/qobject.h
 -
 QtCore/qalgorithms.h
--
-
-/usr/include/qt6/QtWidgets/qspinbox.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qabstractspinbox.h
 -
 
 /usr/include/qt6/QtWidgets/qstatusbar.h
