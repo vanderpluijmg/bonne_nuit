@@ -3,6 +3,9 @@ project(atlir5_Bonne_nuit)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# https://digitalkarabela.com/mingw-w64-how-to-fix-file-too-big-too-many-sections/
+# set(CMAKE_CXX_FLAGS -Wa,-mbig-obj)    # rnvs
+
 set(QT_VERSION 6)
 set(REQUIRED_LIBS Core Widgets SvgWidgets)
 set(REQUIRED_LIBS_QUALIFIED Qt6::Core Qt6::Widgets Qt6::SvgWidgets)
