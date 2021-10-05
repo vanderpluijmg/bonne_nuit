@@ -3,51 +3,51 @@
 
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o: \
  atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Board.cpp.o: \
- ../ressources/random.hpp \
- ../src/Model/Game/Board.cpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.o: \
  ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/OutOfGameBoardException.h \
- ../src/exceptions/PawnInPlaceException.h
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Game/Game.cpp.o: \
- ../ressources/random.hpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Game.cpp \
- ../src/Model/Game/Game.h \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
+ ../src/exceptions/PawnInPlaceException.h \
+ ../src/model/Game/Board.cpp \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/ressources/random.hpp
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.o: \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/exceptions/NumberOfPlayersException.h \
- ../src/exceptions/OutOfGameBoardException.h
-CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/Model/Model.cpp.o: \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.cpp \
- ../src/Model/Model.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Game.cpp \
+ ../src/model/Game/Game.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h \
+ ../src/ressources/random.hpp
+CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.o: \
  ../src/Utils/Observable.h \
- ../src/Utils/Observer.h
+ ../src/Utils/Observer.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.cpp \
+ ../src/model/Model.h
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/mainTest.cpp.o: \
  ../catch2/catch.hpp \
  ../test/mainTest.cpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o: \
  ../catch2/catch.hpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Game.h \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/NumberOfPlayersException.h \
  ../src/exceptions/OutOfGameBoardException.h \
  ../src/exceptions/PawnInPlaceException.h \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Game.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h \
  ../test/testGame.cpp

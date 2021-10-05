@@ -15,103 +15,104 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_Form
 {
 public:
-    QWidget *centralwidget;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *label_start_question;
-    QLCDNumber *numberOfPlayers;
-    QPushButton *plusPlayer;
-    QPushButton *minusPlayer;
+    QStackedWidget *stackedWidget;
+    QWidget *page;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QLCDNumber *lcdNumber;
+    QLabel *label;
+    QPushButton *pushButton;
     QFrame *frame;
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_2;
+    QPushButton *pushButton_2;
+    QWidget *page_2;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QWidget *Form)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(899, 600);
-        centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(180, 20, 517, 36));
-        horizontalLayout_2 = new QHBoxLayout(layoutWidget);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_start_question = new QLabel(layoutWidget);
-        label_start_question->setObjectName(QString::fromUtf8("label_start_question"));
+        if (Form->objectName().isEmpty())
+            Form->setObjectName(QString::fromUtf8("Form"));
+        Form->resize(1376, 883);
+        stackedWidget = new QStackedWidget(Form);
+        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        stackedWidget->setGeometry(QRect(130, 30, 1221, 821));
+        page = new QWidget();
+        page->setObjectName(QString::fromUtf8("page"));
+        horizontalLayoutWidget = new QWidget(page);
+        horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(QRect(10, 10, 1211, 101));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        lcdNumber = new QLCDNumber(horizontalLayoutWidget);
+        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
 
-        horizontalLayout_2->addWidget(label_start_question);
+        horizontalLayout->addWidget(lcdNumber);
 
-        numberOfPlayers = new QLCDNumber(layoutWidget);
-        numberOfPlayers->setObjectName(QString::fromUtf8("numberOfPlayers"));
+        label = new QLabel(horizontalLayoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
 
-        horizontalLayout_2->addWidget(numberOfPlayers);
+        horizontalLayout->addWidget(label);
 
-        plusPlayer = new QPushButton(layoutWidget);
-        plusPlayer->setObjectName(QString::fromUtf8("plusPlayer"));
+        pushButton = new QPushButton(horizontalLayoutWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        horizontalLayout_2->addWidget(plusPlayer);
+        horizontalLayout->addWidget(pushButton);
 
-        minusPlayer = new QPushButton(layoutWidget);
-        minusPlayer->setObjectName(QString::fromUtf8("minusPlayer"));
-
-        horizontalLayout_2->addWidget(minusPlayer);
-
-        frame = new QFrame(centralwidget);
+        frame = new QFrame(page);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(40, 80, 821, 421));
+        frame->setGeometry(QRect(20, 130, 1191, 471));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         verticalLayout = new QVBoxLayout(frame);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer = new QSpacerItem(20, 448, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer);
 
-        MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 899, 30));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
+        verticalLayoutWidget = new QWidget(page);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(20, 620, 1201, 141));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        pushButton_2 = new QPushButton(verticalLayoutWidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
 
-        retranslateUi(MainWindow);
+        verticalLayout_2->addWidget(pushButton_2);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        stackedWidget->addWidget(page);
+        page_2 = new QWidget();
+        page_2->setObjectName(QString::fromUtf8("page_2"));
+        stackedWidget->addWidget(page_2);
+
+        retranslateUi(Form);
+
+        QMetaObject::connectSlotsByName(Form);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QWidget *Form)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_start_question->setText(QCoreApplication::translate("MainWindow", " How many players are going to play ?", nullptr));
-        plusPlayer->setText(QCoreApplication::translate("MainWindow", "Add Player", nullptr));
-        minusPlayer->setText(QCoreApplication::translate("MainWindow", "Remove Player", nullptr));
+        Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
+        label->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
+        pushButton->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
     } // retranslateUi
 
 };
-
-namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
-} // namespace Ui
 
 QT_END_NAMESPACE
 

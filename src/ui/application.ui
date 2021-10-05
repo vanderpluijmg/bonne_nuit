@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Application</class>
+ <widget class="QWidget" name="Application">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1175</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-40</y>
+     <width>1171</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="welcomePage">
+    <widget class="QPushButton" name="players">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>560</y>
+       <width>261</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Please press button to continue to game</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>450</y>
+       <width>221</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GoodNight</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

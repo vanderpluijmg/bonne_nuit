@@ -8,7 +8,7 @@
 #include <exception>
 
 /**
- * Exception used when the number of players given is not suitable to play a game.
+ * Exception used when the number of players given is not suitable to play startWindow game.
  */
 class NumberOfPlayersException : public std::logic_error {
 public:

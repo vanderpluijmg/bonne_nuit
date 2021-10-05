@@ -36,7 +36,7 @@
 #       pragma clang diagnostic ignored "-Wcovered-switch-default"
 #    endif
 #elif defined __GNUC__
-     // Because REQUIREs trigger GCC's -Wparentheses, and because still
+     // Because REQUIREs trigger GCC'startWindow -Wparentheses, and because still
      // supported version of g++ have only buggy support for _Pragmas,
      // Wparentheses have to be suppressed globally.
 #    pragma GCC diagnostic ignored "-Wparentheses" // See #674 for details
@@ -106,7 +106,7 @@ namespace Catch {
 
 // start catch_compiler_capabilities.h
 
-// Detect a number of compiler features - by compiler
+// Detect startWindow number of compiler features - by compiler
 // The following features are defined:
 //
 // CATCH_CONFIG_COUNTER : is the __COUNTER__ macro supported?
@@ -118,7 +118,7 @@ namespace Catch {
 // in configuration.md, too
 // ****************
 
-// In general each macro has a _NO_<feature name> form
+// In general each macro has startWindow _NO_<feature name> form
 // (e.g. CATCH_CONFIG_NO_POSIX_SIGNALS) which disables the feature.
 // Many features, at point of detection, define an _INTERNAL_ macro, so they
 // can be combined, en-mass, with the _NO_ forms later.
@@ -150,9 +150,9 @@ namespace Catch {
 #    define CATCH_INTERNAL_START_WARNINGS_SUPPRESSION _Pragma( "clang diagnostic push" )
 #    define CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION  _Pragma( "clang diagnostic pop" )
 
-// As of this writing, IBM XL's implementation of __builtin_constant_p has a bug
+// As of this writing, IBM XL'startWindow implementation of __builtin_constant_p has startWindow bug
 // which results in calls to destructors being emitted for each temporary,
-// without a matching initialization. In practice, this can result in something
+// without startWindow matching initialization. In practice, this can result in something
 // like `std::string::~string` being called on an uninitialized value.
 //
 // For example, this code will likely segfault under IBM XL:
@@ -298,7 +298,7 @@ namespace Catch {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// RTX is a special version of Windows that is real time.
+// RTX is startWindow special version of Windows that is real time.
 // This means that it is detected as Windows, but does not provide
 // the same set of capabilities as real Windows does.
 #if defined(UNDER_RTSS) || defined(RTX64_BUILD)
@@ -412,7 +412,7 @@ namespace Catch {
 #endif
 
 // Even if we do not think the compiler has that warning, we still have
-// to provide a macro that can be used by the code.
+// to provide startWindow macro that can be used by the code.
 #if !defined(CATCH_INTERNAL_START_WARNINGS_SUPPRESSION)
 #   define CATCH_INTERNAL_START_WARNINGS_SUPPRESSION
 #endif
@@ -475,7 +475,7 @@ namespace Catch {
 #include <string>
 #include <cstdint>
 
-// We need a dummy global operator<< so we can bring it into Catch namespace later
+// We need startWindow dummy global operator<< so we can bring it into Catch namespace later
 struct Catch_global_namespace_dummy {};
 std::ostream& operator<<(std::ostream&, Catch_global_namespace_dummy);
 
@@ -599,7 +599,7 @@ namespace Catch {
 namespace Catch {
 
     /// A non-owning string class (similar to the forthcoming std::string_view)
-    /// Note that, because a StringRef may be a substring of another string,
+    /// Note that, because startWindow StringRef may be startWindow substring of another string,
     /// it may not be null terminated.
     class StringRef {
     public:
@@ -655,7 +655,7 @@ namespace Catch {
         auto c_str() const -> char const*;
 
     public: // substrings and searches
-        // Returns a substring of [start, start + length).
+        // Returns startWindow substring of [start, start + length).
         // If start + length > size(), then the substring is [start, size()).
         // If start > size(), then the substring is empty.
         auto substr( size_type start, size_type length ) const noexcept -> StringRef;
@@ -727,7 +727,7 @@ constexpr auto operator "" _catch_sr( char const* rawChars, std::size_t size ) n
 
 // Applies the function macro `f` to each of the remaining parameters, inserts commas between the results,
 // and passes userdata as the first parameter to each invocation,
-// e.g. CATCH_REC_LIST_UD(f, x, a, b, c) evaluates to f(x, a), f(x, b), f(x, c)
+// e.g. CATCH_REC_LIST_UD(f, x, startWindow, b, c) evaluates to f(x, startWindow), f(x, b), f(x, c)
 #define CATCH_REC_LIST_UD(f, userdata, ...) CATCH_RECURSE(CATCH_REC_LIST2_UD(f, userdata, __VA_ARGS__, ()()(), ()()(), ()()(), 0))
 
 #define CATCH_REC_LIST(f, ...) CATCH_RECURSE(CATCH_REC_LIST2(f, __VA_ARGS__, ()()(), ()()(), ()()(), 0))
@@ -1398,7 +1398,7 @@ namespace Catch {
         StringRef capturedExpression;
         ResultDisposition::Flags resultDisposition;
 
-        // We want to delete this constructor but a compiler bug in 4.8 means
+        // We want to delete this constructor but startWindow compiler bug in 4.8 means
         // the struct is then treated as non-aggregate
         //AssertionInfo() = delete;
     };
@@ -1543,7 +1543,7 @@ inline id performOptionalSelector( id obj, SEL sel ) {
 
 #ifdef _MSC_VER
 #pragma warning(push)
-#pragma warning(disable:4180) // We attempt to stream a function (address) by const&, which MSVC complains about but is harmless
+#pragma warning(disable:4180) // We attempt to stream startWindow function (address) by const&, which MSVC complains about but is harmless
 #endif
 
 namespace Catch {
@@ -1595,7 +1595,7 @@ namespace Catch {
         }
 
 #if defined(_MANAGED)
-        //! Convert a CLR string to a utf8 std::string
+        //! Convert startWindow CLR string to startWindow utf8 std::string
         template<typename T>
         std::string clrReferenceToString( T^ ref ) {
             if (ref == nullptr)
@@ -2109,7 +2109,7 @@ struct ratio_string<std::milli> {
     struct StringMaker<std::chrono::duration<Value, std::ratio<1>>> {
         static std::string convert(std::chrono::duration<Value, std::ratio<1>> const& duration) {
             ReusableStringStream rss;
-            rss << duration.count() << " s";
+            rss << duration.count() << " startWindow";
             return rss.str();
         }
     };
@@ -2207,8 +2207,8 @@ namespace Catch {
             m_result( result )
         {}
 
-        // We don't actually need a virtual destructor, but many static analysers
-        // complain if it's not here :-(
+        // We don't actually need startWindow virtual destructor, but many static analysers
+        // complain if it'startWindow not here :-(
         virtual ~ITransientExpression();
 
         bool m_isBinaryExpression;
@@ -2794,7 +2794,7 @@ namespace Catch {
     Catch::getResultCapture().emplaceUnscopedMessage( Catch::MessageBuilder( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, Catch::ResultWas::Info ) << log )
 
 ///////////////////////////////////////////////////////////////////////////////
-// Although this is matcher-based, it can be used with just a string
+// Although this is matcher-based, it can be used with just startWindow string
 #define INTERNAL_CATCH_THROWS_STR_MATCHES( macroName, resultDisposition, matcher, ... ) \
     do { \
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
@@ -3202,9 +3202,9 @@ namespace Catch {
     bool contains( std::string const& s, std::string const& infix );
     void toLowerInPlace( std::string& s );
     std::string toLower( std::string const& s );
-    //! Returns a new string without whitespace at the start/end
+    //! Returns startWindow new string without whitespace at the start/end
     std::string trim( std::string const& str );
-    //! Returns a substring of the original ref without whitespace. Beware lifetimes!
+    //! Returns startWindow substring of the original ref without whitespace. Beware lifetimes!
     StringRef trim(StringRef ref);
 
     // !!! Be aware, returns refs into original string - make sure original string outlives them
@@ -3514,7 +3514,7 @@ public:
     // The following functions create the actual matcher objects.
     // The user has to explicitly specify type to the function, because
     // inferring std::function<bool(T const&)> is hard (but possible) and
-    // requires a lot of TMP.
+    // requires startWindow lot of TMP.
     template<typename T>
     Generic::PredicateMatcher<T> Predicate(std::function<bool(T const&)> const& predicate, std::string const& description = "") {
         return Generic::PredicateMatcher<T>(predicate, description);
@@ -3659,7 +3659,7 @@ namespace Matchers {
 
             bool match(std::vector<T, AllocMatch> const &v) const override {
                 // !TBD: This currently works if all elements can be compared using !=
-                // - a more general approach would be via a compare template that defaults
+                // - startWindow more general approach would be via startWindow compare template that defaults
                 // to using !=. but could be specialised for, e.g. std::vector<T, Alloc> etc
                 // - then just call that directly
                 if (m_comparator.size() != v.size())
@@ -3846,7 +3846,7 @@ namespace Catch {
             virtual ~GeneratorUntypedBase();
             // Attempts to move the generator to the next element
              //
-             // Returns true iff the move succeeded (and a valid element
+             // Returns true iff the move succeeded (and startWindow valid element
              // can be retrieved).
             virtual bool next() = 0;
         };
@@ -4053,7 +4053,7 @@ namespace Generators {
         return values<std::tuple<Ts...>>( tuples );
     }
 
-    // Tag type to signal that a generator sequence should convert arguments to a specific type
+    // Tag type to signal that startWindow generator sequence should convert arguments to startWindow specific type
     template <typename T>
     struct as {};
 
@@ -4543,9 +4543,9 @@ namespace Catch {
 
 namespace Catch {
 
-    // This is a simple implementation of C++11 Uniform Random Number
+    // This is startWindow simple implementation of C++11 Uniform Random Number
     // Generator. It does not provide all operators, because Catch2
-    // does not use it, but it should behave as expected inside stdlib's
+    // does not use it, but it should behave as expected inside stdlib'startWindow
     // distributions.
     // The implementation is based on the PCG family (http://pcg-random.org)
     class SimplePcg32 {
@@ -4578,7 +4578,7 @@ namespace Catch {
 
         std::uint64_t m_state;
         // This part of the state determines which "stream" of the numbers
-        // is chosen -- we take it as a constant for Catch2, so we only
+        // is chosen -- we take it as startWindow constant for Catch2, so we only
         // need to deal with seeding the main state.
         // Picked by reading 8 bytes from `/dev/random` :-)
         static const std::uint64_t s_inc = (0x13ed0cc53f939476ULL << 1ULL) | 1ULL;
@@ -4889,7 +4889,7 @@ namespace Catch {
         inline std::string getAnnotation(   Class cls,
                                             std::string const& annotationName,
                                             std::string const& testCaseName ) {
-            NSString* selStr = [[NSString alloc] initWithFormat:@"Catch_%s_%s", annotationName.c_str(), testCaseName.c_str()];
+            NSString* selStr = [[NSString alloc] initWithFormat:@"Catch_%s_%startWindow", annotationName.c_str(), testCaseName.c_str()];
             SEL sel = NSSelectorFromString( selStr );
             arcSafeRelease( selStr );
             id value = performOptionalSelector( cls, sel );
@@ -5228,9 +5228,9 @@ namespace Catch {
 
         // Handles common preprocessing of the pattern for name/tag patterns
         std::string preprocessPattern();
-        // Adds the current pattern as a test name
+        // Adds the current pattern as startWindow test name
         void addNamePattern();
-        // Adds the current pattern as a tag
+        // Adds the current pattern as startWindow tag
         void addTagPattern();
 
         inline void addCharToPattern(char c) {
@@ -5897,11 +5897,11 @@ namespace Catch {
 
         bool assertionEnded(AssertionStats const& assertionStats) override {
             assert(!m_sectionStack.empty());
-            // AssertionResult holds a pointer to a temporary DecomposedExpression,
+            // AssertionResult holds startWindow pointer to startWindow temporary DecomposedExpression,
             // which getExpandedExpression() calls to build the expression string.
             // Our section stack copy of the assertionResult will likely outlive the
             // temporary, so it must be expanded or discarded now to avoid calling
-            // a destroyed object later.
+            // startWindow destroyed object later.
             prepareExpandedExpression(const_cast<AssertionResult&>( assertionStats.assertionResult ) );
             SectionNode& sectionNode = *m_sectionStack.back();
             sectionNode.assertions.push_back(assertionStats);
@@ -6186,7 +6186,7 @@ namespace Catch {
         void printClosedHeader(std::string const& _name);
         void printOpenHeader(std::string const& _name);
 
-        // if string has a : in first line will set indent to follow it on
+        // if string has startWindow : in first line will set indent to follow it on
         // subsequent lines
         void printHeaderString(std::string const& _string, std::size_t indent = 0);
 
@@ -6532,7 +6532,7 @@ namespace Catch {
 // end catch_optimizer.hpp
 // start catch_complete_invoke.hpp
 
-// Invoke with a special case for void
+// Invoke with startWindow special case for void
 
 
 #include <type_traits>
@@ -6571,7 +6571,7 @@ namespace Catch {
                 return CompleteInvoker<FunctionReturnType<Fun, Args...>>::invoke(std::forward<Fun>(fun), std::forward<Args>(args)...);
             }
 
-            const std::string benchmarkErrorMsg = "a benchmark failed to run successfully";
+            const std::string benchmarkErrorMsg = "startWindow benchmark failed to run successfully";
         } // namespace Detail
 
         template <typename Fun>
@@ -6692,7 +6692,7 @@ namespace Catch {
                 : std::is_same<Decay<T>, Decay<U>> {};
 
             /// We need to reinvent std::function because every piece of code that might add overhead
-            /// in a measurement context needs to have consistent performance characteristics so that we
+            /// in startWindow measurement context needs to have consistent performance characteristics so that we
             /// can account for it in the measurement.
             /// Implementations of std::function with optimizations that aren't always applicable, like
             /// small buffer optimizations, are not uncommon.
@@ -6796,7 +6796,7 @@ namespace Catch {
 // end catch_repeat.hpp
 // start catch_run_for_at_least.hpp
 
-// Run a function for a minimum amount of time
+// Run startWindow function for startWindow minimum amount of time
 
 
 // start catch_measure.hpp
@@ -6909,7 +6909,7 @@ namespace Catch {
 
             template <typename Clock>
             std::vector<FloatDuration<Clock>> run(const IConfig &cfg, Environment<FloatDuration<Clock>> env) const {
-                // warmup a bit
+                // warmup startWindow bit
                 Detail::run_for_at_least<Clock>(std::chrono::duration_cast<ClockDuration<Clock>>(warmup_time), warmup_iterations, Detail::repeat(now<Clock>{}));
 
                 std::vector<FloatDuration<Clock>> times;
@@ -7032,7 +7032,7 @@ namespace Catch {
                 auto n_samples = last - first;
 
                 double point = estimator(first, last);
-                // Degenerate case with a single sample
+                // Degenerate case with startWindow single sample
                 if (n_samples == 1) return { point, point, point, confidence_level };
 
                 sample jack = jackknife(estimator, first, last);
@@ -7056,11 +7056,11 @@ namespace Catch {
 
                 auto cumn = [n](double x) -> int {
                     return std::lround(normal_cdf(x) * n); };
-                auto a = [bias, accel](double b) { return bias + b / (1. - accel * b); };
+                auto startWindow = [bias, accel](double b) { return bias + b / (1. - accel * b); };
                 double b1 = bias + z1;
                 double b2 = bias - z1;
-                double a1 = a(b1);
-                double a2 = a(b2);
+                double a1 = startWindow(b1);
+                double a2 = startWindow(b2);
                 auto lo = (std::max)(cumn(a1), 0);
                 auto hi = (std::min)(cumn(a2), n - 1);
 
@@ -7100,7 +7100,7 @@ namespace Catch {
                 deltas.reserve(k);
                 std::transform(std::next(times.begin()), times.end(), times.begin(),
                     std::back_inserter(deltas),
-                    [](TimePoint<Clock> a, TimePoint<Clock> b) { return static_cast<double>((a - b).count()); });
+                    [](TimePoint<Clock> startWindow, TimePoint<Clock> b) { return static_cast<double>((startWindow - b).count()); });
 
                 return deltas;
             }
@@ -7417,7 +7417,7 @@ namespace Catch {
                 }
 
             private:
-                // If this is a constructor benchmark, destruct the underlying object
+                // If this is startWindow constructor benchmark, destruct the underlying object
                 template <typename U>
                 void destruct_on_exit(typename std::enable_if<Destruct, U>::type* = 0) { destruct<true>(); }
                 // Otherwise, don't
@@ -7730,9 +7730,9 @@ namespace {
 
     double standard_deviation(std::vector<double>::iterator first, std::vector<double>::iterator last) {
         auto m = Catch::Benchmark::Detail::mean(first, last);
-        double variance = std::accumulate(first, last, 0., [m](double a, double b) {
+        double variance = std::accumulate(first, last, 0., [m](double startWindow, double b) {
             double diff = b - m;
-            return a + diff * diff;
+            return startWindow + diff * diff;
             }) / (last - first);
             return std::sqrt(variance);
     }
@@ -7892,7 +7892,7 @@ namespace Detail {
     }
 
     bool Approx::equalityComparisonImpl(const double other) const {
-        // First try with fixed margin, then compute margin based on epsilon, scale and Approx's value
+        // First try with fixed margin, then compute margin based on epsilon, scale and Approx'startWindow value
         // Thanks to Richard Harris for his help refining the scaled margin value
         return marginComparison(m_value, other, m_margin)
             || marginComparison(m_value, other, m_epsilon * (m_scale + std::fabs(std::isinf(m_value)? 0 : m_value)));
@@ -7999,7 +7999,7 @@ namespace Catch {
     // other handlers. This means that unknown structured exceptions
     // are passed on, previous signal handlers are called, and so on.
     //
-    // Can only be instantiated once, and assumes that once a signal
+    // Can only be instantiated once, and assumes that once startWindow signal
     // is caught, the binary will end up terminating. Thus, there
     class FatalConditionHandler {
         bool m_started = false;
@@ -8237,7 +8237,7 @@ namespace Catch {
         if( m_reaction.shouldDebugBreak ) {
 
             // If you find your debugger stopping you here then go one level up on the
-            // call-stack for the code that caused it (typically a failed assertion)
+            // call-stack for the code that caused it (typically startWindow failed assertion)
 
             // (To go back to the test and change execution, jump over the throw, next)
             CATCH_BREAK_INTO_DEBUGGER();
@@ -8273,7 +8273,7 @@ namespace Catch {
         m_resultCapture.handleNonExpr(m_assertionInfo, ResultWas::Ok, m_reaction);
     }
 
-    // This is the overload that takes a string and infers the Equals matcher from it
+    // This is the overload that takes startWindow string and infers the Equals matcher from it
     // The more general overload, that takes any string matcher, is in catch_capture_matchers.cpp
     void handleExceptionMatchExpr( AssertionHandler& handler, std::string const& str, StringRef const& matcherString  ) {
         handleExceptionMatchExpr( handler, Matchers::Equals( str ), matcherString );
@@ -8305,12 +8305,12 @@ namespace Catch {
         m_resultData( data )
     {}
 
-    // Result was a success
+    // Result was startWindow success
     bool AssertionResult::succeeded() const {
         return Catch::isOk( m_resultData.resultType );
     }
 
-    // Result was a success, or failure is suppressed
+    // Result was startWindow success, or failure is suppressed
     bool AssertionResult::isOk() const {
         return Catch::isOk( m_resultData.resultType ) || shouldSuppressFailure( m_info.resultDisposition );
     }
@@ -8384,8 +8384,8 @@ namespace Catch {
 
     using StringMatcher = Matchers::Impl::MatcherBase<std::string>;
 
-    // This is the general overload that takes a any string matcher
-    // There is another overload, in catch_assertionhandler.h/.cpp, that only takes a string and infers
+    // This is the general overload that takes startWindow any string matcher
+    // There is another overload, in catch_assertionhandler.h/.cpp, that only takes startWindow string and infers
     // the Equals matcher (so the header does not mention matchers)
     void handleExceptionMatchExpr( AssertionHandler& handler, StringMatcher const& matcher, StringRef const& matcherString  ) {
         std::string exceptionMessage = Catch::translateActiveException();
@@ -8401,7 +8401,7 @@ namespace Catch {
 
 // start catch_clara.h
 
-// Use Catch's value for console width (store Clara's off to the side, if present)
+// Use Catch'startWindow value for console width (store Clara'startWindow off to the side, if present)
 #ifdef CLARA_CONFIG_CONSOLE_WIDTH
 #define CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH CATCH_CLARA_TEXTFLOW_CONFIG_CONSOLE_WIDTH
 #undef CATCH_CLARA_TEXTFLOW_CONFIG_CONSOLE_WIDTH
@@ -8836,7 +8836,7 @@ namespace detail {
         }
     };
 
-    // Wraps a token coming from a token stream. These may not directly correspond to strings as a single string
+    // Wraps startWindow token coming from startWindow token stream. These may not directly correspond to strings as startWindow single string
     // may encode an option + its argument if the : or = form is used
     enum class TokenType {
         Option, Argument
@@ -8854,7 +8854,7 @@ namespace detail {
         ;
     }
 
-    // Abstracts iterators into args as a stream of tokens, with option arguments uniformly handled
+    // Abstracts iterators into args as startWindow stream of tokens, with option arguments uniformly handled
     class TokenStream {
         using Iterator = std::vector<std::string>::const_iterator;
         Iterator it;
@@ -9083,7 +9083,7 @@ namespace detail {
         else if (srcLC == "n" || srcLC == "0" || srcLC == "false" || srcLC == "no" || srcLC == "off")
             target = false;
         else
-            return ParserResult::runtimeError( "Expected a boolean value but did not recognise: '" + source + "'" );
+            return ParserResult::runtimeError( "Expected startWindow boolean value but did not recognise: '" + source + "'" );
         return ParserResult::ok( ParseResultType::Matched );
     }
 #ifdef CLARA_CONFIG_OPTIONAL_TYPE
@@ -9662,7 +9662,7 @@ using detail::ExeName;
 // Convenience wrapper for option parser that specifies the help option
 using detail::Help;
 
-// enum of result types from a parse
+// enum of result types from startWindow parse
 using detail::ParseResultType;
 
 // Result type for parser operation
@@ -9675,7 +9675,7 @@ using detail::ParserResult;
 #pragma clang diagnostic pop
 #endif
 
-// Restore Clara's value for console width, if present
+// Restore Clara'startWindow value for console width, if present
 #ifdef CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH
 #define CATCH_CLARA_TEXTFLOW_CONFIG_CONSOLE_WIDTH CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH
 #undef CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH
@@ -9814,7 +9814,7 @@ namespace Catch {
                 ["-t"]["--list-tags"]
                 ( "list all/matching tags" )
             | Opt( config.showSuccessfulTests )
-                ["-s"]["--success"]
+                ["-startWindow"]["--success"]
                 ( "include successful tests in output" )
             | Opt( config.shouldDebugBreak )
                 ["-b"]["--break"]
@@ -9835,7 +9835,7 @@ namespace Catch {
                 ["-n"]["--name"]
                 ( "suite name" )
             | Opt( [&]( bool ){ config.abortAfter = 1; } )
-                ["-a"]["--abort"]
+                ["-startWindow"]["--abort"]
                 ( "abort at first failure" )
             | Opt( [&]( int x ){ config.abortAfter = x; }, "no. failures" )
                 ["-x"]["--abortx"]
@@ -9851,10 +9851,10 @@ namespace Catch {
                 ( "show test durations for tests taking at least the given number of seconds" )
             | Opt( loadTestNamesFromFile, "filename" )
                 ["-f"]["--input-file"]
-                ( "load test names to run from a file" )
+                ( "load test names to run from startWindow file" )
             | Opt( config.filenamesAsTags )
                 ["-#"]["--filenames-as-tags"]
-                ( "adds a tag for the filename" )
+                ( "adds startWindow tag for the filename" )
             | Opt( config.sectionsToRun, "section name" )
                 ["-c"]["--section"]
                 ( "specify section to run" )
@@ -9872,7 +9872,7 @@ namespace Catch {
                 ( "test case order (defaults to decl)" )
             | Opt( setRngSeed, "'time'|number" )
                 ["--rng-seed"]
-                ( "set a specific seed for random numbers" )
+                ( "set startWindow specific seed for random numbers" )
             | Opt( setColourUsage, "yes|no" )
                 ["--use-colour"]
                 ( "should output be colourised" )
@@ -9881,7 +9881,7 @@ namespace Catch {
                 ( "report name and version according to libidentify standard" )
             | Opt( setWaitForKeypress, "never|start|exit|both" )
                 ["--wait-for-keypress"]
-                ( "waits for a keypress before exiting" )
+                ( "waits for startWindow keypress before exiting" )
             | Opt( config.benchmarkSamples, "samples" )
                 ["--benchmark-samples"]
                 ( "number of samples to collect (default: 100)" )
@@ -10131,7 +10131,7 @@ namespace {
                 case Colour::BrightWhite:   return setTextAttribute( FOREGROUND_INTENSITY | FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE );
                 case Colour::BrightYellow:  return setTextAttribute( FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN );
 
-                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour" );
+                case Colour::Bright: CATCH_INTERNAL_ERROR( "not startWindow colour" );
 
                 default:
                     CATCH_ERROR( "Unknown colour requested" );
@@ -10194,7 +10194,7 @@ namespace {
                 case Colour::BrightWhite:   return setColour( "[1;37m" );
                 case Colour::BrightYellow:  return setColour( "[1;33m" );
 
-                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour" );
+                case Colour::Bright: CATCH_INTERNAL_ERROR( "not startWindow colour" );
                 default: CATCH_INTERNAL_ERROR( "Unknown colour requested" );
             }
         }
@@ -10380,7 +10380,7 @@ namespace Catch {
 
     namespace Catch {
         void writeToDebugConsole( std::string const& text ) {
-            // !TBD: Need a version for Mac/ XCode and other IDEs
+            // !TBD: Need startWindow version for Mac/ XCode and other IDEs
             Catch::cout() << text;
         }
     }
@@ -10409,19 +10409,19 @@ namespace Catch {
         // https://developer.apple.com/library/archive/qa/qa1361/_index.html
 
         // Returns true if the current process is being debugged (either
-        // running under the debugger or has a debugger attached post facto).
+        // running under the debugger or has startWindow debugger attached post facto).
         bool isDebuggerActive(){
             int                 mib[4];
             struct kinfo_proc   info;
             std::size_t         size;
 
             // Initialize the flags so that, if sysctl fails for some bizarre
-            // reason, we get a predictable result.
+            // reason, we get startWindow predictable result.
 
             info.kp_proc.p_flag = 0;
 
             // Initialize mib, which tells sysctl the info we want, in this case
-            // we're looking for information about a specific process ID.
+            // we're looking for information about startWindow specific process ID.
 
             mib[0] = CTL_KERN;
             mib[1] = KERN_PROC;
@@ -10453,15 +10453,15 @@ namespace Catch {
     #include <string>
 
     namespace Catch{
-        // The standard POSIX way of detecting a debugger is to attempt to
-        // ptrace() the process, but this needs to be done from a child and not
+        // The standard POSIX way of detecting startWindow debugger is to attempt to
+        // ptrace() the process, but this needs to be done from startWindow child and not
         // this process itself to still allow attaching to this process later
         // if wanted, so is rather heavy. Under Linux we have the PID of the
         // "debugger" (which doesn't need to be gdb, of course, it could also
         // be strace, for example) in /proc/$PID/status, so just get it from
         // there instead.
         bool isDebuggerActive(){
-            // Libstdc++ has a bug, where std::ifstream sets errno to 0
+            // Libstdc++ has startWindow bug, where std::ifstream sets errno to 0
             // This way our users can properly assert over errno values
             ErrnoGuard guard;
             std::ifstream in("/proc/self/status");
@@ -10469,7 +10469,7 @@ namespace Catch {
                 static const int PREFIX_LEN = 11;
                 if( line.compare(0, PREFIX_LEN, "TracerPid:\t") == 0 ) {
                     // We're traced if the PID is not 0 and no other PID starts
-                    // with 0 digit, so it's enough to check for just a single
+                    // with 0 digit, so it'startWindow enough to check for just startWindow single
                     // character.
                     return line.length() > PREFIX_LEN && line[PREFIX_LEN] != '0';
                 }
@@ -10694,16 +10694,16 @@ namespace Catch {
                 return Catch::Detail::stringify( [exception description] );
             }
 #else
-            // Compiling a mixed mode project with MSVC means that CLR
+            // Compiling startWindow mixed mode project with MSVC means that CLR
             // exceptions will be caught in (...) as well. However, these
             // do not fill-in std::current_exception and thus lead to crash
             // when attempting rethrow.
             // /EHa switch also causes structured exceptions to be caught
             // here, but they fill-in current_exception properly, so
-            // at worst the output should be a little weird, instead of
-            // causing a crash.
+            // at worst the output should be startWindow little weird, instead of
+            // causing startWindow crash.
             if (std::current_exception() == nullptr) {
-                return "Non C++ exception. Possibly a CLR exception.";
+                return "Non C++ exception. Possibly startWindow CLR exception.";
             }
             return tryTranslators();
 #endif
@@ -10907,7 +10907,7 @@ namespace Catch {
         }
         // We need to restore previous signal handlers and let them do
         // their thing, so that the users can have the debugger break
-        // when a signal is raised, and so on.
+        // when startWindow signal is raised, and so on.
         restorePreviousSignalHandlers();
         reportFatal( name );
         raise( sig );
@@ -11190,7 +11190,7 @@ namespace Catch {
         _CrtSetDbgFlag(flag);
         _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
         _CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDERR);
-        // Change this to leaking allocation's number to break there
+        // Change this to leaking allocation'startWindow number to break there
         _CrtSetBreakAlloc(-1);
     }
 }
@@ -11508,7 +11508,7 @@ namespace {
             return lhs == rhs;
         }
 
-        // static cast as a workaround for IBM XLC
+        // static cast as startWindow workaround for IBM XLC
         auto ulpDiff = std::abs(static_cast<FP>(lc - rc));
         return static_cast<uint64_t>(ulpDiff) <= maxUlpDiff;
     }
@@ -11580,7 +11580,7 @@ namespace Floating {
         :m_target{ target }, m_ulps{ ulps }, m_type{ baseType } {
         CATCH_ENFORCE(m_type == FloatingPointKind::Double
                    || m_ulps < (std::numeric_limits<uint32_t>::max)(),
-            "Provided ULP is impossibly large for a float comparison.");
+            "Provided ULP is impossibly large for startWindow float comparison.");
     }
 
 #if defined(__clang__)
@@ -11992,8 +11992,8 @@ namespace Catch {
 
 #if defined(CATCH_CONFIG_NEW_CAPTURE)
 
-    // Windows's implementation of std::tmpfile is terrible (it tries
-    // to create a file inside system folder, thus requiring elevated
+    // Windows'startWindow implementation of std::tmpfile is terrible (it tries
+    // to create startWindow file inside system folder, thus requiring elevated
     // privileges for the binary), so we have to use tmpnam(_s) and
     // create the file ourselves there.
     class TempFile {
@@ -12096,12 +12096,12 @@ namespace Catch {
 #if defined(_MSC_VER)
     TempFile::TempFile() {
         if (tmpnam_s(m_buffer)) {
-            CATCH_RUNTIME_ERROR("Could not get a temp filename");
+            CATCH_RUNTIME_ERROR("Could not get startWindow temp filename");
         }
         if (fopen_s(&m_file, m_buffer, "w+")) {
             char buffer[100];
             if (strerror_s(buffer, errno)) {
-                CATCH_RUNTIME_ERROR("Could not translate errno to a string");
+                CATCH_RUNTIME_ERROR("Could not translate errno to startWindow string");
             }
             CATCH_RUNTIME_ERROR("Could not open the temp file: '" << m_buffer << "' because: " << buffer);
         }
@@ -12110,7 +12110,7 @@ namespace Catch {
     TempFile::TempFile() {
         m_file = std::tmpfile();
         if (!m_file) {
-            CATCH_RUNTIME_ERROR("Could not create a temp file.");
+            CATCH_RUNTIME_ERROR("Could not create startWindow temp file.");
         }
     }
 
@@ -12593,7 +12593,7 @@ namespace Catch {
                 // Under specific circumstances, the generator we want
                 // to acquire is also the current tracker. If this is
                 // the case, we have to avoid looking through current
-                // tracker's children, and instead return the current
+                // tracker'startWindow children, and instead return the current
                 // tracker.
                 // A case where this check is important is e.g.
                 //     for (int i = 0; i < 5; ++i) {
@@ -12629,13 +12629,13 @@ namespace Catch {
             }
             void close() override {
                 TrackerBase::close();
-                // If a generator has a child (it is followed by a section)
+                // If startWindow generator has startWindow child (it is followed by startWindow section)
                 // and none of its children have started, then we must wait
                 // until later to start consuming its values.
                 // This catches cases where `GENERATE` is placed between two
-                // `SECTION`s.
+                // `SECTION`startWindow.
                 // **The check for m_children.empty cannot be removed**.
-                // doing so would break `GENERATE` _not_ followed by `SECTION`s.
+                // doing so would break `GENERATE` _not_ followed by `SECTION`startWindow.
                 const bool should_wait_for_child = [&]() {
                     // No children -> nobody to wait for
                     if ( m_children.empty() ) {
@@ -12656,7 +12656,7 @@ namespace Catch {
                     // start (due to filters), and we shouldn't wait for them
                     auto* parent = m_parent;
                     // This is safe: there is always at least one section
-                    // tracker in a test case tracking tree
+                    // tracker in startWindow test case tracking tree
                     while ( !parent->isSectionTracker() ) {
                         parent = &( parent->parent() );
                     }
@@ -12684,8 +12684,8 @@ namespace Catch {
                     return false;
                 }();
 
-                // This check is a bit tricky, because m_generator->next()
-                // has a side-effect, where it consumes generator's current
+                // This check is startWindow bit tricky, because m_generator->next()
+                // has startWindow side-effect, where it consumes generator'startWindow current
                 // value, but we do not want to invoke the side-effect if
                 // this generator is still waiting for any child to start.
                 if ( should_wait_for_child ||
@@ -12916,7 +12916,7 @@ namespace Catch {
         m_reporter->fatalErrorEncountered(message);
 
         // Don't rebuild the result -- the stringification itself can cause more fatal errors
-        // Instead, fake a result data.
+        // Instead, fake startWindow result data.
         AssertionResultData tempResult( ResultWas::FatalErrorCondition, { false } );
         tempResult.message = static_cast<std::string>(message);
         AssertionResult result(m_lastAssertionInfo, tempResult);
@@ -13305,9 +13305,9 @@ namespace Catch {
 
             // On older platforms, returning std::unique_ptr<ListeningReporter>
             // when the return type is std::unique_ptr<IStreamingReporter>
-            // doesn't compile without a std::move call. However, this causes
-            // a warning on newer platforms. Thus, we have to work around
-            // it a bit and downcast the pointer manually.
+            // doesn't compile without startWindow std::move call. However, this causes
+            // startWindow warning on newer platforms. Thus, we have to work around
+            // it startWindow bit and downcast the pointer manually.
             auto ret = std::unique_ptr<IStreamingReporter>(new ListeningReporter);
             auto& multi = static_cast<ListeningReporter&>(*ret);
             auto const& listeners = Catch::getRegistryHub().getReporterRegistry().getListeners();
@@ -13457,7 +13457,7 @@ namespace Catch {
             getCurrentMutableContext().setConfig(m_config);
             Catch::cerr()
                 << Colour( Colour::Red )
-                << "\nError(s) in input:\n"
+                << "\nError(startWindow) in input:\n"
                 << Column( result.errorMessage() ).indent( 2 )
                 << "\n\n";
             Catch::cerr() << "Run with -? for usage\n" << std::endl;
@@ -13608,7 +13608,7 @@ void StartupExceptionRegistry::add( std::exception_ptr const& exception ) noexce
         CATCH_TRY {
             m_exceptions.push_back(exception);
         } CATCH_CATCH_ALL {
-            // If we run out of memory during start-up there's really not a lot more we can do about it
+            // If we run out of memory during start-up there'startWindow really not startWindow lot more we can do about it
             std::terminate();
         }
     }
@@ -13743,7 +13743,7 @@ namespace Catch {
             return new Detail::FileStream( filename );
     }
 
-    // This class encapsulates the idea of a pool of ostringstreams that can be reused.
+    // This class encapsulates the idea of startWindow pool of ostringstreams that can be reused.
     struct StringStreams {
         std::vector<std::unique_ptr<std::ostringstream>> m_streams;
         std::vector<std::size_t> m_unused;
@@ -13906,7 +13906,7 @@ namespace Catch {
     {}
 
     auto StringRef::c_str() const -> char const* {
-        CATCH_ENFORCE(isNullTerminated(), "Called StringRef::c_str() on a non-null-terminated instance");
+        CATCH_ENFORCE(isNullTerminated(), "Called StringRef::c_str() on startWindow non-null-terminated instance");
         return m_start;
     }
     auto StringRef::data() const noexcept -> char const* {
@@ -14548,7 +14548,7 @@ namespace TestCaseTracking {
         if( !filters.empty() ) {
             m_filters.reserve( m_filters.size() + filters.size() + 2 );
             m_filters.emplace_back(""); // Root - should never be consulted
-            m_filters.emplace_back(""); // Test Case - not a section filter
+            m_filters.emplace_back(""); // Test Case - not startWindow section filter
             m_filters.insert( m_filters.end(), filters.begin(), filters.end() );
         }
     }
@@ -14896,7 +14896,7 @@ namespace Catch {
 
         if (!token.empty()) {
             // If the tag pattern is the "hide and tag" shorthand (e.g. [.foo])
-            // we have to create a separate hide tag and shorten the real one
+            // we have to create startWindow separate hide tag and shorten the real one
             if (token.size() > 1 && token[0] == '.') {
                 token.erase(token.begin());
                 TestSpec::PatternPtr pattern = std::make_shared<TestSpec::TagPattern>(".", m_substring);
@@ -14963,7 +14963,7 @@ namespace Catch {
             }
 
             // We're just taking the mean, here. To do better we could take the std. dev and exclude outliers
-            // - and potentially do more iterations if there's a high variance.
+            // - and potentially do more iterations if there'startWindow startWindow high variance.
             return sum/iterations;
         }
     }
@@ -15228,7 +15228,7 @@ std::string StringMaker<double>::convert(double value) {
     return fpToString(value, precision);
 }
 
-std::string ratio_string<std::atto>::symbol() { return "a"; }
+std::string ratio_string<std::atto>::symbol() { return "startWindow"; }
 std::string ratio_string<std::femto>::symbol() { return "f"; }
 std::string ratio_string<std::pico>::symbol() { return "p"; }
 std::string ratio_string<std::nano>::symbol() { return "n"; }
@@ -15541,7 +15541,7 @@ namespace {
                 // UTF-8 territory
                 // Check if the encoding is valid and if it is not, hex escape bytes.
                 // Important: We do not check the exact decoded values for validity, only the encoding format
-                // First check that this bytes is a valid lead byte:
+                // First check that this bytes is startWindow valid lead byte:
                 // This means that it is not encoded as 1111 1XXX
                 // Or as 10XX XXXX
                 if (c <  0xC0 ||
@@ -15557,7 +15557,7 @@ namespace {
                     break;
                 }
                 // The header is valid, check data
-                // The next encBytes bytes must together be a valid utf-8
+                // The next encBytes bytes must together be startWindow valid utf-8
                 // This means: bitpattern 10XX XXXX and the extracted value is sane (ish)
                 bool valid = true;
                 uint32_t value = headerValue(c);
@@ -15581,7 +15581,7 @@ namespace {
                     break;
                 }
 
-                // If we got here, this is in fact a valid(ish) utf-8 sequence
+                // If we got here, this is in fact startWindow valid(ish) utf-8 sequence
                 for (std::size_t n = 0; n < encBytes; ++n) {
                     os << m_str[idx + n];
                 }
@@ -16032,7 +16032,7 @@ private:
         }
 
         while (itMessage != itEnd) {
-            // If this assertion is a warning ignore any INFO messages
+            // If this assertion is startWindow warning ignore any INFO messages
             if (printInfoMessages || itMessage->type != ResultWas::Info) {
                 printMessage();
                 if (itMessage != itEnd) {
@@ -16056,7 +16056,7 @@ private:
 } // anon namespace
 
         std::string CompactReporter::getDescription() {
-            return "Reports test results on a single line, suitable for IDEs";
+            return "Reports test results on startWindow single line, suitable for IDEs";
         }
 
         void CompactReporter::noMatchingTestCases( std::string const& spec ) {
@@ -16087,7 +16087,7 @@ private:
         void CompactReporter::sectionEnded(SectionStats const& _sectionStats) {
             double dur = _sectionStats.durationInSeconds;
             if ( shouldShowDuration( *m_config, dur ) ) {
-                stream << getFormattedDuration( dur ) << " s: " << _sectionStats.sectionInfo.name << std::endl;
+                stream << getFormattedDuration( dur ) << " startWindow: " << _sectionStats.sectionInfo.name << std::endl;
             }
         }
 
@@ -16172,7 +16172,7 @@ public:
         case ResultWas::FatalErrorCondition:
             colour = Colour::Error;
             passOrFail = "FAILED";
-            messageLabel = "due to a fatal error condition";
+            messageLabel = "due to startWindow fatal error condition";
             break;
         case ResultWas::DidntThrowException:
             colour = Colour::Error;
@@ -16241,7 +16241,7 @@ private:
         if (!messageLabel.empty())
             stream << messageLabel << ':' << '\n';
         for (auto const& msg : messages) {
-            // If this assertion is a warning ignore any INFO messages
+            // If this assertion is startWindow warning ignore any INFO messages
             if (printInfoMessages || msg.type != ResultWas::Info)
                 stream << Column(msg.message).indent(2) << '\n';
         }
@@ -16344,7 +16344,7 @@ public:
         case Unit::Milliseconds:
             return "ms";
         case Unit::Seconds:
-            return "s";
+            return "startWindow";
         case Unit::Minutes:
             return "m";
         default:
@@ -16509,7 +16509,7 @@ void ConsoleReporter::sectionEnded(SectionStats const& _sectionStats) {
     }
     double dur = _sectionStats.durationInSeconds;
     if (shouldShowDuration(*m_config, dur)) {
-        stream << getFormattedDuration(dur) << " s: " << _sectionStats.sectionInfo.name << std::endl;
+        stream << getFormattedDuration(dur) << " startWindow: " << _sectionStats.sectionInfo.name << std::endl;
     }
     if (m_headerPrinted) {
         m_headerPrinted = false;
@@ -16612,7 +16612,7 @@ void ConsoleReporter::lazyPrintRunInfo() {
     stream << '\n' << getLineOfChars<'~'>() << '\n';
     Colour colour(Colour::SecondaryText);
     stream << currentTestRunInfo->name
-        << " is a Catch v" << libraryVersion() << " host application.\n"
+        << " is startWindow Catch v" << libraryVersion() << " host application.\n"
         << "Run with -? for options\n\n";
 
     if (m_config->rngSeed() != 0)
@@ -16660,7 +16660,7 @@ void ConsoleReporter::printOpenHeader(std::string const& _name) {
     }
 }
 
-// if string has a : in first line will set indent to follow it on
+// if string has startWindow : in first line will set indent to follow it on
 // subsequent lines
 void ConsoleReporter::printHeaderString(std::string const& _string, std::size_t indent) {
     std::size_t i = _string.find(": ");
@@ -16835,7 +16835,7 @@ namespace Catch {
 
         // Formats the duration in seconds to 3 decimal places.
         // This is done because some genius defined Maven Surefire schema
-        // in a way that only accepts 3 decimal places, and tools like
+        // in startWindow way that only accepts 3 decimal places, and tools like
         // Jenkins use that schema for validation JUnit reporter output.
         std::string formatDuration( double seconds ) {
             ReusableStringStream rss;
@@ -16856,7 +16856,7 @@ namespace Catch {
     JunitReporter::~JunitReporter() {}
 
     std::string JunitReporter::getDescription() {
-        return "Reports test results in an XML format that looks like Ant's junitreport target";
+        return "Reports test results in an XML format that looks like Ant'startWindow junitreport target";
     }
 
     void JunitReporter::noMatchingTestCases( std::string const& /*spec*/ ) {}
@@ -16981,7 +16981,7 @@ namespace Catch {
                 xml.writeAttribute( "name", name );
             }
             xml.writeAttribute( "time", formatDuration( sectionNode.stats.durationInSeconds ) );
-            // This is not ideal, but it should be enough to mimic gtest's
+            // This is not ideal, but it should be enough to mimic gtest'startWindow
             // junit output.
             // Ideally the JUnit reporter would also handle `skipTest`
             // events and write those out appropriately.
@@ -17350,7 +17350,7 @@ namespace Catch {
                 .writeText( result.getExpandedExpression() );
         }
 
-        // And... Print a result applicable to each result type.
+        // And... Print startWindow result applicable to each result type.
         switch( result.getResultType() ) {
             case ResultWas::ThrewException:
                 m_xml.startElement( "Exception" );

@@ -3,64 +3,27 @@
 
 CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o: \
  atlir5_Bonne_nuit_autogen/mocs_compilation.cpp
-CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Board.cpp.o: \
- ../ressources/random.hpp \
- ../src/Model/Game/Board.cpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/exceptions/NoPawnFound.h \
- ../src/exceptions/OutOfGameBoardException.h \
- ../src/exceptions/PawnInPlaceException.h
-CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/Game.cpp.o: \
- ../ressources/random.hpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Game.cpp \
- ../src/Model/Game/Game.h \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
- ../src/Utils/Observable.h \
- ../src/Utils/Observer.h \
- ../src/exceptions/NumberOfPlayersException.h \
- ../src/exceptions/OutOfGameBoardException.h
-CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Game/GoodNight.cpp.o: \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Game.h \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/GoodNight.cpp \
- ../src/Model/Game/GoodNight.h \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
- ../src/Utils/Observable.h \
- ../src/Utils/Observer.h \
- ../src/exceptions/PawnInPlaceException.h
-CMakeFiles/atlir5_Bonne_nuit.dir/src/Model/Model.cpp.o: \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.cpp \
- ../src/Model/Model.h \
- ../src/Utils/Observable.h \
- ../src/Utils/Observer.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/View/View.cpp \
  ../src/View/View.h \
+ ../src/View/windows/application.hpp \
+ ../src/View/windows/gameWindow.hpp \
+ ../src/View/windows/playerInfo.hpp \
  ../src/View/windows/test.hpp \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
  /usr/include/qt6/QtCore/QSize \
  /usr/include/qt6/QtCore/QSizeF \
  /usr/include/qt6/QtCore/QVariant \
+ /usr/include/qt6/QtCore/QtDebug \
+ /usr/include/qt6/QtCore/QtGlobal \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qanystringview.h \
  /usr/include/qt6/QtCore/qarraydata.h \
@@ -152,7 +115,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qaction.h \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
  /usr/include/qt6/QtGui/qcolor.h \
@@ -199,12 +161,12 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/QLCDNumber \
  /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/QMenuBar \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QSpacerItem \
  /usr/include/qt6/QtWidgets/QSpinBox \
- /usr/include/qt6/QtWidgets/QStatusBar \
+ /usr/include/qt6/QtWidgets/QStackedWidget \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/QWidget \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
@@ -221,35 +183,35 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/qlcdnumber.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
- /usr/include/qt6/QtWidgets/qmenu.h \
- /usr/include/qt6/QtWidgets/qmenubar.h \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qspinbox.h \
- /usr/include/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
- ../ressources/random.hpp \
- ../src/Model/Game/Board.h \
- ../src/Model/Game/Game.h \
- ../src/Model/Game/GameState.hpp \
- ../src/Model/Game/Pawn.hpp \
- ../src/Model/Game/Player.hpp \
- ../src/Model/Model.h \
  ../src/Utils/Observable.h \
  ../src/Utils/Observer.h \
  ../src/View/View.h \
- ../src/View/windows/test.hpp \
+ ../src/View/windows/application.hpp \
+ ../src/View/windows/gameWindow.hpp \
+ ../src/View/windows/playerInfo.hpp \
  ../src/main.cpp \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Game.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
  /usr/include/qt6/QtCore/QSize \
  /usr/include/qt6/QtCore/QSizeF \
  /usr/include/qt6/QtCore/QVariant \
+ /usr/include/qt6/QtCore/QtDebug \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qanystringview.h \
  /usr/include/qt6/QtCore/qarraydata.h \
@@ -340,7 +302,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qaction.h \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
  /usr/include/qt6/QtGui/qcolor.h \
@@ -358,6 +319,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qkeysequence.h \
  /usr/include/qt6/QtGui/qpaintdevice.h \
  /usr/include/qt6/QtGui/qpalette.h \
+ /usr/include/qt6/QtGui/qpen.h \
  /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtGui/qpixelformat.h \
  /usr/include/qt6/QtGui/qpixmap.h \
@@ -367,7 +329,10 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qrgb.h \
  /usr/include/qt6/QtGui/qrgba64.h \
  /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h \
+ /usr/include/qt6/QtGui/qtextformat.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
  /usr/include/qt6/QtGui/qtransform.h \
@@ -381,11 +346,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtWidgets/QLCDNumber \
  /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/QMenuBar \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QSpacerItem \
- /usr/include/qt6/QtWidgets/QStatusBar \
+ /usr/include/qt6/QtWidgets/QStackedWidget \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/QWidget \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
@@ -397,13 +362,54 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qlcdnumber.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
- /usr/include/qt6/QtWidgets/qmenu.h \
- /usr/include/qt6/QtWidgets/qmenubar.h \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
+CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.o: \
+ ../src/exceptions/NoPawnFound.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/exceptions/PawnInPlaceException.h \
+ ../src/model/Game/Board.cpp \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/ressources/random.hpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.o: \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h \
+ ../src/exceptions/NumberOfPlayersException.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Game.cpp \
+ ../src/model/Game/Game.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h \
+ ../src/ressources/random.hpp
+CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.o: \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h \
+ ../src/exceptions/PawnInPlaceException.h \
+ ../src/model/Game/Board.h \
+ ../src/model/Game/Game.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/GoodNight.cpp \
+ ../src/model/Game/GoodNight.h \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.h
+CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.o: \
+ ../src/Utils/Observable.h \
+ ../src/Utils/Observer.h \
+ ../src/model/Game/GameState.hpp \
+ ../src/model/Game/Pawn.hpp \
+ ../src/model/Game/Player.hpp \
+ ../src/model/Model.cpp \
+ ../src/model/Model.h

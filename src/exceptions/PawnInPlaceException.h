@@ -7,7 +7,7 @@
 
 #include <stdexcept>
 /**
- * Exception used when trying to place or remove pawn with or without a pawn in place.
+ * Exception used when trying to place or remove pawn with or without startWindow pawn in place.
  */
 class PawnInPlaceException : public std::invalid_argument{
 public:

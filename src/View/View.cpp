@@ -7,70 +7,44 @@
 #include <QSpinBox>
 #include <QInputDialog>
 #include "View.h"
+#include "windows/application.hpp"
+#include "windows/playerInfo.hpp"
 #include "windows/test.hpp"
-#include "../Model/Model.h"
-#include <QList>
+#include <QtGlobal>
 
-View::View(QWidget *parent, Model *m) : QMainWindow(parent) {
-    m->addObserver(this);
-    a = new Ui_MainWindow;
-    //QObject::connect(a->pushButton, SIGNAL(clicked(bool)), this , SLOT(View::onAddPlayer()));
-    QObject::connect(a->plusPlayer, &QPushButton::clicked, this , &View::onAddPlayer);
-    QObject::connect(a->minusPlayer, &QPushButton::clicked, this , &View::onRemovePlayer);
+View::View(QWidget *parent, Model *model) : QWidget(parent) {
+    if (model == nullptr)
+        throw std::invalid_argument("model can't be null");
+    model->addObserver(this);
+    auto form  = new Ui_Form ();
+    form->setupUi(this);
+    QVBoxLayout* a = qobject_cast<QVBoxLayout *>(form->frame->layout());
+    QWidget* player = new QWidget();
+    QHBoxLayout* verticalLayout = new QHBoxLayout(player);
+    verticalLayout->addWidget(new QLabel("How old are you"));
+    auto edit = new QLineEdit();
+    verticalLayout->addWidget(edit);
+    a->insertWidget(0,player);
 
+
+    //Sets up the application
+    //applicationWindow->setupUi(this);
+    //Insert game and player widget into stacked widgets.
+    //applicationWindow->stackedWidget->insertWidget(1, nbf);
+    //applicationWindow->stackedWidget->insertWidget(2, game);
+    //Sets up ui for both widgets
+    //Connects home buttons to different window of game.
+    //QObject::connect(applicationWindow->players, &QPushButton::clicked, this, &View::changeToPlayerWindow);
+    //QObject::connect(nbf->startGame, &QPushButton::clicked, this, &View::changeToGameWindow);
 }
-
-
-void View::update(const Observable *obs) {
+void View::update(std::string_view ,const Observable *obs) {
     auto model = dynamic_cast<const Model *>(obs);
 }
 
-QWidget* View::newPlayer() {
-    QWidget* player = new QWidget();
-    QHBoxLayout* verticalLayout = new QHBoxLayout(player);
-    //Name
-    QString playerName = tr("Hello Player %1").arg(a->numberOfPlayers->intValue());
-    auto name = new QLabel(playerName);
-    verticalLayout->addWidget(name);
-    //Age
-    verticalLayout->addWidget(new QLabel("How old are you"));
-    QLineEdit *edit = new QLineEdit(nullptr);
-    verticalLayout->addWidget(edit);
-    return player;
+void View::changeToPlayerWindow() {
+    applicationWindow->stackedWidget->setCurrentIndex(1);
 }
 
-
-void View::onAddPlayer() {
-    a->numberOfPlayers->display(a->numberOfPlayers->intValue() + 1);
-    auto layout = qobject_cast<QVBoxLayout *>(a->frame->layout());
-    layout->insertWidget(0, newPlayer());
+void View::changeToGameWindow() {
+    applicationWindow->stackedWidget->setCurrentIndex(2);
 }
-
-void View::onRemovePlayer() {
-    a->numberOfPlayers->display(a->numberOfPlayers->intValue() + -1);
-    //QList<QWidget *> Widgets = a->frame->layout()->widget()->findChildren<QWidget *>();
-    //delete Widgets.first();
-}
-/**
-
-    QWidget* playerInfo = new QWidget();
-    QHBoxLayout* verticalLayout = new QHBoxLayout(playerInfo);
-    //name
-
-    //age
-    auto question_age = new QLabel();
-    question_age->setText("How old are you?");
-    verticalLayout->addWidget(question_age);
-    //Insert age
-    //auto age = new QLineEdit();
-    //verticalLayout->addWidget(age);
-
-    ;*/
-
-
-
-/** QWidget c;
- QMainWindow b;
- Ui_MainWindow a;
- a.setupUi(&b);
- b.show();*/
