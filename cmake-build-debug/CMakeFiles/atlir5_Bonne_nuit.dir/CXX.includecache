@@ -27,11 +27,11 @@ View.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
 windows/application.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
-windows/playerInfo.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/playerInfo.hpp
 windows/test.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 QtGlobal
+-
+QMessageBox
 -
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
@@ -55,6 +55,8 @@ windows/application.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
 windows/playerInfo.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/playerInfo.hpp
+windows/test.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
 QtCore/QVariant
@@ -133,6 +135,42 @@ QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
+QApplication
+-
+model/Game/Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
+View/View.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
+model/Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h
+string
+-
+list
+-
+Pawn.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
+list
+-
+iostream
+-
+Player.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp
+Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h
+../../Utils/Observable.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
+GameState.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp
+../Model.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp
 
@@ -1588,6 +1626,10 @@ qlineedit.h
 qmainwindow.h
 /usr/include/qt6/QtWidgets/qmainwindow.h
 
+/usr/include/qt6/QtWidgets/QMessageBox
+qmessagebox.h
+/usr/include/qt6/QtWidgets/qmessagebox.h
+
 /usr/include/qt6/QtWidgets/QPushButton
 qpushbutton.h
 /usr/include/qt6/QtWidgets/qpushbutton.h
@@ -1752,6 +1794,12 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 QtWidgets/qtabwidget.h
+-
+
+/usr/include/qt6/QtWidgets/qmessagebox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qdialog.h
 -
 
 /usr/include/qt6/QtWidgets/qpushbutton.h

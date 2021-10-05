@@ -163,6 +163,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/QLayout \
  /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/QMessageBox \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/QSpacerItem \
  /usr/include/qt6/QtWidgets/QSpinBox \
@@ -183,6 +184,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  /usr/include/qt6/QtWidgets/qlcdnumber.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/qt6/QtWidgets/qmessagebox.h \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qspinbox.h \
@@ -198,6 +200,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  ../src/View/windows/application.hpp \
  ../src/View/windows/gameWindow.hpp \
  ../src/View/windows/playerInfo.hpp \
+ ../src/View/windows/test.hpp \
  ../src/main.cpp \
  ../src/model/Game/Board.h \
  ../src/model/Game/Game.h \

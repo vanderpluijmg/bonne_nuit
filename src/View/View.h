@@ -14,6 +14,7 @@
 #include "windows/gameWindow.hpp"
 #include "windows/application.hpp"
 #include "windows/playerInfo.hpp"
+#include "windows/test.hpp"
 
 
 class View : public QWidget, public Observer {
@@ -32,8 +33,13 @@ private:
     NumberOfPlayers*  nbf = new NumberOfPlayers();
     Application* applicationWindow = new Application;
     gameWindow* game = new gameWindow();
+    Ui_Form* form  = new Ui_Form ();
 
 public:
+
+    void onAddPlayer();
+    void onRemovePlayer();
+
     /**
      * Default constructor for view of game.
      * @param parent
@@ -59,6 +65,8 @@ public:
 
    void changeToGameWindow();
 */
+    static QWidget *newPlayer();
+
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

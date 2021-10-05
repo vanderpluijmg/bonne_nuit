@@ -16,13 +16,13 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>140</x>
      <y>30</y>
      <width>1221</width>
      <height>821</height>
     </rect>
    </property>
-   <widget class="QWidget" name="page">
+   <widget class="QWidget" name="gameIntro">
     <widget class="QWidget" name="horizontalLayoutWidget">
      <property name="geometry">
       <rect>
@@ -32,27 +32,34 @@
        <height>101</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLCDNumber" name="lcdNumber"/>
-      </item>
+     <layout class="QHBoxLayout" name="numberOfPlayerLayout">
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>TextLabel</string>
+         <string>How many players are going to play?</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QLCDNumber" name="numberOfPlayers"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addPlayer">
         <property name="text">
-         <string>PushButton</string>
+         <string>add player</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removePlayer">
+        <property name="text">
+         <string>remove player</string>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <widget class="QFrame" name="frame">
+    <widget class="QFrame" name="centralFrame">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -88,17 +95,43 @@
       <rect>
        <x>20</x>
        <y>620</y>
-       <width>1201</width>
-       <height>141</height>
+       <width>1181</width>
+       <height>151</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="startGameLayout">
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="startGame">
         <property name="text">
-         <string>PushButton</string>
+         <string>Start Game</string>
         </property>
        </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>

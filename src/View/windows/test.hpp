@@ -27,18 +27,21 @@ class Ui_Form
 {
 public:
     QStackedWidget *stackedWidget;
-    QWidget *page;
+    QWidget *gameIntro;
     QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QLCDNumber *lcdNumber;
+    QHBoxLayout *numberOfPlayerLayout;
     QLabel *label;
-    QPushButton *pushButton;
-    QFrame *frame;
+    QLCDNumber *numberOfPlayers;
+    QPushButton *addPlayer;
+    QPushButton *removePlayer;
+    QFrame *centralFrame;
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
     QWidget *verticalLayoutWidget;
-    QVBoxLayout *verticalLayout_2;
-    QPushButton *pushButton_2;
+    QHBoxLayout *startGameLayout;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *startGame;
+    QSpacerItem *horizontalSpacer;
     QWidget *page_2;
 
     void setupUi(QWidget *Form)
@@ -48,58 +51,71 @@ public:
         Form->resize(1376, 883);
         stackedWidget = new QStackedWidget(Form);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-        stackedWidget->setGeometry(QRect(130, 30, 1221, 821));
-        page = new QWidget();
-        page->setObjectName(QString::fromUtf8("page"));
-        horizontalLayoutWidget = new QWidget(page);
+        stackedWidget->setGeometry(QRect(140, 30, 1221, 821));
+        gameIntro = new QWidget();
+        gameIntro->setObjectName(QString::fromUtf8("gameIntro"));
+        horizontalLayoutWidget = new QWidget(gameIntro);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
         horizontalLayoutWidget->setGeometry(QRect(10, 10, 1211, 101));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        lcdNumber = new QLCDNumber(horizontalLayoutWidget);
-        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
-
-        horizontalLayout->addWidget(lcdNumber);
-
+        numberOfPlayerLayout = new QHBoxLayout(horizontalLayoutWidget);
+        numberOfPlayerLayout->setObjectName(QString::fromUtf8("numberOfPlayerLayout"));
+        numberOfPlayerLayout->setContentsMargins(0, 0, 0, 0);
         label = new QLabel(horizontalLayoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
-        horizontalLayout->addWidget(label);
+        numberOfPlayerLayout->addWidget(label);
 
-        pushButton = new QPushButton(horizontalLayoutWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        numberOfPlayers = new QLCDNumber(horizontalLayoutWidget);
+        numberOfPlayers->setObjectName(QString::fromUtf8("numberOfPlayers"));
 
-        horizontalLayout->addWidget(pushButton);
+        numberOfPlayerLayout->addWidget(numberOfPlayers);
 
-        frame = new QFrame(page);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(20, 130, 1191, 471));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        verticalLayout = new QVBoxLayout(frame);
+        addPlayer = new QPushButton(horizontalLayoutWidget);
+        addPlayer->setObjectName(QString::fromUtf8("addPlayer"));
+
+        numberOfPlayerLayout->addWidget(addPlayer);
+
+        removePlayer = new QPushButton(horizontalLayoutWidget);
+        removePlayer->setObjectName(QString::fromUtf8("removePlayer"));
+
+        numberOfPlayerLayout->addWidget(removePlayer);
+
+        centralFrame = new QFrame(gameIntro);
+        centralFrame->setObjectName(QString::fromUtf8("centralFrame"));
+        centralFrame->setGeometry(QRect(20, 130, 1191, 471));
+        centralFrame->setFrameShape(QFrame::StyledPanel);
+        centralFrame->setFrameShadow(QFrame::Raised);
+        verticalLayout = new QVBoxLayout(centralFrame);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalSpacer = new QSpacerItem(20, 448, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer);
 
-        verticalLayoutWidget = new QWidget(page);
+        verticalLayoutWidget = new QWidget(gameIntro);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(20, 620, 1201, 141));
-        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        pushButton_2 = new QPushButton(verticalLayoutWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        verticalLayoutWidget->setGeometry(QRect(20, 620, 1181, 151));
+        startGameLayout = new QHBoxLayout(verticalLayoutWidget);
+        startGameLayout->setObjectName(QString::fromUtf8("startGameLayout"));
+        startGameLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        verticalLayout_2->addWidget(pushButton_2);
+        startGameLayout->addItem(horizontalSpacer_2);
 
-        stackedWidget->addWidget(page);
+        startGame = new QPushButton(verticalLayoutWidget);
+        startGame->setObjectName(QString::fromUtf8("startGame"));
+
+        startGameLayout->addWidget(startGame);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        startGameLayout->addItem(horizontalSpacer);
+
+        stackedWidget->addWidget(gameIntro);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
         stackedWidget->addWidget(page_2);
-
         retranslateUi(Form);
+
 
         QMetaObject::connectSlotsByName(Form);
     } // setupUi
@@ -107,12 +123,17 @@ public:
     void retranslateUi(QWidget *Form)
     {
         Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
-        label->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
-        pushButton->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        label->setText(QCoreApplication::translate("Form", "How many players are going to play?", nullptr));
+        addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
+        removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));
+        startGame->setText(QCoreApplication::translate("Form", "Start Game", nullptr));
     } // retranslateUi
 
 };
+
+namespace Ui {
+    class Form: public Ui_Form {};
+} // namespace Ui
 
 QT_END_NAMESPACE
 
