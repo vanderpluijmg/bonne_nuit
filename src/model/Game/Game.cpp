@@ -49,8 +49,16 @@ void Game::nextPlayer() {
             currentPlayer = players.at(currentPlayer.getName()) : currentPlayer = players.at(0);
 }
 
-void Game::moveRose() {
-    board.moveRose(nvs::random_value(1, 3));
+void Game::moveRose(int value) {
+    board.moveRose(value);
+    Modification m;
+    m.a = "rose move";
+    m.value = board.getRosePlace();
+    Model::notify(m);
+}
+
+int Game::rollDice(){
+    return nvs::random_value(1, 3);
 }
 
 void Game::addPawnsToPlace(int numberOfPlayers) {
@@ -71,7 +79,6 @@ Board &Game::getBoard() {
 }
 
 void Game::playTurnLightOn(int y) {
-    moveRose();
     playMove(currentPlayer, y);
     nextPlayer();
 }

@@ -56,15 +56,19 @@ public:
     QPushButton *pushButton_7;
     QPushButton *pushButton_8;
     QPushButton *pushButton_9;
+    QWidget *verticalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *rollDice;
+    QLCDNumber *rollDiceValue;
 
     void setupUi(QWidget *Form)
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName(QString::fromUtf8("Form"));
-        Form->resize(1179, 883);
+        Form->resize(1373, 911);
         stackedWidget = new QStackedWidget(Form);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-        stackedWidget->setGeometry(QRect(10, 10, 1351, 841));
+        stackedWidget->setGeometry(QRect(10, 20, 1351, 891));
         gameIntro = new QWidget();
         gameIntro->setObjectName(QString::fromUtf8("gameIntro"));
         horizontalLayoutWidget = new QWidget(gameIntro);
@@ -128,7 +132,7 @@ public:
         page_2->setObjectName(QString::fromUtf8("page_2"));
         gridLayoutWidget = new QWidget(page_2);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(0, 0, 1351, 841));
+        gridLayoutWidget->setGeometry(QRect(0, 0, 1351, 751));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -191,6 +195,22 @@ public:
 
         gridLayout->addWidget(pushButton_9, 2, 1, 1, 1);
 
+        verticalLayoutWidget_2 = new QWidget(page_2);
+        verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
+        verticalLayoutWidget_2->setGeometry(QRect(10, 770, 431, 81));
+        horizontalLayout = new QHBoxLayout(verticalLayoutWidget_2);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        rollDice = new QPushButton(verticalLayoutWidget_2);
+        rollDice->setObjectName(QString::fromUtf8("rollDice"));
+
+        horizontalLayout->addWidget(rollDice);
+
+        rollDiceValue = new QLCDNumber(verticalLayoutWidget_2);
+        rollDiceValue->setObjectName(QString::fromUtf8("rollDiceValue"));
+
+        horizontalLayout->addWidget(rollDiceValue);
+
         stackedWidget->addWidget(page_2);
 
         retranslateUi(Form);
@@ -205,18 +225,10 @@ public:
         addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
         removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));
         startGame->setText(QCoreApplication::translate("Form", "Start Game", nullptr));
-        pushButton->setText(QString());
-        pushButton_2->setText(QString());
-        pushButton_3->setText(QString());
-        pushButton_4->setText(QString());
-        pushButton_6->setText(QString());
-        pushButton_5->setText(QString());
-        pushButton_7->setText(QString());
-        pushButton_9->setText(QString());
+        rollDice->setText(QCoreApplication::translate("Form", "Roll Dice", nullptr));
     } // retranslateUi
 
 };
-
 
 QT_END_NAMESPACE
 

@@ -41,10 +41,13 @@ public:
 
     void changeToGameWindow();
 
-    void update(std::string_view, const Observable *obs) override;
+    void update(Modification m, const Observable *obs) override;
 
     QWidget *newPlayer();
 
+    void playTurn();
+
+    void moveRoseView(int rosePlace);
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

@@ -21,10 +21,12 @@ public:
     virtual void turnLightOff()=0;
     virtual void turnLightOn()=0;
     virtual bool isDone()=0;
+    virtual int rollDice()=0;
+    virtual void moveRose(int value)=0;
     virtual bool isFinished()=0;
     [[nodiscard]] virtual const Player getCurrentPlayer() const=0;
     void addObserver(Observer *observer) override;
-    void notify() override;
+    void notify(Modification m) override;
 
 };
 

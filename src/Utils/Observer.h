@@ -13,6 +13,6 @@ public :
      * @param obs Observer that  needs to be updated.
      * @param changed The field that needs to change
      */
-    virtual void update (std::string_view, const Observable * obs)=0;
+    virtual void update (Modification m, const Observable * obs)=0;
 };
 #endif //ATLIR5_BONNE_NUIT_OBSERVER_H

@@ -6,8 +6,13 @@
 #define ATLIR5_BONNE_NUIT_OBSERVABLE_H
 
 #include <list>
-//#include "Observer.h"
+#include <string>
 
+//#include "Observer.h"
+struct Modification{
+    std::string a;
+    int value;
+};
 class Observer;
 
 class Observable {
@@ -20,7 +25,7 @@ public:
     /**
      * Notifies all the list of observers with the field that needs to be changed
      */
-    virtual void notify () = 0;
+    virtual void notify (Modification m) = 0;
 
 
 

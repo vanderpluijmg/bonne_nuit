@@ -63,10 +63,16 @@ public:
     void nextPlayer();
 
     /**
-     * Rolls dice and passes value to board.
-     * @param t Information that has been updated.
+     * Simulates a dice roll.
+     * @return The value of the dice.
      */
-    void moveRose();
+     int rollDice() override;
+
+    /**
+     * Rolls dice and passes value to board.
+     * @param value Value of rolled dice
+     */
+    void moveRose(int value) override;
 
     /**
      * Places the current players pawns.

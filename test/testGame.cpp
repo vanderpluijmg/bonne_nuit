@@ -89,7 +89,7 @@ TEST_CASE( "Populating hands of players with 1 players", "[hand]" "[sunUp]" ) {
 TEST_CASE("Correctly number of rose", "[rose]" "[sunUp]"){
     Game game;
     auto index = 0;
-    game.moveRose();
+    game.moveRose(game.rollDice());
     for (int x = 0; x<  9; x++) {
         if (game.getBoard().getCase(x, 0).getState() == rose)
             index++;
@@ -100,7 +100,7 @@ TEST_CASE("Correctly number of rose", "[rose]" "[sunUp]"){
 TEST_CASE("Correctly placed number of rose", "[rose]" "[sunUp]") {
     Game g;
     int place = g.getBoard().getRosePlace();
-    g.moveRose();
+    g.moveRose(g.rollDice());
     REQUIRE_FALSE(place==g.getBoard().getRosePlace());
 }
 
@@ -162,7 +162,7 @@ TEST_CASE("place pawn out of bounds X and Y", "[placePawn]" "[sunUp]"){
 
 TEST_CASE("move rose", "[rose]" "[sunUp]"){
     Game g;
-    g.moveRose();
+    g.moveRose(g.rollDice());
     int index= 0;
     for (int y = 0; y<5; y++) {
         for (int x = 0; x < 9; x++) {

@@ -20,15 +20,17 @@ View::View(QWidget *parent, Model *model) : QWidget(parent) {
     QObject::connect(form->addPlayer, &QPushButton::clicked, this , &View::onAddPlayer);
     QObject::connect(form->removePlayer, &QPushButton::clicked, this , &View::onRemovePlayer);
     QObject::connect(form->startGame, &QPushButton::clicked, this , &View::changeToGameWindow);
+    QObject::connect(form->rollDice, &QPushButton::clicked, this, &View::playTurn);
 }
-void View::update(std::string_view ,const Observable *obs) {
-    auto model = dynamic_cast<const Model *>(obs);
+void View::update(Modification m, const Observable *obs) {
+    if (m.a == "rose move")
+        moveRoseView(m.value);
+        std::cout<<m.value<<std::endl;
 }
-
 void View::changeToGameWindow() {
     try {
-        Game game(form->numberOfPlayers->intValue());
-        model_ = &game;
+        //Game game(form->numberOfPlayers->intValue());
+        //model_ = &game;
         model_->addObserver(this);
         form->stackedWidget->setCurrentIndex(1);
     } catch (NumberOfPlayersException& e) {
@@ -36,8 +38,6 @@ void View::changeToGameWindow() {
         msgBox.setText("You need at least one player to play");
         msgBox.exec();
     }
-
-
 }
 
 void View::onAddPlayer() {
@@ -60,7 +60,6 @@ QWidget *View::newPlayer() {
     verticalLayout->addWidget(new QLabel("How old are you"));
     auto edit = new QLineEdit();
     verticalLayout->addWidget(edit);
-    qDebug()<<player->sizePolicy();
     return player;
 }
 
@@ -75,4 +74,20 @@ void View::onRemovePlayer() {
         form->numberOfPlayers->display(form->numberOfPlayers->intValue() - 1);
         delete a->takeAt(0);
     }
+}
+
+void View::playTurn() {
+    int diceRoll = model_->rollDice();
+    form->rollDiceValue->display(diceRoll);
+    model_->moveRose(diceRoll);
+}
+
+void View::moveRoseView(int rosePlace) {
+    auto button = form->gridLayout->itemAt(rosePlace) ;
+    auto widget = button->widget();
+    auto buttonToIcon = qobject_cast<QPushButton*>(widget);
+    qDebug()<<buttonToIcon->objectName();
+    QIcon icon1;
+    icon1.addFile(QString::fromUtf8(":/images/img/drop.png"), QSize(), QIcon::Normal, QIcon::Off);
+    buttonToIcon->setIcon(icon1);
 }
