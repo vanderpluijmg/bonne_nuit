@@ -5,7 +5,7 @@
 		<Option title="atlir5_Bonne_nuit"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Core\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Widgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6WidgetsTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Gui\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6SvgWidgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Svg\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\3rdparty\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\3rdparty\kwin\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Core\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Widgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6WidgetsTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Gui\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6SvgWidgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib64\cmake\Qt6Svg\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\3rdparty\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\3rdparty\kwin\;CMake Files\src\;CMake Files\src\ressources\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug"/>
@@ -177,6 +177,12 @@
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.rule">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
@@ -247,6 +253,9 @@
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/images.qrc">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/test/mainTest.cpp">
@@ -464,6 +473,9 @@
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/../../../../../../../../usr/lib/cmake/Qt6/3rdparty/kwin/FindXKB.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\cmake\Qt6\3rdparty\kwin\"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/images.qrc">
+			<Option virtualFolder="CMake Files\src\ressources\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

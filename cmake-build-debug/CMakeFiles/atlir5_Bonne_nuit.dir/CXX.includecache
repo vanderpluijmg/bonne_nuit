@@ -29,6 +29,10 @@ windows/application.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
 windows/test.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
+../model/Game/Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
+../exceptions/NumberOfPlayersException.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
 QtGlobal
 -
 QMessageBox
@@ -115,9 +119,13 @@ QLineEdit
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 QtCore/QVariant
 -
+QtGui/QIcon
+-
 QtWidgets/QApplication
 -
 QtWidgets/QFrame
+-
+QtWidgets/QGridLayout
 -
 QtWidgets/QHBoxLayout
 -
@@ -134,6 +142,10 @@ QtWidgets/QStackedWidget
 QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
+-
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
+exception
 -
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
@@ -1150,6 +1162,10 @@ stdlib.h
 QtCore/qglobal.h
 -
 
+/usr/include/qt6/QtGui/QIcon
+qicon.h
+/usr/include/qt6/QtGui/qicon.h
+
 /usr/include/qt6/QtGui/QTransform
 qtransform.h
 /usr/include/qt6/QtGui/qtransform.h
@@ -1597,6 +1613,10 @@ qapplication.h
 /usr/include/qt6/QtWidgets/QFrame
 qframe.h
 /usr/include/qt6/QtWidgets/qframe.h
+
+/usr/include/qt6/QtWidgets/QGridLayout
+qgridlayout.h
+/usr/include/qt6/QtWidgets/qgridlayout.h
 
 /usr/include/qt6/QtWidgets/QHBoxLayout
 qboxlayout.h

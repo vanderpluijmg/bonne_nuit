@@ -9,13 +9,13 @@
 #include "View.h"
 #include "windows/application.hpp"
 #include "windows/test.hpp"
+#include "../model/Game/Game.h"
+#include "../exceptions/NumberOfPlayersException.h"
 #include <QtGlobal>
 #include <QMessageBox>
 
 View::View(QWidget *parent, Model *model) : QWidget(parent) {
-    if (model == nullptr)
-        throw std::invalid_argument("model can't be null");
-    model->addObserver(this);
+    model_ = model;
     form->setupUi(this);
     QObject::connect(form->addPlayer, &QPushButton::clicked, this , &View::onAddPlayer);
     QObject::connect(form->removePlayer, &QPushButton::clicked, this , &View::onRemovePlayer);
@@ -26,7 +26,18 @@ void View::update(std::string_view ,const Observable *obs) {
 }
 
 void View::changeToGameWindow() {
-    form->stackedWidget->setCurrentIndex(1);
+    try {
+        Game game(form->numberOfPlayers->intValue());
+        model_ = &game;
+        model_->addObserver(this);
+        form->stackedWidget->setCurrentIndex(1);
+    } catch (NumberOfPlayersException& e) {
+        QMessageBox msgBox;
+        msgBox.setText("You need at least one player to play");
+        msgBox.exec();
+    }
+
+
 }
 
 void View::onAddPlayer() {
@@ -43,12 +54,13 @@ void View::onAddPlayer() {
 QWidget *View::newPlayer() {
     QWidget* player = new QWidget();
     QHBoxLayout* verticalLayout = new QHBoxLayout(player);
-    //QString playerName = tr("Hello Player %1").arg();
-    verticalLayout->addWidget(new QLabel("player"));
+    QString playerName = tr("Hello Player %1").arg(form->numberOfPlayers->intValue());
+    verticalLayout->addWidget(new QLabel(playerName));
     //Add color of player.
     verticalLayout->addWidget(new QLabel("How old are you"));
     auto edit = new QLineEdit();
     verticalLayout->addWidget(edit);
+    qDebug()<<player->sizePolicy();
     return player;
 }
 

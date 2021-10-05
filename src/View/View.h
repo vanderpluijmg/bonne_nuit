@@ -20,19 +20,7 @@
 class View : public QWidget, public Observer {
 private:
 
-    /**
-    * Connects start window with necessary buttons
-    *
-    void initStartWindow();
-
-    gameWindow *gameWidget;
-    QStackedWidget* stackedWidget;
-    startWindow *startWidget;
-
-*/
-    NumberOfPlayers*  nbf = new NumberOfPlayers();
-    Application* applicationWindow = new Application;
-    gameWindow* game = new gameWindow();
+    Model *model_;
     Ui_Form* form  = new Ui_Form ();
 
 public:
@@ -53,19 +41,9 @@ public:
 
     void changeToGameWindow();
 
-    void changeToPlayerWindow();
-
     void update(std::string_view, const Observable *obs) override;
-/**
-    void onAddPlayer();
 
-    void onRemovePlayer();
-
-   QWidget* newPlayer();
-
-   void changeToGameWindow();
-*/
-    static QWidget *newPlayer();
+    QWidget *newPlayer();
 
 };
 

@@ -222,7 +222,8 @@
 		"/usr/lib64/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessTargets.cmake",
 		"/usr/lib64/cmake/Qt6/QtFeature.cmake",
 		"/usr/lib/cmake/Qt6/QtFeatureCommon.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckCXXCompilerFlag.cmake"
+		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CheckCXXCompilerFlag.cmake",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/images.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit",
 	"DEP_FILE" : "",

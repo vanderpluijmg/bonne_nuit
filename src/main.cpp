@@ -4,8 +4,7 @@
 #include "model/Model.h"
 int main(int argc, char *argv[]){
     QApplication application (argc,argv);
-    Game game;
-    Model *model =  &game;
+    Model *model;
     View view(nullptr, model);
     view.show();
     return application.exec();
