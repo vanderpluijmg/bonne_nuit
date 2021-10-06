@@ -119,7 +119,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o
  /usr/include/qt6/QtCore/qvariant.h
  /usr/include/qt6/QtCore/qvarlengtharray.h
  /usr/include/qt6/QtCore/qversiontagging.h
- /usr/include/qt6/QtGui/QIcon
  /usr/include/qt6/QtGui/QTransform
  /usr/include/qt6/QtGui/qbitmap.h
  /usr/include/qt6/QtGui/qbrush.h
@@ -162,7 +161,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o
  /usr/include/qt6/QtGui/qwindowdefs_win.h
  /usr/include/qt6/QtWidgets/QApplication
  /usr/include/qt6/QtWidgets/QFrame
- /usr/include/qt6/QtWidgets/QGridLayout
  /usr/include/qt6/QtWidgets/QHBoxLayout
  /usr/include/qt6/QtWidgets/QInputDialog
  /usr/include/qt6/QtWidgets/QLCDNumber
@@ -311,7 +309,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o
  /usr/include/qt6/QtCore/qvariant.h
  /usr/include/qt6/QtCore/qvarlengtharray.h
  /usr/include/qt6/QtCore/qversiontagging.h
- /usr/include/qt6/QtGui/QIcon
  /usr/include/qt6/QtGui/QTransform
  /usr/include/qt6/QtGui/qbitmap.h
  /usr/include/qt6/QtGui/qbrush.h
@@ -353,7 +350,6 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o
  /usr/include/qt6/QtGui/qwindowdefs_win.h
  /usr/include/qt6/QtWidgets/QApplication
  /usr/include/qt6/QtWidgets/QFrame
- /usr/include/qt6/QtWidgets/QGridLayout
  /usr/include/qt6/QtWidgets/QHBoxLayout
  /usr/include/qt6/QtWidgets/QLCDNumber
  /usr/include/qt6/QtWidgets/QLabel

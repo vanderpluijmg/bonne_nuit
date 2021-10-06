@@ -121,13 +121,9 @@ QLineEdit
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 QtCore/QVariant
 -
-QtGui/QIcon
--
 QtWidgets/QApplication
 -
 QtWidgets/QFrame
--
-QtWidgets/QGridLayout
 -
 QtWidgets/QHBoxLayout
 -
@@ -1154,10 +1150,6 @@ stdlib.h
 QtCore/qglobal.h
 -
 
-/usr/include/qt6/QtGui/QIcon
-qicon.h
-/usr/include/qt6/QtGui/qicon.h
-
 /usr/include/qt6/QtGui/QTransform
 qtransform.h
 /usr/include/qt6/QtGui/qtransform.h
@@ -1605,10 +1597,6 @@ qapplication.h
 /usr/include/qt6/QtWidgets/QFrame
 qframe.h
 /usr/include/qt6/QtWidgets/qframe.h
-
-/usr/include/qt6/QtWidgets/QGridLayout
-qgridlayout.h
-/usr/include/qt6/QtWidgets/qgridlayout.h
 
 /usr/include/qt6/QtWidgets/QHBoxLayout
 qboxlayout.h

@@ -89,14 +89,17 @@ void View::playTurn() {
 }
 
 void View::moveRoseView(int rosePlace) {
-    auto buttonOldRosePlace = qobject_cast<QPushButton*>((form->gridLayout->itemAt(currentRosePlace))->widget());
-    auto buttonNewRosePlace = qobject_cast<QPushButton*>((form->gridLayout->itemAt(rosePlace))->widget());
-    qDebug() << buttonNewRosePlace->objectName();
-    qDebug() << buttonOldRosePlace->objectName();
+    QString current = tr("case%1").arg(rosePlace);
+    QString old = tr("case%1").arg(currentRosePlace);
+    QVBoxLayout* layout = (form->cases->findChild<QVBoxLayout*>("case1"));
+    QPushButton* buttonOldRosePlace = qobject_cast<QPushButton*>(layout->itemAt(0)->widget());
+    //auto buttonNewRosePlace = (form->frame->findChild<QPushButton*>("case2"));
+    //qDebug() << buttonNewRosePlace->objectName();
+    //qDebug() << buttonOldRosePlace->objectName();
     QIcon icon;
     icon.addFile(QString::fromUtf8(":/images/img/no_drop.png"), QSize(), QIcon::Normal, QIcon::Off);
     buttonOldRosePlace->setIcon(icon);
     QIcon icon1;
     icon1.addFile(QString::fromUtf8(":/images/img/drop.png"), QSize(), QIcon::Normal, QIcon::Off);
-    buttonNewRosePlace->setIcon(icon1);
+    //buttonNewRosePlace->setIcon(icon1);
 }
