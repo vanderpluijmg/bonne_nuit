@@ -49,13 +49,13 @@ public:
     QGridLayout *gridLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_7;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
-    QPushButton *pushButton_6;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_7;
     QPushButton *pushButton_8;
+    QPushButton *pushButton_5;
     QPushButton *pushButton_9;
+    QPushButton *pushButton_6;
     QWidget *verticalLayoutWidget_2;
     QHBoxLayout *horizontalLayout;
     QPushButton *rollDice;
@@ -142,62 +142,59 @@ public:
         icon.addFile(QString::fromUtf8(":/images/img/no_drop.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton->setIcon(icon);
 
-        gridLayout->addWidget(pushButton, 1, 2, 1, 1);
+        gridLayout->addWidget(pushButton, 1, 0, 1, 1);
 
         pushButton_2 = new QPushButton(gridLayoutWidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setIcon(icon);
 
-        gridLayout->addWidget(pushButton_2, 1, 0, 1, 1);
-
-        pushButton_3 = new QPushButton(gridLayoutWidget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setIcon(icon);
-
-        gridLayout->addWidget(pushButton_3, 2, 0, 1, 1);
-
-        pushButton_4 = new QPushButton(gridLayoutWidget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/images/img/drop.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_4->setIcon(icon1);
-
-        gridLayout->addWidget(pushButton_4, 0, 0, 1, 1);
-
-        pushButton_6 = new QPushButton(gridLayoutWidget);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setIcon(icon);
-
-        gridLayout->addWidget(pushButton_6, 2, 2, 1, 1);
-
-        pushButton_5 = new QPushButton(gridLayoutWidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setIcon(icon);
-
-        gridLayout->addWidget(pushButton_5, 0, 2, 1, 1);
+        gridLayout->addWidget(pushButton_2, 3, 0, 1, 1);
 
         pushButton_7 = new QPushButton(gridLayoutWidget);
         pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
         pushButton_7->setIcon(icon);
 
-        gridLayout->addWidget(pushButton_7, 0, 1, 1, 1);
+        gridLayout->addWidget(pushButton_7, 1, 2, 1, 1);
+
+        pushButton_3 = new QPushButton(gridLayoutWidget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setIcon(icon);
+
+        gridLayout->addWidget(pushButton_3, 5, 0, 1, 1);
+
+        pushButton_4 = new QPushButton(gridLayoutWidget);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setIcon(icon);
+        gridLayout->addWidget(pushButton_4, 1, 1, 1, 1);
 
         pushButton_8 = new QPushButton(gridLayoutWidget);
         pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
         pushButton_8->setIcon(icon);
         pushButton_8->setIconSize(QSize(68, 68));
 
-        gridLayout->addWidget(pushButton_8, 1, 1, 1, 1);
+        gridLayout->addWidget(pushButton_8, 3, 2, 1, 1);
+
+        pushButton_5 = new QPushButton(gridLayoutWidget);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setIcon(icon);
+
+        gridLayout->addWidget(pushButton_5, 3, 1, 1, 1);
 
         pushButton_9 = new QPushButton(gridLayoutWidget);
         pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
         pushButton_9->setIcon(icon);
 
-        gridLayout->addWidget(pushButton_9, 2, 1, 1, 1);
+        gridLayout->addWidget(pushButton_9, 5, 2, 1, 1);
+
+        pushButton_6 = new QPushButton(gridLayoutWidget);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setIcon(icon);
+
+        gridLayout->addWidget(pushButton_6, 5, 1, 1, 1);
 
         verticalLayoutWidget_2 = new QWidget(page_2);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(10, 770, 431, 81));
+        verticalLayoutWidget_2->setGeometry(QRect(0, 770, 431, 81));
         horizontalLayout = new QHBoxLayout(verticalLayoutWidget_2);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -225,10 +222,22 @@ public:
         addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
         removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));
         startGame->setText(QCoreApplication::translate("Form", "Start Game", nullptr));
+        pushButton->setText(QString());
+        pushButton_2->setText(QString());
+        pushButton_7->setText(QString());
+        pushButton_3->setText(QString());
+        pushButton_4->setText(QString());
+        pushButton_5->setText(QString());
+        pushButton_9->setText(QString());
+        pushButton_6->setText(QString());
         rollDice->setText(QCoreApplication::translate("Form", "Roll Dice", nullptr));
     } // retranslateUi
 
 };
+
+namespace Ui {
+    class Form: public Ui_Form {};
+} // namespace Ui
 
 QT_END_NAMESPACE
 

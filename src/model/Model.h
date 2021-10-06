@@ -20,6 +20,7 @@ public:
     virtual void playTurnLightOff(int,int)=0;
     virtual void turnLightOff()=0;
     virtual void turnLightOn()=0;
+    virtual int getRosePlace()=0;
     virtual bool isDone()=0;
     virtual int rollDice()=0;
     virtual void moveRose(int value)=0;

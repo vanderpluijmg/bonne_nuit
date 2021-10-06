@@ -33,6 +33,7 @@ void View::changeToGameWindow() {
         //model_ = &game;
         model_->addObserver(this);
         form->stackedWidget->setCurrentIndex(1);
+        moveRoseView(model_->getRosePlace());
     } catch (NumberOfPlayersException& e) {
         QMessageBox msgBox;
         msgBox.setText("You need at least one player to play");
@@ -77,17 +78,25 @@ void View::onRemovePlayer() {
 }
 
 void View::playTurn() {
+    // Moves the rose
+    currentRosePlace = model_->getRosePlace();
     int diceRoll = model_->rollDice();
     form->rollDiceValue->display(diceRoll);
     model_->moveRose(diceRoll);
+    // Play turn of current player.
+    //Need to ask where he wants to place it next to the star.
+    //model_->playTurnLightOn();
 }
 
 void View::moveRoseView(int rosePlace) {
-    auto button = form->gridLayout->itemAt(rosePlace) ;
-    auto widget = button->widget();
-    auto buttonToIcon = qobject_cast<QPushButton*>(widget);
-    qDebug()<<buttonToIcon->objectName();
+    auto buttonOldRosePlace = qobject_cast<QPushButton*>((form->gridLayout->itemAt(currentRosePlace))->widget());
+    auto buttonNewRosePlace = qobject_cast<QPushButton*>((form->gridLayout->itemAt(rosePlace))->widget());
+    qDebug() << buttonNewRosePlace->objectName();
+    qDebug() << buttonOldRosePlace->objectName();
+    QIcon icon;
+    icon.addFile(QString::fromUtf8(":/images/img/no_drop.png"), QSize(), QIcon::Normal, QIcon::Off);
+    buttonOldRosePlace->setIcon(icon);
     QIcon icon1;
     icon1.addFile(QString::fromUtf8(":/images/img/drop.png"), QSize(), QIcon::Normal, QIcon::Off);
-    buttonToIcon->setIcon(icon1);
+    buttonNewRosePlace->setIcon(icon1);
 }

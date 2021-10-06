@@ -19,14 +19,11 @@
 
 class View : public QWidget, public Observer {
 private:
-
+    int currentRosePlace = 0;
     Model *model_;
     Ui_Form* form  = new Ui_Form ();
 
 public:
-
-    void onAddPlayer();
-    void onRemovePlayer();
 
     /**
      * Default constructor for view of game.
@@ -39,15 +36,43 @@ public:
      */
     ~View() override =default;
 
+    /**
+     * Changes to game window when start button is pressed in GUI.
+     */
     void changeToGameWindow();
 
+    /**
+     * Updates the view when the model has changed.
+     * @param m Modification that have been made in the model.
+     * @param obs Model that has been changed.
+     */
     void update(Modification m, const Observable *obs) override;
 
+    /**
+     * Create a new players when on add player button in GUI is clicked.
+     * @return Widget of new player.
+     */
     QWidget *newPlayer();
 
+    /**
+     * Plays a turn for the current player
+     */
     void playTurn();
 
+    /**
+     * Moves the rose in the view.
+     * @param rosePlace New position of rose.
+     */
     void moveRoseView(int rosePlace);
+
+    /**
+     * When add players button in GUI is clicked.
+     */
+    void onAddPlayer();
+    /**
+     * When remove player button in GUI is clicked.
+     */
+    void onRemovePlayer();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

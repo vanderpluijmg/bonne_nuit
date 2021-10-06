@@ -74,6 +74,7 @@ public:
      */
     void moveRose(int value) override;
 
+    int getRosePlace() override;
     /**
      * Places the current players pawns.
      */

@@ -132,6 +132,10 @@ Player Game::getWinner() {
     return currentPlayer;
 }
 
+int Game::getRosePlace() {
+    return board.getRosePlace();
+}
+
 
 
 
