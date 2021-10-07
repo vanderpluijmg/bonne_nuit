@@ -155,7 +155,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <layout class="QVBoxLayout" name="case8">
        <item>
         <widget class="QPushButton" name="pushButton_7">
          <property name="text">
@@ -174,7 +174,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case4">
+      <layout class="QVBoxLayout" name="case3">
        <item>
         <widget class="QPushButton" name="pushButton_4">
          <property name="text">
@@ -193,7 +193,7 @@
         <height>110</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case1">
+      <layout class="QVBoxLayout" name="case0">
        <item>
         <widget class="QPushButton" name="pushButton">
          <property name="text">
@@ -212,7 +212,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case5">
+      <layout class="QVBoxLayout" name="case4">
        <item>
         <widget class="QPushButton" name="pushButton_5">
          <property name="text">
@@ -231,7 +231,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case3">
+      <layout class="QVBoxLayout" name="case2">
        <item>
         <widget class="QPushButton" name="pushButton_3">
          <property name="text">
@@ -250,7 +250,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case7">
+      <layout class="QVBoxLayout" name="case5">
        <item>
         <widget class="QPushButton" name="pushButton_10">
          <property name="text">
@@ -269,7 +269,7 @@
         <height>110</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case8">
+      <layout class="QVBoxLayout" name="case7">
        <item>
         <widget class="QPushButton" name="pushButton_9">
          <property name="text">
@@ -307,7 +307,7 @@
         <height>111</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="case2">
+      <layout class="QVBoxLayout" name="case1">
        <item>
         <widget class="QPushButton" name="pushButton_2">
          <property name="text">
