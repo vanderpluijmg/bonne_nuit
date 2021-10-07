@@ -11,9 +11,8 @@
 #include "../Utils/Observer.h"
 
 
-class Model : public Observable{
+class Model {
 private:
-    std::list<Observer *> observers;
 public:
     [[nodiscard]] virtual GameState getGameState() const =0;
     virtual void playTurnLightOn(int) =0;
@@ -26,8 +25,7 @@ public:
     virtual void moveRose(int value)=0;
     virtual bool isFinished()=0;
     [[nodiscard]] virtual const Player getCurrentPlayer() const=0;
-    void addObserver(Observer *observer) override;
-    void notify(Modification m) override;
+
 
 };
 

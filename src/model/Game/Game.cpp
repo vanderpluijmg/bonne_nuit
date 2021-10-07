@@ -54,7 +54,7 @@ void Game::moveRose(int value) {
     Modification m;
     m.a = "rose move";
     m.value = board.getRosePlace();
-    Model::notify(m);
+    notify(m);
 }
 
 int Game::rollDice(){
@@ -134,6 +134,15 @@ Player Game::getWinner() {
 
 int Game::getRosePlace() {
     return board.getRosePlace();
+}
+
+void Game::addObserver(Observer *observer) {
+    observers.push_front(observer);
+}
+
+void Game::notify(Modification m) {
+    for(auto &obs : observers)
+        obs->update(m,this);
 }
 
 

@@ -71,6 +71,13 @@ public:
     QWidget *verticalLayoutWidget_5;
     QVBoxLayout *case1;
     QPushButton *pushButton_2;
+    QWidget *horizontalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *pushButton_14;
+    QPushButton *pushButton_13;
+    QPushButton *pushButton_11;
+    QPushButton *pushButton_12;
+    QPushButton *pushButton_8;
     QWidget *verticalLayoutWidget_2;
     QHBoxLayout *horizontalLayout;
     QPushButton *rollDice;
@@ -248,6 +255,37 @@ public:
 
         case1->addWidget(pushButton_2);
 
+        horizontalLayoutWidget_2 = new QWidget(cases);
+        horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
+        horizontalLayoutWidget_2->setGeometry(QRect(460, 80, 431, 80));
+        horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        pushButton_14 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
+
+        horizontalLayout_2->addWidget(pushButton_14);
+
+        pushButton_13 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+
+        horizontalLayout_2->addWidget(pushButton_13);
+
+        pushButton_11 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+
+        horizontalLayout_2->addWidget(pushButton_11);
+
+        pushButton_12 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+
+        horizontalLayout_2->addWidget(pushButton_12);
+
+        pushButton_8 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+
+        horizontalLayout_2->addWidget(pushButton_8);
+
         verticalLayoutWidget_2 = new QWidget(page_2);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
         verticalLayoutWidget_2->setGeometry(QRect(20, 0, 431, 81));
@@ -283,15 +321,20 @@ public:
         addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
         removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));
         startGame->setText(QCoreApplication::translate("Form", "Start Game", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_10->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_7->setText(QString());
+        pushButton_4->setText(QString());
+        pushButton->setText(QString());
+        pushButton_5->setText(QString());
+        pushButton_3->setText(QString());
+        pushButton_10->setText(QString());
+        pushButton_9->setText(QString());
+        pushButton_6->setText(QString());
+        pushButton_2->setText(QString());
+        pushButton_14->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_13->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_11->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_12->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
         rollDice->setText(QCoreApplication::translate("Form", "Roll Dice", nullptr));
         currentPlayer->setText(QCoreApplication::translate("Form", "current Player", nullptr));
     } // retranslateUi

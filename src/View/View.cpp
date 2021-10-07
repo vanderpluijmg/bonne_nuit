@@ -14,8 +14,7 @@
 #include <QtGlobal>
 #include <QMessageBox>
 
-View::View(QWidget *parent, Model *model) : QWidget(parent) {
-    model_ = model;
+View::View(QWidget *parent) : QWidget(parent) {
     form->setupUi(this);
     QObject::connect(form->addPlayer, &QPushButton::clicked, this , &View::onAddPlayer);
     QObject::connect(form->removePlayer, &QPushButton::clicked, this , &View::onRemovePlayer);
@@ -29,11 +28,10 @@ void View::update(Modification m, const Observable *obs) {
 }
 void View::changeToGameWindow() {
     try {
-        //Game game(form->numberOfPlayers->intValue());
-        //model_ = &game;
-        model_->addObserver(this);
+        g = Game(form->numberOfPlayers->intValue());
+        g->addObserver(this);;
         form->stackedWidget->setCurrentIndex(1);
-        moveRoseView(model_->getRosePlace());
+        moveRoseView(g->getRosePlace());
     } catch (NumberOfPlayersException& e) {
         QMessageBox msgBox;
         msgBox.setText("You need at least one player to play");
@@ -79,10 +77,10 @@ void View::onRemovePlayer() {
 
 void View::playTurn() {
     // Moves the rose
-    currentRosePlace = model_->getRosePlace();
-    int diceRoll = model_->rollDice();
+    currentRosePlace = g->getRosePlace();
+    int diceRoll = g->rollDice();
     form->rollDiceValue->display(diceRoll);
-    model_->moveRose(diceRoll);
+    g->moveRose(diceRoll);
     // Play turn of current player.
     //Need to ask where he wants to place it next to the star.
     //model_->playTurnLightOn();
@@ -103,4 +101,7 @@ void View::moveRoseView(int rosePlace) {
     QIcon icon1;
     icon1.addFile(QString::fromUtf8(":/images/img/drop.png"), QSize(), QIcon::Normal, QIcon::Off);
     buttonNewRosePlace->setIcon(icon1);
+}
+
+void View::placeAntiPlayerPawns() {
 }

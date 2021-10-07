@@ -15,12 +15,13 @@
 #include "windows/application.hpp"
 #include "windows/playerInfo.hpp"
 #include "windows/test.hpp"
+#include "../model/Game/Game.h"
 
 
 class View : public QWidget, public Observer {
 private:
     int currentRosePlace = 0;
-    Model *model_;
+    std::optional<Game> g;
     Ui_Form* form  = new Ui_Form ();
 
 public:
@@ -29,7 +30,7 @@ public:
      * Default constructor for view of game.
      * @param parent
      */
-    explicit View(QWidget * parent = nullptr, Model * m = nullptr);
+    explicit View(QWidget * parent = nullptr);
 
     /**
      * Default destructor
@@ -73,6 +74,11 @@ public:
      * When remove player button in GUI is clicked.
      */
     void onRemovePlayer();
+
+    /**
+     * Places pawns
+     */
+    void placeAntiPlayerPawns();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

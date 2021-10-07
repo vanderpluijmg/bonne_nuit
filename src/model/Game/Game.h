@@ -13,9 +13,10 @@
 #include "GameState.hpp"
 #include "../Model.h"
 
-class Game : public Model {
+class Game : public Observable {
 
 private:
+    std::list<Observer *> observers;
     GameState gameState;
     Player currentPlayer;
     std::vector<Player>players;
@@ -66,15 +67,15 @@ public:
      * Simulates a dice roll.
      * @return The value of the dice.
      */
-     int rollDice() override;
+     int rollDice() ;
 
     /**
      * Rolls dice and passes value to board.
      * @param value Value of rolled dice
      */
-    void moveRose(int value) override;
+    void moveRose(int value) ;
 
-    int getRosePlace() override;
+    int getRosePlace() ;
     /**
      * Places the current players pawns.
      */
@@ -117,46 +118,49 @@ public:
     /**
     * Plays turn of player in lights on state of game.
     */
-    void playTurnLightOn(int) override;
+    void playTurnLightOn(int) ;
 
     /**
      * Plays turn of player in light off on state of the game.
      */
-    void playTurnLightOff(int,int) override;
+    void playTurnLightOff(int,int) ;
 
     /**
      * Checks if the game is finished.
      * @return True if the game is finished.
      */
-    bool isFinished() override;
+    bool isFinished() ;
 
     /**
      * Getter for the current playing player.
      * @return The current player that is playing.
      */
-    [[nodiscard]] const Player getCurrentPlayer() const override;
+    [[nodiscard]] const Player getCurrentPlayer() const ;
 
     /**
      * Gets current state of the game.
      * @return Current state of game.
      */
-    [[nodiscard]] GameState getGameState() const override;
+    [[nodiscard]] GameState getGameState() const ;
 
     /**
     * Check if game is done.
      * @return True if game is done.
      */
-    bool isDone() override;
+    bool isDone() ;
 
     /**
      * Turns light off during the game.
      */
-    void turnLightOff() override;
+    void turnLightOff() ;
 
     /**
      * Turns lights on during the game.
      */
-    void turnLightOn() override;
+    void turnLightOn() ;
+
+    void addObserver(Observer *observer) override;
+    void notify(Modification m) override;
 
 
 };
