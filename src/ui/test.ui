@@ -328,35 +328,35 @@
       </property>
       <layout class="QHBoxLayout" name="caseStar0">
        <item>
-        <widget class="QPushButton" name="star0">
+        <widget class="QPushButton" name="star00">
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="star1">
+        <widget class="QPushButton" name="star01">
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="star2">
+        <widget class="QPushButton" name="star02">
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="star3">
+        <widget class="QPushButton" name="star03">
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="star4">
+        <widget class="QPushButton" name="star04">
          <property name="text">
           <string/>
          </property>

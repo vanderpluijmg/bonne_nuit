@@ -116,18 +116,17 @@ void View::placePawnsView(const std::list<Pawn>& x) {
 }
 
 void View::connectStars() {
-    QHBoxLayout* layout = (form->cases->findChild<QHBoxLayout*>("caseStar0"));
-    //QList<QPushButton*> lstChildren = layout->findChildren<QPushButton*>();
-    //for (auto& obj : lstChildren) {
-    for (int i = 0; i<5;i++){
-
-        QObject::connect(a, &QPushButton::clicked, this , &View::onAddStar);
+    for(int i = 0; i<5; i++){
+        QString starName = tr("star0%1").arg(i);
+        QPushButton* star = (form->cases->findChild<QPushButton*>(starName));
+        qDebug()<<star->objectName();
+        QObject::connect(star, &QPushButton::clicked, this , &View::onAddStar);
     }
-    //QObject::connect(form->star1, &QPushButton::clicked, this , &View::onAddStar);
+        //QObject::connect(form->star04, &QPushButton::clicked, this , &View::onAddStar);
 }
 
 void View::onAddStar() {
-    int posY = sender()->objectName().at(4).digitValue();
+    int posY = sender()->objectName().at(5).digitValue();
     try {
         g->playMove(g->getCurrentPlayer(),posY+1);
         QIcon icon1;

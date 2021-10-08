@@ -73,11 +73,13 @@ public:
     QPushButton *pushButton_2;
     QWidget *horizontalLayoutWidget_2;
     QHBoxLayout *caseStar0;
-    QPushButton *star0;
-    QPushButton *star1;
-    QPushButton *star2;
-    QPushButton *star3;
-    QPushButton *star4;
+    QPushButton *star00;
+    QPushButton *star01;
+    QPushButton *star02;
+    QPushButton *star03;
+    QPushButton *star04;
+    QWidget *verticalLayoutWidget_4;
+    QVBoxLayout *verticalLayout_2;
     QLabel *label_2;
     QWidget *verticalLayoutWidget_2;
     QHBoxLayout *horizontalLayout;
@@ -262,34 +264,42 @@ public:
         caseStar0 = new QHBoxLayout(horizontalLayoutWidget_2);
         caseStar0->setObjectName(QString::fromUtf8("caseStar0"));
         caseStar0->setContentsMargins(0, 0, 0, 0);
-        star0 = new QPushButton(horizontalLayoutWidget_2);
-        star0->setObjectName(QString::fromUtf8("star0"));
+        star00 = new QPushButton(horizontalLayoutWidget_2);
+        star00->setObjectName(QString::fromUtf8("star00"));
 
-        caseStar0->addWidget(star0);
+        caseStar0->addWidget(star00);
 
-        star1 = new QPushButton(horizontalLayoutWidget_2);
-        star1->setObjectName(QString::fromUtf8("star1"));
+        star01 = new QPushButton(horizontalLayoutWidget_2);
+        star01->setObjectName(QString::fromUtf8("star01"));
 
-        caseStar0->addWidget(star1);
+        caseStar0->addWidget(star01);
 
-        star2 = new QPushButton(horizontalLayoutWidget_2);
-        star2->setObjectName(QString::fromUtf8("star2"));
+        star02 = new QPushButton(horizontalLayoutWidget_2);
+        star02->setObjectName(QString::fromUtf8("star02"));
 
-        caseStar0->addWidget(star2);
+        caseStar0->addWidget(star02);
 
-        star3 = new QPushButton(horizontalLayoutWidget_2);
-        star3->setObjectName(QString::fromUtf8("star3"));
+        star03 = new QPushButton(horizontalLayoutWidget_2);
+        star03->setObjectName(QString::fromUtf8("star03"));
 
-        caseStar0->addWidget(star3);
+        caseStar0->addWidget(star03);
 
-        star4 = new QPushButton(horizontalLayoutWidget_2);
-        star4->setObjectName(QString::fromUtf8("star4"));
+        star04 = new QPushButton(horizontalLayoutWidget_2);
+        star04->setObjectName(QString::fromUtf8("star04"));
 
-        caseStar0->addWidget(star4);
+        caseStar0->addWidget(star04);
 
-        label_2 = new QLabel(cases);
+        verticalLayoutWidget_4 = new QWidget(cases);
+        verticalLayoutWidget_4->setObjectName(QString::fromUtf8("verticalLayoutWidget_4"));
+        verticalLayoutWidget_4->setGeometry(QRect(610, 0, 131, 81));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_4);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_2 = new QLabel(verticalLayoutWidget_4);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(120, 140, 261, 18));
+
+        verticalLayout_2->addWidget(label_2);
+
         verticalLayoutWidget_2 = new QWidget(page_2);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
         verticalLayoutWidget_2->setGeometry(QRect(20, 0, 431, 81));
@@ -334,12 +344,12 @@ public:
         pushButton_9->setText(QString());
         pushButton_6->setText(QString());
         pushButton_2->setText(QString());
-        star0->setText(QString());
-        star1->setText(QString());
-        star2->setText(QString());
-        star3->setText(QString());
-        star4->setText(QString());
-        label_2->setText(QCoreApplication::translate("Form", "Hello Andrew", nullptr));
+        star00->setText(QString());
+        star01->setText(QString());
+        star02->setText(QString());
+        star03->setText(QString());
+        star04->setText(QString());
+        label_2->setText(QCoreApplication::translate("Form", "Chose place of star", nullptr));
         rollDice->setText(QCoreApplication::translate("Form", "Roll Dice", nullptr));
         currentPlayer->setText(QCoreApplication::translate("Form", "current Player", nullptr));
     } // retranslateUi

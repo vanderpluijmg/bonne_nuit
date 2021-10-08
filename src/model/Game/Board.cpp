@@ -26,7 +26,7 @@ void Board::initGameBoard() {
 }
 
 bool Board::placePawn(int x, int y, Color color) {
-    if (!((x < 8 && x >= 0) && (y < 5 && y > 0)))
+    if (!((x < 8 && x >= 0) && (y < 6 && y > 0)))
         throw OutOfGameBoardException("Sorry the coordinates you gave are not in the game board ("
                                       + std::to_string(x) + std::to_string(y) + " )") ;
     if (getCase(x, y).getColor() != Color::None)
