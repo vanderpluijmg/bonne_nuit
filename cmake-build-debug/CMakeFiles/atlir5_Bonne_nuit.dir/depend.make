@@ -15,6 +15,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  ../src/View/windows/playerInfo.hpp \
  ../src/View/windows/test.hpp \
  ../src/exceptions/NumberOfPlayersException.h \
+ ../src/exceptions/PawnInPlaceException.h \
  ../src/model/Game/Board.h \
  ../src/model/Game/Game.h \
  ../src/model/Game/GameState.hpp \

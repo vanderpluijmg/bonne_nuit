@@ -12,7 +12,7 @@ Game::Game(int numberOfPlayers) {
     if (numberOfPlayers <= 0 || numberOfPlayers > 5)
         throw NumberOfPlayersException(
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
-    gameState = notStarted;
+    gameState_ = notStarted;
     board.initGameBoard();
     addPawnsToPlace(numberOfPlayers);
     currentPlayer = players[0];
@@ -25,11 +25,11 @@ void Game::populateGame(int numberOfPlayers) {
 }
 
 void Game::setGameState(GameState gameState) {
-    Game::gameState = gameState;
+    gameState_ = gameState;
 }
 
 GameState Game::getGameState() const {
-    return gameState;
+    return gameState_;
 }
 
 std::list<Pawn> Game::getPlayerHand(int player) {

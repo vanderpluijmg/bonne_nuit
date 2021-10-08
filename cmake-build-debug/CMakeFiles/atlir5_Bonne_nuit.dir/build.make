@@ -70,7 +70,6 @@ atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images.qr
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: CMakeFiles/atlir5_Bonne_nuit_autogen.dir/AutoRcc_images_5B2EWLNMXV_Info.json
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/no_drop.png
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/star_purple.png
-atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/star_purple.png
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/star_night.png
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/star_green.png
 atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp: ../src/ressources/images/img/star_down.png

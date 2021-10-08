@@ -11,6 +11,7 @@
 #include "windows/test.hpp"
 #include "../model/Game/Game.h"
 #include "../exceptions/NumberOfPlayersException.h"
+#include "../exceptions/PawnInPlaceException.h"
 #include <QtGlobal>
 #include <QMessageBox>
 
@@ -82,6 +83,7 @@ void View::playTurn() {
     int diceRoll = g->rollDice();
     form->rollDiceValue->display(diceRoll);
     g->moveRose(diceRoll);
+    form->rollDice->setDisabled(true);
     // Play turn of current player.
     //Need to ask where he wants to place it next to the star.
     //model_->playTurnLightOn();
@@ -117,18 +119,43 @@ void View::connectStars() {
     QHBoxLayout* layout = (form->cases->findChild<QHBoxLayout*>("caseStar0"));
     //QList<QPushButton*> lstChildren = layout->findChildren<QPushButton*>();
     //for (auto& obj : lstChildren) {
+    for (int i = 0; i<5;i++){
 
-    QObject::connect(form->star0, &QPushButton::clicked, this , &View::onAddStar);
-
+        QObject::connect(a, &QPushButton::clicked, this , &View::onAddStar);
+    }
+    //QObject::connect(form->star1, &QPushButton::clicked, this , &View::onAddStar);
 }
 
 void View::onAddStar() {
-    //Need to move pawn and
-    //I need to get current player
+    int posY = sender()->objectName().at(4).digitValue();
+    try {
+        g->playMove(g->getCurrentPlayer(),posY+1);
+        QIcon icon1;
+        switch (g->getCurrentPlayer().getColor()) {
+            case Black:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Green:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_green.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Purple:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_purple.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Blue:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_blue.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Red:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+        }
+        qobject_cast<QPushButton*>(sender())->setIcon(icon1);
+        g->nextPlayer();
+    } catch (PawnInPlaceException& e ){
+        QMessageBox msgBox;
+        msgBox.setText("Sorry you or another player already has a pawn there");
+        msgBox.exec();
+    }
 
-    QIcon icon1;
-    icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-    qobject_cast<QPushButton*>(sender())->setIcon(icon1);
 }
 
 

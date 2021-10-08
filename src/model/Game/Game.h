@@ -17,7 +17,7 @@ class Game : public Observable {
 
 private:
     std::list<Observer *> observers;
-    GameState gameState;
+    GameState gameState_;
     Player currentPlayer;
     std::vector<Player>players;
     std::vector<Player>npc_;
