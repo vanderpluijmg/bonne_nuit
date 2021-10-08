@@ -20,6 +20,7 @@ private:
     GameState gameState;
     Player currentPlayer;
     std::vector<Player>players;
+    std::vector<Player>npc_;
     Board board;
 
     /**
@@ -161,6 +162,8 @@ public:
 
     void addObserver(Observer *observer) override;
     void notify(Modification m) override;
+
+    const std::vector<Player> &getNpc() const;
 
 
 };

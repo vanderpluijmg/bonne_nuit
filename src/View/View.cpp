@@ -23,7 +23,7 @@ View::View(QWidget *parent) : QWidget(parent) {
 }
 void View::update(Modification m, const Observable *obs) {
     if (m.a == "rose move")
-        moveRoseView(m.value);
+        moveRoseView();
         std::cout<<m.value<<std::endl;
 }
 void View::changeToGameWindow() {
@@ -31,7 +31,8 @@ void View::changeToGameWindow() {
         g = Game(form->numberOfPlayers->intValue());
         g->addObserver(this);;
         form->stackedWidget->setCurrentIndex(1);
-        moveRoseView(g->getRosePlace());
+        connectStars();
+        moveRoseView();
     } catch (NumberOfPlayersException& e) {
         QMessageBox msgBox;
         msgBox.setText("You need at least one player to play");
@@ -45,7 +46,7 @@ void View::onAddPlayer() {
         msgBox.setText("You have reached the maximum number of players");
         msgBox.exec();
     } else {
-    form->numberOfPlayers->display(form->numberOfPlayers->intValue()+1);
+        form->numberOfPlayers->display(form->numberOfPlayers->intValue()+1);
     QVBoxLayout* a = qobject_cast<QVBoxLayout *>(form->centralFrame->layout());
     a->insertWidget(0,newPlayer()); }
 }
@@ -86,9 +87,9 @@ void View::playTurn() {
     //model_->playTurnLightOn();
 }
 
-void View::moveRoseView(int rosePlace) {
+void View::moveRoseView() {
     //rosePlace not between 1 ans 9
-    QString current = tr("case%1").arg(rosePlace);
+    QString current = tr("case%1").arg(g->getRosePlace());
     QString old = tr("case%1").arg(currentRosePlace);
     QVBoxLayout* layoutOld = (form->cases->findChild<QVBoxLayout*>(old));
     QPushButton* buttonOldRosePlace = qobject_cast<QPushButton*>(layoutOld->itemAt(0)->widget());
@@ -104,4 +105,30 @@ void View::moveRoseView(int rosePlace) {
 }
 
 void View::placeAntiPlayerPawns() {
+    for (auto& x : g->getNpc())
+        placePawnsView(x.getPawns());
 }
+
+void View::placePawnsView(const std::list<Pawn>& x) {
+    //for (auto& p : x)
+}
+
+void View::connectStars() {
+    QHBoxLayout* layout = (form->cases->findChild<QHBoxLayout*>("caseStar0"));
+    //QList<QPushButton*> lstChildren = layout->findChildren<QPushButton*>();
+    //for (auto& obj : lstChildren) {
+
+    QObject::connect(form->star0, &QPushButton::clicked, this , &View::onAddStar);
+
+}
+
+void View::onAddStar() {
+    //Need to move pawn and
+    //I need to get current player
+
+    QIcon icon1;
+    icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+    qobject_cast<QPushButton*>(sender())->setIcon(icon1);
+}
+
+

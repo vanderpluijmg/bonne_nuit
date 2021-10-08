@@ -326,39 +326,39 @@
         <height>80</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="caseStar0">
        <item>
-        <widget class="QPushButton" name="pushButton_14">
+        <widget class="QPushButton" name="star0">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_13">
+        <widget class="QPushButton" name="star1">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_11">
+        <widget class="QPushButton" name="star2">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_12">
+        <widget class="QPushButton" name="star3">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="star4">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>

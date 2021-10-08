@@ -14,32 +14,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="new GUI for game. In circle">
+    <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="adding stars of players">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/windows/test.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/windows/test.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Game/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Game/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/test.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/test.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,11 +86,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.atlir5_Bonne_nuit">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in mainTest.cpp" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="atlir5_Bonne_nuit" RUN_TARGET_NAME="atlir5_Bonne_nuit-Tests" TEST_PATTERN="[#mainTest]" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -126,6 +114,11 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="atlir5_Bonne_nuit-Tests_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="atlir5_Bonne_nuit" TARGET_NAME="atlir5_Bonne_nuit-Tests_autogen" CONFIG_NAME="Debug">
@@ -217,7 +210,8 @@
       <workItem from="1633509972317" duration="6307000" />
       <workItem from="1633547293294" duration="35000" />
       <workItem from="1633588298869" duration="710000" />
-      <workItem from="1633614964154" duration="1136000" />
+      <workItem from="1633614964154" duration="5933000" />
+      <workItem from="1633655194630" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="MVC &amp; Observer pattern">
       <created>1632849312238</created>
@@ -275,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633515661586</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rose finished">
+      <created>1633616148521</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633616148521</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +303,8 @@
     <MESSAGE value="rose moves in gui" />
     <MESSAGE value="rose moves but not in right order" />
     <MESSAGE value="new GUI for game. In circle" />
-    <option name="LAST_COMMIT_MESSAGE" value="new GUI for game. In circle" />
+    <MESSAGE value="rose finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="rose finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,24 +325,9 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/model/Game/Game.cpp</url>
-          <line>60</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/model/Game/Game.cpp</url>
-          <line>52</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/model/Game/Game.cpp</url>
-          <line>56</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/View/View.cpp</url>
-          <line>92</line>
-          <option name="timeStamp" value="67" />
+          <line>33</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

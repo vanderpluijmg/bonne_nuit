@@ -64,7 +64,7 @@ public:
      * Moves the rose in the view.
      * @param rosePlace New position of rose.
      */
-    void moveRoseView(int rosePlace);
+    void moveRoseView();
 
     /**
      * When add players button in GUI is clicked.
@@ -79,6 +79,12 @@ public:
      * Places pawns
      */
     void placeAntiPlayerPawns();
+
+    void connectStars();
+
+    void placePawnsView(const std::list<Pawn>&);
+
+    void onAddStar();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

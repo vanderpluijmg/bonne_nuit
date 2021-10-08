@@ -62,12 +62,17 @@ int Game::rollDice(){
 }
 
 void Game::addPawnsToPlace(int numberOfPlayers) {
-    std::list<Player> npc;
+    std::vector<Player> npc;
     populateGame(numberOfPlayers);
     for (int i=players.size(); i<5; i++)
         npc.emplace_back(Player(i,Color(i)));
+    npc_=npc;
     for (auto &x: npc)
         board.placePawnsBeg(x.getColor());
+}
+
+const std::vector<Player> &Game::getNpc() const {
+    return npc_;
 }
 
 bool Game::placePawn(int x, int y) {
@@ -88,8 +93,6 @@ bool Game::isDone() {
     }
 
 void Game::playMove(Player player, int y) {
-    //Get coordinates from user.
-    //Give them to placePawn()
     placePawn(board.getRosePlace(), y);
     player.removePawn();
 }
