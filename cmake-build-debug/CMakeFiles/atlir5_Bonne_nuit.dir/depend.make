@@ -214,6 +214,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  ../src/model/Game/Pawn.hpp \
  ../src/model/Game/Player.hpp \
  ../src/model/Model.h \
+ ../src/ressources/random.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \

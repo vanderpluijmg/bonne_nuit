@@ -106,9 +106,8 @@ void View::moveRoseView() {
     buttonNewRosePlace->setIcon(icon1);
 }
 
-void View::placeAntiPlayerPawns() {
-    for (auto& x : g->getNpc())
-        placePawnsView(x.getPawns());
+void View::placePawn(Pawn pawn, int x, int y) {
+
 }
 
 void View::placePawnsView(const std::list<Pawn>& x) {
@@ -116,20 +115,21 @@ void View::placePawnsView(const std::list<Pawn>& x) {
 }
 
 void View::connectStars() {
-    for(int i = 0; i<5; i++){
-        QString starName = tr("star0%1").arg(i);
-        QPushButton* star = (form->cases->findChild<QPushButton*>(starName));
-        qDebug()<<star->objectName();
-        QObject::connect(star, &QPushButton::clicked, this , &View::onAddStar);
+    for(int x = 0; x<9; x++){
+        QString starX = tr("star%1").arg(x);
+        for (int y = 0; y<5; y++){
+            qDebug()<<starX + QString::number(y);
+            QPushButton* star = (form->cases->findChild<QPushButton*>(starX + QString::number(y)));
+            QObject::connect(star, &QPushButton::clicked, this , &View::onAddStar);
+        }
     }
-        //QObject::connect(form->star04, &QPushButton::clicked, this , &View::onAddStar);
 }
 
 void View::onAddStar() {
     int posY = sender()->objectName().at(5).digitValue();
     try {
-        g->playMove(g->getCurrentPlayer(),posY+1);
         QIcon icon1;
+        g->playMove(g->getCurrentPlayer(),posY+1);
         switch (g->getCurrentPlayer().getColor()) {
             case Black:
                 icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -149,6 +149,7 @@ void View::onAddStar() {
         }
         qobject_cast<QPushButton*>(sender())->setIcon(icon1);
         g->nextPlayer();
+        form->rollDice->setEnabled(true);
     } catch (PawnInPlaceException& e ){
         QMessageBox msgBox;
         msgBox.setText("Sorry you or another player already has a pawn there");

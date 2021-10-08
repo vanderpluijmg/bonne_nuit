@@ -78,7 +78,7 @@ public:
     /**
      * Places pawns
      */
-    void placeAntiPlayerPawns();
+    void placePawn(Pawn pawn);
 
     void connectStars();
 
