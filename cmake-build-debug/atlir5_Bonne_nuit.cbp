@@ -200,6 +200,12 @@
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>

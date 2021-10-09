@@ -4,6 +4,7 @@
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp.o: \
  atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp
 CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.o: \
+ ../src/Utils/Observable.h \
  ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/OutOfGameBoardException.h \
  ../src/exceptions/PawnInPlaceException.h \

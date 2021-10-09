@@ -28,6 +28,8 @@ private:
     */
     void populateGame(int);
 
+    static void removePawnCurrentPlayer(std::list<Pawn>& pawns);
+
     /**
      * Adds all pawns that have not yet been taken by startWindow player.
      */
@@ -47,6 +49,8 @@ public:
      */
     explicit Game(int numberOfPlayers);
 
+    void initGame(int numberOfPlayers);
+
     /**
      * Gets players of game
      * @return Players that are playing the game.
@@ -58,6 +62,8 @@ public:
      * @return
      */
     std::list<Pawn> getPlayerHand(int);
+
+    void notifyBoard();
 
     /**
      * Changes to the next player
@@ -136,7 +142,7 @@ public:
      * Getter for the current playing player.
      * @return The current player that is playing.
      */
-    [[nodiscard]] const Player getCurrentPlayer() const ;
+    [[nodiscard]] Player getCurrentPlayer() const ;
 
     /**
      * Gets current state of the game.

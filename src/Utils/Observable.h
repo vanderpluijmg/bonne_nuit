@@ -12,6 +12,9 @@
 struct Modification{
     std::string a;
     int value;
+    int x;
+    int y;
+    int color;
 };
 class Observer;
 
@@ -26,8 +29,6 @@ public:
      * Notifies all the list of observers with the field that needs to be changed
      */
     virtual void notify (Modification m) = 0;
-
-
 
     virtual ~Observable()=default;
 };

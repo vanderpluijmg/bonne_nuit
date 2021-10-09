@@ -27,7 +27,7 @@ public:
     /**
      * Constructor for player
      * @param name Name of player
-     * @param color Color of playerplayer.getPawns()
+     * @param color Color of player
      */
     Player(int name, Color color){
       _name= name;
@@ -41,7 +41,7 @@ public:
      * Getter for name.
      * @return Name of player.
      */
-    int getName() const {
+    [[nodiscard]] int getName() const {
         return _name;
     }
 
@@ -53,14 +53,14 @@ public:
         return _color;
     }
 
-    const std::list<Pawn> &getPawns() const {
+    [[nodiscard]] std::list<Pawn> &getPawns() {
         return pawns;
     }
     /**
      * Removes one pawn form the player.
      */
     void removePawn(){
-        pawns.pop_back();
+
     }
 
     /**

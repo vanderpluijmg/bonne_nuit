@@ -14,9 +14,12 @@ Game::Game(int numberOfPlayers) {
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     gameState_ = notStarted;
     board.initGameBoard();
+
+}
+void Game::initGame(int numberOfPlayers){
     addPawnsToPlace(numberOfPlayers);
     currentPlayer = players[0];
-}
+};
 
 void Game::populateGame(int numberOfPlayers) {
     for (int i = 0; i < numberOfPlayers; i++) {
@@ -40,7 +43,7 @@ std::vector<Player> Game::getPlayers() {
     return players;
 }
 
-const Player Game::getCurrentPlayer() const {
+Player Game::getCurrentPlayer() const {
     return currentPlayer;
 }
 
@@ -64,11 +67,28 @@ int Game::rollDice(){
 void Game::addPawnsToPlace(int numberOfPlayers) {
     std::vector<Player> npc;
     populateGame(numberOfPlayers);
-    for (int i=players.size(); i<5; i++)
+    for (auto i=players.size(); i<5; i++)
         npc.emplace_back(Player(i,Color(i)));
     npc_=npc;
     for (auto &x: npc)
         board.placePawnsBeg(x.getColor());
+    notifyBoard();
+}
+
+void Game::notifyBoard(){
+  for (int x=0;x<9;x++){
+      for (int y= 0;y<6;y++){
+          if (getBoard().getCase(x,y).getColor()!=None){
+              std::cout<<"notifyBoard"<<std::endl;
+              Modification m;
+              m.a = "pawnsBeginning";
+              m.x = x;
+              m.y=y;
+              m.color = getBoard().getCase(x,y).getColor();
+              notify(m);
+          }
+      }
+  }
 }
 
 const std::vector<Player> &Game::getNpc() const {
@@ -94,7 +114,7 @@ bool Game::isDone() {
 
 void Game::playMove(Player player, int y) {
     placePawn(board.getRosePlace(), y);
-    player.removePawn();
+    removePawnCurrentPlayer(player.getPawns());
 }
 
 void Game::turnLightOff() {
@@ -144,8 +164,14 @@ void Game::addObserver(Observer *observer) {
 }
 
 void Game::notify(Modification m) {
-    for(auto &obs : observers)
-        obs->update(m,this);
+    for(auto &obs : observers) {
+        std::cout<<"notify"<<std::endl;
+        obs->update(m, this);
+    }
+}
+
+void Game::removePawnCurrentPlayer(std::list<Pawn> &pawns) {
+    pawns.pop_back();
 }
 
 

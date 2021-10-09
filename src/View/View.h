@@ -75,14 +75,9 @@ public:
      */
     void onRemovePlayer();
 
-    /**
-     * Places pawns
-     */
-    void placePawn(Pawn pawn);
-
     void connectStars();
 
-    void placePawnsView(const std::list<Pawn>&);
+    void placePawn(int x, int y, int c);
 
     void onAddStar();
 };

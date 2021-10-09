@@ -20,9 +20,9 @@ Pawn Board::getCase(int x, int y) {
 }
 
 void Board::initGameBoard() {
-    for (auto x = 0; x < 9; x++)
+    for (auto & x : gameBoard)
         for (auto y = 0; y <= 5; y++)
-            gameBoard[x][y] = Pawn(Color::None, none);
+            x[y] = Pawn(Color::None, none);
 }
 
 bool Board::placePawn(int x, int y, Color color) {
@@ -46,9 +46,8 @@ void Board::placePawnsBeg(Color color) {
             randomBetween0and8 = nvs::random_value(0, 8);
             randomBetween1and5 = nvs::random_value(1, 5);
         }
-        gameBoard[randomBetween0and8][randomBetween1and5] = Pawn(color, shining);
+        placePawn(randomBetween0and8,randomBetween1and5,color);
     }
-
 }
 
 int Board::getRosePlace() const {

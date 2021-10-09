@@ -382,6 +382,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.o: \
+ ../src/Utils/Observable.h \
  ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/OutOfGameBoardException.h \
  ../src/exceptions/PawnInPlaceException.h \

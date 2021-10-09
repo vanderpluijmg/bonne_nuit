@@ -382,6 +382,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h
  /usr/include/qt6/QtWidgets/qwidget.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.o
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h

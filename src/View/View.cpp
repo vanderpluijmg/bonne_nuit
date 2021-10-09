@@ -3,13 +3,11 @@
 //
 
 #include <QMainWindow>
-#include <iostream>
 #include <QSpinBox>
 #include <QInputDialog>
 #include "View.h"
 #include "windows/application.hpp"
 #include "windows/test.hpp"
-#include "../model/Game/Game.h"
 #include "../exceptions/NumberOfPlayersException.h"
 #include "../exceptions/PawnInPlaceException.h"
 #include <QtGlobal>
@@ -25,12 +23,16 @@ View::View(QWidget *parent) : QWidget(parent) {
 void View::update(Modification m, const Observable *obs) {
     if (m.a == "rose move")
         moveRoseView();
-        std::cout<<m.value<<std::endl;
+    else if (m.a == "pawnsBeginning") {
+        std::cout<<"update"<<std::endl;
+        placePawn(m.x, m.y, m.color);
+    }
 }
 void View::changeToGameWindow() {
     try {
         g = Game(form->numberOfPlayers->intValue());
-        g->addObserver(this);;
+        g->addObserver(this);
+        g->initGame(form->numberOfPlayers->intValue());
         form->stackedWidget->setCurrentIndex(1);
         connectStars();
         moveRoseView();
@@ -53,8 +55,8 @@ void View::onAddPlayer() {
 }
 
 QWidget *View::newPlayer() {
-    QWidget* player = new QWidget();
-    QHBoxLayout* verticalLayout = new QHBoxLayout(player);
+    auto* player = new QWidget();
+    auto* verticalLayout = new QHBoxLayout(player);
     QString playerName = tr("Hello Player %1").arg(form->numberOfPlayers->intValue());
     verticalLayout->addWidget(new QLabel(playerName));
     //Add color of player.
@@ -94,9 +96,9 @@ void View::moveRoseView() {
     QString current = tr("case%1").arg(g->getRosePlace());
     QString old = tr("case%1").arg(currentRosePlace);
     QVBoxLayout* layoutOld = (form->cases->findChild<QVBoxLayout*>(old));
-    QPushButton* buttonOldRosePlace = qobject_cast<QPushButton*>(layoutOld->itemAt(0)->widget());
+    auto* buttonOldRosePlace = qobject_cast<QPushButton*>(layoutOld->itemAt(0)->widget());
     QVBoxLayout* layoutNew = (form->cases->findChild<QVBoxLayout*>(current));
-    QPushButton* buttonNewRosePlace = qobject_cast<QPushButton*>(layoutNew->itemAt(0)->widget());
+    auto* buttonNewRosePlace = qobject_cast<QPushButton*>(layoutNew->itemAt(0)->widget());
     QIcon icon;
     icon.addFile(QString::fromUtf8(":/images/img/no_drop.png"), QSize(), QIcon::Normal, QIcon::Off);
     buttonOldRosePlace->setIcon(icon);
@@ -106,13 +108,34 @@ void View::moveRoseView() {
     buttonNewRosePlace->setIcon(icon1);
 }
 
-void View::placePawn(Pawn pawn, int x, int y) {
-
+void View::placePawn(int x, int y, int c) {
+        std::cout<<x;//Problem must be here.
+        std::cout<<y;//Problem must be here.
+        std::cout<<c;//Problem must be here.
+        QIcon icon1;
+        QString starX = tr("star%1").arg(x);
+        QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y-1)));
+        switch (c) {
+            case Black:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Green:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_green.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Purple:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_purple.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Blue:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_blue.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+            case Red:
+                icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+                break;
+        }
+        star->setIcon(icon1);
 }
 
-void View::placePawnsView(const std::list<Pawn>& x) {
-    //for (auto& p : x)
-}
+
 
 void View::connectStars() {
     for(int x = 0; x<9; x++){
@@ -150,6 +173,7 @@ void View::onAddStar() {
         qobject_cast<QPushButton*>(sender())->setIcon(icon1);
         g->nextPlayer();
         form->rollDice->setEnabled(true);
+        std::cout<<g->getCurrentPlayer().getPawns().size()<<" size "<<std::endl;
     } catch (PawnInPlaceException& e ){
         QMessageBox msgBox;
         msgBox.setText("Sorry you or another player already has a pawn there");
