@@ -366,30 +366,6 @@ src/model/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.s
 .PHONY : src/model/Game/Game.cpp.s
 
-src/model/Game/GoodNight.o: src/model/Game/GoodNight.cpp.o
-.PHONY : src/model/Game/GoodNight.o
-
-# target to build an object file
-src/model/Game/GoodNight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.o
-.PHONY : src/model/Game/GoodNight.cpp.o
-
-src/model/Game/GoodNight.i: src/model/Game/GoodNight.cpp.i
-.PHONY : src/model/Game/GoodNight.i
-
-# target to preprocess a source file
-src/model/Game/GoodNight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.i
-.PHONY : src/model/Game/GoodNight.cpp.i
-
-src/model/Game/GoodNight.s: src/model/Game/GoodNight.cpp.s
-.PHONY : src/model/Game/GoodNight.s
-
-# target to generate assembly for a file
-src/model/Game/GoodNight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/GoodNight.cpp.s
-.PHONY : src/model/Game/GoodNight.cpp.s
-
 src/model/Model.o: src/model/Model.cpp.o
 .PHONY : src/model/Model.o
 
@@ -501,9 +477,6 @@ help:
 	@echo "... src/model/Game/Game.o"
 	@echo "... src/model/Game/Game.i"
 	@echo "... src/model/Game/Game.s"
-	@echo "... src/model/Game/GoodNight.o"
-	@echo "... src/model/Game/GoodNight.i"
-	@echo "... src/model/Game/GoodNight.s"
 	@echo "... src/model/Model.o"
 	@echo "... src/model/Model.i"
 	@echo "... src/model/Model.s"

@@ -11,9 +11,6 @@
 #include "../Utils/Observable.h"
 #include "../Utils/Observer.h"
 #include "../model/Model.h"
-#include "windows/gameWindow.hpp"
-#include "windows/application.hpp"
-#include "windows/playerInfo.hpp"
 #include "windows/test.hpp"
 #include "../model/Game/Game.h"
 
@@ -80,6 +77,11 @@ public:
     void placePawn(int x, int y, int c);
 
     void onAddStar();
+
+    void updateGameState(GameState gs);
+
+    void disableButtonsNotOnRose(int rosePlace);
+
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

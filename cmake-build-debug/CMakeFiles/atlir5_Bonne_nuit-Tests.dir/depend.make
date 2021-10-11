@@ -10,6 +10,7 @@ CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.o: \
  ../src/exceptions/PawnInPlaceException.h \
  ../src/model/Game/Board.cpp \
  ../src/model/Game/Board.h \
+ ../src/model/Game/GameState.hpp \
  ../src/model/Game/Pawn.hpp \
  ../src/model/Game/Player.hpp \
  ../src/ressources/random.hpp

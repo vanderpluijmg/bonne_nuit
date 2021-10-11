@@ -11,6 +11,8 @@ list
 -
 string
 -
+../model/Game/GameState.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 string_view
@@ -25,14 +27,14 @@ QInputDialog
 -
 View.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
-windows/application.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
 windows/test.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 ../exceptions/NumberOfPlayersException.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
 ../exceptions/PawnInPlaceException.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
+windows/newPlayerWidget.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
 QtGlobal
 -
 QMessageBox
@@ -53,69 +55,15 @@ QMainWindow
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 ../model/Model.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h
-windows/gameWindow.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/gameWindow.hpp
-windows/application.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
-windows/playerInfo.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/playerInfo.hpp
 windows/test.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
 ../model/Game/Game.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/application.hpp
-QtCore/QVariant
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
+QWidget
 -
-QtWidgets/QApplication
--
-QtWidgets/QLabel
--
-QtWidgets/QPushButton
--
-QtWidgets/QStackedWidget
--
-QtWidgets/QWidget
--
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/gameWindow.hpp
-QtCore/QVariant
--
-QtWidgets/QApplication
--
-QtWidgets/QFrame
--
-QtWidgets/QHBoxLayout
--
-QtWidgets/QLabel
--
-QtWidgets/QSpacerItem
--
-QtWidgets/QWidget
--
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/playerInfo.hpp
-QtDebug
--
-QtCore/QVariant
--
-QtWidgets/QApplication
--
-QtWidgets/QHBoxLayout
--
-QtWidgets/QLCDNumber
--
-QtWidgets/QLabel
--
-QtWidgets/QPushButton
--
-QtWidgets/QSpacerItem
--
-QtWidgets/QVBoxLayout
--
-QtWidgets/QWidget
--
-QLineEdit
+QHBoxLayout
 -
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
@@ -146,25 +94,9 @@ QtWidgets/QWidget
 exception
 -
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
-stdexcept
--
-
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
 stdexcept
 -
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
-QApplication
--
-model/Game/Game.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
-View/View.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h
-model/Model.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h
-ressources/random.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h
 string
@@ -175,18 +107,6 @@ Pawn.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp
 Player.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.cpp
-Game.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
-Board.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h
-../../ressources/random.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
-../../exceptions/NumberOfPlayersException.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
-../../exceptions/OutOfGameBoardException.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
 list
@@ -205,16 +125,6 @@ GameState.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GoodNight.cpp
-GoodNight.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GoodNight.h
-Game.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
-../../exceptions/PawnInPlaceException.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GoodNight.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp
 
@@ -240,16 +150,6 @@ Game/GameState.hpp
 ../Utils/Observer.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
-random
--
-utility
--
-limits
--
-ctime
--
-
 /usr/include/qt6/QtCore/QList
 qlist.h
 /usr/include/qt6/QtCore/qlist.h
@@ -273,10 +173,6 @@ qsize.h
 /usr/include/qt6/QtCore/QVariant
 qvariant.h
 /usr/include/qt6/QtCore/qvariant.h
-
-/usr/include/qt6/QtCore/QtDebug
-qdebug.h
-/usr/include/qt6/QtCore/qdebug.h
 
 /usr/include/qt6/QtCore/QtGlobal
 qglobal.h
@@ -1669,10 +1565,6 @@ qlabel.h
 /usr/include/qt6/QtWidgets/QLayout
 qlayout.h
 /usr/include/qt6/QtWidgets/qlayout.h
-
-/usr/include/qt6/QtWidgets/QLineEdit
-qlineedit.h
-/usr/include/qt6/QtWidgets/qlineedit.h
 
 /usr/include/qt6/QtWidgets/QMainWindow
 qmainwindow.h

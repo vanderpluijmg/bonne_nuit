@@ -6,10 +6,10 @@
 #include <QSpinBox>
 #include <QInputDialog>
 #include "View.h"
-#include "windows/application.hpp"
 #include "windows/test.hpp"
 #include "../exceptions/NumberOfPlayersException.h"
 #include "../exceptions/PawnInPlaceException.h"
+#include "windows/newPlayerWidget.h"
 #include <QtGlobal>
 #include <QMessageBox>
 
@@ -24,10 +24,14 @@ void View::update(Modification m, const Observable *obs) {
     if (m.a == "rose move")
         moveRoseView();
     else if (m.a == "pawnsBeginning") {
-        std::cout<<"update"<<std::endl;
         placePawn(m.x, m.y, m.color);
+    } else if (m.a =="gameState"){
+        updateGameState(m.gameState);
     }
 }
+
+
+
 void View::changeToGameWindow() {
     try {
         g = Game(form->numberOfPlayers->intValue());
@@ -44,14 +48,16 @@ void View::changeToGameWindow() {
 }
 
 void View::onAddPlayer() {
-    if(form->numberOfPlayers->intValue()>=5){
+    if (form->numberOfPlayers->intValue() >= 5) {
         QMessageBox msgBox;
         msgBox.setText("You have reached the maximum number of players");
         msgBox.exec();
     } else {
-        form->numberOfPlayers->display(form->numberOfPlayers->intValue()+1);
-    QVBoxLayout* a = qobject_cast<QVBoxLayout *>(form->centralFrame->layout());
-    a->insertWidget(0,newPlayer()); }
+        form->numberOfPlayers->display(form->numberOfPlayers->intValue() + 1);
+        QVBoxLayout *a = qobject_cast<QVBoxLayout *>(form->centralFrame->layout());
+        QWidget* aut = new newPlayerWidget(form->numberOfPlayers->intValue());
+        a->insertWidget(0, aut);
+    }
 }
 
 QWidget *View::newPlayer() {
@@ -86,9 +92,7 @@ void View::playTurn() {
     form->rollDiceValue->display(diceRoll);
     g->moveRose(diceRoll);
     form->rollDice->setDisabled(true);
-    // Play turn of current player.
-    //Need to ask where he wants to place it next to the star.
-    //model_->playTurnLightOn();
+    disableButtonsNotOnRose(g->getRosePlace());
 }
 
 void View::moveRoseView() {
@@ -109,9 +113,6 @@ void View::moveRoseView() {
 }
 
 void View::placePawn(int x, int y, int c) {
-        std::cout<<x;//Problem must be here.
-        std::cout<<y;//Problem must be here.
-        std::cout<<c;//Problem must be here.
         QIcon icon1;
         QString starX = tr("star%1").arg(x);
         QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y-1)));
@@ -152,7 +153,7 @@ void View::onAddStar() {
     int posY = sender()->objectName().at(5).digitValue();
     try {
         QIcon icon1;
-        g->playMove(g->getCurrentPlayer(),posY+1);
+        g->playMove(posY+1);
         switch (g->getCurrentPlayer().getColor()) {
             case Black:
                 icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -180,6 +181,22 @@ void View::onAddStar() {
         msgBox.exec();
     }
 
+}
+
+void View::updateGameState(GameState gs) {
+    qDebug()<<"hello";
+}
+
+void View::disableButtonsNotOnRose(int rosePlace) {
+    for (int x =0; x<9; x++) {
+        for (int y = 0; y < 5; y++){
+            QString starX = tr("star%1").arg(x);
+            QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
+            if (x != rosePlace) {
+                star->setDisabled(true);
+            } else star->setEnabled(true);
+        }
+    }
 }
 
 

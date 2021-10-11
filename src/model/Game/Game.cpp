@@ -43,7 +43,7 @@ std::vector<Player> Game::getPlayers() {
     return players;
 }
 
-Player Game::getCurrentPlayer() const {
+Player Game::getCurrentPlayer(){
     return currentPlayer;
 }
 
@@ -104,17 +104,24 @@ Board &Game::getBoard() {
 }
 
 void Game::playTurnLightOn(int y) {
-    playMove(currentPlayer, y);
+    playMove(y);
     nextPlayer();
 }
 
-bool Game::isDone() {
-    return players.back().hasPawns();
+void Game::isDone() {
+    if (players.back().hasPawns()){
+        turnLightOff();
+        Modification m;
+        m.gameState = getGameState();
+        m.a = "gameState";
+        notify(m);
     }
+}
 
-void Game::playMove(Player player, int y) {
+void Game::playMove(int y) {
+    isDone();
     placePawn(board.getRosePlace(), y);
-    removePawnCurrentPlayer(player.getPawns());
+    removePawnCurrentPlayer(currentPlayer.getPawns());
 }
 
 void Game::turnLightOff() {

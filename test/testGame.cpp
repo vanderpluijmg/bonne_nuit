@@ -212,12 +212,6 @@ TEST_CASE("autofill", "[sunDown]") {
     REQUIRE (index == 15);
 }
 
-TEST_CASE("isDone", "[sunUp]"){
-    Game g(1);
-    g.autofill();
-    REQUIRE(g.isDone());
-}
-
 TEST_CASE("isFinished", "[sunDown]"){
     Game g(1);
     g.autofill();

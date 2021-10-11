@@ -6,8 +6,16 @@
 #define ATLIR5_BONNE_NUIT_NEWPLAYERWIDGET_H
 
 
-class newPlayerWidget {
+#include <QWidget>
+#include <QHBoxLayout>
 
+class newPlayerWidget : public QWidget{
+private:
+    int playerName;
+    QHBoxLayout* verticalLayoutManager;
+public:
+    newPlayerWidget(int nbr);
+    void setUp(QWidget* parent, int number);
 };
 
 

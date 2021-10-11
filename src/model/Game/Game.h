@@ -104,7 +104,7 @@ public:
      * Plays startWindow move for startWindow player.
      * @param player Player to play move for.
      */
-    void playMove(Player player, int);
+    void playMove(int y);
 
     /**
      * Return pawn of current player.
@@ -142,7 +142,7 @@ public:
      * Getter for the current playing player.
      * @return The current player that is playing.
      */
-    [[nodiscard]] Player getCurrentPlayer() const ;
+    [[nodiscard]] Player getCurrentPlayer();
 
     /**
      * Gets current state of the game.
@@ -154,7 +154,7 @@ public:
     * Check if game is done.
      * @return True if game is done.
      */
-    bool isDone() ;
+    void isDone() ;
 
     /**
      * Turns light off during the game.

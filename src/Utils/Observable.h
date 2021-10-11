@@ -7,6 +7,7 @@
 
 #include <list>
 #include <string>
+#include "../model/Game/GameState.hpp"
 
 //#include "Observer.h"
 struct Modification{
@@ -15,6 +16,7 @@ struct Modification{
     int x;
     int y;
     int color;
+    GameState gameState;
 };
 class Observer;
 
