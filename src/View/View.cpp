@@ -184,7 +184,8 @@ void View::onAddStar() {
 }
 
 void View::updateGameState(GameState gs) {
-    qDebug()<<"hello";
+    form->label_2->setText("please return a star");
+    goIntoNight();
 }
 
 void View::disableButtonsNotOnRose(int rosePlace) {
@@ -195,6 +196,20 @@ void View::disableButtonsNotOnRose(int rosePlace) {
             if (x != rosePlace) {
                 star->setDisabled(true);
             } else star->setEnabled(true);
+        }
+    }
+}
+//Disable all the buttons except the ones that have a star.
+void View::goIntoNight() {
+    QIcon icon;
+    icon.addFile(QString::fromUtf8(":/images/img/night.png"), QSize(), QIcon::Normal, QIcon::Off);
+    for (int x = 0; x < 9; x++) {
+        for (int y = 0; y < 5; y++) {
+            QString starX = tr("star%1").arg(x);
+            QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
+            star->setEnabled(true);
+            if (g->getBoard().getCase(x,y).getState() == shining ) //Not sure why but does not make all shining star night logo.
+                star->setIcon(icon);
         }
     }
 }

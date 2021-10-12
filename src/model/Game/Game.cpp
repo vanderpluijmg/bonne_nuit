@@ -118,9 +118,10 @@ void Game::isDone() {
 }
 
 void Game::playMove(int y) {
-    isDone();
     placePawn(board.getRosePlace(), y);
     removePawnCurrentPlayer();
+    isDone();
+
 }
 
 void Game::turnLightOff() {

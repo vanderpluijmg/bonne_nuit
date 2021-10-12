@@ -82,6 +82,7 @@ public:
 
     void disableButtonsNotOnRose(int rosePlace);
 
+    void goIntoNight();
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H
