@@ -16,6 +16,7 @@
 
 
 class View : public QWidget, public Observer {
+Q_OBJECT
 private:
     int currentRosePlace = 0;
     std::optional<Game> g;
@@ -45,12 +46,6 @@ public:
      * @param obs Model that has been changed.
      */
     void update(Modification m, const Observable *obs) override;
-
-    /**
-     * Create a new players when on add player button in GUI is clicked.
-     * @return Widget of new player.
-     */
-    QWidget *newPlayer();
 
     /**
      * Plays a turn for the current player
@@ -83,6 +78,12 @@ public:
     void disableButtonsNotOnRose(int rosePlace);
 
     void goIntoNight();
+
+    int findYoungestPlayer();
+
+    void updateCurrentPlayer();
+
+    void activateAllButton(bool activate);
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

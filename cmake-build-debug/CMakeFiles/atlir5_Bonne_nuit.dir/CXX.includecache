@@ -60,20 +60,6 @@ windows/test.hpp
 ../model/Game/Game.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.cpp
-QLabel
--
-QLineEdit
--
-iostream
--
-QIcon
--
-QPushButton
--
-newPlayerWidget.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
-
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
 QWidget
 -
@@ -1126,10 +1112,6 @@ stdlib.h
 QtCore/qglobal.h
 -
 
-/usr/include/qt6/QtGui/QIcon
-qicon.h
-/usr/include/qt6/QtGui/qicon.h
-
 /usr/include/qt6/QtGui/QTransform
 qtransform.h
 /usr/include/qt6/QtGui/qtransform.h
@@ -1597,10 +1579,6 @@ qlabel.h
 /usr/include/qt6/QtWidgets/QLayout
 qlayout.h
 /usr/include/qt6/QtWidgets/qlayout.h
-
-/usr/include/qt6/QtWidgets/QLineEdit
-qlineedit.h
-/usr/include/qt6/QtWidgets/qlineedit.h
 
 /usr/include/qt6/QtWidgets/QMainWindow
 qmainwindow.h

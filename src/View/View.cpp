@@ -25,8 +25,10 @@ void View::update(Modification m, const Observable *obs) {
         moveRoseView();
     else if (m.a == "pawnsBeginning") {
         placePawn(m.x, m.y, m.color);
-    } else if (m.a =="gameState"){
+    } else if (m.a =="turnLightOff"){
         updateGameState(m.gameState);
+    } else if (m.a == "currentPlayer"){
+        updateCurrentPlayer();
     }
 }
 
@@ -36,8 +38,10 @@ void View::changeToGameWindow() {
     try {
         g = Game(form->numberOfPlayers->intValue());
         g->addObserver(this);
+        g->turnLightOn();
         g->initGame(form->numberOfPlayers->intValue());
         form->stackedWidget->setCurrentIndex(1);
+        //findYoungestPlayer();
         connectStars();
         moveRoseView();
     } catch (NumberOfPlayersException& e) {
@@ -58,18 +62,6 @@ void View::onAddPlayer() {
         QWidget* aut = new newPlayerWidget(form->numberOfPlayers->intValue());
         a->insertWidget(0, aut);
     }
-}
-
-QWidget *View::newPlayer() {
-    auto* player = new QWidget();
-    auto* verticalLayout = new QHBoxLayout(player);
-    QString playerName = tr("Hello Player %1").arg(form->numberOfPlayers->intValue());
-    verticalLayout->addWidget(new QLabel(playerName));
-    //Add color of player.
-    verticalLayout->addWidget(new QLabel("How old are you"));
-    auto edit = new QLineEdit();
-    verticalLayout->addWidget(edit);
-    return player;
 }
 
 void View::onRemovePlayer() {
@@ -93,6 +85,7 @@ void View::playTurn() {
     g->moveRose(diceRoll);
     form->rollDice->setDisabled(true);
     disableButtonsNotOnRose(g->getRosePlace());
+
 }
 
 void View::moveRoseView() {
@@ -175,6 +168,7 @@ void View::onAddStar() {
         qobject_cast<QPushButton*>(sender())->setIcon(icon1);
         g->nextPlayer();
         form->rollDice->setEnabled(true);
+        activateAllButton(false);
     } catch (PawnInPlaceException& e ){
         QMessageBox msgBox;
         msgBox.setText("Sorry you or another player already has a pawn there");
@@ -201,17 +195,41 @@ void View::disableButtonsNotOnRose(int rosePlace) {
 }
 //Disable all the buttons except the ones that have a star.
 void View::goIntoNight() {
+    form->label_2->setText("Please click on the star you would like to turn over");
+    form->rollDice->hide();
+    form->rollDiceValue->hide();
     QIcon icon;
     icon.addFile(QString::fromUtf8(":/images/img/night.png"), QSize(), QIcon::Normal, QIcon::Off);
     for (int x = 0; x < 9; x++) {
         for (int y = 0; y < 5; y++) {
             QString starX = tr("star%1").arg(x);
             QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
-            star->setEnabled(true);
             if (g->getBoard().getCase(x,y).getState() == shining ) //Not sure why but does not make all shining star night logo.
                 star->setIcon(icon);
         }
     }
+}
+void View::activateAllButton(bool activate){
+    for (int x = 0; x < 9; x++) {
+        for (int y = 0; y < 5; y++) {
+            QString starX = tr("star%1").arg(x);
+            QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
+            star->setDisabled(true);
+        }
+        }
+}
+
+int View::findYoungestPlayer() {
+    int min = 0;
+    for (int x = 0; x<=form->numberOfPlayers->intValue();x++){
+        int age = form->centralFrame->layout()->itemAt(x)->layout()->findChild<QLineEdit*>("ageResp")->text().toInt();
+        age > min ? : min =age;
+    }
+    return min;
+}
+
+void View::updateCurrentPlayer() {
+    form->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(g->getCurrentPlayer().getName()) + "'s turn to make a move"));
 }
 
 

@@ -50,6 +50,9 @@ Player Game::getCurrentPlayer(){
 void Game::nextPlayer() {
     currentPlayer.getName() < players.size() ?
             currentPlayer = players.at(currentPlayer.getName()) : currentPlayer = players.at(0);
+    Modification m;
+    m.a="currentPlayer";
+    notify(m);
 }
 
 void Game::moveRose(int value) {
@@ -112,7 +115,7 @@ void Game::isDone() {
         turnLightOff();
         Modification m;
         m.gameState = getGameState();
-        m.a = "gameState";
+        m.a = "turnLightOff";
         notify(m);
     }
 }
@@ -126,9 +129,12 @@ void Game::playMove(int y) {
 
 void Game::turnLightOff() {
     setGameState(lightOff);
+    Modification m;
+
 }
 
 void Game::turnLightOn() {
+    Modification m;
     setGameState(lightOn);
 }
 
@@ -172,7 +178,6 @@ void Game::addObserver(Observer *observer) {
 
 void Game::notify(Modification m) {
     for(auto &obs : observers) {
-        std::cout<<"notify"<<std::endl;
         obs->update(m, this);
     }
 }

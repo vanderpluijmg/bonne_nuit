@@ -347,7 +347,7 @@ public:
 
         verticalLayoutWidget_4 = new QWidget(cases);
         verticalLayoutWidget_4->setObjectName(QString::fromUtf8("verticalLayoutWidget_4"));
-        verticalLayoutWidget_4->setGeometry(QRect(610, 0, 131, 81));
+        verticalLayoutWidget_4->setGeometry(QRect(560, 10, 381, 111));
         verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_4);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -653,7 +653,7 @@ public:
         star02->setText(QString());
         star03->setText(QString());
         star04->setText(QString());
-        label_2->setText(QCoreApplication::translate("Form", "Chose place of star", nullptr));
+        label_2->setText(QCoreApplication::translate("Form", "Please click on one of the buttons to place your star", nullptr));
         star80->setText(QString());
         star81->setText(QString());
         star82->setText(QString());
