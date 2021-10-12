@@ -8,12 +8,19 @@
 
 #include <QWidget>
 #include <QHBoxLayout>
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QWidget>
 
 class newPlayerWidget : public QWidget{
 private:
-    int playerName;
-    QHBoxLayout* verticalLayoutManager;
+    QHBoxLayout* horizontalLayoutManager;
 public:
+
     newPlayerWidget(int nbr);
     void setUp(QWidget* parent, int number);
 };

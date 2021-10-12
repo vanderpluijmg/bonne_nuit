@@ -170,9 +170,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o
  /usr/include/qt6/QtWidgets/QSpacerItem
  /usr/include/qt6/QtWidgets/QSpinBox
  /usr/include/qt6/QtWidgets/QStackedWidget
+ /usr/include/qt6/QtWidgets/QTextEdit
  /usr/include/qt6/QtWidgets/QVBoxLayout
  /usr/include/qt6/QtWidgets/QWidget
  /usr/include/qt6/QtWidgets/qabstractbutton.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/qt6/QtWidgets/qabstractspinbox.h
  /usr/include/qt6/QtWidgets/qapplication.h
  /usr/include/qt6/QtWidgets/qboxlayout.h
@@ -192,6 +194,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o
  /usr/include/qt6/QtWidgets/qspinbox.h
  /usr/include/qt6/QtWidgets/qstackedwidget.h
  /usr/include/qt6/QtWidgets/qtabwidget.h
+ /usr/include/qt6/QtWidgets/qtextedit.h
  /usr/include/qt6/QtWidgets/qtwidgets-config.h
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h
  /usr/include/qt6/QtWidgets/qwidget.h
@@ -203,6 +206,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtCore/QRect
  /usr/include/qt6/QtCore/QSize
  /usr/include/qt6/QtCore/QSizeF
+ /usr/include/qt6/QtCore/QVariant
  /usr/include/qt6/QtCore/qalgorithms.h
  /usr/include/qt6/QtCore/qanystringview.h
  /usr/include/qt6/QtCore/qarraydata.h
@@ -225,9 +229,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtCore/qcontainerinfo.h
  /usr/include/qt6/QtCore/qcontainertools_impl.h
  /usr/include/qt6/QtCore/qcontiguouscache.h
+ /usr/include/qt6/QtCore/qcoreapplication.h
  /usr/include/qt6/QtCore/qcoreevent.h
  /usr/include/qt6/QtCore/qdatastream.h
  /usr/include/qt6/QtCore/qdebug.h
+ /usr/include/qt6/QtCore/qeventloop.h
  /usr/include/qt6/QtCore/qflags.h
  /usr/include/qt6/QtCore/qgenericatomic.h
  /usr/include/qt6/QtCore/qglobal.h
@@ -240,6 +246,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtCore/qiterator.h
  /usr/include/qt6/QtCore/qline.h
  /usr/include/qt6/QtCore/qlist.h
+ /usr/include/qt6/QtCore/qlocale.h
  /usr/include/qt6/QtCore/qlogging.h
  /usr/include/qt6/QtCore/qmap.h
  /usr/include/qt6/QtCore/qmargins.h
@@ -300,9 +307,11 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtGui/qfont.h
  /usr/include/qt6/QtGui/qfontinfo.h
  /usr/include/qt6/QtGui/qfontmetrics.h
+ /usr/include/qt6/QtGui/qguiapplication.h
  /usr/include/qt6/QtGui/qicon.h
  /usr/include/qt6/QtGui/qimage.h
  /usr/include/qt6/QtGui/qinputdevice.h
+ /usr/include/qt6/QtGui/qinputmethod.h
  /usr/include/qt6/QtGui/qkeysequence.h
  /usr/include/qt6/QtGui/qpaintdevice.h
  /usr/include/qt6/QtGui/qpalette.h
@@ -327,12 +336,17 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtGui/qvectornd.h
  /usr/include/qt6/QtGui/qwindowdefs.h
  /usr/include/qt6/QtGui/qwindowdefs_win.h
+ /usr/include/qt6/QtWidgets/QApplication
  /usr/include/qt6/QtWidgets/QHBoxLayout
  /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/QLineEdit
  /usr/include/qt6/QtWidgets/QPushButton
+ /usr/include/qt6/QtWidgets/QSpacerItem
+ /usr/include/qt6/QtWidgets/QTextEdit
  /usr/include/qt6/QtWidgets/QWidget
  /usr/include/qt6/QtWidgets/qabstractbutton.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/qt6/QtWidgets/qapplication.h
  /usr/include/qt6/QtWidgets/qboxlayout.h
  /usr/include/qt6/QtWidgets/qframe.h
  /usr/include/qt6/QtWidgets/qgridlayout.h
@@ -342,6 +356,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
  /usr/include/qt6/QtWidgets/qlineedit.h
  /usr/include/qt6/QtWidgets/qpushbutton.h
  /usr/include/qt6/QtWidgets/qsizepolicy.h
+ /usr/include/qt6/QtWidgets/qtextedit.h
  /usr/include/qt6/QtWidgets/qtwidgets-config.h
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h
  /usr/include/qt6/QtWidgets/qwidget.h

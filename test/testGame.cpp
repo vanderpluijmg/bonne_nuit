@@ -136,8 +136,8 @@ TEST_CASE("place pawn without pawn", "[placePawn]" "[sunUp]"){
 
 TEST_CASE("place pawn with pawn in place", "[placePawn]" "[sunUp]"){
     Game g;
-    g.playMove(g.getCurrentPlayer(), 4);
-    REQUIRE_THROWS_AS(  g.playMove(g.getCurrentPlayer(), 4)
+    g.playMove(4);
+    REQUIRE_THROWS_AS(  g.playMove(4)
     ,PawnInPlaceException);
 }
 

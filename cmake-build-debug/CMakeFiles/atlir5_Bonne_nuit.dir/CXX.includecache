@@ -60,10 +60,38 @@ windows/test.hpp
 ../model/Game/Game.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.cpp
+QLabel
+-
+QLineEdit
+-
+iostream
+-
+QIcon
+-
+QPushButton
+-
+newPlayerWidget.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h
 QWidget
 -
 QHBoxLayout
+-
+QtCore/QVariant
+-
+QtWidgets/QApplication
+-
+QtWidgets/QHBoxLayout
+-
+QtWidgets/QLabel
+-
+QtWidgets/QSpacerItem
+-
+QtWidgets/QTextEdit
+-
+QtWidgets/QWidget
 -
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/test.hpp
@@ -1098,6 +1126,10 @@ stdlib.h
 QtCore/qglobal.h
 -
 
+/usr/include/qt6/QtGui/QIcon
+qicon.h
+/usr/include/qt6/QtGui/qicon.h
+
 /usr/include/qt6/QtGui/QTransform
 qtransform.h
 /usr/include/qt6/QtGui/qtransform.h
@@ -1566,6 +1598,10 @@ qlabel.h
 qlayout.h
 /usr/include/qt6/QtWidgets/qlayout.h
 
+/usr/include/qt6/QtWidgets/QLineEdit
+qlineedit.h
+/usr/include/qt6/QtWidgets/qlineedit.h
+
 /usr/include/qt6/QtWidgets/QMainWindow
 qmainwindow.h
 /usr/include/qt6/QtWidgets/qmainwindow.h
@@ -1590,6 +1626,10 @@ qspinbox.h
 qstackedwidget.h
 /usr/include/qt6/QtWidgets/qstackedwidget.h
 
+/usr/include/qt6/QtWidgets/QTextEdit
+qtextedit.h
+/usr/include/qt6/QtWidgets/qtextedit.h
+
 /usr/include/qt6/QtWidgets/QVBoxLayout
 qboxlayout.h
 /usr/include/qt6/QtWidgets/qboxlayout.h
@@ -1606,6 +1646,12 @@ QtGui/qicon.h
 QtGui/qkeysequence.h
 -
 QtWidgets/qwidget.h
+-
+
+/usr/include/qt6/QtWidgets/qabstractscrollarea.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
 -
 
 /usr/include/qt6/QtWidgets/qabstractspinbox.h
@@ -1778,6 +1824,20 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 QtGui/qicon.h
+-
+
+/usr/include/qt6/QtWidgets/qtextedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+QtGui/qtextdocument.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qtextcursor.h
+-
+QtGui/qtextformat.h
 -
 
 /usr/include/qt6/QtWidgets/qtwidgets-config.h
