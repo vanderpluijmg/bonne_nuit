@@ -94,6 +94,10 @@ QtWidgets/QWidget
 exception
 -
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
+stdexcept
+-
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
 stdexcept
 -
@@ -107,6 +111,18 @@ Pawn.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp
 Player.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.cpp
+Game.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
+Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h
+../../ressources/random.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
+../../exceptions/NumberOfPlayersException.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
+../../exceptions/OutOfGameBoardException.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/OutOfGameBoardException.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h
 list
@@ -149,6 +165,16 @@ Game/GameState.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp
 ../Utils/Observer.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
 
 /usr/include/qt6/QtCore/QList
 qlist.h

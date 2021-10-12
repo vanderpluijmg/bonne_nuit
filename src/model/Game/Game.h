@@ -28,7 +28,7 @@ private:
     */
     void populateGame(int);
 
-    static void removePawnCurrentPlayer(std::list<Pawn>& pawns);
+    void removePawnCurrentPlayer();
 
     /**
      * Adds all pawns that have not yet been taken by startWindow player.
@@ -167,6 +167,7 @@ public:
     void turnLightOn() ;
 
     void addObserver(Observer *observer) override;
+
     void notify(Modification m) override;
 
     const std::vector<Player> &getNpc() const;

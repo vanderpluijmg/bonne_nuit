@@ -79,7 +79,6 @@ void Game::notifyBoard(){
   for (int x=0;x<9;x++){
       for (int y= 0;y<6;y++){
           if (getBoard().getCase(x,y).getColor()!=None){
-              std::cout<<"notifyBoard"<<std::endl;
               Modification m;
               m.a = "pawnsBeginning";
               m.x = x;
@@ -121,7 +120,7 @@ void Game::isDone() {
 void Game::playMove(int y) {
     isDone();
     placePawn(board.getRosePlace(), y);
-    removePawnCurrentPlayer(currentPlayer.getPawns());
+    removePawnCurrentPlayer();
 }
 
 void Game::turnLightOff() {
@@ -177,8 +176,8 @@ void Game::notify(Modification m) {
     }
 }
 
-void Game::removePawnCurrentPlayer(std::list<Pawn> &pawns) {
-    pawns.pop_back();
+void Game::removePawnCurrentPlayer() {
+    players[currentPlayer.getName()-1].getPawns().pop_back();
 }
 
 

@@ -153,6 +153,7 @@ void View::onAddStar() {
     int posY = sender()->objectName().at(5).digitValue();
     try {
         QIcon icon1;
+        std::cout<<g->getCurrentPlayer().getPawns().size()<<" size "<<std::endl;
         g->playMove(posY+1);
         switch (g->getCurrentPlayer().getColor()) {
             case Black:
@@ -174,7 +175,6 @@ void View::onAddStar() {
         qobject_cast<QPushButton*>(sender())->setIcon(icon1);
         g->nextPlayer();
         form->rollDice->setEnabled(true);
-        std::cout<<g->getCurrentPlayer().getPawns().size()<<" size "<<std::endl;
     } catch (PawnInPlaceException& e ){
         QMessageBox msgBox;
         msgBox.setText("Sorry you or another player already has a pawn there");
