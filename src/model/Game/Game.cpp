@@ -123,8 +123,6 @@ void Game::isDone() {
 void Game::playMove(int y) {
     placePawn(board.getRosePlace(), y);
     removePawnCurrentPlayer();
-    isDone();
-
 }
 
 void Game::turnLightOff() {
@@ -143,8 +141,8 @@ void Game::playTurnLightOff(int x, int y) {
 }
 
 bool Game::returnPawn(int x, int y) {
-    if ((x < 8 && x >= 0))
-        if (y < 5 && y > 0) {
+    if ((x <= 8 && x >= 0))
+        if (y <= 5 && y >= 0) {
             board.removePawn(x, y);
             return true;
         }

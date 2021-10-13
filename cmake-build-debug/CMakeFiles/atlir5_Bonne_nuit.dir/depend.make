@@ -186,7 +186,9 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o: \
  ../src/View/View.h \
  ../src/View/windows/newPlayerWidget.h \
  ../src/View/windows/test.hpp \
+ ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/NumberOfPlayersException.h \
+ ../src/exceptions/OutOfGameBoardException.h \
  ../src/exceptions/PawnInPlaceException.h \
  ../src/model/Game/Board.h \
  ../src/model/Game/Game.h \

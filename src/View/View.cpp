@@ -10,6 +10,8 @@
 #include "../exceptions/NumberOfPlayersException.h"
 #include "../exceptions/PawnInPlaceException.h"
 #include "windows/newPlayerWidget.h"
+#include "../exceptions/NoPawnFound.h"
+#include "../exceptions/OutOfGameBoardException.h"
 #include <QtGlobal>
 #include <QMessageBox>
 
@@ -85,11 +87,11 @@ void View::playTurn() {
     g->moveRose(diceRoll);
     form->rollDice->setDisabled(true);
     disableButtonsNotOnRose(g->getRosePlace());
+    form->label_2->setText("Please place a pawn");
 
 }
 
 void View::moveRoseView() {
-    //rosePlace not between 1 ans 9
     QString current = tr("case%1").arg(g->getRosePlace());
     QString old = tr("case%1").arg(currentRosePlace);
     QVBoxLayout* layoutOld = (form->cases->findChild<QVBoxLayout*>(old));
@@ -135,46 +137,64 @@ void View::connectStars() {
     for(int x = 0; x<9; x++){
         QString starX = tr("star%1").arg(x);
         for (int y = 0; y<5; y++){
-            qDebug()<<starX + QString::number(y);
             QPushButton* star = (form->cases->findChild<QPushButton*>(starX + QString::number(y)));
-            QObject::connect(star, &QPushButton::clicked, this , &View::onAddStar);
+            QObject::connect(star, &QPushButton::clicked, this , &View::onAddStarOrRemove);
         }
     }
 }
 
-void View::onAddStar() {
-    int posY = sender()->objectName().at(5).digitValue();
-    try {
-        QIcon icon1;
-        std::cout<<g->getCurrentPlayer().getPawns().size()<<" size "<<std::endl;
-        g->playMove(posY+1);
-        switch (g->getCurrentPlayer().getColor()) {
-            case Black:
-                icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
-                break;
-            case Green:
-                icon1.addFile(QString::fromUtf8(":/images/img/star_green.png"), QSize(), QIcon::Normal, QIcon::Off);
-                break;
-            case Purple:
-                icon1.addFile(QString::fromUtf8(":/images/img/star_purple.png"), QSize(), QIcon::Normal, QIcon::Off);
-                break;
-            case Blue:
-                icon1.addFile(QString::fromUtf8(":/images/img/star_blue.png"), QSize(), QIcon::Normal, QIcon::Off);
-                break;
-            case Red:
-                icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-                break;
+void View::onAddStarOrRemove() {
+    if (g->getGameState() == lightOn) {
+        int posY = sender()->objectName().at(5).digitValue();
+        try {
+            QIcon icon1;
+            std::cout << g->getCurrentPlayer().getPawns().size() << " size " << std::endl;
+            g->playMove(posY + 1);
+            switch (g->getCurrentPlayer().getColor()) {
+                case Black:
+                    icon1.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
+                    break;
+                case Green:
+                    icon1.addFile(QString::fromUtf8(":/images/img/star_green.png"), QSize(), QIcon::Normal, QIcon::Off);
+                    break;
+                case Purple:
+                    icon1.addFile(QString::fromUtf8(":/images/img/star_purple.png"), QSize(), QIcon::Normal,
+                                  QIcon::Off);
+                    break;
+                case Blue:
+                    icon1.addFile(QString::fromUtf8(":/images/img/star_blue.png"), QSize(), QIcon::Normal, QIcon::Off);
+                    break;
+                case Red:
+                    icon1.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+                    break;
+            }
+            qobject_cast<QPushButton *>(sender())->setIcon(icon1);
+            g->nextPlayer();
+            form->rollDice->setEnabled(true);
+            deactivateAllButton(true);
+            form->label_2->setText("Please roll the dice");
+            g->isDone();
+        } catch (PawnInPlaceException &e) {
+            QMessageBox msgBox;
+            msgBox.setText("Sorry you or another player already has a pawn there");
+            msgBox.exec();
         }
-        qobject_cast<QPushButton*>(sender())->setIcon(icon1);
-        g->nextPlayer();
-        form->rollDice->setEnabled(true);
-        activateAllButton(false);
-    } catch (PawnInPlaceException& e ){
-        QMessageBox msgBox;
-        msgBox.setText("Sorry you or another player already has a pawn there");
-        msgBox.exec();
+    } else {
+        try {
+            int posX = sender()->objectName().at(4).digitValue();
+            int posY = sender()->objectName().at(5).digitValue();
+            g->returnPawn(posX, posY+1);
+            delete sender();
+        } catch (NoPawnFoundException &e) {
+            QMessageBox msgBox;
+            msgBox.setText("Sorry no pawn has been placed here");
+            msgBox.exec();
+        } catch (OutOfGameBoardException &a) {
+            QMessageBox msgBox;
+            msgBox.setText("Out of bounds");
+            msgBox.exec();
+        }
     }
-
 }
 
 void View::updateGameState(GameState gs) {
@@ -195,28 +215,32 @@ void View::disableButtonsNotOnRose(int rosePlace) {
 }
 //Disable all the buttons except the ones that have a star.
 void View::goIntoNight() {
+    g->turnLightOff();
     form->label_2->setText("Please click on the star you would like to turn over");
     form->rollDice->hide();
     form->rollDiceValue->hide();
     QIcon icon;
     icon.addFile(QString::fromUtf8(":/images/img/night.png"), QSize(), QIcon::Normal, QIcon::Off);
+    deactivateAllButton(false);
     for (int x = 0; x < 9; x++) {
         for (int y = 0; y < 5; y++) {
             QString starX = tr("star%1").arg(x);
             QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
-            if (g->getBoard().getCase(x,y).getState() == shining ) //Not sure why but does not make all shining star night logo.
+            if (g->getBoard().getCase(x,y+1).getState() == shining ){
+                std::cout<<x <<" " <<y<<std::endl;//Not sure why but does not make all shining star night logo.
                 star->setIcon(icon);
+            }
         }
     }
 }
-void View::activateAllButton(bool activate){
+void View::deactivateAllButton(bool activate){
     for (int x = 0; x < 9; x++) {
         for (int y = 0; y < 5; y++) {
             QString starX = tr("star%1").arg(x);
             QPushButton *star = (form->cases->findChild<QPushButton *>(starX + QString::number(y)));
-            star->setDisabled(true);
+            star->setDisabled(activate);
         }
-        }
+    }
 }
 
 int View::findYoungestPlayer() {
@@ -231,5 +255,4 @@ int View::findYoungestPlayer() {
 void View::updateCurrentPlayer() {
     form->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(g->getCurrentPlayer().getName()) + "'s turn to make a move"));
 }
-
 

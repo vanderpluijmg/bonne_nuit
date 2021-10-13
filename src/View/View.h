@@ -71,7 +71,7 @@ public:
 
     void placePawn(int x, int y, int c);
 
-    void onAddStar();
+    void onAddStarOrRemove();
 
     void updateGameState(GameState gs);
 
@@ -83,7 +83,8 @@ public:
 
     void updateCurrentPlayer();
 
-    void activateAllButton(bool activate);
+    void deactivateAllButton(bool activate);
+
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

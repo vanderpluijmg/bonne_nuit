@@ -62,7 +62,7 @@ void Board::moveRose(int t) {
 }
 
 void Board::removePawn(int x, int y) {
-    getCase(x,y).getColor() == Color::None ? throw NoPawnFoundException("Sorry the coordinates do not lead to startWindow pawn") :
+    getCase(x,y).getColor() == Color::None ? throw NoPawnFoundException("Sorry there is no pawn here") :
     gameBoard[x][y].setState(notShining);
 
 
