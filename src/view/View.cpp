@@ -22,10 +22,12 @@ void View::update(Modification m, const Observable *obs) {
         updateRoseView();
     else if (m.description.value() == "pawnsBeginning")
         placePawn(m.x.value(), m.y.value(), m.color.value());
-    else if (m.description == "turnLightOff")
+    else if (m.description.value() == "turnLightOff")
         updateGameState();
-    else if (m.description == "currentPlayer")
+    else if (m.description.value() == "currentPlayer")
         updateCurrentPlayer();
+    else if(m.description.value() == "winner")
+        displayWinner(m.winner.value());
 }
 
 void View::changeToGameWindow() {
@@ -33,7 +35,7 @@ void View::changeToGameWindow() {
         game = Game();
         game->addObserver(this);
         game->turnLightOn();
-        game->initGame(mainWindow->numberOfPlayers->intValue());
+        game->initGame(mainWindow->numberOfPlayers->intValue(), firstPlayer);
         mainWindow->stackedWidget->setCurrentIndex(1);
         //findYoungestPlayer();
         affectAllStars(true, false, false);
@@ -54,6 +56,8 @@ void View::onAddPlayer() {
         mainWindow->numberOfPlayers->display(mainWindow->numberOfPlayers->intValue() + 1);
         auto layout = qobject_cast<QVBoxLayout *>(mainWindow->centralFrame->layout());
         auto player = new newPlayerWidget(mainWindow->numberOfPlayers->intValue());
+        if (player->getAge()<smallestAge)
+            firstPlayer = mainWindow->numberOfPlayers->intValue();
         layout->insertWidget(0, player);
     }
 }
@@ -129,6 +133,7 @@ void View::onAddStarOrRemove() {
             int posY = sender()->objectName().at(5).digitValue();
             game->returnPawn(posX, posY + 1);
             delete sender();
+            game->isFinished();
         } catch (NoPawnFoundException &e) {
             QMessageBox msgBox;
             msgBox.setText("Sorry no pawn has been placed here");
@@ -186,15 +191,6 @@ void View::affectAllStars(bool connectStars, bool disableNotOnRose, bool activat
     }
 }
 
-int View::findYoungestPlayer() {
-    int min = 0;
-    for (int x = 0; x <= mainWindow->numberOfPlayers->intValue(); x++){
-        int age = mainWindow->centralFrame->layout()->itemAt(x)->layout()->findChild<QLineEdit*>("ageResp")->text().toInt();
-        age > min ? : min =age;
-    }
-    return min;
-}
-
 void View::updateCurrentPlayer() {
     mainWindow->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(game->getCurrentPlayer().getName()) + "'s turn to make description move"));
 }
@@ -217,11 +213,16 @@ void View::getStarPicture(int c, QIcon& icon) {
             icon.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
             break;
     }
-
 }
 
 void View::setMessageGuiding(const QString& msg) {
     mainWindow->label_2->setText(msg);
+}
+
+void View::displayWinner(int winner) {
+    QMessageBox msgBox;
+    msgBox.setText(QString::number(winner));
+    msgBox.exec();
 }
 
 

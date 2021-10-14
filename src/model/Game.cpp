@@ -8,14 +8,15 @@
 Game::Game() {
     gameState_ = notStarted;
     board.initGameBoard();
+    returnedPawns=0;
 }
 
-void Game::initGame(int numberOfPlayers) {
+void Game::initGame(int numberOfPlayers, int firstPlayer) {
     if (numberOfPlayers <= 0 || numberOfPlayers > 5)
         throw NumberOfPlayersException(
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     addPawnsToPlace(numberOfPlayers);
-    currentPlayer = players[0];
+    currentPlayer = players[firstPlayer];
 };
 
 void Game::populateGame(int numberOfPlayers) {
@@ -123,24 +124,17 @@ void Game::turnLightOn() {
 void Game::returnPawn(int x, int y) {
     ((x <= 8 && x >= 0) && (y <= 5 && y >= 0)) ? board.removePawn(x, y) :
     throw OutOfGameBoardException("Sorry the coordinates are not in the game board");
-    if (isFinished()) {
-        Modification m;
-        m.description = "winner";
-        notify(m);
-    }
-}
-
-void Game::autofill() {
-    int nbNpc = 5 - players.size();
-    for (; nbNpc <= 5; nbNpc++)
-        board.placePawnsNpcPlayers(Color(nbNpc));
-    for (auto &x: players)
-        while (!x.getPawns().empty())
-            x.removePawn();
+    returnedPawns++;
+    nextPlayer();
 }
 
 bool Game::isFinished() {
-    return true;
+    if (returnedPawns==14){
+        Modification m;
+        m.description = "winner";
+        m.winner = determineWinner();
+        notify(m);
+    }
 }
 
 int Game::getRosePlace() {
@@ -159,6 +153,14 @@ void Game::notify(Modification m) {
 
 void Game::removePawnCurrentPlayer() {
     players[currentPlayer.getName() - 1].getPawns().pop_back();
+}
+
+int Game::determineWinner() {
+    for (int x = 0; x < 9; x++)
+        for (int y = 0; y < 6; y++)
+            if(getBoard().getCase(x,y).getState()==SHINING)
+                return getBoard().getCase(x,y).getColor();
+    return 0;
 }
 
 

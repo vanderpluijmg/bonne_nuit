@@ -14,14 +14,44 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="full refractoring">
+    <list default="true" id="10184038-0c79-47a6-8866-a1493d5c9e19" name="Changes" comment="final touches">
+      <change afterPath="$PROJECT_DIR$/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit-Tests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit-Tests_autogen/deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit-Tests_autogen/moc_predefs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit-Tests_autogen/mocs_compilation.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit-Tests_autogen/timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/3JYSCEOBDA/moc_View.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/3JYSCEOBDA/moc_View.cpp.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/moc_predefs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlir5_Bonne_nuit_autogen/timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests.dir/test/testGame.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit-Tests_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/atlir5_Bonne_nuit_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atlir5_Bonne_nuit-Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Observable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Observable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +245,7 @@
       <workItem from="1634085368194" duration="3280000" />
       <workItem from="1634194168955" duration="3618000" />
       <workItem from="1634199574307" duration="1767000" />
-      <workItem from="1634206283553" duration="1082000" />
+      <workItem from="1634206283553" duration="4939000" />
     </task>
     <task id="LOCAL-00001" summary="MVC &amp; Observer pattern">
       <created>1632849312238</created>
@@ -350,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634206922539</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="final touches">
+      <created>1634207545686</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634207545686</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +425,8 @@
     <MESSAGE value="almost finished just need to find a way to find the end of the game" />
     <MESSAGE value="refractoring" />
     <MESSAGE value="full refractoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="full refractoring" />
+    <MESSAGE value="final touches" />
+    <option name="LAST_COMMIT_MESSAGE" value="final touches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

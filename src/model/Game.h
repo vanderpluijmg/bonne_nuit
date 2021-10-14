@@ -17,6 +17,7 @@ private:
     std::vector<Player> players;
     std::vector<Player> npc_;
     Board board;
+    int returnedPawns;
 
     /**
     * Populates the game with number of players.
@@ -50,7 +51,7 @@ public:
      * Initializes a game with the number of players.
      * @param numberOfPlayers Number of players to initializes game with.
      */
-    void initGame(int numberOfPlayers);
+    void initGame(int numberOfPlayers, int firstPlayer);
 
     /**
      * Gets all the players that are playing.
@@ -111,11 +112,6 @@ public:
     void returnPawn(int x, int y);
 
     /**
-     * Auto fills the game with pawns.
-     */
-    void autofill();
-
-    /**
      * Checks if the game is finished.
      * @return True if the game is finished.
      */
@@ -165,5 +161,7 @@ public:
      * @return List of players that are not in the game.
      */
     [[nodiscard]] const std::vector<Player> &getNpc() const;
+
+    int determineWinner();
 };
 #endif //ATLIR5_BONNE_NUIT_GAME_H

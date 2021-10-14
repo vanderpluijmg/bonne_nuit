@@ -1,7 +1,3 @@
-//
-// Created by greg on 17.09.21.
-//
-
 #include "../catch2/catch.hpp"
 #include "../src/model/Game.h"
 #include "../src/exceptions/NumberOfPlayersException.h"
@@ -199,27 +195,6 @@ TEST_CASE("remove current pawn with no pawn","[remove pawn]" "[sunDown]") {
 TEST_CASE("remove current pawn out of bounds","[remove pawn]" "[sunDown]") {
     Game g;
     REQUIRE_THROWS_AS(g.returnPawn(g.getBoard().getRosePlace(),8), OutOfGameBoardException);
-}
-
-TEST_CASE("autofill", "[sunDown]") {
-    Game game;
-    game.initGame(1);
-    int index = 0;
-    game.autofill();
-    for (int y = 0; y < 9; y++) {
-        for (int x = 0; x <= 5; x++) {
-            if (game.getBoard().getCase(y, x).getColor() != Color::NONE)
-                index++;
-        }
-    }
-    REQUIRE (index == 15);
-}
-
-TEST_CASE("isFinished", "[sunDown]"){
-    Game game;
-    game.initGame(1);
-    game.autofill();
-
 }
 
 

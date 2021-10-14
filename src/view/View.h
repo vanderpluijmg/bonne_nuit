@@ -14,6 +14,8 @@
 class View : public QWidget, public Observer {
 Q_OBJECT
 private:
+    int firstPlayer=0;
+    int smallestAge=0;
     int currentRosePlace_ = 0;
     std::optional<Game> game;
     Ui_Form* mainWindow  = new Ui_Form ();
@@ -118,6 +120,10 @@ public:
      */
     void affectAllStars(bool connectStars, bool disableNotOnRose, bool activateAll, int rosePlace=0, bool activate=0);
 
+    /**
+     * Display the winner of the current game
+     */
+    static void displayWinner(int winner);
 };
 
 #endif //ATLIR5_BONNE_NUIT_VIEW_H

@@ -12,6 +12,7 @@ private:
     int _name{};
     Color _color;
     std::list<Pawn> pawns;
+    int _returnedPawns;
 public:
 
     /**
@@ -25,6 +26,7 @@ public:
      * @param color Color of player
      */
     Player(int name, Color color) {
+        _returnedPawns = 0;
         _name = name;
         _color = color;
         for (auto i = 0; i < 3; i++) {

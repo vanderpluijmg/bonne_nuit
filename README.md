@@ -11,7 +11,11 @@
 
 
 # Build project
-
+```bash
+$ cd esi-atlir5-bonne_nuit
+$ ninja
+$ ./atlir5_Bonne_nuit
+```
 
 # Règles du jeu
 

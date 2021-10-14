@@ -15,6 +15,7 @@ struct Modification{
     std::optional<int> x;
     std::optional<int> y;
     std::optional<int> color;
+    std::optional<int> winner;
 };
 class Observer;
 
