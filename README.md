@@ -10,11 +10,8 @@
 ```
 
 
-# README
+# Build project
 
-Projet de ATLIR5 de Gregory van der Pluijm. Q5 2020-2021
-
-To run project please run the following code in the /root of the project.
 
 # Règles du jeu
 
@@ -40,5 +37,54 @@ Ainsi les étoiles startWindow’éteignent une à une (autant celles des joueur
 personne)… et quand il n’en reste plus qu’une seule sur la table, allumez la lumière pour découvrir
 celui qui gagne la partie.
 
-### Authors
+# Project structure
+```bash
+.
+|-- exceptions
+|   |-- NoPawnFound.h
+|   |-- NumberOfPlayersException.h
+|   |-- OutOfGameBoardException.h
+|   `-- PawnInPlaceException.h
+|-- main.cpp
+|-- model
+|   |-- Board.cpp
+|   |-- Board.h
+|   |-- Game.cpp
+|   |-- Game.h
+|   |-- GameState.hpp
+|   |-- Pawn.hpp
+|   `-- Player.hpp
+|-- ressources
+|   |-- images
+|   |   `-- img
+|   |       |-- drop.png
+|   |       |-- empty.png
+|   |       |-- night.png
+|   |       |-- no_drop.png
+|   |       |-- star_black.png
+|   |       |-- star_blue.png
+|   |       |-- star_down.png
+|   |       |-- star_green.png
+|   |       |-- star_night.png
+|   |       |-- star_purple.png
+|   |       `-- star_red.png
+|   |-- images.qrc
+|   `-- random.hpp
+|-- ui
+|   `-- mainWindow.ui
+|-- utils
+|   |-- Observable.h
+|   `-- Observer.h
+`-- view
+    |-- View.cpp
+    |-- View.h
+    `-- windows
+      |-- mainWindow.cpp
+      |-- mainWindow.hpp
+      |-- newPlayerWidget.cpp
+      `-- newPlayerWidget.h
+    
+```
+
+## Authors
 - [Gregory van der Pluijm](54786@etu.he2b.be)
