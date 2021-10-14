@@ -1,7 +1,6 @@
 //
 // Created by greg on 17.09.21.
 //
-
 #include "Game.h"
 #include "Board.h"
 #include "../../ressources/random.hpp"
@@ -14,7 +13,6 @@ Game::Game(int numberOfPlayers) {
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     gameState_ = notStarted;
     board.initGameBoard();
-
 }
 void Game::initGame(int numberOfPlayers){
     addPawnsToPlace(numberOfPlayers);
@@ -79,7 +77,7 @@ void Game::addPawnsToPlace(int numberOfPlayers) {
 }
 
 void Game::notifyBoard(){
-  for (int x=0;x<9;x++){
+    for (int x=0;x<9;x++){
       for (int y= 0;y<6;y++){
           if (getBoard().getCase(x,y).getColor()!=None){
               Modification m;
@@ -90,7 +88,7 @@ void Game::notifyBoard(){
               notify(m);
           }
       }
-  }
+    }
 }
 
 const std::vector<Player> &Game::getNpc() const {
@@ -135,18 +133,14 @@ void Game::turnLightOn() {
     Modification m;
     setGameState(lightOn);
 }
-
-void Game::playTurnLightOff(int x, int y) {
-    returnPawn(x, y);
-}
-
-bool Game::returnPawn(int x, int y) {
-    if ((x <= 8 && x >= 0))
-        if (y <= 5 && y >= 0) {
-            board.removePawn(x, y);
-            return true;
-        }
-    throw OutOfGameBoardException("Sorry the coordinates are not in the game board");
+void Game::returnPawn(int x, int y) {
+    if (isFinished()){
+        Modification m;
+        m.a="winner";
+        notify(m);
+    }
+    ((x <= 8 && x >= 0)&&(y <= 5 && y >= 0)) ? board.removePawn(x, y):
+        throw OutOfGameBoardException("Sorry the coordinates are not in the game board");
 }
 
 void Game::autofill(){
@@ -159,7 +153,7 @@ void Game::autofill(){
 }
 
 bool Game::isFinished(){
-    return true;// players.back().full();
+    return true;
 }
 
 Player Game::getWinner() {

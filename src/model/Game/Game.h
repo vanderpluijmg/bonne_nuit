@@ -109,7 +109,7 @@ public:
     /**
      * Return pawn of current player.
      */
-    bool returnPawn(int, int);
+    void returnPawn(int, int);
 
     /**
      * Gets winner of the game.

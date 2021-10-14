@@ -229,6 +229,8 @@ void View::goIntoNight() {
             if (g->getBoard().getCase(x,y+1).getState() == shining ){
                 std::cout<<x <<" " <<y<<std::endl;//Not sure why but does not make all shining star night logo.
                 star->setIcon(icon);
+            } else {
+                star->setHidden(true);
             }
         }
     }

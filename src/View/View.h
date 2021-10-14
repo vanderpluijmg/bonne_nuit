@@ -51,13 +51,11 @@ public:
      * Plays a turn for the current player
      */
     void playTurn();
-
     /**
      * Moves the rose in the view.
      * @param rosePlace New position of rose.
      */
     void moveRoseView();
-
     /**
      * When add players button in GUI is clicked.
      */
