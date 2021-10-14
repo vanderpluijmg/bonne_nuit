@@ -240,54 +240,6 @@ atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s
 .PHONY : atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.s
 
-src/View/View.o: src/View/View.cpp.o
-.PHONY : src/View/View.o
-
-# target to build an object file
-src/View/View.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.o
-.PHONY : src/View/View.cpp.o
-
-src/View/View.i: src/View/View.cpp.i
-.PHONY : src/View/View.i
-
-# target to preprocess a source file
-src/View/View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.i
-.PHONY : src/View/View.cpp.i
-
-src/View/View.s: src/View/View.cpp.s
-.PHONY : src/View/View.s
-
-# target to generate assembly for a file
-src/View/View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/View.cpp.s
-.PHONY : src/View/View.cpp.s
-
-src/View/windows/newPlayerWidget.o: src/View/windows/newPlayerWidget.cpp.o
-.PHONY : src/View/windows/newPlayerWidget.o
-
-# target to build an object file
-src/View/windows/newPlayerWidget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.o
-.PHONY : src/View/windows/newPlayerWidget.cpp.o
-
-src/View/windows/newPlayerWidget.i: src/View/windows/newPlayerWidget.cpp.i
-.PHONY : src/View/windows/newPlayerWidget.i
-
-# target to preprocess a source file
-src/View/windows/newPlayerWidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.i
-.PHONY : src/View/windows/newPlayerWidget.cpp.i
-
-src/View/windows/newPlayerWidget.s: src/View/windows/newPlayerWidget.cpp.s
-.PHONY : src/View/windows/newPlayerWidget.s
-
-# target to generate assembly for a file
-src/View/windows/newPlayerWidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/View/windows/newPlayerWidget.cpp.s
-.PHONY : src/View/windows/newPlayerWidget.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -312,86 +264,131 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/model/Game/Board.o: src/model/Game/Board.cpp.o
-.PHONY : src/model/Game/Board.o
+src/model/Board.o: src/model/Board.cpp.o
+.PHONY : src/model/Board.o
 
 # target to build an object file
-src/model/Game/Board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.o
-.PHONY : src/model/Game/Board.cpp.o
+src/model/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Board.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Board.cpp.o
+.PHONY : src/model/Board.cpp.o
 
-src/model/Game/Board.i: src/model/Game/Board.cpp.i
-.PHONY : src/model/Game/Board.i
+src/model/Board.i: src/model/Board.cpp.i
+.PHONY : src/model/Board.i
 
 # target to preprocess a source file
-src/model/Game/Board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.i
-.PHONY : src/model/Game/Board.cpp.i
+src/model/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Board.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Board.cpp.i
+.PHONY : src/model/Board.cpp.i
 
-src/model/Game/Board.s: src/model/Game/Board.cpp.s
-.PHONY : src/model/Game/Board.s
+src/model/Board.s: src/model/Board.cpp.s
+.PHONY : src/model/Board.s
 
 # target to generate assembly for a file
-src/model/Game/Board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Board.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Board.cpp.s
-.PHONY : src/model/Game/Board.cpp.s
+src/model/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Board.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Board.cpp.s
+.PHONY : src/model/Board.cpp.s
 
-src/model/Game/Game.o: src/model/Game/Game.cpp.o
-.PHONY : src/model/Game/Game.o
+src/model/Game.o: src/model/Game.cpp.o
+.PHONY : src/model/Game.o
 
 # target to build an object file
-src/model/Game/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.o
-.PHONY : src/model/Game/Game.cpp.o
+src/model/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.o
+.PHONY : src/model/Game.cpp.o
 
-src/model/Game/Game.i: src/model/Game/Game.cpp.i
-.PHONY : src/model/Game/Game.i
+src/model/Game.i: src/model/Game.cpp.i
+.PHONY : src/model/Game.i
 
 # target to preprocess a source file
-src/model/Game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.i
-.PHONY : src/model/Game/Game.cpp.i
+src/model/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.i
+.PHONY : src/model/Game.cpp.i
 
-src/model/Game/Game.s: src/model/Game/Game.cpp.s
-.PHONY : src/model/Game/Game.s
+src/model/Game.s: src/model/Game.cpp.s
+.PHONY : src/model/Game.s
 
 # target to generate assembly for a file
-src/model/Game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game/Game.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game/Game.cpp.s
-.PHONY : src/model/Game/Game.cpp.s
+src/model/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.s
+.PHONY : src/model/Game.cpp.s
 
-src/model/Model.o: src/model/Model.cpp.o
-.PHONY : src/model/Model.o
+src/view/MainWindow.o: src/view/MainWindow.cpp.o
+.PHONY : src/view/MainWindow.o
 
 # target to build an object file
-src/model/Model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.o
-.PHONY : src/model/Model.cpp.o
+src/view/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.o
+.PHONY : src/view/MainWindow.cpp.o
 
-src/model/Model.i: src/model/Model.cpp.i
-.PHONY : src/model/Model.i
+src/view/MainWindow.i: src/view/MainWindow.cpp.i
+.PHONY : src/view/MainWindow.i
 
 # target to preprocess a source file
-src/model/Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.i
-.PHONY : src/model/Model.cpp.i
+src/view/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.i
+.PHONY : src/view/MainWindow.cpp.i
 
-src/model/Model.s: src/model/Model.cpp.s
-.PHONY : src/model/Model.s
+src/view/MainWindow.s: src/view/MainWindow.cpp.s
+.PHONY : src/view/MainWindow.s
 
 # target to generate assembly for a file
-src/model/Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit-Tests.dir/build.make CMakeFiles/atlir5_Bonne_nuit-Tests.dir/src/model/Model.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Model.cpp.s
-.PHONY : src/model/Model.cpp.s
+src/view/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.s
+.PHONY : src/view/MainWindow.cpp.s
+
+src/view/View.o: src/view/View.cpp.o
+.PHONY : src/view/View.o
+
+# target to build an object file
+src/view/View.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o
+.PHONY : src/view/View.cpp.o
+
+src/view/View.i: src/view/View.cpp.i
+.PHONY : src/view/View.i
+
+# target to preprocess a source file
+src/view/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.i
+.PHONY : src/view/View.cpp.i
+
+src/view/View.s: src/view/View.cpp.s
+.PHONY : src/view/View.s
+
+# target to generate assembly for a file
+src/view/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.s
+.PHONY : src/view/View.cpp.s
+
+src/view/windows/newPlayerWidget.o: src/view/windows/newPlayerWidget.cpp.o
+.PHONY : src/view/windows/newPlayerWidget.o
+
+# target to build an object file
+src/view/windows/newPlayerWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o
+.PHONY : src/view/windows/newPlayerWidget.cpp.o
+
+src/view/windows/newPlayerWidget.i: src/view/windows/newPlayerWidget.cpp.i
+.PHONY : src/view/windows/newPlayerWidget.i
+
+# target to preprocess a source file
+src/view/windows/newPlayerWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.i
+.PHONY : src/view/windows/newPlayerWidget.cpp.i
+
+src/view/windows/newPlayerWidget.s: src/view/windows/newPlayerWidget.cpp.s
+.PHONY : src/view/windows/newPlayerWidget.s
+
+# target to generate assembly for a file
+src/view/windows/newPlayerWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.s
+.PHONY : src/view/windows/newPlayerWidget.cpp.s
 
 test/mainTest.o: test/mainTest.cpp.o
 .PHONY : test/mainTest.o
@@ -462,24 +459,24 @@ help:
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.o"
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.i"
 	@echo "... atlir5_Bonne_nuit_autogen/mocs_compilation.s"
-	@echo "... src/View/View.o"
-	@echo "... src/View/View.i"
-	@echo "... src/View/View.s"
-	@echo "... src/View/windows/newPlayerWidget.o"
-	@echo "... src/View/windows/newPlayerWidget.i"
-	@echo "... src/View/windows/newPlayerWidget.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/model/Game/Board.o"
-	@echo "... src/model/Game/Board.i"
-	@echo "... src/model/Game/Board.s"
-	@echo "... src/model/Game/Game.o"
-	@echo "... src/model/Game/Game.i"
-	@echo "... src/model/Game/Game.s"
-	@echo "... src/model/Model.o"
-	@echo "... src/model/Model.i"
-	@echo "... src/model/Model.s"
+	@echo "... src/model/Board.o"
+	@echo "... src/model/Board.i"
+	@echo "... src/model/Board.s"
+	@echo "... src/model/Game.o"
+	@echo "... src/model/Game.i"
+	@echo "... src/model/Game.s"
+	@echo "... src/view/MainWindow.o"
+	@echo "... src/view/MainWindow.i"
+	@echo "... src/view/MainWindow.s"
+	@echo "... src/view/View.o"
+	@echo "... src/view/View.i"
+	@echo "... src/view/View.s"
+	@echo "... src/view/windows/newPlayerWidget.o"
+	@echo "... src/view/windows/newPlayerWidget.i"
+	@echo "... src/view/windows/newPlayerWidget.s"
 	@echo "... test/mainTest.o"
 	@echo "... test/mainTest.i"
 	@echo "... test/mainTest.s"

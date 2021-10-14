@@ -231,30 +231,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h",
-			"MU",
-			"WGYDDRAMTN/moc_Observable.cpp",
-			null
-		],
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h",
-			"MU",
-			"WGYDDRAMTN/moc_Observer.cpp",
-			null
-		],
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h",
-			"MU",
-			"GT66W5ZSTU/moc_View.cpp",
-			null
-		],
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h",
-			"MU",
-			"2BF6PUDNJ4/moc_newPlayerWidget.cpp",
-			null
-		],
-		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h",
 			"MU",
 			"P2QHMNIPOG/moc_NoPawnFound.cpp",
@@ -279,39 +255,63 @@
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Board.h",
 			"MU",
-			"DI5G6D6UZN/moc_Board.cpp",
+			"VNQA4LF4BW/moc_Board.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.h",
 			"MU",
-			"DI5G6D6UZN/moc_Game.cpp",
+			"VNQA4LF4BW/moc_Game.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/GameState.hpp",
 			"MU",
-			"DI5G6D6UZN/moc_GameState.cpp",
+			"VNQA4LF4BW/moc_GameState.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Pawn.hpp",
 			"MU",
-			"DI5G6D6UZN/moc_Pawn.cpp",
+			"VNQA4LF4BW/moc_Pawn.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Player.hpp",
 			"MU",
-			"DI5G6D6UZN/moc_Player.cpp",
+			"VNQA4LF4BW/moc_Player.cpp",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h",
 			"MU",
-			"VNQA4LF4BW/moc_Model.cpp",
+			"VSCBVMNR7M/moc_Observable.cpp",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h",
+			"MU",
+			"VSCBVMNR7M/moc_Observer.cpp",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.h",
+			"MU",
+			"3JYSCEOBDA/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h",
+			"MU",
+			"3JYSCEOBDA/moc_View.cpp",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h",
+			"MU",
+			"LFZUTIRKXQ/moc_newPlayerWidget.cpp",
 			null
 		]
 	],
@@ -378,32 +378,32 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.cpp",
-			"MU",
-			null
-		],
-		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.cpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Board.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.cpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.cpp",
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.cpp",
 			"MU",
 			null
 		]

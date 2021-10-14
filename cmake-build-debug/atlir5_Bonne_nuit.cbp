@@ -186,26 +186,6 @@
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observable.h">
-			<Option target="atlir5_Bonne_nuit-Tests"/>
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/Utils/Observer.h">
-			<Option target="atlir5_Bonne_nuit-Tests"/>
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.cpp">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/View.h">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.cpp">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/View/windows/newPlayerWidget.h">
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
@@ -221,41 +201,59 @@
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.cpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Board.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Board.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Board.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.cpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.cpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Game.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.h">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/GameState.hpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/GameState.hpp">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Pawn.hpp">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Pawn.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game/Player.hpp">
-			<Option target="atlir5_Bonne_nuit-Tests"/>
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.cpp">
-			<Option target="atlir5_Bonne_nuit-Tests"/>
-			<Option target="atlir5_Bonne_nuit"/>
-		</Unit>
-		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Model.h">
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Player.hpp">
 			<Option target="atlir5_Bonne_nuit-Tests"/>
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/images.qrc">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h">
+			<Option target="atlir5_Bonne_nuit-Tests"/>
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.cpp">
+			<Option target="atlir5_Bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h">
 			<Option target="atlir5_Bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/test/mainTest.cpp">

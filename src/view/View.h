@@ -1,0 +1,83 @@
+#ifndef ATLIR5_BONNE_NUIT_VIEW_H
+#define ATLIR5_BONNE_NUIT_VIEW_H
+
+#include <QWidget>
+#include <QLayout>
+#include <QStackedWidget>
+#include <QMainWindow>
+#include "../utils/Observable.h"
+#include "../utils/Observer.h"
+#include "windows/test.hpp"
+#include "../model/Game.h"
+
+
+class View : public QWidget, public Observer {
+Q_OBJECT
+private:
+    int currentRosePlace = 0;
+    std::optional<Game> g;
+    Ui_Form* form  = new Ui_Form ();
+public:
+
+    /**
+     * Default constructor for view of game.
+     * @param parent Parent of main Window;
+     */
+    explicit View(QWidget * parent = nullptr);
+
+    /**
+     * Default destructor
+     */
+    ~View() override =default;
+
+    /**
+     * Changes to game window when start button is pressed in GUI.
+     */
+    void changeToGameWindow();
+
+    /**
+     * Updates the view when the model has changed.
+     * @param m Modification that have been made in the model.
+     * @param obs Model that has been changed.
+     */
+    void update(Modification m, const Observable *obs) override;
+
+    /**
+     * Plays a turn for the current player
+     */
+    void playTurn();
+    /**
+     * Moves the ROSE in the view.
+     * @param rosePlace New position of ROSE.
+     */
+    void moveRoseView();
+    /**
+     * When add players button in GUI is clicked.
+     */
+    void onAddPlayer();
+    /**
+     * When remove player button in GUI is clicked.
+     */
+    void onRemovePlayer();
+
+    void connectStars();
+
+    void placePawn(int x, int y, int c);
+
+    void onAddStarOrRemove();
+
+    void updateGameState(GameState gs);
+
+    void disableButtonsNotOnRose(int rosePlace);
+
+    void goIntoNight();
+
+    int findYoungestPlayer();
+
+    void updateCurrentPlayer();
+
+    void deactivateAllButton(bool activate);
+
+};
+
+#endif //ATLIR5_BONNE_NUIT_VIEW_H

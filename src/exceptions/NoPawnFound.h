@@ -1,7 +1,3 @@
-//
-// Created by greg on 24.09.21.
-//
-
 #ifndef ATLIR5_BONNE_NUIT_NOPAWNFOUND_H
 #define ATLIR5_BONNE_NUIT_NOPAWNFOUND_H
 

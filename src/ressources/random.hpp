@@ -30,7 +30,7 @@ namespace nvs
  * (_Uniform Random Number Generator_).
  * Elle est issue de Random Number Generation in C++11
  * ([WG21 N3551]
- * (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
+ * (http://www.OPEN-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
  * par Walter E. Brown.
  *
  * _Remarque_ : Sous Windows, c'est un std::mt19937 qui est
@@ -64,7 +64,7 @@ inline auto & urng()
  * partagé par nvs::urng() dans un état aléatoire.
  * Elle est issue de Random Number Generation in C++11
  * ([WG21 N3551]
- * (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
+ * (http://www.OPEN-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
  * par Walter E. Brown.
  */
 inline void randomize()
@@ -89,7 +89,7 @@ inline void randomize()
  *
  * Cette fonction est largement inspirée par Random Number Generation in
  * C++11 ([WG21 N3551]
- * (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
+ * (http://www.OPEN-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
  * par Walter E. Brown.
  *
  * _Remarque_ : Par rapport au modèle de fonction nvs::random_value<T>
@@ -135,7 +135,7 @@ inline double random_value(double max = 1., double min = 0.)
  *
  * Cette fonction est largement inspirée par Random Number Generation
  * in C++11 ([WG21 N3551]
- * (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
+ * (http://www.OPEN-std.org/jtc1/sc22/wg21/docs/papers/2013/n3551.pdf)),
  * par Walter E. Brown.
  *
  * \param min la valeur minimale (ou maximale) pouvant être retournée.

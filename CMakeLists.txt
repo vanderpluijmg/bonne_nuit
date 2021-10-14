@@ -16,8 +16,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-add_executable(atlir5_Bonne_nuit src/main.cpp src/model/Game/Pawn.hpp src/model/Game/Player.hpp src/model/Game/Game.cpp src/model/Game/Game.h src/model/Game/Board.cpp src/model/Game/Board.h src/exceptions/NumberOfPlayersException.h src/exceptions/OutOfGameBoardException.h src/exceptions/PawnInPlaceException.h src/exceptions/NoPawnFound.h src/View/View.cpp src/View/View.h src/Utils/Observable.h src/Utils/Observer.h src/model/Game/GameState.hpp src/model/Model.h src/model/Model.cpp src/ressources/images.qrc src/View/windows/newPlayerWidget.cpp src/View/windows/newPlayerWidget.h)
+add_executable(atlir5_Bonne_nuit src/main.cpp src/model/Pawn.hpp src/model/Player.hpp src/model/Game.cpp src/model/Game.h src/model/Board.cpp src/model/Board.h src/exceptions/NumberOfPlayersException.h src/exceptions/OutOfGameBoardException.h src/exceptions/PawnInPlaceException.h src/exceptions/NoPawnFound.h src/view/View.cpp src/view/View.h src/utils/Observable.h src/utils/Observer.h src/model/GameState.hpp src/ressources/images.qrc src/view/windows/newPlayerWidget.cpp src/view/windows/newPlayerWidget.h src/view/MainWindow.cpp src/view/MainWindow.h)
 
-add_executable(atlir5_Bonne_nuit-Tests test/mainTest.cpp src/model/Game/Pawn.hpp src/model/Game/Player.hpp src/model/Game/Game.cpp src/model/Game/Game.h src/model/Game/Board.cpp test/testGame.cpp src/Utils/Observable.h src/Utils/Observer.h src/Utils/Observable.h src/Utils/Observable.h src/model/Model.cpp src/model/Model.h)
+add_executable(atlir5_Bonne_nuit-Tests test/mainTest.cpp src/model/Pawn.hpp src/model/Player.hpp src/model/Game.cpp src/model/Game.h src/model/Board.cpp test/testGame.cpp src/utils/Observable.h src/utils/Observer.h src/utils/Observable.h src/utils/Observable.h)
 
 target_link_libraries(${PROJECT_NAME} ${REQUIRED_LIBS_QUALIFIED})

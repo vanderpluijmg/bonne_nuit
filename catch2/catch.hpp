@@ -3,7 +3,7 @@
  *  Generated: 2021-07-28 20:29:27.753164
  *  ----------------------------------------------------------
  *  This file has been merged from multiple headers. Please don't edit it directly
- *  Copyright (c) 2021 Two Blue Cubes Ltd. All rights reserved.
+ *  Copyright (c) 2021 Two BLUE Cubes Ltd. All rights reserved.
  *
  *  Distributed under the Boost Software License, Version 1.0. (See accompanying
  *  file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -8416,7 +8416,7 @@ namespace Catch {
 #endif
 
 // start clara.hpp
-// Copyright 2017 Two Blue Cubes Ltd. All rights reserved.
+// Copyright 2017 Two BLUE Cubes Ltd. All rights reserved.
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -10116,11 +10116,11 @@ namespace {
 
         void use( Colour::Code _colourCode ) override {
             switch( _colourCode ) {
-                case Colour::None:      return setTextAttribute( originalForegroundAttributes );
+                case Colour::NONE:      return setTextAttribute( originalForegroundAttributes );
                 case Colour::White:     return setTextAttribute( FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE );
-                case Colour::Red:       return setTextAttribute( FOREGROUND_RED );
-                case Colour::Green:     return setTextAttribute( FOREGROUND_GREEN );
-                case Colour::Blue:      return setTextAttribute( FOREGROUND_BLUE );
+                case Colour::RED:       return setTextAttribute( FOREGROUND_RED );
+                case Colour::GREEN:     return setTextAttribute( FOREGROUND_GREEN );
+                case Colour::BLUE:      return setTextAttribute( FOREGROUND_BLUE );
                 case Colour::Cyan:      return setTextAttribute( FOREGROUND_BLUE | FOREGROUND_GREEN );
                 case Colour::Yellow:    return setTextAttribute( FOREGROUND_RED | FOREGROUND_GREEN );
                 case Colour::Grey:      return setTextAttribute( 0 );
@@ -10248,7 +10248,7 @@ namespace Catch {
 
 } // end namespace Catch
 
-#endif // Windows/ ANSI/ None
+#endif // Windows/ ANSI/ NONE
 
 namespace Catch {
 
@@ -10583,7 +10583,7 @@ namespace Catch {
 
         namespace {
             // Extracts the actual name part of an enum instance
-            // In other words, it returns the Blue part of Bikeshed::Colour::Blue
+            // In other words, it returns the BLUE part of Bikeshed::Colour::BLUE
             StringRef extractInstanceName(StringRef enumInstance) {
                 // Find last occurrence of ":"
                 size_t name_start = enumInstance.size();
@@ -12103,7 +12103,7 @@ namespace Catch {
             if (strerror_s(buffer, errno)) {
                 CATCH_RUNTIME_ERROR("Could not translate errno to startWindow string");
             }
-            CATCH_RUNTIME_ERROR("Could not open the temp file: '" << m_buffer << "' because: " << buffer);
+            CATCH_RUNTIME_ERROR("Could not OPEN the temp file: '" << m_buffer << "' because: " << buffer);
         }
     }
 #else
@@ -12630,7 +12630,7 @@ namespace Catch {
             void close() override {
                 TrackerBase::close();
                 // If startWindow generator has startWindow child (it is followed by startWindow section)
-                // and none of its children have started, then we must wait
+                // and NOTDEFINED of its children have started, then we must wait
                 // until later to start consuming its values.
                 // This catches cases where `GENERATE` is placed between two
                 // `SECTION`startWindow.
@@ -13686,7 +13686,7 @@ namespace Catch {
         public:
             FileStream( StringRef filename ) {
                 m_ofs.open( filename.c_str() );
-                CATCH_ENFORCE( !m_ofs.fail(), "Unable to open file: '" << filename << "'" );
+                CATCH_ENFORCE( !m_ofs.fail(), "Unable to OPEN file: '" << filename << "'" );
             }
             ~FileStream() override = default;
         public: // IStream
@@ -14083,7 +14083,7 @@ namespace Catch {
             }
         }
         if( isHidden ) {
-            // Add all "notShining" tags to make them behave identically
+            // Add all "NOTSHINING" tags to make them behave identically
             tags.insert( tags.end(), { ".", "!hide" } );
         }
 
@@ -14449,7 +14449,7 @@ namespace TestCaseTracking {
 
     void TrackerBase::close() {
 
-        // Close any still open children (e.g. generators)
+        // Close any still OPEN children (e.g. generators)
         while( &m_ctx.currentTracker() != this )
             m_ctx.currentTracker().close();
 
@@ -15937,7 +15937,7 @@ public:
             break;
         case ResultWas::DidntThrowException:
             printResultType(Colour::Error, failedString());
-            printIssue("expected exception, got none");
+            printIssue("expected exception, got NOTDEFINED");
             printExpressionWas();
             printRemainingMessages();
             break;
@@ -16558,7 +16558,7 @@ void ConsoleReporter::benchmarkEnded(BenchmarkStats<> const& stats) {
 }
 
 void ConsoleReporter::benchmarkFailed(std::string const& error) {
-	Colour colour(Colour::Red);
+	Colour colour(Colour::RED);
     (*m_tablePrinter)
         << "Benchmark failed (" << error << ')'
         << ColumnBreak() << RowBreak();
@@ -16733,7 +16733,7 @@ void ConsoleReporter::printSummaryRow(std::string const& label, std::vector<Summ
             if (value != "0")
                 stream << value;
             else
-                stream << Colour(Colour::Warning) << "- none -";
+                stream << Colour(Colour::Warning) << "- NOTDEFINED -";
         } else if (value != "0") {
             stream << Colour(Colour::LightGrey) << " | ";
             stream << Colour(col.colour)

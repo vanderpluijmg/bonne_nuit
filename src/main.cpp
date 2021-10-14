@@ -1,7 +1,6 @@
 #include <QApplication>
-#include "model/Game/Game.h"
-#include "View/View.h"
-#include "model/Model.h"
+#include "model/Game.h"
+#include "view/View.h"
 #include "ressources/random.hpp"
 
 int main(int argc, char *argv[]){

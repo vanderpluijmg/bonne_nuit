@@ -1,11 +1,8 @@
-//
-// Created by greg on 23.09.21.
-//
-
 #ifndef ATLIR5_BONNE_NUIT_PAWNINPLACEEXCEPTION_H
 #define ATLIR5_BONNE_NUIT_PAWNINPLACEEXCEPTION_H
 
 #include <stdexcept>
+
 /**
  * Exception used when trying to place or remove pawn with or without startWindow pawn in place.
  */
