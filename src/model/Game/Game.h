@@ -1,7 +1,3 @@
-//
-// Created by greg on 17.09.21.
-//
-
 #ifndef ATLIR5_BONNE_NUIT_GAME_H
 #define ATLIR5_BONNE_NUIT_GAME_H
 
@@ -19,8 +15,8 @@ private:
     std::list<Observer *> observers;
     GameState gameState_;
     Player currentPlayer;
-    std::vector<Player>players;
-    std::vector<Player>npc_;
+    std::vector<Player> players;
+    std::vector<Player> npc_;
     Board board;
 
     /**
@@ -28,61 +24,69 @@ private:
     */
     void populateGame(int);
 
+    /**
+     * Remove the pawn of the current player.
+     */
     void removePawnCurrentPlayer();
 
     /**
-     * Adds all pawns that have not yet been taken by startWindow player.
+     * Adds all pawns that have not yet been taken by any players.
      */
     void addPawnsToPlace(int);
 
+    /**
+     * Setter for game state.
+     * @param gameState Game state to set to.
+     */
+    void setGameState(GameState gameState);
 
 public:
 
     /**
-     * Default constructor for Game
-    */
-    Game() : Game(5){};
+     * Constructor of class Game.
+     */
+    Game();
 
     /**
-     * Constructor of Game
-     * @param numberOfPlayers Number of players who are going to play.
+     * Initializes a game with the number of players.
+     * @param numberOfPlayers Number of players to initializes game with.
      */
-    explicit Game(int numberOfPlayers);
-
     void initGame(int numberOfPlayers);
 
     /**
-     * Gets players of game
-     * @return Players that are playing the game.
+     * Gets all the players that are playing.
+     * @return A list of all the players.
      */
     std::vector<Player> getPlayers();
 
     /**
-     * Gets the paws of startWindow specific player.
-     * @return
+     * Notifies view of all the pawns that have to be placed by the pc.
      */
-    std::list<Pawn> getPlayerHand(int);
-
-    void notifyBoard();
+    void notifyStartingNpcPawn();
 
     /**
-     * Changes to the next player
-     */
+    * Changes to the next player.
+    */
     void nextPlayer();
 
     /**
      * Simulates a dice roll.
      * @return The value of the dice.
      */
-     int rollDice() ;
+    static int rollDice();
 
     /**
-     * Rolls dice and passes value to board.
-     * @param value Value of rolled dice
+     * Moves rose and notifies view.
+     * @param value Value of rolled dice.
      */
-    void moveRose(int value) ;
+    void moveRose(int value);
 
-    int getRosePlace() ;
+    /**
+     * Getter of the current place of the rose.
+     * @return The current place of the rose.
+     */
+    int getRosePlace();
+
     /**
      * Places the current players pawns.
      */
@@ -92,51 +96,31 @@ public:
      * Getter for the game board.
      * @return game board.
      */
-    Board &getBoard() ;
+    Board &getBoard();
 
     /**
-     * Setter for game state
-     * @param gameState Game state to set to.
-     */
-    void setGameState(GameState gameState);
-
-    /**
-     * Plays startWindow move for startWindow player.
-     * @param player Player to play move for.
+     * Plays the current players move. Removes a pawn from his hand.
+     * @param y Y coordinates of the start he would like to place.
      */
     void playMove(int y);
 
     /**
-     * Return pawn of current player.
+     * Return pawn of current player at coordinates x and y.
+     * @param y X coordinates of star.
+     * @param x Y coordinates of star.
      */
-    void returnPawn(int, int);
+    void returnPawn(int x, int y);
 
     /**
-     * Gets winner of the game.
-     * @return The player that has won the current game.
-     */
-    Player getWinner();
-
-    /**
-     * Auto fills startWindow game with pawn. Used to test second part of the game.
+     * Auto fills the game with pawns.
      */
     void autofill();
-
-    /**
-    * Plays turn of player in lights on state of game.
-    */
-    void playTurnLightOn(int) ;
-
-    /**
-     * Plays turn of player in light off on state of the game.
-     */
-    void playTurnLightOff(int,int) ;
 
     /**
      * Checks if the game is finished.
      * @return True if the game is finished.
      */
-    bool isFinished() ;
+    bool isFinished();
 
     /**
      * Getter for the current playing player.
@@ -148,32 +132,39 @@ public:
      * Gets current state of the game.
      * @return Current state of game.
      */
-    [[nodiscard]] GameState getGameState() const ;
+    [[nodiscard]] GameState getGameState() const;
 
     /**
-    * Check if game is done.
-     * @return True if game is done.
+    * Check if the fist part of the game is done. Notifies view if done.
      */
-    void isDone() ;
+    void dayDone();
 
     /**
-     * Turns light off during the game.
+     * Turns "light off" during the game.
      */
-    void turnLightOff() ;
+    void turnLightOff();
 
     /**
-     * Turns lights on during the game.
+     * Turns "lights on" during the game.
      */
-    void turnLightOn() ;
+    void turnLightOn();
 
+    /**
+     * Subscribes an observer to game.
+     * @param observer Observer that needs to subscribe.
+     */
     void addObserver(Observer *observer) override;
 
+    /**
+     * Notifies all subscribers of game.
+     * @param m Modifications that have happened.
+     */
     void notify(Modification m) override;
 
-    const std::vector<Player> &getNpc() const;
-
-
+    /**
+     * Gets a list of pawn of all the players that are not playing.
+     * @return List of players that are not in the game.
+     */
+    [[nodiscard]] const std::vector<Player> &getNpc() const;
 };
-
-
 #endif //ATLIR5_BONNE_NUIT_GAME_H

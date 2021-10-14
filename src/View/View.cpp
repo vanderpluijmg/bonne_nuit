@@ -38,7 +38,7 @@ void View::update(Modification m, const Observable *obs) {
 
 void View::changeToGameWindow() {
     try {
-        g = Game(form->numberOfPlayers->intValue());
+        g = Game();
         g->addObserver(this);
         g->turnLightOn();
         g->initGame(form->numberOfPlayers->intValue());
@@ -173,7 +173,7 @@ void View::onAddStarOrRemove() {
             form->rollDice->setEnabled(true);
             deactivateAllButton(true);
             form->label_2->setText("Please roll the dice");
-            g->isDone();
+            g->dayDone();
         } catch (PawnInPlaceException &e) {
             QMessageBox msgBox;
             msgBox.setText("Sorry you or another player already has a pawn there");
