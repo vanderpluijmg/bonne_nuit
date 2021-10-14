@@ -15,21 +15,16 @@ newPlayerWidget::newPlayerWidget(int nbr) {
 
 void newPlayerWidget::setUp(QWidget *parent, int name) {
     horizontalLayoutManager = new QHBoxLayout(parent);
-    //Name of player
     auto playerNameLabel = tr("Player %1").arg(name);
     auto nameOfPlayer = new QLabel(playerNameLabel);
     horizontalLayoutManager->addWidget(nameOfPlayer);
-    // End of name of player
-    //Spacer
     auto spacerNameAge = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-    //Age of player
     horizontalLayoutManager->addItem(spacerNameAge);
     auto ageQuestion = new QLabel("How old are you?");
     horizontalLayoutManager->addWidget(ageQuestion);
     ageResp = new QLineEdit();
     ageResp->setMaximumSize(QSize(100, 33));
     horizontalLayoutManager->addWidget(ageResp);
-    //End age of player
     auto colorPlayer = new QLabel("Your color is : ");
     horizontalLayoutManager->addWidget(colorPlayer);
     auto colorPic = new QLabel();
@@ -62,7 +57,6 @@ void newPlayerWidget::setUp(QWidget *parent, int name) {
     }
     horizontalLayoutManager->addWidget(colorPic);
     auto spaceColorEnd = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-    //Spacer
     horizontalLayoutManager->addItem(spaceColorEnd);
 }
 

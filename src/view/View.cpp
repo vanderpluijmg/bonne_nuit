@@ -37,7 +37,6 @@ void View::changeToGameWindow() {
         game->turnLightOn();
         game->initGame(mainWindow->numberOfPlayers->intValue(), firstPlayer);
         mainWindow->stackedWidget->setCurrentIndex(1);
-        //findYoungestPlayer();
         affectAllStars(true, false, false);
         updateRoseView();
     } catch (NumberOfPlayersException& e) {
@@ -86,8 +85,8 @@ void View::rollDiceMoveRose() {
 }
 
 void View::updateRoseView() {
-    QString currentPlace = tr("case%1").arg(game->getRosePlace());
-    QString previousPlace = tr("case%1").arg(currentRosePlace_);
+    QString currentPlace = tr("caseRose%1").arg(game->getRosePlace());
+    QString previousPlace = tr("caseRose%1").arg(currentRosePlace_);
     auto previousLayout = (mainWindow->cases->findChild<QVBoxLayout*>(previousPlace));
     auto previousRosePlace = qobject_cast<QPushButton*>(previousLayout->itemAt(0)->widget());
     auto currentLayout = (mainWindow->cases->findChild<QVBoxLayout*>(currentPlace));

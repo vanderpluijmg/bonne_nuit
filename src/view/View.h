@@ -88,12 +88,6 @@ public:
     void goIntoNight();
 
     /**
-     * Find the youngest player to make him play first.
-     * @return
-     */
-    int findYoungestPlayer();
-
-    /**
      * Updates the current player in the GUI.
      */
     void updateCurrentPlayer();

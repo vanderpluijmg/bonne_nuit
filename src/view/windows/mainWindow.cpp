@@ -75,101 +75,101 @@ void Ui_Form::setupUi(QWidget *Form) {
     verticalLayoutWidget_6 = new QWidget(cases);
     verticalLayoutWidget_6->setObjectName(QString::fromUtf8("verticalLayoutWidget_6"));
     verticalLayoutWidget_6->setGeometry(QRect(870, 360, 431, 41));
-    case8 = new QVBoxLayout(verticalLayoutWidget_6);
-    case8->setObjectName(QString::fromUtf8("case8"));
-    case8->setContentsMargins(0, 0, 0, 0);
+    caseRose8 = new QVBoxLayout(verticalLayoutWidget_6);
+    caseRose8->setObjectName(QString::fromUtf8("caseRose8"));
+    caseRose8->setContentsMargins(0, 0, 0, 0);
     pushButton_7 = new QPushButton(verticalLayoutWidget_6);
     pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
 
-    case8->addWidget(pushButton_7);
+    caseRose8->addWidget(pushButton_7);
 
     verticalLayoutWidget_9 = new QWidget(cases);
     verticalLayoutWidget_9->setObjectName(QString::fromUtf8("verticalLayoutWidget_9"));
     verticalLayoutWidget_9->setGeometry(QRect(40, 620, 431, 41));
-    case3 = new QVBoxLayout(verticalLayoutWidget_9);
-    case3->setObjectName(QString::fromUtf8("case3"));
-    case3->setContentsMargins(0, 0, 0, 0);
+    caseRose3 = new QVBoxLayout(verticalLayoutWidget_9);
+    caseRose3->setObjectName(QString::fromUtf8("caseRose3"));
+    caseRose3->setContentsMargins(0, 0, 0, 0);
     pushButton_4 = new QPushButton(verticalLayoutWidget_9);
     pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
 
-    case3->addWidget(pushButton_4);
+    caseRose3->addWidget(pushButton_4);
 
     verticalLayoutWidget_3 = new QWidget(cases);
     verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
     verticalLayoutWidget_3->setGeometry(QRect(460, 229, 431, 41));
-    case0 = new QVBoxLayout(verticalLayoutWidget_3);
-    case0->setObjectName(QString::fromUtf8("case0"));
-    case0->setContentsMargins(0, 0, 0, 0);
+    caseRose0 = new QVBoxLayout(verticalLayoutWidget_3);
+    caseRose0->setObjectName(QString::fromUtf8("caseRose0"));
+    caseRose0->setContentsMargins(0, 0, 0, 0);
     pushButton = new QPushButton(verticalLayoutWidget_3);
     pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-    case0->addWidget(pushButton);
+    caseRose0->addWidget(pushButton);
 
     verticalLayoutWidget_11 = new QWidget(cases);
     verticalLayoutWidget_11->setObjectName(QString::fromUtf8("verticalLayoutWidget_11"));
     verticalLayoutWidget_11->setGeometry(QRect(250, 750, 431, 41));
-    case4 = new QVBoxLayout(verticalLayoutWidget_11);
-    case4->setObjectName(QString::fromUtf8("case4"));
-    case4->setContentsMargins(0, 0, 0, 0);
+    caseRose4 = new QVBoxLayout(verticalLayoutWidget_11);
+    caseRose4->setObjectName(QString::fromUtf8("caseRose4"));
+    caseRose4->setContentsMargins(0, 0, 0, 0);
     pushButton_5 = new QPushButton(verticalLayoutWidget_11);
     pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
 
-    case4->addWidget(pushButton_5);
+    caseRose4->addWidget(pushButton_5);
 
     verticalLayoutWidget_8 = new QWidget(cases);
     verticalLayoutWidget_8->setObjectName(QString::fromUtf8("verticalLayoutWidget_8"));
     verticalLayoutWidget_8->setGeometry(QRect(0, 490, 431, 41));
-    case2 = new QVBoxLayout(verticalLayoutWidget_8);
-    case2->setObjectName(QString::fromUtf8("case2"));
-    case2->setContentsMargins(0, 0, 0, 0);
+    caseRose2 = new QVBoxLayout(verticalLayoutWidget_8);
+    caseRose2->setObjectName(QString::fromUtf8("caseRose2"));
+    caseRose2->setContentsMargins(0, 0, 0, 0);
     pushButton_3 = new QPushButton(verticalLayoutWidget_8);
     pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
 
-    case2->addWidget(pushButton_3);
+    caseRose2->addWidget(pushButton_3);
 
     verticalLayoutWidget_12 = new QWidget(cases);
     verticalLayoutWidget_12->setObjectName(QString::fromUtf8("verticalLayoutWidget_12"));
     verticalLayoutWidget_12->setGeometry(QRect(690, 750, 431, 41));
-    case5 = new QVBoxLayout(verticalLayoutWidget_12);
-    case5->setObjectName(QString::fromUtf8("case5"));
-    case5->setContentsMargins(0, 0, 0, 0);
+    caseRose5 = new QVBoxLayout(verticalLayoutWidget_12);
+    caseRose5->setObjectName(QString::fromUtf8("caseRose5"));
+    caseRose5->setContentsMargins(0, 0, 0, 0);
     pushButton_10 = new QPushButton(verticalLayoutWidget_12);
     pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
 
-    case5->addWidget(pushButton_10);
+    caseRose5->addWidget(pushButton_10);
 
     verticalLayoutWidget_10 = new QWidget(cases);
     verticalLayoutWidget_10->setObjectName(QString::fromUtf8("verticalLayoutWidget_10"));
     verticalLayoutWidget_10->setGeometry(QRect(910, 489, 431, 41));
-    case7 = new QVBoxLayout(verticalLayoutWidget_10);
-    case7->setObjectName(QString::fromUtf8("case7"));
-    case7->setContentsMargins(0, 0, 0, 0);
+    caseRose7 = new QVBoxLayout(verticalLayoutWidget_10);
+    caseRose7->setObjectName(QString::fromUtf8("caseRose7"));
+    caseRose7->setContentsMargins(0, 0, 0, 0);
     pushButton_9 = new QPushButton(verticalLayoutWidget_10);
     pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
 
-    case7->addWidget(pushButton_9);
+    caseRose7->addWidget(pushButton_9);
 
     verticalLayoutWidget_13 = new QWidget(cases);
     verticalLayoutWidget_13->setObjectName(QString::fromUtf8("verticalLayoutWidget_13"));
     verticalLayoutWidget_13->setGeometry(QRect(870, 620, 431, 41));
-    case6 = new QVBoxLayout(verticalLayoutWidget_13);
-    case6->setObjectName(QString::fromUtf8("case6"));
-    case6->setContentsMargins(0, 0, 0, 0);
+    caseRose6 = new QVBoxLayout(verticalLayoutWidget_13);
+    caseRose6->setObjectName(QString::fromUtf8("caseRose6"));
+    caseRose6->setContentsMargins(0, 0, 0, 0);
     pushButton_6 = new QPushButton(verticalLayoutWidget_13);
     pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
 
-    case6->addWidget(pushButton_6);
+    caseRose6->addWidget(pushButton_6);
 
     verticalLayoutWidget_5 = new QWidget(cases);
     verticalLayoutWidget_5->setObjectName(QString::fromUtf8("verticalLayoutWidget_5"));
     verticalLayoutWidget_5->setGeometry(QRect(50, 360, 431, 41));
-    case1 = new QVBoxLayout(verticalLayoutWidget_5);
-    case1->setObjectName(QString::fromUtf8("case1"));
-    case1->setContentsMargins(0, 0, 0, 0);
+    caseRose1 = new QVBoxLayout(verticalLayoutWidget_5);
+    caseRose1->setObjectName(QString::fromUtf8("caseRose1"));
+    caseRose1->setContentsMargins(0, 0, 0, 0);
     pushButton_2 = new QPushButton(verticalLayoutWidget_5);
     pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
 
-    case1->addWidget(pushButton_2);
+    caseRose1->addWidget(pushButton_2);
 
     horizontalLayoutWidget_2 = new QWidget(cases);
     horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
