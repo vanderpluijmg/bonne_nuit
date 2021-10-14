@@ -14,7 +14,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.
  ../src/utils/Observable.h \
  ../src/utils/Observer.h \
  ../src/view/View.h \
- ../src/view/windows/test.hpp \
+ ../src/view/windows/mainWindow.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -189,7 +189,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o: \
  ../src/utils/Observable.h \
  ../src/utils/Observer.h \
  ../src/view/View.h \
- ../src/view/windows/test.hpp \
+ ../src/view/windows/mainWindow.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -370,6 +370,9 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.o: \
  ../src/ressources/random.hpp \
  ../src/utils/Observable.h \
  ../src/utils/Observer.h
+CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.o: \
+ ../src/view/MainWindow.cpp \
+ ../src/view/MainWindow.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o: \
  ../src/exceptions/NoPawnFound.h \
  ../src/exceptions/NumberOfPlayersException.h \
@@ -384,15 +387,14 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o: \
  ../src/utils/Observer.h \
  ../src/view/View.cpp \
  ../src/view/View.h \
+ ../src/view/windows/mainWindow.hpp \
  ../src/view/windows/newPlayerWidget.h \
- ../src/view/windows/test.hpp \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
  /usr/include/qt6/QtCore/QSize \
  /usr/include/qt6/QtCore/QSizeF \
  /usr/include/qt6/QtCore/QVariant \
- /usr/include/qt6/QtCore/QtGlobal \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qanystringview.h \
  /usr/include/qt6/QtCore/qarraydata.h \

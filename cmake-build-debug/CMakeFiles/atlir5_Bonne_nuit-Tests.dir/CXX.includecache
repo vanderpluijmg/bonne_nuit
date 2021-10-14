@@ -83,6 +83,8 @@ list
 -
 string
 -
+optional
+-
 ../model/GameState.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/GameState.hpp
 

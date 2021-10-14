@@ -318,30 +318,6 @@ src/model/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.s
 .PHONY : src/model/Game.cpp.s
 
-src/view/MainWindow.o: src/view/MainWindow.cpp.o
-.PHONY : src/view/MainWindow.o
-
-# target to build an object file
-src/view/MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.o
-.PHONY : src/view/MainWindow.cpp.o
-
-src/view/MainWindow.i: src/view/MainWindow.cpp.i
-.PHONY : src/view/MainWindow.i
-
-# target to preprocess a source file
-src/view/MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.i
-.PHONY : src/view/MainWindow.cpp.i
-
-src/view/MainWindow.s: src/view/MainWindow.cpp.s
-.PHONY : src/view/MainWindow.s
-
-# target to generate assembly for a file
-src/view/MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.s
-.PHONY : src/view/MainWindow.cpp.s
-
 src/view/View.o: src/view/View.cpp.o
 .PHONY : src/view/View.o
 
@@ -468,9 +444,6 @@ help:
 	@echo "... src/model/Game.o"
 	@echo "... src/model/Game.i"
 	@echo "... src/model/Game.s"
-	@echo "... src/view/MainWindow.o"
-	@echo "... src/view/MainWindow.i"
-	@echo "... src/view/MainWindow.s"
 	@echo "... src/view/View.o"
 	@echo "... src/view/View.i"
 	@echo "... src/view/View.s"

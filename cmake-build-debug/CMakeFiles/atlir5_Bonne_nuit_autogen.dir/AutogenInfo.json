@@ -297,12 +297,6 @@
 			null
 		],
 		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.h",
-			"MU",
-			"3JYSCEOBDA/moc_MainWindow.cpp",
-			null
-		],
-		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h",
 			"MU",
 			"3JYSCEOBDA/moc_View.cpp",
@@ -389,11 +383,6 @@
 		],
 		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.cpp",
 			"MU",
 			null
 		],

@@ -7,16 +7,16 @@
 #include <QMainWindow>
 #include "../utils/Observable.h"
 #include "../utils/Observer.h"
-#include "windows/test.hpp"
+#include "windows/mainWindow.hpp"
 #include "../model/Game.h"
 
 
 class View : public QWidget, public Observer {
 Q_OBJECT
 private:
-    int currentRosePlace = 0;
-    std::optional<Game> g;
-    Ui_Form* form  = new Ui_Form ();
+    int currentRosePlace_ = 0;
+    std::optional<Game> game;
+    Ui_Form* mainWindow  = new Ui_Form ();
 public:
 
     /**
@@ -43,40 +43,80 @@ public:
     void update(Modification m, const Observable *obs) override;
 
     /**
-     * Plays a turn for the current player
+     * Plays description turn for the current player
      */
-    void playTurn();
+    void rollDiceMoveRose();
     /**
      * Moves the ROSE in the view.
-     * @param rosePlace New position of ROSE.
      */
-    void moveRoseView();
+    void updateRoseView();
+
     /**
      * When add players button in GUI is clicked.
      */
     void onAddPlayer();
+
     /**
      * When remove player button in GUI is clicked.
      */
     void onRemovePlayer();
 
-    void connectStars();
-
+    /**
+     * Places description pawn in the GUI.
+     * @param x X coordinates of the pawn.
+     * @param y Y coordinates of the pawn.
+     * @param c Color of the pawn.
+     */
     void placePawn(int x, int y, int c);
 
+    /**
+     * Removes or adds description start to the GUI depending of the state of the game.
+     */
     void onAddStarOrRemove();
 
-    void updateGameState(GameState gs);
+    /**
+     * Updates the state of the game in the GUI.
+     * @param gs
+     */
+    void updateGameState();
 
-    void disableButtonsNotOnRose(int rosePlace);
-
+    /**
+     * Changes game from day ton night.
+     */
     void goIntoNight();
 
+    /**
+     * Find the youngest player to make him play first.
+     * @return
+     */
     int findYoungestPlayer();
 
+    /**
+     * Updates the current player in the GUI.
+     */
     void updateCurrentPlayer();
 
-    void deactivateAllButton(bool activate);
+    /**
+     * Applies the current picture of the correct star to the icon.
+     * @param c Color of star.
+     */
+    static void getStarPicture(int c, QIcon&);
+
+    /**
+     * Sets the instruction label with a specific message.
+     * @param msg Message to display.
+     */
+    void setMessageGuiding(const QString& msg);
+
+    /**
+     * Affect all the stars on the board with the desired action.
+     * @param connectStars Connects all the stars to a specific action.
+     * @param disableNotOnRose Disable all button that are not on same axis as rose.
+     * @param activateAll Activates or deactivates all buttons.
+     * @param rosePlace place of rose.
+     * @param activate Either to activate or disable all buttons.
+     */
+    void affectAllStars(bool connectStars, bool disableNotOnRose, bool activateAll, int rosePlace=0, bool activate=0);
 
 };
 

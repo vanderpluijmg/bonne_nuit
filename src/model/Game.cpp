@@ -43,14 +43,14 @@ void Game::nextPlayer() {
     currentPlayer.getName() < players.size() ?
             currentPlayer = players.at(currentPlayer.getName()) : currentPlayer = players.at(0);
     Modification m;
-    m.a = "currentPlayer";
+    m.description = "currentPlayer";
     notify(m);
 }
 
 void Game::moveRose(int value) {
     board.moveRose(value);
     Modification m;
-    m.a = "ROSE move";
+    m.description = "ROSE move";
     m.value = board.getRosePlace();
     notify(m);
 }
@@ -76,7 +76,7 @@ void Game::notifyStartingNpcPawn() {
         for (int y = 0; y < 6; y++) {
             if (getBoard().getCase(x, y).getColor() != NONE) {
                 Modification m;
-                m.a = "pawnsBeginning";
+                m.description = "pawnsBeginning";
                 m.x = x;
                 m.y = y;
                 m.color = getBoard().getCase(x, y).getColor();
@@ -102,8 +102,7 @@ void Game::dayDone() {
     if (players.back().hasPawns()) {
         turnLightOff();
         Modification m;
-        m.gameState = getGameState();
-        m.a = "turnLightOff";
+        m.description = "turnLightOff";
         notify(m);
     }
 }
@@ -126,7 +125,7 @@ void Game::returnPawn(int x, int y) {
     throw OutOfGameBoardException("Sorry the coordinates are not in the game board");
     if (isFinished()) {
         Modification m;
-        m.a = "winner";
+        m.description = "winner";
         notify(m);
     }
 }

@@ -14,7 +14,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp.
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/test.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp
  /usr/include/qt6/QtCore/QList
  /usr/include/qt6/QtCore/QObject
  /usr/include/qt6/QtCore/QRect
@@ -189,7 +189,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/main.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/test.hpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp
  /usr/include/qt6/QtCore/QList
  /usr/include/qt6/QtCore/QObject
  /usr/include/qt6/QtCore/QRect
@@ -370,6 +370,9 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h
+CMakeFiles/atlir5_Bonne_nuit.dir/src/view/MainWindow.cpp.o
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.cpp
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/MainWindow.h
 CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NumberOfPlayersException.h
@@ -384,15 +387,14 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observer.h
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.cpp
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h
+ /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp
  /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h
- /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/test.hpp
  /usr/include/qt6/QtCore/QList
  /usr/include/qt6/QtCore/QObject
  /usr/include/qt6/QtCore/QRect
  /usr/include/qt6/QtCore/QSize
  /usr/include/qt6/QtCore/QSizeF
  /usr/include/qt6/QtCore/QVariant
- /usr/include/qt6/QtCore/QtGlobal
  /usr/include/qt6/QtCore/qalgorithms.h
  /usr/include/qt6/QtCore/qanystringview.h
  /usr/include/qt6/QtCore/qarraydata.h

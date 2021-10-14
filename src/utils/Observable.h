@@ -3,18 +3,18 @@
 
 #include <list>
 #include <string>
+#include <optional>
 #include "../model/GameState.hpp"
 
 /**
  * Modification that have happend in the game to pass to the view
  */
 struct Modification{
-    std::string a;
-    int value;
-    int x;
-    int y;
-    int color;
-    GameState gameState;
+    std::optional<std::string >description;
+    std::optional<int> value;
+    std::optional<int> x;
+    std::optional<int> y;
+    std::optional<int> color;
 };
 class Observer;
 
