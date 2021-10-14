@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Board.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/model/Game.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.o"
+  "CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/mainWindow.cpp.o"
   "CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o"
   "atlir5_Bonne_nuit"
   "atlir5_Bonne_nuit.pdb"

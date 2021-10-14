@@ -303,6 +303,12 @@
 			null
 		],
 		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp",
+			"MU",
+			"LFZUTIRKXQ/moc_mainWindow.cpp",
+			null
+		],
+		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h",
 			"MU",
 			"LFZUTIRKXQ/moc_newPlayerWidget.cpp",
@@ -388,6 +394,11 @@
 		],
 		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.cpp",
 			"MU",
 			null
 		],

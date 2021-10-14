@@ -342,6 +342,30 @@ src/view/View.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/View.cpp.s
 .PHONY : src/view/View.cpp.s
 
+src/view/windows/mainWindow.o: src/view/windows/mainWindow.cpp.o
+.PHONY : src/view/windows/mainWindow.o
+
+# target to build an object file
+src/view/windows/mainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/mainWindow.cpp.o
+.PHONY : src/view/windows/mainWindow.cpp.o
+
+src/view/windows/mainWindow.i: src/view/windows/mainWindow.cpp.i
+.PHONY : src/view/windows/mainWindow.i
+
+# target to preprocess a source file
+src/view/windows/mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/mainWindow.cpp.i
+.PHONY : src/view/windows/mainWindow.cpp.i
+
+src/view/windows/mainWindow.s: src/view/windows/mainWindow.cpp.s
+.PHONY : src/view/windows/mainWindow.s
+
+# target to generate assembly for a file
+src/view/windows/mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlir5_Bonne_nuit.dir/build.make CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/mainWindow.cpp.s
+.PHONY : src/view/windows/mainWindow.cpp.s
+
 src/view/windows/newPlayerWidget.o: src/view/windows/newPlayerWidget.cpp.o
 .PHONY : src/view/windows/newPlayerWidget.o
 
@@ -447,6 +471,9 @@ help:
 	@echo "... src/view/View.o"
 	@echo "... src/view/View.i"
 	@echo "... src/view/View.s"
+	@echo "... src/view/windows/mainWindow.o"
+	@echo "... src/view/windows/mainWindow.i"
+	@echo "... src/view/windows/mainWindow.s"
 	@echo "... src/view/windows/newPlayerWidget.o"
 	@echo "... src/view/windows/newPlayerWidget.i"
 	@echo "... src/view/windows/newPlayerWidget.s"
