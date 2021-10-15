@@ -9,10 +9,9 @@
 
 class Player {
 private:
-    int _name{};
+    int _name;
     Color _color;
     std::list<Pawn> pawns;
-    int _returnedPawns;
 public:
 
     /**
@@ -26,12 +25,16 @@ public:
      * @param color Color of player
      */
     Player(int name, Color color) {
-        _returnedPawns = 0;
         _name = name;
         _color = color;
         for (auto i = 0; i < 3; i++) {
             pawns.emplace_back(Pawn(_color, pawnState::INHAND));
         }
+    }
+    void setPlayer(Player& player){
+        _color = player.getColor();
+        _name = player.getName();
+        pawns = player.getPawns();
     }
 
     /**
@@ -57,14 +60,6 @@ public:
     [[nodiscard]] std::list<Pawn> &getPawns() {
         return pawns;
     }
-
-    /**
-     * Removes one pawn form the player.
-     */
-    void removePawn() {
-
-    }
-
     /**
      * Checks if the player still has any pawns.
      * @return True if player still has pawns.

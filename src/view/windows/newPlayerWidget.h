@@ -19,12 +19,16 @@
 class newPlayerWidget : public QWidget{
 private:
     QHBoxLayout* horizontalLayoutManager;
-    QLineEdit* ageResp;
+    int ageResp;
+    int name_;
 public:
 
     newPlayerWidget(int nbr);
     void setUp(QWidget* parent, int number);
-    int getAge();
+
+    int getAgeResp() const;
+
+    int getName() const;
 };
 
 

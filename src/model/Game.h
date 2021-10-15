@@ -113,9 +113,8 @@ public:
 
     /**
      * Checks if the game is finished.
-     * @return True if the game is finished.
      */
-    bool isFinished();
+    void isFinished();
 
     /**
      * Getter for the current playing player.

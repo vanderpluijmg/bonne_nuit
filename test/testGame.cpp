@@ -7,6 +7,7 @@
 
 TEST_CASE( "Populating hands of players with 5 players", "[hand]" "[sunUp]") {
     Game game;
+    game.initGame(5,0);
     std::list<Color> colorInUse;
     REQUIRE(game.getPlayers().size() == 5);
     REQUIRE(game.getGameState() == GameState::notStarted);
@@ -22,7 +23,7 @@ TEST_CASE( "Populating hands of players with 5 players", "[hand]" "[sunUp]") {
 TEST_CASE( "Populating hands of players with 4 players", "[hand]" "[sunUp]") {
     std::list<Color> colorInUse;
     Game game;
-    game.initGame(4);
+    game.initGame(4,0);
     REQUIRE(game.getPlayers().size() == 4);
     for (auto x : game.getPlayers()) {
         REQUIRE (x.getPawns().size() == 3);
@@ -34,7 +35,7 @@ TEST_CASE( "Populating hands of players with 4 players", "[hand]" "[sunUp]") {
 TEST_CASE( "Populating hands of players with 3 players", "[hand]" "[sunUp]") {
     std::list<Color> colorInUse;
     Game game;
-    game.initGame(3);
+    game.initGame(3,0);
     REQUIRE(game.getPlayers().size() == 3);
     for (auto x : game.getPlayers()) {
         REQUIRE (x.getPawns().size() == 3);
@@ -46,7 +47,7 @@ TEST_CASE( "Populating hands of players with 3 players", "[hand]" "[sunUp]") {
 TEST_CASE( "Populating hands of players with 2 players", "[hand]" "[sunUp]") {
     std::list<Color> colorInUse;
     Game game;
-    game.initGame(2);
+    game.initGame(2,0);
     REQUIRE(game.getPlayers().size() == 2);
     for (auto x : game.getPlayers()) {
         REQUIRE (x.getPawns().size() == 3);
@@ -56,20 +57,15 @@ TEST_CASE( "Populating hands of players with 2 players", "[hand]" "[sunUp]") {
     REQUIRE(colorInUse.size() == 2);
 }
 
-TEST_CASE("Populating hand 0 players", "[hand]" "[sunUp]"){
-
-}
 TEST_CASE("Populating hand 6 players", "[hand]" "[sunUp]"){
     Game game;
-    REQUIRE_THROWS_AS(game.initGame(4), NumberOfPlayersException);
+    REQUIRE_THROWS_AS(game.initGame(6,0), NumberOfPlayersException);
 }
-
-
 
 TEST_CASE( "Populating hands of players with 1 players", "[hand]" "[sunUp]" ) {
     std::list<Color> colorInUse;
     Game game;
-    game.initGame(1);
+    game.initGame(1,0);
     REQUIRE(game.getPlayers().size() == 1);
     for (auto x : game.getPlayers()) {
         REQUIRE (x.getPawns().size() == 3);
@@ -97,9 +93,9 @@ TEST_CASE("Correctly placed number of ROSE", "[ROSE]" "[sunUp]") {
     REQUIRE_FALSE(place==g.getBoard().getRosePlace());
 }
 
-TEST_CASE("next player" "[sunUp]" "[sunDown]"){
+TEST_CASE("next player" ,"[sunUp]" "[sunDown]"){
     Game game;
-    game.initGame(4);
+    game.initGame(4,0);
     game.nextPlayer();
     REQUIRE(game.getPlayers()[1].getColor() == game.getCurrentPlayer().getColor());
     game.nextPlayer();
@@ -110,9 +106,9 @@ TEST_CASE("next player" "[sunUp]" "[sunDown]"){
     REQUIRE(game.getPlayers()[0].getColor() == game.getCurrentPlayer().getColor());
 }
 
-TEST_CASE("populating table" "[sunUp]"){
+TEST_CASE("populating table", "[sunUp]"){
     Game game;
-    game.initGame(3);
+    game.initGame(3,0);
     int index=0;
     for (int x =0; x<9;x++) {
         for (int y = 0; y <= 5; y++) {
@@ -126,11 +122,13 @@ TEST_CASE("populating table" "[sunUp]"){
 
 TEST_CASE("place pawn without pawn", "[placePawn]" "[sunUp]"){
     Game g;
+    g.initGame(5,0);
     REQUIRE(g.placePawn(g.getBoard().getRosePlace(),4));
 }
 
 TEST_CASE("place pawn with pawn in place", "[placePawn]" "[sunUp]"){
     Game g;
+    g.initGame(5,0);
     g.playMove(4);
     REQUIRE_THROWS_AS(  g.playMove(4)
     ,PawnInPlaceException);
@@ -138,21 +136,21 @@ TEST_CASE("place pawn with pawn in place", "[placePawn]" "[sunUp]"){
 
 TEST_CASE("place pawn out of bounds y", "[placePawn]" "[sunUp]"){
     Game game;
-    game.initGame(3);
+    game.initGame(3,0);
     //REQUIRE_FALSE(g.placePawn(4,7));
     REQUIRE_THROWS_AS(game.placePawn(4,7), OutOfGameBoardException);
 }
 
 TEST_CASE("place pawn out of bounds x", "[placePawn]" "[sunUp]"){
     Game g;
-    g.initGame(4);
+    g.initGame(4,0);
     //REQUIRE_FALSE(g.placePawn(10,4));
     REQUIRE_THROWS_AS(g.placePawn(10,4), OutOfGameBoardException);
 }
 
 TEST_CASE("place pawn out of bounds X and Y", "[placePawn]" "[sunUp]"){
     Game game;
-    game.initGame(1);
+    game.initGame(1,0);
     //REQUIRE_FALSE(g.placePawn(10,7));
     REQUIRE_THROWS_AS(game.placePawn(10,7), OutOfGameBoardException);
 
@@ -174,6 +172,7 @@ TEST_CASE("move ROSE", "[ROSE]" "[sunUp]"){
 
 TEST_CASE("play moves lights on", "[game mechanics]" "[sunUp]"){
     Game g;
+    g.initGame(5,1);
     Player playingPlayer = g.getCurrentPlayer();
     g.playMove(4);
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getColor()) == (playingPlayer.getColor()));
@@ -184,6 +183,7 @@ TEST_CASE("play moves lights on", "[game mechanics]" "[sunUp]"){
 
 TEST_CASE("remove current player pawn","[remove pawn]" "[sunDown]") {
     Game g;
+    g.initGame(5,0);
     g.placePawn(g.getBoard().getRosePlace(), 4);
     g.returnPawn(g.getBoard().getRosePlace(),4);
     REQUIRE(g.getBoard().getCase(g.getBoard().getRosePlace(),4).getState() == NOTSHINING);

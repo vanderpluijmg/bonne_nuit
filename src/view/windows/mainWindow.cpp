@@ -93,6 +93,7 @@ void Ui_Form::setupUi(QWidget *Form) {
     pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
 
     caseRose3->addWidget(pushButton_4);
+    QPixmap pixmap (":/images/img/night.png");
 
     verticalLayoutWidget_3 = new QWidget(cases);
     verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
@@ -489,8 +490,8 @@ void Ui_Form::setupUi(QWidget *Form) {
     QMetaObject::connectSlotsByName(Form);
 }
 
-void Ui_Form::retranslateUi(QWidget *Form) {
-    Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
+void Ui_Form::retranslateUi(QWidget *Form) const {
+    Form->setWindowTitle(QCoreApplication::translate("Good night game", "Good night game", nullptr));
     label->setText(QCoreApplication::translate("Form", "How many players are going to play?", nullptr));
     addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
     removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));

@@ -7,6 +7,7 @@
 #include <iostream>
 #include <QIcon>
 #include <QPushButton>
+#include <QInputDialog>
 #include "newPlayerWidget.h"
 
 newPlayerWidget::newPlayerWidget(int nbr) {
@@ -14,17 +15,25 @@ newPlayerWidget::newPlayerWidget(int nbr) {
 }
 
 void newPlayerWidget::setUp(QWidget *parent, int name) {
+    name_ = name;
     horizontalLayoutManager = new QHBoxLayout(parent);
     auto playerNameLabel = tr("Player %1").arg(name);
     auto nameOfPlayer = new QLabel(playerNameLabel);
     horizontalLayoutManager->addWidget(nameOfPlayer);
     auto spacerNameAge = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
     horizontalLayoutManager->addItem(spacerNameAge);
-    auto ageQuestion = new QLabel("How old are you?");
+    auto ageQuestion = new QLabel("Your age is :");
     horizontalLayoutManager->addWidget(ageQuestion);
-    ageResp = new QLineEdit();
-    ageResp->setMaximumSize(QSize(100, 33));
-    horizontalLayoutManager->addWidget(ageResp);
+    auto integerLabel = new QLabel();
+    bool ok;
+    int i = QInputDialog::getInt(this, tr("QInputDialog::getInt()"),
+                                 tr("How old are you?:"), 10, 0, 100, 1, &ok);
+    if (ok){
+        integerLabel->setText(tr("%1").arg(i));
+        ageResp = i;
+    }
+    integerLabel->setMaximumSize(QSize(100, 33));
+    horizontalLayoutManager->addWidget(integerLabel);
     auto colorPlayer = new QLabel("Your color is : ");
     horizontalLayoutManager->addWidget(colorPlayer);
     auto colorPic = new QLabel();
@@ -60,6 +69,10 @@ void newPlayerWidget::setUp(QWidget *parent, int name) {
     horizontalLayoutManager->addItem(spaceColorEnd);
 }
 
-int newPlayerWidget::getAge() {
-    return ageResp->text().toInt();
+int newPlayerWidget::getName() const {
+    return name_;
+}
+
+int newPlayerWidget::getAgeResp() const {
+    return ageResp;
 }

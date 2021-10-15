@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/3JYSCEOBDA/moc_View.cpp
-memory
--
-../../../src/view/View.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h
-QtGui/qtextcursor.h
--
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/mocs_compilation.cpp
-3JYSCEOBDA/moc_View.cpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/cmake-build-debug/atlir5_Bonne_nuit_autogen/3JYSCEOBDA/moc_View.cpp
-
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/NoPawnFound.h
 exception
 -
@@ -37,16 +21,6 @@ stdexcept
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/exceptions/PawnInPlaceException.h
 stdexcept
 -
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/main.cpp
-QApplication
--
-model/Game.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.h
-view/View.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/View.h
-ressources/random.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Board.h
 string
@@ -87,16 +61,6 @@ list
 -
 Pawn.hpp
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Pawn.hpp
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/ressources/random.hpp
-random
--
-utility
--
-limits
--
-ctime
--
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/utils/Observable.h
 list
@@ -154,10 +118,6 @@ windows/mainWindow.hpp
 ../model/Game.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/model/Game.h
 
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.cpp
-mainWindow.hpp
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp
-
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/mainWindow.hpp
 QtCore/QVariant
 -
@@ -181,20 +141,6 @@ QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
-
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.cpp
-QLabel
--
-QLineEdit
--
-iostream
--
-QIcon
--
-QPushButton
--
-newPlayerWidget.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/esi-atlir5-bonne_nuit/src/view/windows/newPlayerWidget.h
 QWidget
@@ -1160,10 +1106,6 @@ stdlib.h
 QtCore/qglobal.h
 -
 
-/usr/include/qt6/QtGui/QIcon
-qicon.h
-/usr/include/qt6/QtGui/qicon.h
-
 /usr/include/qt6/QtGui/QTransform
 qtransform.h
 /usr/include/qt6/QtGui/qtransform.h
@@ -1631,10 +1573,6 @@ qlabel.h
 /usr/include/qt6/QtWidgets/QLayout
 qlayout.h
 /usr/include/qt6/QtWidgets/qlayout.h
-
-/usr/include/qt6/QtWidgets/QLineEdit
-qlineedit.h
-/usr/include/qt6/QtWidgets/qlineedit.h
 
 /usr/include/qt6/QtWidgets/QMainWindow
 qmainwindow.h

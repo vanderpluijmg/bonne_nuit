@@ -15,7 +15,7 @@ class View : public QWidget, public Observer {
 Q_OBJECT
 private:
     int firstPlayer=0;
-    int smallestAge=0;
+    int smallestAge=100;
     int currentRosePlace_ = 0;
     std::optional<Game> game;
     Ui_Form* mainWindow  = new Ui_Form ();

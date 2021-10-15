@@ -55,9 +55,12 @@ void View::onAddPlayer() {
         mainWindow->numberOfPlayers->display(mainWindow->numberOfPlayers->intValue() + 1);
         auto layout = qobject_cast<QVBoxLayout *>(mainWindow->centralFrame->layout());
         auto player = new newPlayerWidget(mainWindow->numberOfPlayers->intValue());
-        if (player->getAge()<smallestAge)
-            firstPlayer = mainWindow->numberOfPlayers->intValue();
         layout->insertWidget(0, player);
+        int get = player->getAgeResp();
+        if (player->getAgeResp()<smallestAge) {
+            smallestAge = player->getAgeResp();
+            firstPlayer = player->getName();
+        }
     }
 }
 
@@ -191,25 +194,30 @@ void View::affectAllStars(bool connectStars, bool disableNotOnRose, bool activat
 }
 
 void View::updateCurrentPlayer() {
-    mainWindow->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(game->getCurrentPlayer().getName()) + "'s turn to make description move"));
+    mainWindow->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(game->getCurrentPlayer().getName()) + "'s turn to make move"));
 }
 
 void View::getStarPicture(int c, QIcon& icon) {
     switch (c) {
         case BLACK:
-            icon.addFile(QString::fromUtf8(":/images/img/star_black.png"), QSize(), QIcon::Normal, QIcon::Off);
+            icon.addPixmap(QPixmap(":/images/img/star_black.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/star_black.png"), QIcon::Disabled);
             break;
         case GREEN:
-            icon.addFile(QString::fromUtf8(":/images/img/star_green.png"), QSize(), QIcon::Normal, QIcon::Off);
+            icon.addPixmap(QPixmap(":/images/img/star_green.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/star_green.png"), QIcon::Disabled);
             break;
         case PURPLE:
-            icon.addFile(QString::fromUtf8(":/images/img/star_purple.png"), QSize(), QIcon::Normal, QIcon::Off);
+            icon.addPixmap(QPixmap(":/images/img/star_purple.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/star_purple.png"), QIcon::Disabled);
             break;
         case BLUE:
-            icon.addFile(QString::fromUtf8(":/images/img/star_blue.png"), QSize(), QIcon::Normal, QIcon::Off);
+            icon.addPixmap(QPixmap(":/images/img/star_blue.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/star_blue.png"), QIcon::Disabled);
             break;
         case RED:
-            icon.addFile(QString::fromUtf8(":/images/img/star_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+            icon.addPixmap(QPixmap(":/images/img/star_red.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/star_red.png"), QIcon::Disabled);
             break;
     }
 }

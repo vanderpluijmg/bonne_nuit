@@ -861,6 +861,7 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o: \
  /usr/include/qt6/QtGui/qwindowdefs_win.h \
  /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QInputDialog \
  /usr/include/qt6/QtWidgets/QLabel \
  /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/QPushButton \
@@ -871,8 +872,10 @@ CMakeFiles/atlir5_Bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o: \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/qt6/QtWidgets/qdialog.h \
  /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qinputdialog.h \
  /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \

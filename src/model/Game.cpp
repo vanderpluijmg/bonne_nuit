@@ -16,7 +16,11 @@ void Game::initGame(int numberOfPlayers, int firstPlayer) {
         throw NumberOfPlayersException(
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     addPawnsToPlace(numberOfPlayers);
-    currentPlayer = players[firstPlayer];
+    firstPlayer--;
+    currentPlayer.setPlayer(players[firstPlayer]);
+    Modification m;
+    m.description = "currentPlayer";
+    notify(m);
 };
 
 void Game::populateGame(int numberOfPlayers) {
@@ -128,7 +132,7 @@ void Game::returnPawn(int x, int y) {
     nextPlayer();
 }
 
-bool Game::isFinished() {
+void Game::isFinished() {
     if (returnedPawns==14){
         Modification m;
         m.description = "winner";

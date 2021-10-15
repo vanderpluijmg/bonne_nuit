@@ -135,7 +135,7 @@ public:
 
     void setupUi(QWidget *Form);
 
-    void retranslateUi(QWidget *Form);
+    void retranslateUi(QWidget *Form) const;
 };
 
 
