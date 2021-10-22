@@ -2,13 +2,14 @@
 #include <QSpinBox>
 #include <QInputDialog>
 #include "View.h"
-#include "windows/mainWindow.h"
 #include "../exceptions/NumberOfPlayerException.h"
 #include "../exceptions/PawnInPlaceException.h"
 #include "windows/newPlayerWidget.h"
 #include "../exceptions/NoPawnFound.h"
 #include "../exceptions/OutOfGameBoardException.h"
+#include "windows/winnerWidget.h"
 #include <QMessageBox>
+#include <QScreen>
 
 View::View(QWidget *parent) : QWidget(parent) {
     mainWindow->setupUi(this);
@@ -86,7 +87,7 @@ void View::rollDiceMoveRose() {
     game->moveRose(diceRoll);
     mainWindow->rollDice->setDisabled(true);
     affectAllStars(false,true,false,game->getRosePlace());
-    mainWindow->label_2->setText("Please place pawn");
+    mainWindow->label_2->setText("Please place a pawn");
 }
 
 void View::updateRoseView() {
@@ -115,11 +116,10 @@ void View::placePawn(int x, int y, int c) {
 }
 
 void View::onAddStarOrRemove() {
-    if (game->getGameState() == lightOn) {
+    if (game->getGameState() == LIGHTON) {
         int posY = sender()->objectName().at(5).digitValue();
         try {
             QIcon icon;
-            std::cout << game->getCurrentPlayer().getPawns().size() << " size " << std::endl;
             game->playMove(posY + 1);
             getStarPicture(game->getCurrentPlayer().getColor(), icon);
             auto star = qobject_cast<QPushButton *>(sender());
@@ -140,8 +140,10 @@ void View::onAddStarOrRemove() {
         try {
             int posX = sender()->objectName().at(4).digitValue();
             int posY = sender()->objectName().at(5).digitValue();
+            QIcon icon = QIcon();
+            getStarPicture(game->getBoard().getCase(posX, posY + 1).getColor(), icon);
+            qobject_cast<QPushButton*>(sender())->setIcon(icon);
             game->returnPawn(posX, posY + 1);
-            delete sender();
             game->isFinished();
         } catch (NoPawnFoundException &e) {
             QMessageBox msgBox;
@@ -161,9 +163,9 @@ void View::updateGameState() {
 }
 
 void View::goIntoNight() {
-    game->turnLightOff();
+    game->nextPlayer();
     affectAllRoses(true);
-    mainWindow->label_2->setText("Please click on the star you would like to turn over");
+    mainWindow->label_2->setText("Please click on a star");
     mainWindow->rollDice->hide();
     mainWindow->rollDiceValue->hide();
     QIcon icon;
@@ -201,7 +203,7 @@ void View::affectAllStars(bool connectStars, bool disableNotOnRose, bool activat
 }
 
 void View::updateCurrentPlayer() {
-    mainWindow->currentPlayer->setText(QString::fromStdString("It is player: " + std::to_string(game->getCurrentPlayer().getName()) + "'s turn to make move"));
+    mainWindow->currentPlayer->setText(QString::fromStdString("It is player " + std::to_string(game->getCurrentPlayer().getName()) + "'s turn"));
 }
 
 void View::getStarPicture(int c, QIcon& icon) {
@@ -227,8 +229,8 @@ void View::getStarPicture(int c, QIcon& icon) {
             icon.addPixmap(QPixmap(":/images/img/star_red.png"), QIcon::Disabled);
             break;
         default :
-            icon.addPixmap(QPixmap(":/images/img/empty.png"), QIcon::Normal);
-            icon.addPixmap(QPixmap(":/images/img/empty.png"), QIcon::Disabled);
+            icon.addPixmap(QPixmap(":/images/img/night.png"), QIcon::Normal);
+            icon.addPixmap(QPixmap(":/images/img/night.png"), QIcon::Disabled);
             break;
     }
 }
@@ -238,9 +240,10 @@ void View::setMessageGuiding(const QString& msg) {
 }
 
 void View::displayWinner(int winner) {
-    QMessageBox msgBox;
-    msgBox.setText(QString::number(winner));
-    msgBox.exec();
+    qDebug()<<winner;
+    auto winnerW = new winnerWidget(winner);
+    mainWindow->stackedWidget->addWidget(winnerW);
+    mainWindow->stackedWidget->setCurrentIndex(2);
 }
 
 void View::affectAllRoses(bool hidden) {

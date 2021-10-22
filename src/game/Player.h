@@ -15,7 +15,7 @@ private:
 public:
 
     /**
-     * Default consturctor for player.
+     * Default constructor for player.
      */
     Player() = default;
 
@@ -31,7 +31,12 @@ public:
             pawns.emplace_back(Pawn(_color, pawnState::INHAND));
         }
     }
-    void setPlayer(Player& player){
+
+    /**
+     * Sets a player to the current player.
+     * @param player Player that will become current player.
+     */
+    void setPlayer(Player &player) {
         _color = player.getColor();
         _name = player.getName();
         pawns = player.getPawns();
@@ -60,6 +65,7 @@ public:
     [[nodiscard]] std::list<Pawn> &getPawns() {
         return pawns;
     }
+
     /**
      * Checks if the player still has any pawns.
      * @return True if player still has pawns.

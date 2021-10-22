@@ -1,6 +1,3 @@
-//
-// Created by gregory on 10/9/21.
-//
 #include <QLabel>
 #include <QLineEdit>
 #include <iostream>
@@ -18,12 +15,18 @@ void newPlayerWidget::setUp(QWidget *parent, int name) {
     horizontalLayoutManager = new QHBoxLayout(parent);
     auto playerNameLabel = tr("Player %1").arg(name);
     auto nameOfPlayer = new QLabel(playerNameLabel);
+    nameOfPlayer->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
     horizontalLayoutManager->addWidget(nameOfPlayer);
     auto spacerNameAge = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
     horizontalLayoutManager->addItem(spacerNameAge);
-    auto ageQuestion = new QLabel("Your age is :");
+    auto ageQuestion = new QLabel("Your are ");
+    ageQuestion->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
     horizontalLayoutManager->addWidget(ageQuestion);
     auto integerLabel = new QLabel();
+    integerLabel->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
     bool ok;
     int i = QInputDialog::getInt(this, tr("QInputDialog::getInt()"),
                                  tr("How old are you?:"), 10, 0, 100, 1, &ok);
@@ -33,7 +36,9 @@ void newPlayerWidget::setUp(QWidget *parent, int name) {
     }
     integerLabel->setMaximumSize(QSize(100, 33));
     horizontalLayoutManager->addWidget(integerLabel);
-    auto colorPlayer = new QLabel("Your color is : ");
+    auto colorPlayer = new QLabel("and you will play with color");
+    colorPlayer->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
     horizontalLayoutManager->addWidget(colorPlayer);
     auto colorPic = new QLabel();
     switch (name) {

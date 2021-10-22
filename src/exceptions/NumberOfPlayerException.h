@@ -7,7 +7,12 @@
  */
 class NumberOfPlayerException : public std::logic_error {
 public:
-    explicit NumberOfPlayerException(std::string mess) : std::logic_error(mess){};
+
+    /**
+     * Constructor for exception.
+     * @param mess Message to display in exception.
+     */
+    explicit NumberOfPlayerException(const std::string& mess) : std::logic_error(mess){};
 };
 
 

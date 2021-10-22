@@ -6,7 +6,12 @@
  */
 class OutOfGameBoardException : public std::out_of_range {
 public:
-    explicit OutOfGameBoardException(std::string mess) : std::out_of_range(mess){};
+
+    /**
+     * Constructor for exception.
+     * @param mess Message to display in exception.
+     */
+    explicit OutOfGameBoardException(const std::string& mess) : std::out_of_range(mess){};
 };
 
 

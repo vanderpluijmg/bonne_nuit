@@ -12,7 +12,7 @@ enum Color {
  * All different possible pawn states of a pawn.
  */
 enum pawnState {
-    SHINING, NOTSHINING, INHAND, NOTDEFINED, OPEN, ROSE
+    SHINING, NOTSHINING, INHAND, NOTDEFINED, ROSE
 };
 
 class Pawn {

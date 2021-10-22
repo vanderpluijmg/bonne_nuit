@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "Game.h"
 #include "Board.h"
 #include "../ressources/random.hpp"
@@ -6,14 +7,15 @@
 #include "../utils/Observer.h"
 
 Game::Game() {
-    gameState_ = notStarted;
+    gameState_ = NOTSTARTED;
     board.initGameBoard();
-    returnedPawns=0;
+    returnedPawns = 0;
 }
 
 void Game::initGame(int numberOfPlayers, int firstPlayer) {
+    firstPlayer_ = firstPlayer;
     if (numberOfPlayers <= 0 || numberOfPlayers > 5)
-        throw NumberOfPlayerException (
+        throw NumberOfPlayerException(
                 "The number of players should be between 1-5, you provided " + std::to_string(numberOfPlayers));
     addPawnsToPlace(numberOfPlayers);
     firstPlayer--;
@@ -34,10 +36,6 @@ void Game::setGameState(GameState gameState) {
 
 GameState Game::getGameState() const {
     return gameState_;
-}
-
-std::vector<Player> Game::getPlayers() {
-    return players;
 }
 
 Player Game::getCurrentPlayer() {
@@ -78,22 +76,16 @@ void Game::addPawnsToPlace(int numberOfPlayers) {
 
 void Game::notifyStartingNpcPawn() {
     for (int x = 0; x < 9; x++) {
-        for (int y = 0; y < 6; y++) {
+        for (int y = 1; y < 6; y++) {
             Modification m;
-            if (getBoard().getCase(x, y).getColor() != NONE){
-                m.description = "pawnsBeginning";
-                m.x = x;
-                m.y = y;
-                m.color = getBoard().getCase(x, y).getColor();
-                notify(m);}
+            m.description = "pawnsBeginning";
+            m.x = x;
+            m.y = y;
+            m.color = getBoard().getCase(x, y).getColor();
+            notify(m);
         }
     }
 }
-
-const std::vector<Player> &Game::getNpc() const {
-    return npc_;
-}
-
 bool Game::placePawn(int x, int y) {
     return getBoard().placePawn(x, y, currentPlayer.getColor());
 }
@@ -103,7 +95,7 @@ Board &Game::getBoard() {
 }
 
 void Game::dayDone() {
-    if (players.back().hasPawns()) {
+    if (firstPlayer_-2 < 0 ? players[0].hasPawns() : players[firstPlayer_-2].hasPawns()) {
         turnLightOff();
         Modification m;
         m.description = "turnLightOff";
@@ -117,11 +109,11 @@ void Game::playMove(int y) {
 }
 
 void Game::turnLightOff() {
-    setGameState(lightOff);
+    setGameState(LIGHTOFF);
 }
 
 void Game::turnLightOn() {
-    setGameState(lightOn);
+    setGameState(LIGHTON);
 }
 
 void Game::returnPawn(int x, int y) {
@@ -132,7 +124,8 @@ void Game::returnPawn(int x, int y) {
 }
 
 void Game::isFinished() {
-    if (returnedPawns==14){
+    if (returnedPawns == 14) {
+        usleep(3*10000);
         Modification m;
         m.description = "winner";
         m.winner = determineWinner();
@@ -160,10 +153,14 @@ void Game::removePawnCurrentPlayer() {
 
 int Game::determineWinner() {
     for (int x = 0; x < 9; x++)
-        for (int y = 0; y < 6; y++)
-            if(getBoard().getCase(x,y).getState()==SHINING)
-                return getBoard().getCase(x,y).getColor();
+        for (int y = 1; y < 6; y++)
+            if (getBoard().getCase(x, y).getState() == SHINING)
+                return getBoard().getCase(x, y).getColor();
     return 0;
+}
+
+const std::vector<Player> &Game::getPlayers() const {
+    return players;
 }
 
 

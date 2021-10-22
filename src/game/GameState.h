@@ -5,10 +5,9 @@
  * All different possible game states.
  */
 enum GameState {
-    notStarted, //Game has not yet been started.
-    lightOn, //Once game is initialized light turns on.
-    lightOff, //Once every player has dealt its pawn light turns off.
-    finished //Winner of the current game has been declared.
+    NOTSTARTED, //Game has not yet been started.
+    LIGHTON, //Once game is initialized light turns on.
+    LIGHTOFF, //Once every player has dealt its pawn light turns off.
 };
 
 #endif //BONNE_NUIT_GAMESTATE_H

@@ -1,10 +1,5 @@
-//
-// Created by gregory on 10/20/21.
-//
-
 #ifndef BONNE_NUIT_MAINWINDOW_H
 #define BONNE_NUIT_MAINWINDOW_H
-
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -19,6 +14,8 @@
 #include <QtWidgets/QWidget>
 
 class Ui_Form {
+    int screenSizeH;
+    int screenSizeW;
 public:
     QStackedWidget *stackedWidget;
     QWidget *gameIntro;
@@ -137,8 +134,21 @@ public:
     QLCDNumber *rollDiceValue;
     QLabel *currentPlayer;
 
+    /**
+     * Constructor for main form.
+     */
+    Ui_Form();
+
+    /**
+     * Sets up ui to parent widget.
+     * @param Form Parent widget.
+     */
     void setupUi(QWidget *Form);
 
+    /**
+     * Translates ui to text.
+     * @param Form Parent widget
+     */
     void retranslateUi(QWidget *Form) const;
 };
 

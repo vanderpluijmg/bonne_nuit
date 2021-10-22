@@ -7,7 +7,12 @@
  */
 class PawnInPlaceException : public std::invalid_argument{
 public:
-    explicit PawnInPlaceException(std::string mess) : std::invalid_argument(mess){};
+
+    /**
+     * Constructor for exception.
+     * @param mess Message to display in exception.
+     */
+    explicit PawnInPlaceException(const std::string& mess) : std::invalid_argument(mess){};
 };
 
 #endif //BONNE_NUIT_PAWNINPLACEEXCEPTION_H

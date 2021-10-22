@@ -9,7 +9,11 @@
  */
 class NoPawnFoundException : public std::logic_error {
 public:
-    explicit NoPawnFoundException(std::string mess) : std::logic_error(mess){};
+    /**
+     * Constructor for exception.
+     * @param mess Message to display in exception.
+     */
+    explicit NoPawnFoundException(const std::string& mess) : std::logic_error(mess){};
 };
 
 #endif //BONNE_NUIT_NOPAWNFOUND_H

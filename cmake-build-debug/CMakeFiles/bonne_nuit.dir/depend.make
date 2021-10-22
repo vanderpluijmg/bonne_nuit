@@ -214,85 +214,7 @@ CMakeFiles/bonne_nuit.dir/src/game/Game.cpp.o: \
  ../src/game/Player.h \
  ../src/ressources/random.hpp \
  ../src/utils/Observable.h \
- ../src/utils/Observer.h \
- /usr/include/qt6/QtCore/QDebug \
- /usr/include/qt6/QtCore/qalgorithms.h \
- /usr/include/qt6/QtCore/qanystringview.h \
- /usr/include/qt6/QtCore/qarraydata.h \
- /usr/include/qt6/QtCore/qarraydataops.h \
- /usr/include/qt6/QtCore/qarraydatapointer.h \
- /usr/include/qt6/QtCore/qatomic.h \
- /usr/include/qt6/QtCore/qatomic_bootstrap.h \
- /usr/include/qt6/QtCore/qatomic_cxx11.h \
- /usr/include/qt6/QtCore/qbasicatomic.h \
- /usr/include/qt6/QtCore/qbytearray.h \
- /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
- /usr/include/qt6/QtCore/qbytearraylist.h \
- /usr/include/qt6/QtCore/qbytearrayview.h \
- /usr/include/qt6/QtCore/qchar.h \
- /usr/include/qt6/QtCore/qcompare.h \
- /usr/include/qt6/QtCore/qcompilerdetection.h \
- /usr/include/qt6/QtCore/qconfig-bootstrapped.h \
- /usr/include/qt6/QtCore/qconfig.h \
- /usr/include/qt6/QtCore/qcontainerfwd.h \
- /usr/include/qt6/QtCore/qcontainerinfo.h \
- /usr/include/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/qt6/QtCore/qcontiguouscache.h \
- /usr/include/qt6/QtCore/qcoreevent.h \
- /usr/include/qt6/QtCore/qdatastream.h \
- /usr/include/qt6/QtCore/qdebug.h \
- /usr/include/qt6/QtCore/qflags.h \
- /usr/include/qt6/QtCore/qgenericatomic.h \
- /usr/include/qt6/QtCore/qglobal.h \
- /usr/include/qt6/QtCore/qglobalstatic.h \
- /usr/include/qt6/QtCore/qhash.h \
- /usr/include/qt6/QtCore/qhashfunctions.h \
- /usr/include/qt6/QtCore/qiodevicebase.h \
- /usr/include/qt6/QtCore/qiterable.h \
- /usr/include/qt6/QtCore/qiterator.h \
- /usr/include/qt6/QtCore/qlist.h \
- /usr/include/qt6/QtCore/qlogging.h \
- /usr/include/qt6/QtCore/qmap.h \
- /usr/include/qt6/QtCore/qmath.h \
- /usr/include/qt6/QtCore/qmetacontainer.h \
- /usr/include/qt6/QtCore/qmetatype.h \
- /usr/include/qt6/QtCore/qnamespace.h \
- /usr/include/qt6/QtCore/qnumeric.h \
- /usr/include/qt6/QtCore/qobject.h \
- /usr/include/qt6/QtCore/qobject_impl.h \
- /usr/include/qt6/QtCore/qobjectdefs.h \
- /usr/include/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/qt6/QtCore/qpair.h \
- /usr/include/qt6/QtCore/qprocessordetection.h \
- /usr/include/qt6/QtCore/qproperty.h \
- /usr/include/qt6/QtCore/qpropertyprivate.h \
- /usr/include/qt6/QtCore/qrefcount.h \
- /usr/include/qt6/QtCore/qscopedpointer.h \
- /usr/include/qt6/QtCore/qscopeguard.h \
- /usr/include/qt6/QtCore/qset.h \
- /usr/include/qt6/QtCore/qshareddata.h \
- /usr/include/qt6/QtCore/qshareddata_impl.h \
- /usr/include/qt6/QtCore/qsharedpointer.h \
- /usr/include/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/qt6/QtCore/qstring.h \
- /usr/include/qt6/QtCore/qstringalgorithms.h \
- /usr/include/qt6/QtCore/qstringbuilder.h \
- /usr/include/qt6/QtCore/qstringconverter.h \
- /usr/include/qt6/QtCore/qstringlist.h \
- /usr/include/qt6/QtCore/qstringliteral.h \
- /usr/include/qt6/QtCore/qstringmatcher.h \
- /usr/include/qt6/QtCore/qstringtokenizer.h \
- /usr/include/qt6/QtCore/qstringview.h \
- /usr/include/qt6/QtCore/qsysinfo.h \
- /usr/include/qt6/QtCore/qsystemdetection.h \
- /usr/include/qt6/QtCore/qtaggedpointer.h \
- /usr/include/qt6/QtCore/qtcore-config.h \
- /usr/include/qt6/QtCore/qtextstream.h \
- /usr/include/qt6/QtCore/qtmetamacros.h \
- /usr/include/qt6/QtCore/qtypeinfo.h \
- /usr/include/qt6/QtCore/qutf8stringview.h \
- /usr/include/qt6/QtCore/qvarlengtharray.h \
- /usr/include/qt6/QtCore/qversiontagging.h
+ ../src/utils/Observer.h
 CMakeFiles/bonne_nuit.dir/src/main.cpp.o: \
  ../src/game/Board.h \
  ../src/game/Game.h \
@@ -1238,3 +1160,11 @@ CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o: \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
+CMakeFiles/bonne_nuit.dir/test/mainTest.cpp.o: \
+ ../test/mainTest.cpp
+CMakeFiles/bonne_nuit.dir/test/testGame.cpp.o: \
+ ../src/exceptions/NoPawnFound.h \
+ ../src/exceptions/NumberOfPlayerException.h \
+ ../src/exceptions/OutOfGameBoardException.h \
+ ../src/exceptions/PawnInPlaceException.h \
+ ../test/testGame.cpp

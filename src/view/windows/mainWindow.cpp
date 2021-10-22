@@ -1,22 +1,27 @@
 #include "mainWindow.h"
+#include <QRect>
+#include <QScreen>
+#include <QFile>
 
 void Ui_Form::setupUi(QWidget *Form) {
     if (Form->objectName().isEmpty())
         Form->setObjectName(QString::fromUtf8("Form"));
-    Form->resize(1373, 911);
+    Form->resize(screenSizeW, screenSizeH);
     stackedWidget = new QStackedWidget(Form);
     stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-    stackedWidget->setGeometry(QRect(-10, 10, 1371, 911));
+    stackedWidget->setGeometry(QRect(-10, 10, screenSizeW, screenSizeH));
     gameIntro = new QWidget();
     gameIntro->setObjectName(QString::fromUtf8("gameIntro"));
     horizontalLayoutWidget = new QWidget(gameIntro);
     horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-    horizontalLayoutWidget->setGeometry(QRect(10, 10, 1341, 101));
+    horizontalLayoutWidget->setGeometry(QRect(2, screenSizeH * 2 / 100, screenSizeW, 101));
     numberOfPlayerLayout = new QHBoxLayout(horizontalLayoutWidget);
     numberOfPlayerLayout->setObjectName(QString::fromUtf8("numberOfPlayerLayout"));
-    numberOfPlayerLayout->setContentsMargins(0, 0, 0, 0);
+    numberOfPlayerLayout->setContentsMargins(screenSizeW * 5 / 100, 0, screenSizeW * 5 / 100, screenSizeH * 2 / 100);
     label = new QLabel(horizontalLayoutWidget);
     label->setObjectName(QString::fromUtf8("label"));
+    label->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
 
     numberOfPlayerLayout->addWidget(label);
 
@@ -26,18 +31,25 @@ void Ui_Form::setupUi(QWidget *Form) {
     numberOfPlayerLayout->addWidget(numberOfPlayers);
 
     addPlayer = new QPushButton(horizontalLayoutWidget);
-    addPlayer->setObjectName(QString::fromUtf8("addPlayer"));
+    addPlayer->setObjectName(QString::fromUtf8("Add a player"));
+    addPlayer->setStyleSheet(
+            "background-color: green; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
 
     numberOfPlayerLayout->addWidget(addPlayer);
 
     removePlayer = new QPushButton(horizontalLayoutWidget);
-    removePlayer->setObjectName(QString::fromUtf8("removePlayer"));
+    removePlayer->setObjectName(QString::fromUtf8("Remove a player"));
+    removePlayer->setStyleSheet(
+            "background-color: red; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
 
     numberOfPlayerLayout->addWidget(removePlayer);
 
     centralFrame = new QFrame(gameIntro);
     centralFrame->setObjectName(QString::fromUtf8("centralFrame"));
-    centralFrame->setGeometry(QRect(20, 130, 1321, 471));
+    centralFrame->setGeometry(
+            QRect(screenSizeW * 5 / 100, screenSizeH * 15 / 100, screenSizeW * 90 / 100, screenSizeH * 50 / 100));
     centralFrame->setFrameShape(QFrame::StyledPanel);
     centralFrame->setFrameShadow(QFrame::Raised);
     verticalLayout = new QVBoxLayout(centralFrame);
@@ -48,7 +60,7 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget = new QWidget(gameIntro);
     verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-    verticalLayoutWidget->setGeometry(QRect(20, 620, 1331, 151));
+    verticalLayoutWidget->setGeometry(QRect(0, screenSizeH * 70 / 100, screenSizeW, screenSizeH * 5 / 100));
     startGameLayout = new QHBoxLayout(verticalLayoutWidget);
     startGameLayout->setObjectName(QString::fromUtf8("startGameLayout"));
     startGameLayout->setContentsMargins(0, 0, 0, 0);
@@ -57,6 +69,8 @@ void Ui_Form::setupUi(QWidget *Form) {
     startGameLayout->addItem(horizontalSpacer_2);
 
     startGame = new QPushButton(verticalLayoutWidget);
+    startGame->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
     startGame->setObjectName(QString::fromUtf8("startGame"));
 
     startGameLayout->addWidget(startGame);
@@ -70,10 +84,11 @@ void Ui_Form::setupUi(QWidget *Form) {
     page_2->setObjectName(QString::fromUtf8("page_2"));
     cases = new QWidget(page_2);
     cases->setObjectName(QString::fromUtf8("cases"));
-    cases->setGeometry(QRect(10, 40, 1351, 801));
+    cases->setGeometry(QRect(10, 40, screenSizeW, 900));
     verticalLayoutWidget_6 = new QWidget(cases);
     verticalLayoutWidget_6->setObjectName(QString::fromUtf8("verticalLayoutWidget_6"));
-    verticalLayoutWidget_6->setGeometry(QRect(870, 360, 431, 41));
+    verticalLayoutWidget_6->setGeometry(
+            QRect(screenSizeW * 72 / 100, screenSizeH * 33.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose8 = new QVBoxLayout(verticalLayoutWidget_6);
     caseRose8->setObjectName(QString::fromUtf8("caseRose8"));
     caseRose8->setContentsMargins(0, 0, 0, 0);
@@ -84,7 +99,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_9 = new QWidget(cases);
     verticalLayoutWidget_9->setObjectName(QString::fromUtf8("verticalLayoutWidget_9"));
-    verticalLayoutWidget_9->setGeometry(QRect(40, 620, 431, 41));
+    verticalLayoutWidget_9->setGeometry(
+            QRect(screenSizeW * 10 / 100, screenSizeH * 61.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose3 = new QVBoxLayout(verticalLayoutWidget_9);
     caseRose3->setObjectName(QString::fromUtf8("caseRose3"));
     caseRose3->setContentsMargins(0, 0, 0, 0);
@@ -92,11 +108,12 @@ void Ui_Form::setupUi(QWidget *Form) {
     rose3->setObjectName(QString::fromUtf8("rose3"));
 
     caseRose3->addWidget(rose3);
-    QPixmap pixmap (":/images/img/night.png");
+    QPixmap pixmap(":/images/img/night.png");
 
     verticalLayoutWidget_3 = new QWidget(cases);
     verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
-    verticalLayoutWidget_3->setGeometry(QRect(460, 229, 431, 41));
+    verticalLayoutWidget_3->setGeometry(
+            QRect(screenSizeW * 46.5 / 100, screenSizeH * 22 / 100, screenSizeW * 5 / 100, screenSizeH * 5 / 100));
     caseRose0 = new QVBoxLayout(verticalLayoutWidget_3);
     caseRose0->setObjectName(QString::fromUtf8("caseRose0"));
     caseRose0->setContentsMargins(0, 0, 0, 0);
@@ -107,7 +124,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_11 = new QWidget(cases);
     verticalLayoutWidget_11->setObjectName(QString::fromUtf8("verticalLayoutWidget_11"));
-    verticalLayoutWidget_11->setGeometry(QRect(250, 750, 431, 41));
+    verticalLayoutWidget_11->setGeometry(
+            QRect(screenSizeW * 27.5 / 100, screenSizeH * 75.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose4 = new QVBoxLayout(verticalLayoutWidget_11);
     caseRose4->setObjectName(QString::fromUtf8("caseRose4"));
     caseRose4->setContentsMargins(0, 0, 0, 0);
@@ -118,7 +136,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_8 = new QWidget(cases);
     verticalLayoutWidget_8->setObjectName(QString::fromUtf8("verticalLayoutWidget_8"));
-    verticalLayoutWidget_8->setGeometry(QRect(0, 490, 431, 41));
+    verticalLayoutWidget_8->setGeometry(
+            QRect(screenSizeW * 5 / 100, screenSizeH * 47.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose2 = new QVBoxLayout(verticalLayoutWidget_8);
     caseRose2->setObjectName(QString::fromUtf8("caseRose2"));
     caseRose2->setContentsMargins(0, 0, 0, 0);
@@ -129,7 +148,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_12 = new QWidget(cases);
     verticalLayoutWidget_12->setObjectName(QString::fromUtf8("verticalLayoutWidget_12"));
-    verticalLayoutWidget_12->setGeometry(QRect(690, 750, 431, 41));
+    verticalLayoutWidget_12->setGeometry(
+            QRect(screenSizeW * 52.5 / 100, screenSizeH * 75.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose5 = new QVBoxLayout(verticalLayoutWidget_12);
     caseRose5->setObjectName(QString::fromUtf8("caseRose5"));
     caseRose5->setContentsMargins(0, 0, 0, 0);
@@ -140,7 +160,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_10 = new QWidget(cases);
     verticalLayoutWidget_10->setObjectName(QString::fromUtf8("verticalLayoutWidget_10"));
-    verticalLayoutWidget_10->setGeometry(QRect(910, 489, 431, 41));
+    verticalLayoutWidget_10->setGeometry(
+            QRect(screenSizeW * 77 / 100, screenSizeH * 47.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose7 = new QVBoxLayout(verticalLayoutWidget_10);
     caseRose7->setObjectName(QString::fromUtf8("caseRose7"));
     caseRose7->setContentsMargins(0, 0, 0, 0);
@@ -151,7 +172,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_13 = new QWidget(cases);
     verticalLayoutWidget_13->setObjectName(QString::fromUtf8("verticalLayoutWidget_13"));
-    verticalLayoutWidget_13->setGeometry(QRect(870, 620, 431, 41));
+    verticalLayoutWidget_13->setGeometry(
+            QRect(screenSizeW * 72 / 100, screenSizeH * 61.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose6 = new QVBoxLayout(verticalLayoutWidget_13);
     caseRose6->setObjectName(QString::fromUtf8("caseRose6"));
     caseRose6->setContentsMargins(0, 0, 0, 0);
@@ -162,7 +184,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_5 = new QWidget(cases);
     verticalLayoutWidget_5->setObjectName(QString::fromUtf8("verticalLayoutWidget_5"));
-    verticalLayoutWidget_5->setGeometry(QRect(50, 360, 431, 41));
+    verticalLayoutWidget_5->setGeometry(
+            QRect(screenSizeW * 10 / 100, screenSizeH * 33.5 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseRose1 = new QVBoxLayout(verticalLayoutWidget_5);
     caseRose1->setObjectName(QString::fromUtf8("caseRose1"));
     caseRose1->setContentsMargins(0, 0, 0, 0);
@@ -173,7 +196,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_2 = new QWidget(cases);
     horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
-    horizontalLayoutWidget_2->setGeometry(QRect(460, 180, 431, 51));
+    horizontalLayoutWidget_2->setGeometry(
+            QRect(screenSizeW * 40 / 100, screenSizeH * 14 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar0 = new QHBoxLayout(horizontalLayoutWidget_2);
     caseStar0->setObjectName(QString::fromUtf8("caseStar0"));
     caseStar0->setContentsMargins(0, 0, 0, 0);
@@ -204,18 +228,21 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_4 = new QWidget(cases);
     verticalLayoutWidget_4->setObjectName(QString::fromUtf8("verticalLayoutWidget_4"));
-    verticalLayoutWidget_4->setGeometry(QRect(560, 10, 381, 111));
+    verticalLayoutWidget_4->setGeometry(
+            QRect(screenSizeW * 44 / 100, screenSizeH * 42 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_4);
     verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
     verticalLayout_2->setContentsMargins(0, 0, 0, 0);
     label_2 = new QLabel(verticalLayoutWidget_4);
     label_2->setObjectName(QString::fromUtf8("label_2"));
+    label_2->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
 
     verticalLayout_2->addWidget(label_2);
 
     horizontalLayoutWidget_3 = new QWidget(cases);
     horizontalLayoutWidget_3->setObjectName(QString::fromUtf8("horizontalLayoutWidget_3"));
-    horizontalLayoutWidget_3->setGeometry(QRect(870, 310, 431, 51));
+    horizontalLayoutWidget_3->setGeometry(
+            QRect(screenSizeW * 72 / 100, screenSizeH * 28 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar8 = new QHBoxLayout(horizontalLayoutWidget_3);
     caseStar8->setObjectName(QString::fromUtf8("caseStar8"));
     caseStar8->setContentsMargins(0, 0, 0, 0);
@@ -246,7 +273,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_4 = new QWidget(cases);
     horizontalLayoutWidget_4->setObjectName(QString::fromUtf8("horizontalLayoutWidget_4"));
-    horizontalLayoutWidget_4->setGeometry(QRect(910, 440, 431, 51));
+    horizontalLayoutWidget_4->setGeometry(
+            QRect(screenSizeW * 77 / 100, screenSizeH * 42 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar7 = new QHBoxLayout(horizontalLayoutWidget_4);
     caseStar7->setObjectName(QString::fromUtf8("caseStar7"));
     caseStar7->setContentsMargins(0, 0, 0, 0);
@@ -277,7 +305,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_5 = new QWidget(cases);
     horizontalLayoutWidget_5->setObjectName(QString::fromUtf8("horizontalLayoutWidget_5"));
-    horizontalLayoutWidget_5->setGeometry(QRect(870, 570, 431, 51));
+    horizontalLayoutWidget_5->setGeometry(
+            QRect(screenSizeW * 72 / 100, screenSizeH * 56 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar6 = new QHBoxLayout(horizontalLayoutWidget_5);
     caseStar6->setObjectName(QString::fromUtf8("caseStar6"));
     caseStar6->setContentsMargins(0, 0, 0, 0);
@@ -308,7 +337,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_6 = new QWidget(cases);
     horizontalLayoutWidget_6->setObjectName(QString::fromUtf8("horizontalLayoutWidget_6"));
-    horizontalLayoutWidget_6->setGeometry(QRect(690, 700, 431, 51));
+    horizontalLayoutWidget_6->setGeometry(
+            QRect(screenSizeW * 52.5 / 100, screenSizeH * 70 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar5 = new QHBoxLayout(horizontalLayoutWidget_6);
     caseStar5->setObjectName(QString::fromUtf8("caseStar5"));
     caseStar5->setContentsMargins(0, 0, 0, 0);
@@ -339,7 +369,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_7 = new QWidget(cases);
     horizontalLayoutWidget_7->setObjectName(QString::fromUtf8("horizontalLayoutWidget_7"));
-    horizontalLayoutWidget_7->setGeometry(QRect(0, 440, 431, 51));
+    horizontalLayoutWidget_7->setGeometry(
+            QRect(screenSizeW * 5 / 100, screenSizeH * 42 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar2 = new QHBoxLayout(horizontalLayoutWidget_7);
     caseStar2->setObjectName(QString::fromUtf8("caseStar2"));
     caseStar2->setContentsMargins(0, 0, 0, 0);
@@ -370,7 +401,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_8 = new QWidget(cases);
     horizontalLayoutWidget_8->setObjectName(QString::fromUtf8("horizontalLayoutWidget_8"));
-    horizontalLayoutWidget_8->setGeometry(QRect(250, 700, 431, 51));
+    horizontalLayoutWidget_8->setGeometry(
+            QRect(screenSizeW * 27.5 / 100, screenSizeH * 70 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar4 = new QHBoxLayout(horizontalLayoutWidget_8);
     caseStar4->setObjectName(QString::fromUtf8("caseStar4"));
     caseStar4->setContentsMargins(0, 0, 0, 0);
@@ -401,7 +433,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_9 = new QWidget(cases);
     horizontalLayoutWidget_9->setObjectName(QString::fromUtf8("horizontalLayoutWidget_9"));
-    horizontalLayoutWidget_9->setGeometry(QRect(40, 570, 431, 51));
+    horizontalLayoutWidget_9->setGeometry(
+            QRect(screenSizeW * 10 / 100, screenSizeH * 56 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar3 = new QHBoxLayout(horizontalLayoutWidget_9);
     caseStar3->setObjectName(QString::fromUtf8("caseStar3"));
     caseStar3->setContentsMargins(0, 0, 0, 0);
@@ -432,7 +465,8 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     horizontalLayoutWidget_10 = new QWidget(cases);
     horizontalLayoutWidget_10->setObjectName(QString::fromUtf8("horizontalLayoutWidget_10"));
-    horizontalLayoutWidget_10->setGeometry(QRect(50, 310, 431, 51));
+    horizontalLayoutWidget_10->setGeometry(
+            QRect(screenSizeW * 10 / 100, screenSizeH * 28 / 100, screenSizeW * 18 / 100, screenSizeH * 10 / 100));
     caseStar1 = new QHBoxLayout(horizontalLayoutWidget_10);
     caseStar1->setObjectName(QString::fromUtf8("caseStar1"));
     caseStar1->setContentsMargins(0, 0, 0, 0);
@@ -463,12 +497,15 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     verticalLayoutWidget_2 = new QWidget(page_2);
     verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-    verticalLayoutWidget_2->setGeometry(QRect(20, 0, 431, 81));
+    verticalLayoutWidget_2->setGeometry(
+            QRect(screenSizeH * 68 / 100, screenSizeH * 2 / 100, screenSizeW / 4, screenSizeH * 5 / 100));
     horizontalLayout = new QHBoxLayout(verticalLayoutWidget_2);
     horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
     horizontalLayout->setContentsMargins(0, 0, 0, 0);
     rollDice = new QPushButton(verticalLayoutWidget_2);
     rollDice->setObjectName(QString::fromUtf8("rollDice"));
+    rollDice->setStyleSheet(" font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
+
 
     horizontalLayout->addWidget(rollDice);
 
@@ -479,11 +516,11 @@ void Ui_Form::setupUi(QWidget *Form) {
 
     currentPlayer = new QLabel(verticalLayoutWidget_2);
     currentPlayer->setObjectName(QString::fromUtf8("currentPlayer"));
+    currentPlayer->setStyleSheet("font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;");
 
     horizontalLayout->addWidget(currentPlayer);
 
     stackedWidget->addWidget(page_2);
-
     retranslateUi(Form);
 
     QMetaObject::connectSlotsByName(Form);
@@ -492,10 +529,17 @@ void Ui_Form::setupUi(QWidget *Form) {
 void Ui_Form::retranslateUi(QWidget *Form) const {
     Form->setWindowTitle(QCoreApplication::translate("Good night game", "Good night game", nullptr));
     label->setText(QCoreApplication::translate("Form", "How many players are going to play?", nullptr));
-    addPlayer->setText(QCoreApplication::translate("Form", "add player", nullptr));
-    removePlayer->setText(QCoreApplication::translate("Form", "remove player", nullptr));
+    addPlayer->setText(QCoreApplication::translate("Form", "Add a player", nullptr));
+    removePlayer->setText(QCoreApplication::translate("Form", "Remove a player", nullptr));
     startGame->setText(QCoreApplication::translate("Form", "Start Game", nullptr));
-    label_2->setText(QCoreApplication::translate("Form", "Please click on one of the buttons to place your star", nullptr));
+    label_2->setText(
+            QCoreApplication::translate("Form", "Please click on one of the buttons to place your star", nullptr));
     rollDice->setText(QCoreApplication::translate("Form", "Roll Dice", nullptr));
     currentPlayer->setText(QCoreApplication::translate("Form", "current Player", nullptr));
+}
+
+Ui_Form::Ui_Form() {
+    QRect rect = QGuiApplication::primaryScreen()->geometry();
+    screenSizeH = rect.height();
+    screenSizeW = rect.width();
 }

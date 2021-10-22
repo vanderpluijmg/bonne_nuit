@@ -3,10 +3,10 @@
 #include "view/View.h"
 #include "ressources/random.hpp"
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
     nvs::randomize();
-    QApplication application (argc,argv);
+    QApplication application(argc, argv);
     View view(nullptr);
     view.show();
-    return application.exec();
+    return QApplication::exec();
 }

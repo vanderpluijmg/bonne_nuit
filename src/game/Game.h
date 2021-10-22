@@ -12,6 +12,7 @@
 class Game : public Observable {
 
 private:
+    int firstPlayer_;
     std::list<Observer *> observers;
     GameState gameState_;
     Player currentPlayer;
@@ -55,12 +56,6 @@ public:
     void initGame(int numberOfPlayers, int firstPlayer);
 
     /**
-     * Gets all the players that are playing.
-     * @return A list of all the players.
-     */
-    std::vector<Player> getPlayers();
-
-    /**
      * Notifies view of all the pawns that have to be placed by the pc.
      */
     void notifyStartingNpcPawn();
@@ -69,6 +64,12 @@ public:
     * Changes to the next player.
     */
     void nextPlayer();
+
+    /**
+     * Gets the list of players.
+     * @return Vector of players.
+     */
+    [[nodiscard]] const std::vector<Player> &getPlayers() const;
 
     /**
      * Simulates a dice roll.
@@ -104,6 +105,7 @@ public:
      * @param y Y coordinates of the start he would like to place.
      */
     void playMove(int y);
+
 
     /**
      * Return pawn of current player at coordinates x and y.
@@ -157,11 +159,9 @@ public:
     void notify(Modification m) override;
 
     /**
-     * Gets a list of pawn of all the players that are not playing.
-     * @return List of players that are not in the game.
+     * Determines the winner.
+     * @return Name of winner.
      */
-    [[nodiscard]] const std::vector<Player> &getNpc() const;
-
     int determineWinner();
 };
 

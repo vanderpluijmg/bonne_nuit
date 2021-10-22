@@ -16,23 +16,25 @@
 class View : public QWidget, public Observer {
 Q_OBJECT
 private:
-    int firstPlayer=0;
-    int smallestAge=100;
+
+    int firstPlayer = 0;
+    int smallestAge = 100;
     int currentRosePlace_ = 0;
     std::optional<Game> game;
-    Ui_Form* mainWindow  = new Ui_Form ();
+    Ui_Form *mainWindow = new Ui_Form();
+
 public:
 
     /**
      * Default constructor for view of game.
-     * @param parent Parent of main Window;
+     * @param parent Parent of main Window.
      */
-    explicit View(QWidget * parent = nullptr);
+    explicit View(QWidget *parent = nullptr);
 
     /**
      * Default destructor
      */
-    ~View() override =default;
+    ~View() override = default;
 
     /**
      * Changes to game window when start button is pressed in GUI.
@@ -50,6 +52,7 @@ public:
      * Plays description turn for the current player
      */
     void rollDiceMoveRose();
+
     /**
      * Moves the ROSE in the view.
      */
@@ -80,7 +83,6 @@ public:
 
     /**
      * Updates the state of the game in the GUI.
-     * @param gs
      */
     void updateGameState();
 
@@ -97,14 +99,15 @@ public:
     /**
      * Applies the current picture of the correct star to the icon.
      * @param c Color of star.
+     * @param Icon Icon to set picture of star to.
      */
-    static void getStarPicture(int c, QIcon&);
+    static void getStarPicture(int c, QIcon &);
 
     /**
      * Sets the instruction label with a specific message.
      * @param msg Message to display.
      */
-    void setMessageGuiding(const QString& msg);
+    void setMessageGuiding(const QString &msg);
 
     /**
      * Affect all the stars on the board with the desired action.
@@ -114,16 +117,21 @@ public:
      * @param rosePlace place of rose.
      * @param activate Either to activate or disable all buttons.
      */
-    void affectAllStars(bool connectStars, bool disableNotOnRose, bool activateAll, int rosePlace=0, bool disactivate=false);
+    void affectAllStars(bool connectStars, bool disableNotOnRose, bool activateAll, int rosePlace = 0,
+                        bool disactivate = false);
 
+    /**
+     * Affects all the roses to show or not to show.
+     */
     void affectAllRoses(bool);
 
     /**
-     * Display the winner of the current game
+     * Display the winner of the current game.
+     * @param winner Winner of the current game.
      */
-    static void displayWinner(int winner);
-};
+    void displayWinner(int winner);
 
+};
 
 
 #endif //BONNE_NUIT_VIEW_H

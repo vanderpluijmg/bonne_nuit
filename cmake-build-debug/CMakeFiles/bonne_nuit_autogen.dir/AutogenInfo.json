@@ -277,10 +277,6 @@
 		"/usr/lib64/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargets-release.cmake",
 		"/usr/lib64/cmake/Qt6SvgWidgets/Qt6SvgWidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib64/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessTargets.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CTest.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CTestUseLaunchers.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/CTestTargets.cmake",
-		"/home/gregory/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/share/cmake-3.20/Modules/DartConfiguration.tcl.in",
 		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit",
@@ -476,6 +472,16 @@
 		],
 		[
 			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/test/mainTest.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/test/testGame.cpp",
 			"MU",
 			null
 		]
