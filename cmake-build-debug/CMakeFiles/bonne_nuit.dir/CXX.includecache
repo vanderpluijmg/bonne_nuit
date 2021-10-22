@@ -22,6 +22,18 @@ stdexcept
 stdexcept
 -
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/game/Board.cpp
+Board.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/game/Board.h
+../ressources/random.hpp
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/random.hpp
+../exceptions/OutOfGameBoardException.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/OutOfGameBoardException.h
+../exceptions/PawnInPlaceException.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/PawnInPlaceException.h
+../exceptions/NoPawnFound.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/NoPawnFound.h
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/game/Board.h
 string
 -
@@ -62,6 +74,16 @@ list
 Pawn.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/game/Pawn.h
 
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
+
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/utils/Observable.h
 list
 -
@@ -85,8 +107,6 @@ QInputDialog
 -
 View.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/View.h
-windows/mainWindow.h
-/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/mainWindow.h
 ../exceptions/NumberOfPlayerException.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/NumberOfPlayerException.h
 ../exceptions/PawnInPlaceException.h
@@ -97,7 +117,11 @@ windows/newPlayerWidget.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/NoPawnFound.h
 ../exceptions/OutOfGameBoardException.h
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/exceptions/OutOfGameBoardException.h
+windows/winnerWidget.h
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.h
 QMessageBox
+-
+QScreen
 -
 
 /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/View.h
@@ -158,6 +182,22 @@ QtWidgets/QLabel
 QtWidgets/QSpacerItem
 -
 QtWidgets/QTextEdit
+-
+QtWidgets/QWidget
+-
+
+/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.h
+QtCore/QVariant
+-
+QtWidgets/QApplication
+-
+QtWidgets/QHBoxLayout
+-
+QtWidgets/QLabel
+-
+QtWidgets/QPushButton
+-
+QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
@@ -1247,6 +1287,10 @@ stdlib.h
 /usr/include/qt6/QtCore/qversiontagging.h
 QtCore/qglobal.h
 -
+
+/usr/include/qt6/QtGui/QScreen
+qscreen.h
+/usr/include/qt6/QtGui/qscreen.h
 
 /usr/include/qt6/QtGui/QTransform
 qtransform.h

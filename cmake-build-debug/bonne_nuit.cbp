@@ -107,6 +107,46 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="bonne_nuit_autogen">
 				<Option working_dir="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug"/>
 				<Option type="4"/>
@@ -191,6 +231,12 @@
 			<Option target="bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/newPlayerWidget.h">
+			<Option target="bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp">
+			<Option target="bonne_nuit"/>
+		</Unit>
+		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.h">
 			<Option target="bonne_nuit"/>
 		</Unit>
 		<Unit filename="/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/CMakeLists.txt">

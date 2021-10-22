@@ -173,9 +173,22 @@ CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/newPlayerWidget.cpp -o CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.s
 
+CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o: CMakeFiles/bonne_nuit.dir/flags.make
+CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o: ../src/view/windows/winnerWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp
+
+CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp > CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.i
+
+CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp -o CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.s
+
 CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o: CMakeFiles/bonne_nuit.dir/flags.make
 CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o: bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o -c /home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp
 
 CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.i: cmake_force
@@ -195,6 +208,7 @@ bonne_nuit_OBJECTS = \
 "CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o" \
 "CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o" \
 "CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o" \
+"CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o" \
 "CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o"
 
 # External object files for target bonne_nuit
@@ -207,6 +221,7 @@ bonne_nuit: CMakeFiles/bonne_nuit.dir/src/game/Game.cpp.o
 bonne_nuit: CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o
 bonne_nuit: CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o
 bonne_nuit: CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o
+bonne_nuit: CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o
 bonne_nuit: CMakeFiles/bonne_nuit.dir/bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp.o
 bonne_nuit: CMakeFiles/bonne_nuit.dir/build.make
 bonne_nuit: /usr/lib/libQt6SvgWidgets.so.6.2.0
@@ -217,7 +232,7 @@ bonne_nuit: /usr/lib/libQt6Core.so.6.2.0
 bonne_nuit: /usr/lib/libGLX.so
 bonne_nuit: /usr/lib/libOpenGL.so
 bonne_nuit: CMakeFiles/bonne_nuit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bonne_nuit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bonne_nuit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bonne_nuit.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/View.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o"
   "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/mainWindow.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o"
   "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/newPlayerWidget.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o"
+  "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/view/windows/winnerWidget.cpp" "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

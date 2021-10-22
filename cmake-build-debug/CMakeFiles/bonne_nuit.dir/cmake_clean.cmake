@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o"
   "CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o"
   "CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o"
+  "CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o"
   "bonne_nuit"
   "bonne_nuit.pdb"
   "bonne_nuit_autogen/5B2EWLNMXV/qrc_images.cpp"

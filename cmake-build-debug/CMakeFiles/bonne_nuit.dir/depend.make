@@ -214,7 +214,85 @@ CMakeFiles/bonne_nuit.dir/src/game/Game.cpp.o: \
  ../src/game/Player.h \
  ../src/ressources/random.hpp \
  ../src/utils/Observable.h \
- ../src/utils/Observer.h
+ ../src/utils/Observer.h \
+ /usr/include/qt6/QtCore/QDebug \
+ /usr/include/qt6/QtCore/qalgorithms.h \
+ /usr/include/qt6/QtCore/qanystringview.h \
+ /usr/include/qt6/QtCore/qarraydata.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qatomic.h \
+ /usr/include/qt6/QtCore/qatomic_bootstrap.h \
+ /usr/include/qt6/QtCore/qatomic_cxx11.h \
+ /usr/include/qt6/QtCore/qbasicatomic.h \
+ /usr/include/qt6/QtCore/qbytearray.h \
+ /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
+ /usr/include/qt6/QtCore/qbytearraylist.h \
+ /usr/include/qt6/QtCore/qbytearrayview.h \
+ /usr/include/qt6/QtCore/qchar.h \
+ /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qcompilerdetection.h \
+ /usr/include/qt6/QtCore/qconfig-bootstrapped.h \
+ /usr/include/qt6/QtCore/qconfig.h \
+ /usr/include/qt6/QtCore/qcontainerfwd.h \
+ /usr/include/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qdatastream.h \
+ /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qflags.h \
+ /usr/include/qt6/QtCore/qgenericatomic.h \
+ /usr/include/qt6/QtCore/qglobal.h \
+ /usr/include/qt6/QtCore/qglobalstatic.h \
+ /usr/include/qt6/QtCore/qhash.h \
+ /usr/include/qt6/QtCore/qhashfunctions.h \
+ /usr/include/qt6/QtCore/qiodevicebase.h \
+ /usr/include/qt6/QtCore/qiterable.h \
+ /usr/include/qt6/QtCore/qiterator.h \
+ /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/qlogging.h \
+ /usr/include/qt6/QtCore/qmap.h \
+ /usr/include/qt6/QtCore/qmath.h \
+ /usr/include/qt6/QtCore/qmetacontainer.h \
+ /usr/include/qt6/QtCore/qmetatype.h \
+ /usr/include/qt6/QtCore/qnamespace.h \
+ /usr/include/qt6/QtCore/qnumeric.h \
+ /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCore/qobject_impl.h \
+ /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/qt6/QtCore/qprocessordetection.h \
+ /usr/include/qt6/QtCore/qproperty.h \
+ /usr/include/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qscopedpointer.h \
+ /usr/include/qt6/QtCore/qscopeguard.h \
+ /usr/include/qt6/QtCore/qset.h \
+ /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtCore/qshareddata_impl.h \
+ /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/qt6/QtCore/qstring.h \
+ /usr/include/qt6/QtCore/qstringalgorithms.h \
+ /usr/include/qt6/QtCore/qstringbuilder.h \
+ /usr/include/qt6/QtCore/qstringconverter.h \
+ /usr/include/qt6/QtCore/qstringlist.h \
+ /usr/include/qt6/QtCore/qstringliteral.h \
+ /usr/include/qt6/QtCore/qstringmatcher.h \
+ /usr/include/qt6/QtCore/qstringtokenizer.h \
+ /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qsysinfo.h \
+ /usr/include/qt6/QtCore/qsystemdetection.h \
+ /usr/include/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/qt6/QtCore/qtcore-config.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qtmetamacros.h \
+ /usr/include/qt6/QtCore/qtypeinfo.h \
+ /usr/include/qt6/QtCore/qutf8stringview.h \
+ /usr/include/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/qt6/QtCore/qversiontagging.h
 CMakeFiles/bonne_nuit.dir/src/main.cpp.o: \
  ../src/game/Board.h \
  ../src/game/Game.h \
@@ -418,6 +496,7 @@ CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o: \
  ../src/view/View.h \
  ../src/view/windows/mainWindow.h \
  ../src/view/windows/newPlayerWidget.h \
+ ../src/view/windows/winnerWidget.h \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -529,6 +608,7 @@ CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o: \
  /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
+ /usr/include/qt6/QtGui/QScreen \
  /usr/include/qt6/QtGui/QTransform \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
@@ -614,6 +694,7 @@ CMakeFiles/bonne_nuit.dir/src/view/View.cpp.o: \
 CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o: \
  ../src/view/windows/mainWindow.cpp \
  ../src/view/windows/mainWindow.h \
+ /usr/include/qt6/QtCore/QFile \
  /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect \
@@ -652,6 +733,8 @@ CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o: \
  /usr/include/qt6/QtCore/qelapsedtimer.h \
  /usr/include/qt6/QtCore/qeventloop.h \
  /usr/include/qt6/QtCore/qexception.h \
+ /usr/include/qt6/QtCore/qfile.h \
+ /usr/include/qt6/QtCore/qfiledevice.h \
  /usr/include/qt6/QtCore/qflags.h \
  /usr/include/qt6/QtCore/qfuture.h \
  /usr/include/qt6/QtCore/qfuture_impl.h \
@@ -724,6 +807,7 @@ CMakeFiles/bonne_nuit.dir/src/view/windows/mainWindow.cpp.o: \
  /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversiontagging.h \
+ /usr/include/qt6/QtGui/QScreen \
  /usr/include/qt6/QtGui/QTransform \
  /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtGui/qbrush.h \
@@ -963,6 +1047,194 @@ CMakeFiles/bonne_nuit.dir/src/view/windows/newPlayerWidget.cpp.o: \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qtextedit.h \
+ /usr/include/qt6/QtWidgets/qtwidgets-config.h \
+ /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/qt6/QtWidgets/qwidget.h
+CMakeFiles/bonne_nuit.dir/src/view/windows/winnerWidget.cpp.o: \
+ ../src/game/Board.h \
+ ../src/game/Game.h \
+ ../src/game/GameState.h \
+ ../src/game/Pawn.h \
+ ../src/game/Player.h \
+ ../src/utils/Observable.h \
+ ../src/utils/Observer.h \
+ ../src/view/View.h \
+ ../src/view/windows/mainWindow.h \
+ ../src/view/windows/winnerWidget.cpp \
+ ../src/view/windows/winnerWidget.h \
+ /usr/include/qt6/QtCore/QList \
+ /usr/include/qt6/QtCore/QObject \
+ /usr/include/qt6/QtCore/QRect \
+ /usr/include/qt6/QtCore/QSize \
+ /usr/include/qt6/QtCore/QSizeF \
+ /usr/include/qt6/QtCore/QVariant \
+ /usr/include/qt6/QtCore/qalgorithms.h \
+ /usr/include/qt6/QtCore/qanystringview.h \
+ /usr/include/qt6/QtCore/qapplicationpermission.h \
+ /usr/include/qt6/QtCore/qarraydata.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qatomic.h \
+ /usr/include/qt6/QtCore/qatomic_bootstrap.h \
+ /usr/include/qt6/QtCore/qatomic_cxx11.h \
+ /usr/include/qt6/QtCore/qbasicatomic.h \
+ /usr/include/qt6/QtCore/qbytearray.h \
+ /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
+ /usr/include/qt6/QtCore/qbytearraylist.h \
+ /usr/include/qt6/QtCore/qbytearrayview.h \
+ /usr/include/qt6/QtCore/qchar.h \
+ /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qcompilerdetection.h \
+ /usr/include/qt6/QtCore/qconfig-bootstrapped.h \
+ /usr/include/qt6/QtCore/qconfig.h \
+ /usr/include/qt6/QtCore/qcontainerfwd.h \
+ /usr/include/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qdatastream.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qexception.h \
+ /usr/include/qt6/QtCore/qflags.h \
+ /usr/include/qt6/QtCore/qfuture.h \
+ /usr/include/qt6/QtCore/qfuture_impl.h \
+ /usr/include/qt6/QtCore/qfutureinterface.h \
+ /usr/include/qt6/QtCore/qgenericatomic.h \
+ /usr/include/qt6/QtCore/qglobal.h \
+ /usr/include/qt6/QtCore/qglobalstatic.h \
+ /usr/include/qt6/QtCore/qhash.h \
+ /usr/include/qt6/QtCore/qhashfunctions.h \
+ /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtCore/qiodevicebase.h \
+ /usr/include/qt6/QtCore/qiterable.h \
+ /usr/include/qt6/QtCore/qiterator.h \
+ /usr/include/qt6/QtCore/qline.h \
+ /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtCore/qlogging.h \
+ /usr/include/qt6/QtCore/qloggingcategory.h \
+ /usr/include/qt6/QtCore/qmap.h \
+ /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtCore/qmath.h \
+ /usr/include/qt6/QtCore/qmetacontainer.h \
+ /usr/include/qt6/QtCore/qmetatype.h \
+ /usr/include/qt6/QtCore/qmutex.h \
+ /usr/include/qt6/QtCore/qnamespace.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtCore/qnumeric.h \
+ /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCore/qobject_impl.h \
+ /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/qt6/QtCore/qpoint.h \
+ /usr/include/qt6/QtCore/qpointer.h \
+ /usr/include/qt6/QtCore/qprocessordetection.h \
+ /usr/include/qt6/QtCore/qproperty.h \
+ /usr/include/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qresultstore.h \
+ /usr/include/qt6/QtCore/qrunnable.h \
+ /usr/include/qt6/QtCore/qscopedpointer.h \
+ /usr/include/qt6/QtCore/qscopeguard.h \
+ /usr/include/qt6/QtCore/qset.h \
+ /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtCore/qshareddata_impl.h \
+ /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/qstring.h \
+ /usr/include/qt6/QtCore/qstringalgorithms.h \
+ /usr/include/qt6/QtCore/qstringbuilder.h \
+ /usr/include/qt6/QtCore/qstringconverter.h \
+ /usr/include/qt6/QtCore/qstringlist.h \
+ /usr/include/qt6/QtCore/qstringliteral.h \
+ /usr/include/qt6/QtCore/qstringmatcher.h \
+ /usr/include/qt6/QtCore/qstringtokenizer.h \
+ /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qsysinfo.h \
+ /usr/include/qt6/QtCore/qsystemdetection.h \
+ /usr/include/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/qt6/QtCore/qtcore-config.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qthread.h \
+ /usr/include/qt6/QtCore/qthreadpool.h \
+ /usr/include/qt6/QtCore/qtmetamacros.h \
+ /usr/include/qt6/QtCore/qtypeinfo.h \
+ /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtCore/qutf8stringview.h \
+ /usr/include/qt6/QtCore/qvariant.h \
+ /usr/include/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/qt6/QtCore/qversiontagging.h \
+ /usr/include/qt6/QtGui/QScreen \
+ /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qbitmap.h \
+ /usr/include/qt6/QtGui/qbrush.h \
+ /usr/include/qt6/QtGui/qcolor.h \
+ /usr/include/qt6/QtGui/qcursor.h \
+ /usr/include/qt6/QtGui/qevent.h \
+ /usr/include/qt6/QtGui/qeventpoint.h \
+ /usr/include/qt6/QtGui/qfont.h \
+ /usr/include/qt6/QtGui/qfontinfo.h \
+ /usr/include/qt6/QtGui/qfontmetrics.h \
+ /usr/include/qt6/QtGui/qguiapplication.h \
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtGui/qicon.h \
+ /usr/include/qt6/QtGui/qimage.h \
+ /usr/include/qt6/QtGui/qinputdevice.h \
+ /usr/include/qt6/QtGui/qinputmethod.h \
+ /usr/include/qt6/QtGui/qkeysequence.h \
+ /usr/include/qt6/QtGui/qpaintdevice.h \
+ /usr/include/qt6/QtGui/qpalette.h \
+ /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtGui/qpixelformat.h \
+ /usr/include/qt6/QtGui/qpixmap.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qpolygon.h \
+ /usr/include/qt6/QtGui/qregion.h \
+ /usr/include/qt6/QtGui/qrgb.h \
+ /usr/include/qt6/QtGui/qrgba64.h \
+ /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtGui/qtextdocument.h \
+ /usr/include/qt6/QtGui/qtgui-config.h \
+ /usr/include/qt6/QtGui/qtguiglobal.h \
+ /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h \
+ /usr/include/qt6/QtGui/qwindowdefs_win.h \
+ /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/QFrame \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QLCDNumber \
+ /usr/include/qt6/QtWidgets/QLabel \
+ /usr/include/qt6/QtWidgets/QLayout \
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/QSpacerItem \
+ /usr/include/qt6/QtWidgets/QStackedWidget \
+ /usr/include/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/qt6/QtWidgets/QWidget \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/qapplication.h \
+ /usr/include/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/qt6/QtWidgets/qframe.h \
+ /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/qlayout.h \
+ /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qlcdnumber.h \
+ /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qsizepolicy.h \
+ /usr/include/qt6/QtWidgets/qstackedwidget.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qwidget.h
