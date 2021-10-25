@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/bonne_nuit_autogen",
+	"CMAKE_BINARY_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit",
+	"CMAKE_SOURCE_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit",
+	"INCLUDE_DIR" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/bonne_nuit_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/no_drop.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_purple.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_night.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_green.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_down.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_black.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/drop.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_red.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/star_blue.png",
+		"/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images/img/night.png"
+	],
+	"LOCK_FILE" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit_autogen.dir/AutoRcc_images_5B2EWLNMXV_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "5B2EWLNMXV",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/cmake-build-debug/CMakeFiles/bonne_nuit_autogen.dir/AutoRcc_images_5B2EWLNMXV_Used.txt",
+	"SOURCE" : "/home/gregory/Documents/2020-2021/Q5/ATLIR/C++/bonne_nuit/src/ressources/images.qrc",
+	"VERBOSITY" : 0
+}
