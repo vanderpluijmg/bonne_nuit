@@ -9,7 +9,8 @@ ______                          _   _       _ _
 ```
 # Table of Contents
 1. [About](#About)
-2. [Dependencies](#Dependencies)
+2. [Build](#Build)
+    1. [Dependencies] (#Dependencies)
 4. [Rules of the game](#rules-of-the-game)
    1. [First part](#premire-phase)
    2. [Second part](#deuxime-phase)
@@ -21,11 +22,19 @@ This project was created for my class of ATLIR5/C++ @ ESI.
 - Title : Bonne Nuit
 - Date : 29/10/2021
 
-# Dependencies
+# Build
+## Dependencies
 - QT6
 - Catch2
 - Git
 - CMake
+
+```bash
+cd esi-atlir5-bonne_nuit
+make
+cd build/release
+./bonne_nuit
+```
 
 # Rules of the game
 Dans l’explication de la règle, les pions rouges sont appelés « cases ».
