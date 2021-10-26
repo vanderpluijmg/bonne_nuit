@@ -10,11 +10,10 @@ ______                          _   _       _ _
 # Table of Contents
 1. [About](#About)
 2. [Build](#Build)
-    1. [Dependencies] (#Dependencies)
-4. [Rules of the game](#rules-of-the-game)
+3. [Rules of the game](#rules-of-the-game)
    1. [First part](#premire-phase)
    2. [Second part](#deuxime-phase)
-5. [Project Structure](#project-structure)
+4. [Project Structure](#project-structure)
 
 # About
 This project was created for my class of ATLIR5/C++ @ ESI.
@@ -23,7 +22,7 @@ This project was created for my class of ATLIR5/C++ @ ESI.
 - Date : 29/10/2021
 
 # Build
-## Dependencies
+Needed dependencies
 - QT6
 - Catch2
 - Git
