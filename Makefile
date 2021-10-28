@@ -20,3 +20,6 @@ test: debug
 
 tree:
 	tree --dirsfirst -I 'build|resources|docs' .
+
+docs:
+	doxygen ./doxygen
