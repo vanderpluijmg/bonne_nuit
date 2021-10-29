@@ -1,4 +1,4 @@
-/**#include "../src/game/Game.h"
+#include "../src/game/Game.h"
 #include "../src/exceptions/NumberOfPlayerException.h"
 #include "../src/exceptions/OutOfGameBoardException.h"
 #include "../src/exceptions/PawnInPlaceException.h"
@@ -177,7 +177,7 @@ TEST_CASE("play moves lights on", "[game mechanics]" "[sunUp]"){
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getColor()) == (playingPlayer.getColor()));
     REQUIRE((g.getBoard().getCase(g.getBoard().getRosePlace(), 4).getState())
             == (SHINING));
-    REQUIRE(g.getPlayers().at(1).getName() == g.getCurrentPlayer().getName());
+    REQUIRE(g.getPlayers().at(0).getName() == g.getCurrentPlayer().getName());
 }
 
 TEST_CASE("remove current player pawn","[remove pawn]" "[sunDown]") {
@@ -193,5 +193,5 @@ TEST_CASE("remove current pawn with no pawn","[remove pawn]" "[sunDown]") {
 }
 TEST_CASE("remove current pawn out of bounds","[remove pawn]" "[sunDown]") {
     Game g;
-    REQUIRE_THROWS_AS(g.returnPawn(g.getBoard().getRosePlace(),8), OutOfGameBoardException);
-}*/
+    REQUIRE_THROWS_AS(g.returnPawn(g.getBoard().getRosePlace(), 8), OutOfGameBoardException);
+}
